@@ -1,4 +1,4 @@
-https://github.com/ptitSeb/box64: 430ca5b9545d47866b07de14b00df3004fcc1c5d
+https://github.com/ptitSeb/box64: 03324f6c731f2fd2da6413a69b01155eb55e49df
 https://github.com/Pipetto-crypto/box64: c0cc2c254e24ae53bd435e4d3ff84e1a7fdb6399
 https://github.com/FEX-Emu/FEX: 4968dc4bab80f3a8b296a59df7b9b42ebf40429e
 https://github.com/HansKristian-Work/vkd3d-proton: f7fcd3b5a4bf3fb5e3b472350ce68a8aea017677
