@@ -1112,7 +1112,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           WEBHOOK="${{ secrets.DISCORD_WEBHOOK_URL }}"
-          OLD_MSG_ID="${{ vars.DISCORD_LAST_MESSAGE_ID }}"
+
+          # Read previous message ID from repo file (GITHUB_TOKEN + contents:write is enough)
+          OLD_MSG_ID=$(gh api repos/${{ github.repository }}/contents/discord_message_id.txt \
+            --jq '.content' 2>/dev/null \
+            | tr -d '\n' | base64 -d 2>/dev/null | tr -d '\n' || echo "")
 
           # Delete the previous message so only the latest build appears
           if [ -n "$OLD_MSG_ID" ]; then
@@ -1159,10 +1163,22 @@ jobs:
               }]
             }')
 
-          # Save the new message ID for the next run to delete
+          # Save new message ID to repo file for the next run
           NEW_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('id',''))" 2>/dev/null || echo "")
           if [ -n "$NEW_ID" ]; then
-            gh variable set DISCORD_LAST_MESSAGE_ID --body "$NEW_ID"
+            CONTENT=$(echo -n "$NEW_ID" | base64 -w0)
+            SHA=$(gh api repos/${{ github.repository }}/contents/discord_message_id.txt \
+              --jq '.sha' 2>/dev/null || echo "")
+            if [ -n "$SHA" ]; then
+              gh api -X PUT repos/${{ github.repository }}/contents/discord_message_id.txt \
+                -f message="chore: update discord message id [skip ci]" \
+                -f content="$CONTENT" \
+                -f sha="$SHA"
+            else
+              gh api -X PUT repos/${{ github.repository }}/contents/discord_message_id.txt \
+                -f message="chore: create discord message id [skip ci]" \
+                -f content="$CONTENT"
+            fi
           fi
 
       - name: Notify Discord (failure)
