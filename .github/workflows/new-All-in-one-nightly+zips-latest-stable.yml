@@ -868,6 +868,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Download Artifacts
         uses: actions/download-artifact@v4
         with:
@@ -944,6 +947,143 @@ jobs:
             PAGE=$((PAGE + 1))
           done
 
+      - name: Build Release Body
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FEX_VERSION: ${{ needs.build-fex.outputs.version }}
+          FEX_COMMIT: ${{ needs.build-fex.outputs.commit }}
+          VKD3D_VERSION: ${{ needs.build-vkd3d.outputs.version }}
+          VKD3D_COMMIT: ${{ needs.build-vkd3d.outputs.commit }}
+          VKD3D_ARM64EC_VERSION: ${{ needs.build-vkd3d-arm64ec.outputs.version }}
+          VKD3D_ARM64EC_COMMIT: ${{ needs.build-vkd3d-arm64ec.outputs.commit }}
+          DXVK_COMMIT: ${{ needs.build-dxvk.outputs.commit }}
+          DXVK_VERSION: ${{ needs.build-dxvk.outputs.version }}
+          DXVK_ARM64EC_VERSION: ${{ needs.build-dxvk-arm64ec.outputs.version }}
+          DXVK_ARM64EC_COMMIT: ${{ needs.build-dxvk-arm64ec.outputs.commit }}
+        run: |
+          REPOS=(
+            "ptitSeb/box64"
+            "Pipetto-crypto/box64"
+            "FEX-Emu/FEX"
+            "HansKristian-Work/vkd3d-proton"
+            "doitsujin/dxvk"
+            "jp7677/dxvk-nvapi"
+          )
+          NAMES=(
+            "Box64 (Official)"
+            "Box64 (Hybrid/Pipetto)"
+            "FEX"
+            "VKD3D-Proton"
+            "DXVK"
+            "DXVK-NVAPI"
+          )
+
+          CUTOFF_24H=$(date -u -d '24 hours ago' +%s)
+
+          # ── Fetch current status for all upstreams ──────────────────────
+          STATUS_TABLE="### 📊 All Upstream Status\n| Component | Latest Commit | Last Updated |\n| :--- | :--- | :--- |\n"
+
+          for i in "${!REPOS[@]}"; do
+            REPO="${REPOS[$i]}"
+            NAME="${NAMES[$i]}"
+            INFO=$(curl -s \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${REPO}/commits/HEAD")
+            HASH=$(echo "$INFO" | jq -r '.sha // "unknown"')
+            SHORT="${HASH:0:7}"
+            MSG=$(echo "$INFO" | jq -r '.commit.message // "N/A"' | head -1 | cut -c1-72)
+            DATE=$(echo "$INFO" | jq -r '.commit.committer.date // "unknown"')
+            DISPLAY_DATE=$(echo "$DATE" | cut -c1-10)
+
+            # Mark with 🆕 if updated in last 24 hours
+            DATE_EPOCH=$(date -u -d "$DATE" +%s 2>/dev/null || echo 0)
+            if [ "$DATE_EPOCH" -gt "$CUTOFF_24H" ]; then
+              BADGE=" 🆕"
+            else
+              BADGE=""
+            fi
+
+            STATUS_TABLE="${STATUS_TABLE}| **${NAME}** | [\`${SHORT}\` — ${MSG}](https://github.com/${REPO}/commit/${HASH}) | ${DISPLAY_DATE}${BADGE} |\n"
+          done
+
+          # ── What triggered this build (from upstream_changes.json) ──────
+          TRIGGER_SECTION=""
+          if [ -f "upstream_changes.json" ]; then
+            CHANGED_COUNT=$(jq '.changed | length' upstream_changes.json)
+            TRIGGERED_AT=$(jq -r '.triggered_at' upstream_changes.json)
+            TRIGGERED_EPOCH=$(date -u -d "$TRIGGERED_AT" +%s 2>/dev/null || echo 0)
+            NOW_EPOCH=$(date -u +%s)
+            AGE=$(( NOW_EPOCH - TRIGGERED_EPOCH ))
+
+            # Only show "what changed" section if watcher ran within the last 3 hours
+            # (avoids stale data from a previous watcher run on scheduler-triggered builds)
+            if [ "$CHANGED_COUNT" -gt "0" ] && [ "$AGE" -lt "10800" ]; then
+              TRIGGER_SECTION="### 🔄 What Triggered This Build\n> ${CHANGED_COUNT} upstream component(s) updated since last build\n\n| Component | Old Commit | New Commit | Change |\n| :--- | :--- | :--- | :--- |\n"
+              while IFS= read -r row; do
+                R_NAME=$(echo "$row" | jq -r '.name')
+                R_REPO=$(echo "$row" | jq -r '.repo')
+                R_OLD=$(echo "$row" | jq -r '.old')
+                R_NEW=$(echo "$row" | jq -r '.new')
+                R_FULL=$(echo "$row" | jq -r '.full')
+                R_MSG=$(echo "$row" | jq -r '.msg' | cut -c1-72)
+                TRIGGER_SECTION="${TRIGGER_SECTION}| **${R_NAME}** | \`${R_OLD}\` | [\`${R_NEW}\`](https://github.com/${R_REPO}/commit/${R_FULL}) | ${R_MSG} |\n"
+              done < <(jq -c '.changed[]' upstream_changes.json)
+              TRIGGER_SECTION="${TRIGGER_SECTION}\n---\n\n"
+            fi
+          fi
+
+          # ── Write the full release body ─────────────────────────────────
+          cat > release_body.md << BODYEOF
+          > ⚠️ **DISCLAIMER: NIGHTLY BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK! STABLE RELEASES ARE ALWAYS BEST TO USE!**
+
+          ---
+
+          ### 🚀 Nightly Build: ${{ env.TAG_NAME }}
+
+          BODYEOF
+
+          # Append trigger section if present
+          if [ -n "$TRIGGER_SECTION" ]; then
+            printf "%b\n" "$TRIGGER_SECTION" >> release_body.md
+          fi
+
+          # Append upstream status table
+          printf "%b\n\n" "$STATUS_TABLE" >> release_body.md
+
+          # Append built component versions table + files list
+          cat >> release_body.md << BODYEOF
+          ---
+
+          ### 📦 Built Components
+
+          | Component | Source / Commit |
+          | :--- | :--- |
+          | **Box64 (All Variants)** | [ptitSeb/main](https://github.com/ptitSeb/box64/commits/main) |
+          | **Box64 Hybrid (All Variants)** | [Pipetto/main](https://github.com/Pipetto-crypto/box64/commits/main) |
+          | **FEXCore** | [${FEX_VERSION}](https://github.com/FEX-Emu/FEX/commit/${FEX_COMMIT}) |
+          | **VKD3D-Proton (Std)** | [${VKD3D_VERSION}](https://github.com/HansKristian-Work/vkd3d-proton/commit/${VKD3D_COMMIT}) |
+          | **VKD3D-Proton (ARM64EC)** | [${VKD3D_ARM64EC_VERSION}](https://github.com/HansKristian-Work/vkd3d-proton/commit/${VKD3D_ARM64EC_COMMIT}) |
+          | **DXVK (GPLAsync)** | [${DXVK_COMMIT}](https://github.com/doitsujin/dxvk/commit/${DXVK_COMMIT}) |
+          | **DXVK (ARM64EC)** | [${DXVK_ARM64EC_VERSION}](https://github.com/doitsujin/dxvk/commit/${DXVK_ARM64EC_COMMIT}) |
+
+          ### 📦 Files Included
+          1. **Box64 Native**: `box64-*.wcp` (and `.zip`)
+          2. **Box64 Bionic**: `box64-bionic-*.wcp` (and `.zip`)
+          3. **WOWBox64**: `WOWBox64-*.wcp` (and `.zip`)
+          4. **Box64 Hybrid Native**: `Box64-Hybrid-Native-*.wcp` (and `.zip`)
+          5. **Box64 Hybrid Bionic**: `Box64-Hybrid-Bionic-*.wcp` (and `.zip`)
+          6. **WOWBox64 Hybrid**: `WOWBox64-Hybrid-*.wcp` (and `.zip`)
+          7. **FEXCore**: `FEX-*.wcp` (and `.zip`)
+          8. **VKD3D-Proton (Std)**: `VKD3D-Proton-3.0b*.wcp` (and `.zip`)
+          9. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-3.0b-ARM64EC*.wcp` (and `.zip`)
+          10. **DXVK**: `dxvk-gplasync-*.wcp` (and `.zip`)
+          11. **DXVK (ARM64EC)**: `DXVK-ARM64EC-*.wcp` (and `.zip`)
+
+          **The .wcp files are packaged for use with Winlator**
+          **The .zip files are packaged for manual injection with Gamehub**
+          BODYEOF
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -951,34 +1091,7 @@ jobs:
           name: ${{ env.RELEASE_NAME }}
           prerelease: false
           make_latest: true
-          body: |
-            ### 🚀 Nightly Build: ${{ env.TAG_NAME }}
-
-            | Component | Source / Commit |
-            | :--- | :--- |
-            | **Box64 (All Variants)** | [ptitSeb/main](https://github.com/ptitSeb/box64/commits/main) |
-            | **Box64 Hybrid (All Variants)** | [Pipetto/main](https://github.com/Pipetto-crypto/box64/commits/main) |
-            | **FEXCore** | [${{ needs.build-fex.outputs.version }}](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex.outputs.commit }}) |
-            | **VKD3D-Proton (Std)** | [${{ needs.build-vkd3d.outputs.version }}](https://github.com/HansKristian-Work/vkd3d-proton/commit/${{ needs.build-vkd3d.outputs.commit }}) |
-            | **VKD3D-Proton (ARM64EC)** | [${{ needs.build-vkd3d-arm64ec.outputs.version }}](https://github.com/HansKristian-Work/vkd3d-proton/commit/${{ needs.build-vkd3d-arm64ec.outputs.commit }}) |
-            | **DXVK (GPLAsync)** | [${{ needs.build-dxvk.outputs.commit }}](https://github.com/doitsujin/dxvk/commit/${{ needs.build-dxvk.outputs.commit }}) |
-            | **DXVK (ARM64EC)** | [${{ needs.build-dxvk-arm64ec.outputs.version }}](https://github.com/doitsujin/dxvk/commit/${{ needs.build-dxvk-arm64ec.outputs.commit }}) |
-
-            ### 📦 Files Included
-            1. **Box64 Native**: `box64-*.wcp` (and `.zip`)
-            2. **Box64 Bionic**: `box64-bionic-*.wcp` (and `.zip`)
-            3. **WOWBox64**: `WOWBox64-*.wcp` (and `.zip`)
-            4. **Box64 Hybrid Native**: `Box64-Hybrid-Native-*.wcp` (and `.zip`)
-            5. **Box64 Hybrid Bionic**: `Box64-Hybrid-Bionic-*.wcp` (and `.zip`)
-            6. **WOWBox64 Hybrid**: `WOWBox64-Hybrid-*.wcp` (and `.zip`)
-            7. **FEXCore**: `FEX-*.wcp` (and `.zip`)
-            8. **VKD3D-Proton (Std)**: `VKD3D-Proton-3.0b*.wcp` (and `.zip`)
-            9. **VKD3D-Proton (ARM64EC)**: `VKD3D-Proton-3.0b-ARM64EC*.wcp` (and `.zip`)
-            10. **DXVK**: `dxvk-gplasync-*.wcp` (and `.zip`)
-            11. **DXVK (ARM64EC)**: `DXVK-ARM64EC-*.wcp` (and `.zip`)
-
-            **The .wcp files are packaged for use with Winlator**
-            **The .zip files are packaged for manual injection with Gamehub**
+          body_path: release_body.md
           files: |
             ./artifacts/*.wcp
             ./artifacts/*.zip
