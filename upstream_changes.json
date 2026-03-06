@@ -1,0 +1,14 @@
+{
+  "triggered_at": "2026-03-06T16:30:26Z",
+  "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8ab8b98",
+      "new": "aafe2e3",
+      "full": "aafe2e34c3e6f32ec16588e1c818b16f295a574e",
+      "msg": "[ARM64_DYNAREC] Some optimisation for neg8 and neg16 emitters",
+      "date": "2026-03-06T16:13:01Z"
+    }
+  ]
+}
