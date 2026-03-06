@@ -867,6 +867,7 @@ jobs:
     needs: [build-box64-matrix, build-fex, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec]
     permissions:
       contents: write
+      actions: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -1102,11 +1103,22 @@ jobs:
       # Discord notification — success
       # Requires DISCORD_WEBHOOK_URL to be set in repo secrets:
       #   Settings → Secrets and variables → Actions → New repository secret
+      # Message ID is stored as repo variable DISCORD_LAST_MESSAGE_ID and
+      # deleted at the start of each run so the channel stays clean (~24h TTL).
       # ----------------------------------------------------------------
       - name: Notify Discord (success)
         if: success()
         run: |
-          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+          WEBHOOK="${{ secrets.DISCORD_WEBHOOK_URL }}"
+          OLD_MSG_ID="${{ vars.DISCORD_LAST_MESSAGE_ID }}"
+
+          # Delete the previous message so only the latest build appears
+          if [ -n "$OLD_MSG_ID" ]; then
+            curl -s -X DELETE "${WEBHOOK}/messages/${OLD_MSG_ID}" || true
+          fi
+
+          # Post new message — ?wait=true makes Discord return the message object
+          RESPONSE=$(curl -s -X POST "${WEBHOOK}?wait=true" \
             -H "Content-Type: application/json" \
             -d '{
               "embeds": [{
@@ -1143,7 +1155,13 @@ jobs:
                 "footer": { "text": "GitHub Actions · ${{ github.repository }}" },
                 "timestamp": "${{ github.event.repository.updated_at }}"
               }]
-            }'
+            }')
+
+          # Save the new message ID for the next run to delete
+          NEW_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('id',''))" 2>/dev/null || echo "")
+          if [ -n "$NEW_ID" ]; then
+            gh variable set DISCORD_LAST_MESSAGE_ID --body "$NEW_ID"
+          fi
 
       - name: Notify Discord (failure)
         if: failure()
