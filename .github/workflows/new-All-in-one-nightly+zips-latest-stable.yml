@@ -1108,6 +1108,8 @@ jobs:
       # ----------------------------------------------------------------
       - name: Notify Discord (success)
         if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           WEBHOOK="${{ secrets.DISCORD_WEBHOOK_URL }}"
           OLD_MSG_ID="${{ vars.DISCORD_LAST_MESSAGE_ID }}"
