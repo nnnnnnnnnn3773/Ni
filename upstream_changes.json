@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-06T17:28:17Z",
+  "triggered_at": "2026-03-07T11:13:40Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "aafe2e3",
-      "new": "8b4c9b3",
-      "full": "8b4c9b3bf0a9797cfb923c1231c9ebfde8ad428e",
-      "msg": "Even more syscalls",
-      "date": "2026-03-06T17:18:36Z"
+      "repo": "jp7677/dxvk-nvapi",
+      "name": "DXVK-NVAPI",
+      "old": "62e9944",
+      "new": "8f0105d",
+      "full": "8f0105d0221f139d0a1d5b123f6ec286cb554545",
+      "msg": "build(deps): bump actions/upload-artifact from 6 to 7 (#346)",
+      "date": "2026-03-07T10:21:55Z"
     }
   ]
 }
