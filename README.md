@@ -28,9 +28,13 @@ My repo to help rooting your Ayaneo Konkr Pocket Fit:
 
 https://github.com/The412Banner/Ayaneo-PocketFit-tools
 
-xNick417x Winlator Bionic Nightly WCP Repo
+xNick417x Winlator Bionic Nightly WCP Repo:
 
 https://github.com/Xnick417x/Winlator-Bionic-Nightly-wcp
+
+My Gamehub Component Injector App:
+
+https://github.com/The412Banner/BannersComponentInjector
 
 ---
 
