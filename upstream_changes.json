@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-08T07:26:09Z",
+  "triggered_at": "2026-03-08T12:31:07Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "24065ff",
-      "new": "3ab34da",
-      "full": "3ab34da16a7ee12145ec360e3b9bc722bf6c8fec",
-      "msg": "[BUNDLE] Remove libvorbis (#3625)",
-      "date": "2026-03-08T06:33:12Z"
+      "old": "3ab34da",
+      "new": "2b9cc90",
+      "full": "2b9cc9068e43f096520ba46a75f73a163cedbdef",
+      "msg": "[ARM64_DYNAREC] Added optimised crc function when crc32 cpu extension is not ava",
+      "date": "2026-03-08T12:20:05Z"
     }
   ]
 }
