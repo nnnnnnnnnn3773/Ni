@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-07T20:16:23Z",
+  "triggered_at": "2026-03-08T07:26:09Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "59eb308",
-      "new": "6f3a758",
-      "full": "6f3a758f7982fc51a5ddd41f316aef13c6dd1285",
-      "msg": "[util] Enable zeroMappedMemory for Nioh 2",
-      "date": "2026-03-07T19:29:20Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "24065ff",
+      "new": "3ab34da",
+      "full": "3ab34da16a7ee12145ec360e3b9bc722bf6c8fec",
+      "msg": "[BUNDLE] Remove libvorbis (#3625)",
+      "date": "2026-03-08T06:33:12Z"
     }
   ]
 }
