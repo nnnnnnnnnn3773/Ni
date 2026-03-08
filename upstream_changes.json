@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-08T12:31:07Z",
+  "triggered_at": "2026-03-08T16:18:51Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3ab34da",
-      "new": "2b9cc90",
-      "full": "2b9cc9068e43f096520ba46a75f73a163cedbdef",
-      "msg": "[ARM64_DYNAREC] Added optimised crc function when crc32 cpu extension is not ava",
-      "date": "2026-03-08T12:20:05Z"
+      "old": "2b9cc90",
+      "new": "96735b6",
+      "full": "96735b63cfeae643c27543ab783a1a768b2c9335",
+      "msg": "[ARM64_DYNAREC] Small fix on F7 /3 opcode",
+      "date": "2026-03-08T16:11:43Z"
     }
   ]
 }
