@@ -3,5 +3,4 @@ https://github.com/Pipetto-crypto/box64: c0cc2c254e24ae53bd435e4d3ff84e1a7fdb639
 https://github.com/FEX-Emu/FEX: 9eb639e89124b5976501029d886740b0e76c01c9
 https://github.com/HansKristian-Work/vkd3d-proton: bf4a024036f51731e1fd61f8ceffbeaad060043d
 https://github.com/doitsujin/dxvk: 6f3a758f7982fc51a5ddd41f316aef13c6dd1285
-https://github.com/jp7677/dxvk-nvapi: 8f0105d0221f139d0a1d5b123f6ec286cb554545
 

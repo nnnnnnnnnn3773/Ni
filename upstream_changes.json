@@ -1,14 +1,4 @@
 {
-  "triggered_at": "2026-03-08T16:18:51Z",
-  "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "2b9cc90",
-      "new": "96735b6",
-      "full": "96735b63cfeae643c27543ab783a1a768b2c9335",
-      "msg": "[ARM64_DYNAREC] Small fix on F7 /3 opcode",
-      "date": "2026-03-08T16:11:43Z"
-    }
-  ]
+  "triggered_at": "2026-03-08T23:15:56Z",
+  "changed": []
 }
