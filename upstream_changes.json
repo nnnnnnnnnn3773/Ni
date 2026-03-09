@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-09T19:35:05Z",
+  "triggered_at": "2026-03-09T20:25:02Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9eb639e",
-      "new": "a17d7ce",
-      "full": "a17d7ce6bac35ae16e2b39999e69fe86da183f0b",
-      "msg": "Merge pull request #5351 from lioncash/hostmops",
-      "date": "2026-03-09T19:09:31Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8189831",
+      "new": "4474ac0",
+      "full": "4474ac0f19d8b4728c760f9a7ad1f453d4af84fc",
+      "msg": "[WRAPPER] Fix dbus callback return type and format string bugs (#3634)",
+      "date": "2026-03-09T20:19:25Z"
     }
   ]
 }
