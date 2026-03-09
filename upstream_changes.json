@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-09T11:29:56Z",
+  "triggered_at": "2026-03-09T16:50:05Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "9f0e1ff",
-      "new": "bcdaa3d",
-      "full": "bcdaa3da83ba7b3458c922d2565e789cbc8691c5",
-      "msg": "[WRAPPER] Fixed a typo with libxkbfile wrapping (for #3623)",
-      "date": "2026-03-09T10:57:34Z"
+      "old": "bcdaa3d",
+      "new": "8189831",
+      "full": "8189831cea3ea795c2f9bfd79588d9108030c4ca",
+      "msg": "[WRAPPER][VULKAN] Added 1 more vulkan extension",
+      "date": "2026-03-09T16:04:57Z"
     }
   ]
 }
