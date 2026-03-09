@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-09T09:40:31Z",
+  "triggered_at": "2026-03-09T10:37:55Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "bf4a024",
-      "new": "a83811b",
-      "full": "a83811bf228ec4e7fc09727388521c725126d868",
-      "msg": "vkd3d: Add VKD3D_CONFIG path for retain_psos.",
-      "date": "2026-03-09T09:32:58Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9558d59",
+      "new": "9f0e1ff",
+      "full": "9f0e1ff6a8cd6fe256c21055a6bf0e6adbc21684",
+      "msg": "[DYNAREC] Fixed potential issue with FillBlock recovering from a segfault",
+      "date": "2026-03-09T10:37:04Z"
     }
   ]
 }
