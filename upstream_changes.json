@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-09T10:37:55Z",
+  "triggered_at": "2026-03-09T11:29:56Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "9558d59",
-      "new": "9f0e1ff",
-      "full": "9f0e1ff6a8cd6fe256c21055a6bf0e6adbc21684",
-      "msg": "[DYNAREC] Fixed potential issue with FillBlock recovering from a segfault",
-      "date": "2026-03-09T10:37:04Z"
+      "old": "9f0e1ff",
+      "new": "bcdaa3d",
+      "full": "bcdaa3da83ba7b3458c922d2565e789cbc8691c5",
+      "msg": "[WRAPPER] Fixed a typo with libxkbfile wrapping (for #3623)",
+      "date": "2026-03-09T10:57:34Z"
     }
   ]
 }
