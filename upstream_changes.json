@@ -1,4 +1,14 @@
 {
-  "triggered_at": "2026-03-08T23:15:56Z",
-  "changed": []
+  "triggered_at": "2026-03-09T08:35:08Z",
+  "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "96735b6",
+      "new": "9558d59",
+      "full": "9558d59aafb69b052d320c76d4d78414b64b1572",
+      "msg": "[LA64_DYNAREC] fix COMISS/UCOMISS flags state handling (#3631)",
+      "date": "2026-03-09T08:21:08Z"
+    }
+  ]
 }
