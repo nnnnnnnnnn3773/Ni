@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-10T10:31:15Z",
+  "triggered_at": "2026-03-10T15:53:27Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "52539fb",
-      "new": "28d542b",
-      "full": "28d542b40addc4cbdc0c396344f133219c984062",
-      "msg": "Fix box64 -t for systems with page sizes larger than 4K (#3638)",
-      "date": "2026-03-10T09:42:20Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "d21351e",
+      "new": "9d4a71b",
+      "full": "9d4a71b57a6b7d0388df58b2615fb73ad93fdea2",
+      "msg": "Merge pull request #5355 from wsxarcher/patch-1",
+      "date": "2026-03-10T15:40:16Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "a83811b",
+      "new": "0a18efb",
+      "full": "0a18efb6bc3505d427773f49ebc703959fd5dbe1",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-03-10T15:07:05Z"
     }
   ]
 }
