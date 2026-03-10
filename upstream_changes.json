@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-10T04:02:05Z",
+  "triggered_at": "2026-03-10T09:36:04Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5558c3a",
-      "new": "d21351e",
-      "full": "d21351e66eb67c831b1286a45e9acfa155147773",
-      "msg": "Merge pull request #5354 from Sonicadvance1/104",
-      "date": "2026-03-10T01:51:05Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "4474ac0",
+      "new": "52539fb",
+      "full": "52539fbfc26766dd53647d1c2979637669e6f0da",
+      "msg": "[WRAPPER] fix CRYPTO_get_ex_new_index callbacks && add some symbol (#3637)",
+      "date": "2026-03-10T09:35:25Z"
     }
   ]
 }
