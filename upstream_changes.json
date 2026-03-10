@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-10T09:36:04Z",
+  "triggered_at": "2026-03-10T10:31:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "4474ac0",
-      "new": "52539fb",
-      "full": "52539fbfc26766dd53647d1c2979637669e6f0da",
-      "msg": "[WRAPPER] fix CRYPTO_get_ex_new_index callbacks && add some symbol (#3637)",
-      "date": "2026-03-10T09:35:25Z"
+      "old": "52539fb",
+      "new": "28d542b",
+      "full": "28d542b40addc4cbdc0c396344f133219c984062",
+      "msg": "Fix box64 -t for systems with page sizes larger than 4K (#3638)",
+      "date": "2026-03-10T09:42:20Z"
     }
   ]
 }
