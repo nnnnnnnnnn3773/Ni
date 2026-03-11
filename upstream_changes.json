@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T07:38:31Z",
+  "triggered_at": "2026-03-11T08:31:36Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "1ce4789",
-      "new": "3c44b21",
-      "full": "3c44b2119f9be15b9d2a59690bee6f22ae310cf4",
-      "msg": "[PPC64LE_DYNAREC] Add MOV, NOP/XCHG, MOVSXD, CWDE/CDQ opcodes (#3633)",
-      "date": "2026-03-11T07:38:04Z"
+      "old": "3c44b21",
+      "new": "a22ab35",
+      "full": "a22ab3511f436a4460bc18dc12673eff87e08b0e",
+      "msg": "[LA64_DYNAREC] Added fastnan=0 path to F3 0F 51 SQRTSS opcode (#3646)",
+      "date": "2026-03-11T07:55:25Z"
     }
   ]
 }
