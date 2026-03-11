@@ -3,4 +3,4 @@ https://github.com/Pipetto-crypto/box64: c0cc2c254e24ae53bd435e4d3ff84e1a7fdb639
 https://github.com/FEX-Emu/FEX: e27d12ee5ebfbcd2c73b53df061d641f26b861d8
 https://github.com/HansKristian-Work/vkd3d-proton: 0a18efb6bc3505d427773f49ebc703959fd5dbe1
 https://github.com/doitsujin/dxvk: 6f3a758f7982fc51a5ddd41f316aef13c6dd1285
-
+https://github.com/ValveSoftware/wine@bleeding-edge: 83cf31f90af7dd61583c61c638127a009d8c8c00
