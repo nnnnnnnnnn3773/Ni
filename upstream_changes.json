@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T18:43:22Z",
+  "triggered_at": "2026-03-11T19:37:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "799647b",
-      "new": "2a1d9fd",
-      "full": "2a1d9fd6a602d93d73a6f9780e2d03d10f3a5a72",
-      "msg": "[WOW64] Fix build with llvm-mingw 20260224 (#3653)",
-      "date": "2026-03-11T18:17:04Z"
+      "old": "2a1d9fd",
+      "new": "f88108c",
+      "full": "f88108ca8f781bcb8e4b1e782629a80a56ff8890",
+      "msg": "[WRAPPER] Added some synonym to libpcap wrapping",
+      "date": "2026-03-11T19:27:58Z"
     }
   ]
 }
