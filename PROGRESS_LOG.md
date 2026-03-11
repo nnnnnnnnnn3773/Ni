@@ -129,3 +129,42 @@
 
 #### Files touched
 - `.github/workflows/proton-bleeding-edge-nightly.yml`
+
+---
+
+### [fix] — sync-scripts rebase conflict fix (2026-03-11)
+**Commit:** `76645fe`
+
+#### What changed
+- `git pull --rebase -X ours` also applied to the sync-scripts job commit step (same race condition as release job — if two concurrent runs both detect upstream script changes, the second would conflict)
+
+#### Files touched
+- `.github/workflows/proton-bleeding-edge-nightly.yml`
+
+---
+
+### [feat] — Auto-update README with latest releases after every build (2026-03-11)
+**Commits:** `35fb31a` (proton README), `6142553` (all-in-one README + combined section)
+
+#### What changed
+
+**README.md:**
+- Replaced single `## 🍷 Latest Proton Bleeding-Edge Release` section with a combined `## 🌙 Latest Nightly Releases` section containing two sub-sections:
+  - `### 📦 All-in-One Emulation Nightly` — updated by all-in-one workflow; markers: `<!-- NIGHTLY-LATEST-START/END -->`
+  - `### 🍷 Proton Bleeding-Edge ARM64EC` — updated by proton workflow; markers: `<!-- PROTON-LATEST-START/END -->`
+
+**proton-bleeding-edge-nightly.yml (Create GitHub Release step):**
+- Python block also rewrites `README.md` between `PROTON-LATEST-START/END` markers after writing release notes
+- Table shows: release link, wine commit link + message, date, asset download link
+- Commit step stages `README.md` alongside `proton-latest.json`
+
+**new-All-in-one-nightly+zips-latest-stable.yml (create-release job):**
+- New `Update README with latest nightly` step after `Create GitHub Release`
+- Python block rewrites `README.md` between `NIGHTLY-LATEST-START/END` markers
+- Table shows: release link, FEX commit+version, VKD3D std+ARM64EC commits, DXVK std+ARM64EC commits, Box64 repo links, asset download link
+- Commits and pushes `README.md` with `git pull --rebase -X ours`
+
+#### Files touched
+- `README.md`
+- `.github/workflows/proton-bleeding-edge-nightly.yml`
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
