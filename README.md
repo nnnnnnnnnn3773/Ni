@@ -19,7 +19,16 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 ### 📦 All-in-One Emulation Nightly (Box64 · FEX · VKD3D-Proton · DXVK)
 
 <!-- NIGHTLY-LATEST-START -->
-*Waiting for the next workflow run...*
+| | |
+| :--- | :--- |
+| **Release** | [🔗 nightly-20260311-213551](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260311-213551) |
+| **FEXCore** | [`957c1fc42`](https://github.com/FEX-Emu/FEX/commit/957c1fc42) — FEX-2603-Nightly-957c1fc42 |
+| **VKD3D-Proton (Std)** | [`0a18efb6`](https://github.com/HansKristian-Work/vkd3d-proton/commit/0a18efb6) |
+| **VKD3D-Proton (ARM64EC)** | [`0a18efb6`](https://github.com/HansKristian-Work/vkd3d-proton/commit/0a18efb6) |
+| **DXVK (GPLAsync)** | [`6f3a758f`](https://github.com/doitsujin/dxvk/commit/6f3a758f) |
+| **DXVK (ARM64EC)** | [`6f3a758f`](https://github.com/doitsujin/dxvk/commit/6f3a758f) |
+| **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260311-213551) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
