@@ -1,0 +1,35 @@
+diff --git a/dlls/winex11.drv/event.c b/dlls/winex11.drv/event.c
+index 541eee1..d8bd3d0 100644
+--- a/dlls/winex11.drv/event.c
++++ b/dlls/winex11.drv/event.c
+@@ -291,25 +291,25 @@ static Bool filter_event( Display *display, XEvent *event, char *arg )
+     case KeyPress:
+     case KeyRelease:
+     case KeymapNotify:
+     case MappingNotify:
+-        return (mask & (QS_KEY | QS_HOTKEY | QS_RAWINPUT)) != 0;
++        return (mask & (QS_KEY|QS_HOTKEY)) != 0;
+     case ButtonPress:
+     case ButtonRelease:
+-        return (mask & (QS_MOUSEBUTTON | QS_RAWINPUT)) != 0;
++        return (mask & QS_MOUSEBUTTON) != 0;
+     case MotionNotify:
+     case EnterNotify:
+     case LeaveNotify:
+-        return (mask & (QS_MOUSEMOVE | QS_RAWINPUT)) != 0;
++        return (mask & QS_MOUSEMOVE) != 0;
+     case Expose:
+         return (mask & QS_PAINT) != 0;
+     case FocusIn:
+     case FocusOut:
+     case MapNotify:
+     case UnmapNotify:
+     case ConfigureNotify:
+     case PropertyNotify:
+     case ClientMessage:
+-        return (mask & (QS_POSTMESSAGE | QS_SENDMESSAGE)) != 0;
++        return (mask & QS_POSTMESSAGE) != 0;
+ #ifdef GenericEvent
+     case GenericEvent:
+ #ifdef HAVE_X11_EXTENSIONS_XINPUT2_H
+         if (event->xcookie.extension == xinput2_opcode) return (mask & QS_INPUT) != 0;
