@@ -108,60 +108,10 @@ jobs:
           }
 
   # ============================================================
-  # JOB 1: Check upstream Wine — skip if bleeding-edge unchanged
-  # ============================================================
-  prepare:
-    needs: sync-scripts
-    runs-on: ubuntu-latest
-    outputs:
-      resolved_hash: ${{ steps.upstream_check.outputs.resolved_hash }}
-      resolved_short_hash: ${{ steps.upstream_check.outputs.resolved_short_hash }}
-      skip_build: ${{ steps.upstream_check.outputs.skip_build }}
-    steps:
-      - name: Checkout Nightlies repo
-        uses: actions/checkout@v4
-
-      - name: Check upstream bleeding-edge HEAD
-        id: upstream_check
-        run: |
-          WINE_REF="${{ github.event.inputs.wine_ref || 'bleeding-edge' }}"
-          FORCE_BUILD="${{ inputs.force_build && 'true' || 'false' }}"
-          PREV_GIT_HASH="$(python3 -c 'import json; d=json.load(open("proton-latest.json")); print(d.get("gitHash",""))')"
-
-          if printf '%s' "$WINE_REF" | grep -Eq '^[0-9a-fA-F]{7,40}$'; then
-            REMOTE_FULL_HASH="$WINE_REF"
-          else
-            REMOTE_FULL_HASH="$(git ls-remote https://github.com/ValveSoftware/wine "$WINE_REF" "refs/heads/$WINE_REF" "refs/tags/$WINE_REF" | awk 'NR==1 {print $1}')"
-          fi
-
-          if [ -z "$REMOTE_FULL_HASH" ]; then
-            echo "ERROR: could not resolve upstream ref $WINE_REF"
-            exit 1
-          fi
-
-          REMOTE_SHORT_HASH="$(printf '%s' "$REMOTE_FULL_HASH" | cut -c1-7)"
-          SKIP_BUILD=false
-          if [ "$FORCE_BUILD" != 'true' ] && [ "$REMOTE_SHORT_HASH" = "$PREV_GIT_HASH" ]; then
-            SKIP_BUILD=true
-          fi
-
-          echo "resolved_hash=$REMOTE_FULL_HASH"        >> "$GITHUB_OUTPUT"
-          echo "resolved_short_hash=$REMOTE_SHORT_HASH" >> "$GITHUB_OUTPUT"
-          echo "skip_build=$SKIP_BUILD"                 >> "$GITHUB_OUTPUT"
-          echo "Previous gitHash: $PREV_GIT_HASH"
-          echo "Remote   gitHash: $REMOTE_SHORT_HASH"
-          echo "skip_build=$SKIP_BUILD"
-
-      - name: Skip notice
-        if: steps.upstream_check.outputs.skip_build == 'true'
-        run: echo "Skipping build — upstream bleeding-edge HEAD unchanged."
-
-  # ============================================================
   # JOB 2: Build Proton ARM64EC
   # ============================================================
   build:
-    needs: [sync-scripts, prepare]
-    if: needs.prepare.outputs.skip_build != 'true'
+    needs: sync-scripts
     runs-on: ubuntu-latest
     timeout-minutes: 360
     permissions:
@@ -491,8 +441,7 @@ jobs:
   # JOB 3: Publish GitHub Release
   # ============================================================
   release:
-    needs: [prepare, build]
-    if: needs.prepare.outputs.skip_build != 'true'
+    needs: [sync-scripts, build]
     runs-on: ubuntu-latest
     permissions:
       contents: write

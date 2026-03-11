@@ -21,7 +21,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Repos and matching friendly names (must stay in the same order)
+          # ── Repos tracked for the all-in-one nightly (must stay in same order) ──
           REPOS=(
             "https://github.com/ptitSeb/box64"
             "https://github.com/Pipetto-crypto/box64"
@@ -44,7 +44,7 @@ jobs:
           CHANGED_JSON="[]"
           ANY_CHANGED=false
 
-          echo "Checking latest commits..."
+          echo "Checking all-in-one upstream repos..."
           for i in "${!REPOS[@]}"; do
             repo="${REPOS[$i]}"
             name="${NAMES[$i]}"
@@ -55,7 +55,6 @@ jobs:
             SHORT_HASH="${HASH:0:7}"
             SHORT_OLD="${OLD_HASH:0:7}"
 
-            # Fetch latest commit message + date from GitHub API
             COMMIT_INFO=$(curl -s \
               -H "Authorization: Bearer $GH_TOKEN" \
               -H "Accept: application/vnd.github+json" \
@@ -63,7 +62,6 @@ jobs:
             MSG=$(echo "$COMMIT_INFO" | jq -r '.commit.message // "N/A"' | head -1 | cut -c1-80)
             DATE=$(echo "$COMMIT_INFO" | jq -r '.commit.committer.date // "unknown"')
 
-            # If this repo changed, add it to the changed array
             if [ -n "$OLD_HASH" ] && [ "$HASH" != "$OLD_HASH" ]; then
               ANY_CHANGED=true
               CHANGED_JSON=$(echo "$CHANGED_JSON" | jq \
@@ -80,36 +78,68 @@ jobs:
             NEW_HASHES="${NEW_HASHES}${repo}: ${HASH}\n"
           done
 
-          echo -e "$NEW_HASHES" > new_hashes.txt
+          # ── Wine bleeding-edge — tracked separately for the Proton nightly ──
+          WINE_REPO="https://github.com/ValveSoftware/wine"
+          WINE_KEY="${WINE_REPO}@bleeding-edge"
+          WINE_HASH=$(git ls-remote "$WINE_REPO" refs/heads/bleeding-edge | awk '{print $1}')
+          WINE_OLD=$(grep "^${WINE_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+          WINE_CHANGED=false
 
-          if cmp -s "$HASH_FILE" new_hashes.txt; then
-            echo "No new commits detected in upstream repositories."
-            echo "changed=false" >> $GITHUB_OUTPUT
+          if [ -n "$WINE_HASH" ]; then
+            if [ -n "$WINE_OLD" ] && [ "$WINE_HASH" != "$WINE_OLD" ]; then
+              WINE_CHANGED=true
+              echo "Wine bleeding-edge changed: ${WINE_OLD:0:7} → ${WINE_HASH:0:7}"
+            elif [ -z "$WINE_OLD" ]; then
+              echo "Wine bleeding-edge first seen: ${WINE_HASH:0:7} (recording, no build triggered)"
+            fi
+            NEW_HASHES="${NEW_HASHES}${WINE_KEY}: ${WINE_HASH}\n"
           else
-            echo "New commits detected!"
-            mv new_hashes.txt "$HASH_FILE"
+            echo "WARNING: could not fetch ValveSoftware/wine bleeding-edge HEAD"
+            # preserve existing hash so we don't falsely trigger
+            OLD_WINE_LINE=$(grep "^${WINE_KEY}:" "$HASH_FILE" 2>/dev/null || true)
+            [ -n "$OLD_WINE_LINE" ] && NEW_HASHES="${NEW_HASHES}${OLD_WINE_LINE#*: }\n" || true
+          fi
 
-            # Write the changes JSON so the build workflow can embed it in the release notes
+          # ── Write combined hash file ──
+          printf '%b' "$NEW_HASHES" > new_hashes.txt
+
+          ANYTHING_CHANGED=false
+          if ! cmp -s "$HASH_FILE" new_hashes.txt; then
+            ANYTHING_CHANGED=true
+            mv new_hashes.txt "$HASH_FILE"
+          fi
+
+          if [ "$ANY_CHANGED" = "true" ]; then
             jq -n \
               --argjson changed "$CHANGED_JSON" \
               --arg ts "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
               '{"triggered_at":$ts,"changed":$changed}' > upstream_changes.json
-
-            echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
+          echo "changed=$ANY_CHANGED"         >> $GITHUB_OUTPUT
+          echo "wine_changed=$WINE_CHANGED"   >> $GITHUB_OUTPUT
+          echo "anything_changed=$ANYTHING_CHANGED" >> $GITHUB_OUTPUT
+
       - name: Commit Updated Hashes
-        if: steps.check.outputs.changed == 'true'
+        if: steps.check.outputs.anything_changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add upstream_hashes.txt upstream_changes.json
-          git commit -m "chore: auto-update upstream commit hashes"
+          git add upstream_hashes.txt
+          [ -f upstream_changes.json ] && git add upstream_changes.json || true
+          git diff --staged --quiet || git commit -m "chore: auto-update upstream commit hashes"
           git push
 
-      - name: Trigger Main Build Workflow
+      - name: Trigger All-in-One Nightly
         if: steps.check.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh workflow run "new-All-in-one-nightly+zips-latest-stable.yml"
+
+      - name: Trigger Proton Bleeding-Edge Nightly
+        if: steps.check.outputs.wine_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "proton-bleeding-edge-nightly.yml"
