@@ -498,29 +498,120 @@ jobs:
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_HASH: ${{ steps.meta.outputs.git_hash }}
+          GIT_DATE: ${{ steps.meta.outputs.git_date }}
+          RELEASE_TAG: ${{ steps.meta.outputs.release_tag }}
         run: |
-          GIT_HASH="${{ steps.meta.outputs.git_hash }}"
-          GIT_DATE="${{ steps.meta.outputs.git_date }}"
-          TAG="${{ steps.meta.outputs.release_tag }}"
-          TITLE="Proton bleeding-edge ARM64EC (${GIT_DATE})"
+          python3 <<'PY'
+          import json, os, glob, datetime, urllib.request
 
-          cat > /tmp/release-notes.md <<NOTES
-          > ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**
+          git_hash    = os.environ["GIT_HASH"]
+          git_date    = os.environ["GIT_DATE"]
+          tag         = os.environ["RELEASE_TAG"]
+          gh_token    = os.environ["GH_TOKEN"]
 
-          Built from **ValveSoftware/wine** \`bleeding-edge\` @ \`${GIT_HASH}\` with GameNative Android + ARM64EC patches applied.
+          def gh_api(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com/{path}",
+                  headers={"Authorization": f"Bearer {gh_token}",
+                           "Accept": "application/vnd.github+json"})
+              try:
+                  with urllib.request.urlopen(req, timeout=15) as r:
+                      return json.loads(r.read())
+              except Exception as e:
+                  print(f"WARNING: API call failed ({path}): {e}")
+                  return {}
 
-          **Files:**
-          - \`.wcp\` — WCP format, inject directly into GameHub/Winlator via BannersComponentInjector
-          - \`.wcp.xz\` — XZ-compressed tar archive (bin/lib/share + prefixPack), for manual use or Winlator
+          # Old hash from proton-latest.json (before update)
+          try:
+              old_hash = json.loads(open("proton-latest.json").read()).get("gitHash", "")
+          except Exception:
+              old_hash = ""
+          old_short = old_hash[:7] if old_hash else ""
 
-          Built automatically by [The412Banner/Nightlies](https://github.com/The412Banner/Nightlies).
-          NOTES
+          # Wine bleeding-edge current HEAD + commit info
+          branch_info  = gh_api("repos/ValveSoftware/wine/branches/bleeding-edge")
+          wine_full    = branch_info.get("commit", {}).get("sha", "") or git_hash
+          wine_short   = wine_full[:7]
 
-          gh release create "$TAG" release/* \
-            --title "$TITLE" \
+          commit_info  = gh_api(f"repos/ValveSoftware/wine/commits/{wine_full}")
+          wine_msg     = (commit_info.get("commit", {}).get("message", "N/A") or "N/A").split("\n")[0][:80]
+          wine_ts_str  = commit_info.get("commit", {}).get("committer", {}).get("date", "")
+          wine_date_d  = wine_ts_str[:10] if wine_ts_str else "unknown"
+
+          # 🆕 badge — updated in last 24h
+          new_badge = ""
+          if wine_ts_str:
+              try:
+                  dt = datetime.datetime.fromisoformat(wine_ts_str.replace("Z", "+00:00"))
+                  if (datetime.datetime.now(datetime.timezone.utc) - dt).total_seconds() < 86400:
+                      new_badge = " 🆕"
+              except Exception:
+                  pass
+
+          # What triggered
+          if old_short and old_short != wine_short:
+              triggered = (
+                  "### 🔄 What Triggered This Build\n"
+                  "> Wine bleeding-edge was updated\n\n"
+                  "| Component | Old Commit | New Commit | Change |\n"
+                  "| :--- | :--- | :--- | :--- |\n"
+                  f"| **ValveSoftware/wine** `bleeding-edge` | `{old_short}` "
+                  f"| [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) "
+                  f"| {wine_msg} |\n\n---"
+              )
+          else:
+              triggered = (
+                  "### 🔄 What Triggered This Build\n"
+                  "> Scheduled build or manual dispatch\n\n---"
+              )
+
+          # File names from release/
+          wcp_files  = [f for f in glob.glob("release/*.wcp") if not f.endswith(".xz")]
+          wcpxz_files = glob.glob("release/*.wcp.xz")
+          wcp_name   = os.path.basename(wcp_files[0])   if wcp_files   else "proton-*.wcp"
+          wcpxz_name = os.path.basename(wcpxz_files[0]) if wcpxz_files else "proton-wine-*.wcp.xz"
+
+          notes = f"""> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**
+
+---
+
+### 🚀 Proton Bleeding-Edge Build: {tag}
+
+{triggered}
+
+
+### 📊 Upstream Status
+| Component | Latest Commit | Last Updated |
+| :--- | :--- | :--- |
+| **ValveSoftware/wine** `bleeding-edge` | [`{wine_short}` — {wine_msg}](https://github.com/ValveSoftware/wine/commit/{wine_full}) | {wine_date_d}{new_badge} |
+
+
+---
+
+### 📦 Built Components
+
+| Component | Source / Commit |
+| :--- | :--- |
+| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |
+
+### 📦 Files Included
+1. **Proton WCP**: `{wcp_name}` (and `{wcp_name}.sha256`)
+2. **Proton WCP.XZ**: `{wcpxz_name}` (and `{wcpxz_name}.sha256`)
+
+**The .wcp file is packaged for direct injection via BannersComponentInjector into GameHub/Winlator**
+**The .wcp.xz file is an XZ-compressed tar archive (bin/lib/share + prefixPack) for manual use or Winlator**
+"""
+          with open("/tmp/release-notes.md", "w") as f:
+              f.write(notes)
+          print("Release notes written.")
+          PY
+
+          gh release create "$RELEASE_TAG" release/* \
+            --title "Proton bleeding-edge ARM64EC ($GIT_DATE)" \
             --notes-file /tmp/release-notes.md \
             --prerelease \
-          || gh release upload "$TAG" release/* --clobber
+          || gh release upload "$RELEASE_TAG" release/* --clobber
 
       - name: Update proton-latest.json
         run: |
