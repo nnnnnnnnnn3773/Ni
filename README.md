@@ -12,6 +12,16 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 
 ---
 
+## 🍷 Latest Proton Bleeding-Edge Release
+
+> ⚠️ Bleeding-edge builds are not always stable. Use at your own risk.
+
+<!-- PROTON-LATEST-START -->
+*Waiting for the next workflow run...*
+<!-- PROTON-LATEST-END -->
+
+---
+
 ## 📱 My Other Projects
 
 - [**Banners Component Injector**](https://github.com/The412Banner/BannersComponentInjector) — A no-root Android app to browse, download, and seamlessly inject these WCP components directly into GameHub Lite and other Winlator variants.

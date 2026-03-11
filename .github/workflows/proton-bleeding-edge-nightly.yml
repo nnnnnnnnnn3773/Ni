@@ -620,6 +620,30 @@ jobs:
           with open("/tmp/release-notes.md", "w") as f:
               f.write(notes)
           print("Release notes written.")
+
+          # Update README.md latest proton section
+          import re
+          from pathlib import Path
+          readme_path = "README.md"
+          readme = Path(readme_path).read_text()
+          new_block = "\n".join([
+              "<!-- PROTON-LATEST-START -->",
+              "| | |",
+              "| :--- | :--- |",
+              f"| **Release** | [🔗 {tag}]({release_url}) |",
+              f"| **Wine Commit** | [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) — {wine_msg} |",
+              f"| **Date** | {wine_date_d} |",
+              f"| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets]({release_url}) |",
+              "<!-- PROTON-LATEST-END -->",
+          ])
+          readme = re.sub(
+              r"<!-- PROTON-LATEST-START -->.*?<!-- PROTON-LATEST-END -->",
+              new_block,
+              readme,
+              flags=re.DOTALL,
+          )
+          Path(readme_path).write_text(readme)
+          print("README.md updated.")
           PY
 
           gh release create "$RELEASE_TAG" release/* \
@@ -656,9 +680,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add proton-latest.json
+          git add proton-latest.json README.md
           GIT_DATE="${{ steps.meta.outputs.git_date }}"
-          git diff --staged --quiet || git commit -m "chore: update proton-latest.json for bleeding-edge ${GIT_DATE}"
+          git diff --staged --quiet || git commit -m "chore: update proton-latest.json + README for bleeding-edge ${GIT_DATE}"
           git pull --rebase -X ours origin HEAD
           git push
 
