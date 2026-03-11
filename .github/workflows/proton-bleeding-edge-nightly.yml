@@ -572,36 +572,38 @@ jobs:
           wcp_name   = os.path.basename(wcp_files[0])   if wcp_files   else "proton-*.wcp"
           wcpxz_name = os.path.basename(wcpxz_files[0]) if wcpxz_files else "proton-wine-*.wcp.xz"
 
-          notes = f"""> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**
-
----
-
-### 🚀 Proton Bleeding-Edge Build: {tag}
-
-{triggered}
-
-
-### 📊 Upstream Status
-| Component | Latest Commit | Last Updated |
-| :--- | :--- | :--- |
-| **ValveSoftware/wine** `bleeding-edge` | [`{wine_short}` — {wine_msg}](https://github.com/ValveSoftware/wine/commit/{wine_full}) | {wine_date_d}{new_badge} |
-
-
----
-
-### 📦 Built Components
-
-| Component | Source / Commit |
-| :--- | :--- |
-| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |
-
-### 📦 Files Included
-1. **Proton WCP**: `{wcp_name}` (and `{wcp_name}.sha256`)
-2. **Proton WCP.XZ**: `{wcpxz_name}` (and `{wcpxz_name}.sha256`)
-
-**The .wcp file is packaged for direct injection via BannersComponentInjector into GameHub/Winlator**
-**The .wcp.xz file is an XZ-compressed tar archive (bin/lib/share + prefixPack) for manual use or Winlator**
-"""
+          lines = [
+              "> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**",
+              "",
+              "---",
+              "",
+              f"### 🚀 Proton Bleeding-Edge Build: {tag}",
+              "",
+              triggered,
+              "",
+              "",
+              "### 📊 Upstream Status",
+              "| Component | Latest Commit | Last Updated |",
+              "| :--- | :--- | :--- |",
+              f"| **ValveSoftware/wine** `bleeding-edge` | [`{wine_short}` — {wine_msg}](https://github.com/ValveSoftware/wine/commit/{wine_full}) | {wine_date_d}{new_badge} |",
+              "",
+              "",
+              "---",
+              "",
+              "### 📦 Built Components",
+              "",
+              "| Component | Source / Commit |",
+              "| :--- | :--- |",
+              f"| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |",
+              "",
+              "### 📦 Files Included",
+              f"1. **Proton WCP**: `{wcp_name}` (and `{wcp_name}.sha256`)",
+              f"2. **Proton WCP.XZ**: `{wcpxz_name}` (and `{wcpxz_name}.sha256`)",
+              "",
+              "**The .wcp file is packaged for direct injection via BannersComponentInjector into GameHub/Winlator**",
+              "**The .wcp.xz file is an XZ-compressed tar archive (bin/lib/share + prefixPack) for manual use or Winlator**",
+          ]
+          notes = "\n".join(lines)
           with open("/tmp/release-notes.md", "w") as f:
               f.write(notes)
           print("Release notes written.")
