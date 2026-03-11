@@ -103,7 +103,7 @@ jobs:
           git add proton-scripts/
           git diff --staged --quiet || {
             git commit -m "chore: sync proton-scripts from Pepelespooder upstream"
-            git pull --rebase origin HEAD
+            git pull --rebase -X ours origin HEAD
             git push
           }
 
