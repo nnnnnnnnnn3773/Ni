@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T08:31:36Z",
+  "triggered_at": "2026-03-11T09:34:58Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3c44b21",
-      "new": "a22ab35",
-      "full": "a22ab3511f436a4460bc18dc12673eff87e08b0e",
-      "msg": "[LA64_DYNAREC] Added fastnan=0 path to F3 0F 51 SQRTSS opcode (#3646)",
-      "date": "2026-03-11T07:55:25Z"
+      "old": "a22ab35",
+      "new": "799647b",
+      "full": "799647b6accd8b9f7dfcd4171863c7b6c1158f88",
+      "msg": "[LA64_DYNAREC] Fixed MULX opcode (#3649)",
+      "date": "2026-03-11T09:29:43Z"
     }
   ]
 }
