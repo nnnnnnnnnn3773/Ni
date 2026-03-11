@@ -34,7 +34,12 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 ### 🍷 Proton Bleeding-Edge ARM64EC
 
 <!-- PROTON-LATEST-START -->
-*Waiting for the next workflow run...*
+| | |
+| :--- | :--- |
+| **Release** | [🔗 proton-bleeding-edge-20260309-83cf31f-run10](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260309-83cf31f-run10) |
+| **Wine Commit** | [`83cf31f`](https://github.com/ValveSoftware/wine/commit/83cf31f90af7dd61583c61c638127a009d8c8c00) — win32u: Set VendorId / DeviceId in DirectX registry key with correct size. |
+| **Date** | 2026-03-09 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260309-83cf31f-run10) |
 <!-- PROTON-LATEST-END -->
 
 ---
