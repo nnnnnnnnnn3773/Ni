@@ -625,3 +625,4 @@ Built automatically by [The412Banner/Nightlies](https://github.com/The412Banner/
           git diff --staged --quiet || git commit -m "chore: update proton-latest.json for bleeding-edge ${GIT_DATE}"
           git pull --rebase origin HEAD
           git push
+
