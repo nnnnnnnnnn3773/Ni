@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T09:34:58Z",
+  "triggered_at": "2026-03-11T12:40:18Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "a22ab35",
-      "new": "799647b",
-      "full": "799647b6accd8b9f7dfcd4171863c7b6c1158f88",
-      "msg": "[LA64_DYNAREC] Fixed MULX opcode (#3649)",
-      "date": "2026-03-11T09:29:43Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9d4a71b",
+      "new": "e27d12e",
+      "full": "e27d12ee5ebfbcd2c73b53df061d641f26b861d8",
+      "msg": "Merge pull request #5359 from Sonicadvance1/107",
+      "date": "2026-03-11T12:40:04Z"
     }
   ]
 }
