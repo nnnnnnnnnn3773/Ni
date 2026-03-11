@@ -12,9 +12,17 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 
 ---
 
-## 🍷 Latest Proton Bleeding-Edge Release
+## 🌙 Latest Nightly Releases
 
-> ⚠️ Bleeding-edge builds are not always stable. Use at your own risk.
+> ⚠️ Nightly builds are not always stable. Use at your own risk.
+
+### 📦 All-in-One Emulation Nightly (Box64 · FEX · VKD3D-Proton · DXVK)
+
+<!-- NIGHTLY-LATEST-START -->
+*Waiting for the next workflow run...*
+<!-- NIGHTLY-LATEST-END -->
+
+### 🍷 Proton Bleeding-Edge ARM64EC
 
 <!-- PROTON-LATEST-START -->
 *Waiting for the next workflow run...*

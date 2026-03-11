@@ -1098,6 +1098,63 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Update README with latest nightly
+        env:
+          FEX_VERSION: ${{ needs.build-fex.outputs.version }}
+          FEX_COMMIT: ${{ needs.build-fex.outputs.commit }}
+          VKD3D_COMMIT: ${{ needs.build-vkd3d.outputs.commit }}
+          VKD3D_ARM64EC_COMMIT: ${{ needs.build-vkd3d-arm64ec.outputs.commit }}
+          DXVK_COMMIT: ${{ needs.build-dxvk.outputs.commit }}
+          DXVK_ARM64EC_COMMIT: ${{ needs.build-dxvk-arm64ec.outputs.commit }}
+        run: |
+          python3 <<'PY'
+          import re, os
+          from pathlib import Path
+
+          tag        = os.environ["TAG_NAME"]
+          repo       = os.environ.get("GITHUB_REPOSITORY", "The412Banner/Nightlies")
+          release_url = f"https://github.com/{repo}/releases/tag/{tag}"
+
+          fex_ver          = os.environ.get("FEX_VERSION", "unknown")
+          fex_commit       = os.environ.get("FEX_COMMIT", "")
+          vkd3d_commit     = os.environ.get("VKD3D_COMMIT", "")
+          vkd3d_ec_commit  = os.environ.get("VKD3D_ARM64EC_COMMIT", "")
+          dxvk_commit      = os.environ.get("DXVK_COMMIT", "")
+          dxvk_ec_commit   = os.environ.get("DXVK_ARM64EC_COMMIT", "")
+
+          new_block = "\n".join([
+              "<!-- NIGHTLY-LATEST-START -->",
+              "| | |",
+              "| :--- | :--- |",
+              f"| **Release** | [🔗 {tag}]({release_url}) |",
+              f"| **FEXCore** | [`{fex_commit}`](https://github.com/FEX-Emu/FEX/commit/{fex_commit}) — {fex_ver} |",
+              f"| **VKD3D-Proton (Std)** | [`{vkd3d_commit}`](https://github.com/HansKristian-Work/vkd3d-proton/commit/{vkd3d_commit}) |",
+              f"| **VKD3D-Proton (ARM64EC)** | [`{vkd3d_ec_commit}`](https://github.com/HansKristian-Work/vkd3d-proton/commit/{vkd3d_ec_commit}) |",
+              f"| **DXVK (GPLAsync)** | [`{dxvk_commit}`](https://github.com/doitsujin/dxvk/commit/{dxvk_commit}) |",
+              f"| **DXVK (ARM64EC)** | [`{dxvk_ec_commit}`](https://github.com/doitsujin/dxvk/commit/{dxvk_ec_commit}) |",
+              f"| **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |",
+              f"| **Files** | [`.wcp` and `.zip` — scroll to Assets]({release_url}) |",
+              "<!-- NIGHTLY-LATEST-END -->",
+          ])
+
+          readme = Path("README.md").read_text()
+          readme = re.sub(
+              r"<!-- NIGHTLY-LATEST-START -->.*?<!-- NIGHTLY-LATEST-END -->",
+              new_block,
+              readme,
+              flags=re.DOTALL,
+          )
+          Path("README.md").write_text(readme)
+          print("README.md updated.")
+          PY
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update README for nightly ${TAG_NAME}"
+          git pull --rebase -X ours origin HEAD
+          git push
+
       # ----------------------------------------------------------------
       # Discord notification — success
       # Requires DISCORD_WEBHOOK_URL to be set in repo secrets:
