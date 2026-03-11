@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T12:40:18Z",
+  "triggered_at": "2026-03-11T18:43:22Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "9d4a71b",
-      "new": "e27d12e",
-      "full": "e27d12ee5ebfbcd2c73b53df061d641f26b861d8",
-      "msg": "Merge pull request #5359 from Sonicadvance1/107",
-      "date": "2026-03-11T12:40:04Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "799647b",
+      "new": "2a1d9fd",
+      "full": "2a1d9fd6a602d93d73a6f9780e2d03d10f3a5a72",
+      "msg": "[WOW64] Fix build with llvm-mingw 20260224 (#3653)",
+      "date": "2026-03-11T18:17:04Z"
     }
   ]
 }
