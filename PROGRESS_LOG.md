@@ -115,3 +115,17 @@
 - `.github/workflows/Upstream-watcher.yml`
 - `proton-scripts/` (new directory, 39 files)
 - `proton-latest.json` (new)
+
+---
+
+## Session — 2026-03-11 (continued)
+
+### [fix] — Rebase conflict fix + release description improvements (2026-03-11)
+**Commit:** `dfacb3f`
+
+#### What changed
+- `git pull --rebase -X ours` in "Commit proton-latest.json" step — concurrent runs no longer fail with a merge conflict; current run's version of `proton-latest.json` always wins
+- Added `⬇️ Download` section to release description with a per-file table (file name, description, link) and a "Which file do I need?" callout explaining `.wcp` vs `.wcp.xz`
+
+#### Files touched
+- `.github/workflows/proton-bleeding-edge-nightly.yml`
