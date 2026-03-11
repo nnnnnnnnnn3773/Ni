@@ -572,6 +572,9 @@ jobs:
           wcp_name   = os.path.basename(wcp_files[0])   if wcp_files   else "proton-*.wcp"
           wcpxz_name = os.path.basename(wcpxz_files[0]) if wcpxz_files else "proton-wine-*.wcp.xz"
 
+          repo = os.environ.get("GITHUB_REPOSITORY", "The412Banner/Nightlies")
+          release_url = f"https://github.com/{repo}/releases/tag/{tag}"
+
           lines = [
               "> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**",
               "",
@@ -596,12 +599,22 @@ jobs:
               "| :--- | :--- |",
               f"| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |",
               "",
-              "### 📦 Files Included",
-              f"1. **Proton WCP**: `{wcp_name}` (and `{wcp_name}.sha256`)",
-              f"2. **Proton WCP.XZ**: `{wcpxz_name}` (and `{wcpxz_name}.sha256`)",
+              "---",
               "",
-              "**The .wcp file is packaged for direct injection via BannersComponentInjector into GameHub/Winlator**",
-              "**The .wcp.xz file is an XZ-compressed tar archive (bin/lib/share + prefixPack) for manual use or Winlator**",
+              "### ⬇️ Download",
+              "",
+              "Scroll down to **Assets** below to download the files, or use the direct links:",
+              "",
+              f"| File | Description | Link |",
+              f"| :--- | :--- | :--- |",
+              f"| `{wcp_name}` | Proton WCP — inject via BannersComponentInjector into GameHub / Winlator | [Download]({release_url}) |",
+              f"| `{wcp_name}.sha256` | SHA-256 checksum for `.wcp` | [Download]({release_url}) |",
+              f"| `{wcpxz_name}` | Proton WCP.XZ — XZ-compressed tar (bin/lib/share + prefixPack) for manual use | [Download]({release_url}) |",
+              f"| `{wcpxz_name}.sha256` | SHA-256 checksum for `.wcp.xz` | [Download]({release_url}) |",
+              "",
+              "> **Which file do I need?**",
+              "> - Use **`.wcp`** if you are injecting via **BannersComponentInjector** (GameHub / Winlator Cmod)",
+              "> - Use **`.wcp.xz`** if you need the raw XZ archive for manual extraction or other tools",
           ]
           notes = "\n".join(lines)
           with open("/tmp/release-notes.md", "w") as f:
@@ -646,6 +659,6 @@ jobs:
           git add proton-latest.json
           GIT_DATE="${{ steps.meta.outputs.git_date }}"
           git diff --staged --quiet || git commit -m "chore: update proton-latest.json for bleeding-edge ${GIT_DATE}"
-          git pull --rebase origin HEAD
+          git pull --rebase -X ours origin HEAD
           git push
 
