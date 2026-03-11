@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-10T17:43:30Z",
+  "triggered_at": "2026-03-11T07:38:31Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "28d542b",
-      "new": "1ce4789",
-      "full": "1ce47890c91426380ea65167719f6379903e25b8",
-      "msg": "Fix ALSA callback copy-paste bugs in find* lookup functions (#3639)",
-      "date": "2026-03-10T16:53:59Z"
+      "old": "1ce4789",
+      "new": "3c44b21",
+      "full": "3c44b2119f9be15b9d2a59690bee6f22ae310cf4",
+      "msg": "[PPC64LE_DYNAREC] Add MOV, NOP/XCHG, MOVSXD, CWDE/CDQ opcodes (#3633)",
+      "date": "2026-03-11T07:38:04Z"
     }
   ]
 }
