@@ -574,19 +574,22 @@ jobs:
           GIT_DATE="${{ steps.detect_changes.outputs.git_date }}"
           TAG="${{ steps.detect_changes.outputs.release_tag }}"
           TITLE="Proton bleeding-edge ARM64EC (${GIT_DATE})"
-          NOTES="> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**
 
-Built from **ValveSoftware/wine** \`bleeding-edge\` @ \`${GIT_HASH}\` with GameNative Android + ARM64EC patches applied.
+          cat > /tmp/release-notes.md <<NOTES
+          > ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**
 
-**Files:**
-- \`.wcp\` — WCP format, inject directly into GameHub/Winlator via BannersComponentInjector
-- \`.wcp.xz\` — XZ-compressed tar archive (bin/lib/share + prefixPack), for manual use or Winlator
+          Built from **ValveSoftware/wine** \`bleeding-edge\` @ \`${GIT_HASH}\` with GameNative Android + ARM64EC patches applied.
 
-Built automatically by [The412Banner/Nightlies](https://github.com/The412Banner/Nightlies)."
+          **Files:**
+          - \`.wcp\` — WCP format, inject directly into GameHub/Winlator via BannersComponentInjector
+          - \`.wcp.xz\` — XZ-compressed tar archive (bin/lib/share + prefixPack), for manual use or Winlator
+
+          Built automatically by [The412Banner/Nightlies](https://github.com/The412Banner/Nightlies).
+          NOTES
 
           gh release create "$TAG" release/* \
             --title "$TITLE" \
-            --notes "$NOTES" \
+            --notes-file /tmp/release-notes.md \
             --prerelease \
           || gh release upload "$TAG" release/* --clobber
 
