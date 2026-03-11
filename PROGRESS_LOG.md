@@ -61,3 +61,57 @@
 **Commit:** (this file)
 #### What changed
 - Created PROGRESS_LOG.md to track all changes to this repo going forward
+
+---
+
+## Session — 2026-03-11
+
+### [feat] — Proton Bleeding-Edge ARM64EC standalone workflow (2026-03-11)
+**Commits:** `491632a` (initial), `9943fa9`→`e9c28db` (release notes fix)
+
+#### What changed
+
+**New file: `.github/workflows/proton-bleeding-edge-nightly.yml`**
+- Standalone workflow to build ValveSoftware/wine `bleeding-edge` branch with GameNative Android + ARM64EC patches
+- Schedules every 6 hours + `workflow_dispatch` (inputs: `wine_ref`, `gamenative_ref`, `target_app_id`, `force_build`)
+- **Job 0 — sync-scripts:** Fetches all build scripts/patches from Pepelespooder/proton-arm64-nightlies via GitHub API, compares byte-for-byte, commits any changes to `proton-scripts/`. Gracefully skips if upstream unavailable. Local copies act as permanent fallback.
+- **Job 2 — build:** Clones ValveSoftware/wine + GameNative/proton-wine, applies patches from `proton-scripts/`, downloads LLVM MinGW 20250920 (bylaws) + NDK r27d + termuxfs aarch64, compiles full ARM64EC Wine, packages `.wcp` (zstd-tar) and `.wcp.xz` (XZ-tar + prefixPack) with SHA256
+- **Job 3 — release:** Queries GitHub API live for wine bleeding-edge commit info, builds styled release notes matching all-in-one format, always publishes a release (no skip gate), updates and commits `proton-latest.json`
+- Release tag format: `proton-bleeding-edge-{date}-{hash}-run{N}`
+- Release is always pre-release
+
+**New file: `proton-scripts/`** (39 files)
+- Full backup of all build dependencies from Pepelespooder's repo
+- `scripts/` — 26 Python/shell scripts (filter_patches.py, patch_build_script.py, fix_*.py, generate_profile.py, create-proton-wcp.sh, verify_required_markers.py, etc.)
+- `ge-second-pass/test-bylaws/` — 2 BYLAWS patch overrides
+- `ge-second-pass/focus/`, `keyboard/`, `mouse/`, `performance/` — additional patches
+- `patches/` — dlls_winex11_drv_window_c.patch
+
+**New file: `proton-latest.json`**
+- Tracks last built Wine hash, version name, WCP/WCP.XZ filenames + SHA256 checksums, release tag
+- Read by release job to determine old hash for "What Triggered" section
+
+**Modified: `.github/workflows/Upstream-watcher.yml`**
+- Added ValveSoftware/wine `bleeding-edge` branch tracking (separate from the main 5-repo loop)
+- Stored under key `https://github.com/ValveSoftware/wine@bleeding-edge: <hash>` in `upstream_hashes.txt`
+- New output: `wine_changed` (true when wine bleeding-edge HEAD changes)
+- New output: `anything_changed` (true when any hash changed — used for commit step)
+- New trigger step: `gh workflow run "proton-bleeding-edge-nightly.yml"` fires when `wine_changed == true`
+- Existing `changed` output still triggers all-in-one nightly as before
+
+#### Release note format (matching all-in-one style)
+- Disclaimer at top
+- `### 🚀 Proton Bleeding-Edge Build: {tag}`
+- `### 🔄 What Triggered This Build` — old→new wine hash table when hash changed; "Scheduled/manual" otherwise
+- `### 📊 Upstream Status` — wine bleeding-edge commit with 🆕 badge if updated in last 24h
+- `### 📦 Built Components` — Proton ARM64EC row with commit link
+- `### 📦 Files Included` — WCP + WCP.XZ with sha256 note
+
+#### Bug fixed
+- **Heredoc PY terminator not found (run6):** Triple-quoted f-string content had zero YAML indentation. YAML calculated min-indent=0 so stripped nothing — the `PY` end-marker kept 10 leading spaces in the shell script and bash never matched it. Fixed by replacing `f"""..."""` with `list` + `"\n".join()` so all lines stay indented inside the Python block.
+
+#### Files touched
+- `.github/workflows/proton-bleeding-edge-nightly.yml` (new)
+- `.github/workflows/Upstream-watcher.yml`
+- `proton-scripts/` (new directory, 39 files)
+- `proton-latest.json` (new)
