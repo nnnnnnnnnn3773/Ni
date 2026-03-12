@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260311-dc4edba-run12](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run12) |
+| **Release** | [🔗 proton-bleeding-edge-20260311-dc4edba-run13](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run13) |
 | **Wine Commit** | [`dc4edba`](https://github.com/ValveSoftware/wine/commit/dc4edba058270197904cddfbff19b8e6ab822561) — mfmediaengine: Add IMFMediaEngineClassFactoryEx interface. |
 | **Date** | 2026-03-12 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run12) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run13) |
 <!-- PROTON-LATEST-END -->
 
 ---
