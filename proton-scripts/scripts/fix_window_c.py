@@ -129,7 +129,8 @@ def main():
     )
     total += n
 
-    # 5. Guard _NET_WM_PID (getpid) + XdndAware with #ifndef __ANDROID__ (line ~1189)
+    # 5. Guard only _NET_WM_PID (getpid) with #ifndef __ANDROID__.
+    # GameNative keeps XdndAware enabled on Android.
     src, n = apply(src, "android _NET_WM_PID guard",
         "    /* set the pid. together, these properties are needed so the window manager can kill us if we freeze */\n"
         "    i = getpid();\n"
@@ -153,8 +154,8 @@ def main():
     )
     total += n
 
-    # 6. Add Android _NET_WM_PID via NtUserGetWindowThread in set_net_active_window (line ~2225)
-    src, n = apply(src, "android set_net_active_window _NET_WM_PID",
+    # 6. Add Android _NET_WM_PID and _NET_WM_HWND in set_net_active_window.
+    src, n = apply(src, "android set_net_active_window _NET_WM_PID/_NET_WM_HWND",
         "    XFlush( data->display );\n"
         "}\n"
         "\n"
