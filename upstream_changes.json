@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-12T15:51:32Z",
+  "triggered_at": "2026-03-12T16:52:05Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "1ad0b9c",
-      "new": "4a4a03c",
-      "full": "4a4a03cd2add8a19a842b3c62a65431bbe9615ed",
-      "msg": "[WOW64] Fixed build on my machine (#3660)",
-      "date": "2026-03-12T15:40:28Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "6f3a758",
+      "new": "3730b70",
+      "full": "3730b707223a273fb1774f2f2ac3572d68c4dbe9",
+      "msg": "[d3d9] Update sampler state when binding a different texture",
+      "date": "2026-03-12T16:40:08Z"
     }
   ]
 }
