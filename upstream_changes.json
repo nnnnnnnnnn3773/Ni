@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-12T10:31:15Z",
+  "triggered_at": "2026-03-12T15:51:32Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "0a18efb",
-      "new": "82091ed",
-      "full": "82091ed50fa6b544647e10ad637bc8c9602adac5",
-      "msg": "vkd3d: Don't noop NumPlanes == 0 barriers.",
-      "date": "2026-03-12T10:07:14Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "1ad0b9c",
+      "new": "4a4a03c",
+      "full": "4a4a03cd2add8a19a842b3c62a65431bbe9615ed",
+      "msg": "[WOW64] Fixed build on my machine (#3660)",
+      "date": "2026-03-12T15:40:28Z"
     }
   ]
 }
