@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260312-e73e158-run15](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-e73e158-run15) |
-| **Wine Commit** | [`e73e158`](https://github.com/ValveSoftware/wine/commit/e73e15800c79142ef0eb47d9ed6fe3129ef62231) — amend! winhttp: Stub WinHttpSetOption( WINHTTP_OPTION_DECOMPRESSION ). |
+| **Release** | [🔗 proton-bleeding-edge-20260312-b310f0c-run16](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-b310f0c-run16) |
+| **Wine Commit** | [`b310f0c`](https://github.com/ValveSoftware/wine/commit/b310f0cb430231afb8401915ddadb4304fce0065) — win32u: Disable undecorated windows hack for Rei and the Floating City. |
 | **Date** | 2026-03-12 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-e73e158-run15) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-b310f0c-run16) |
 <!-- PROTON-LATEST-END -->
 
 ---
