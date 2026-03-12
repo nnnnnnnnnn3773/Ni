@@ -127,6 +127,7 @@ diff --git a/dlls/dinput/keyboard.c b/dlls/dinput/keyboard.c
  
      if ((index = dinput_device_object_index_from_id( iface, DIDFT_PSHBUTTON | DIDFT_MAKEINSTANCE( dik_code ) )) >= 0)
 diff --git a/dlls/dinput/device.c b/dlls/dinput/device.c
+index 4166d18..0000000 100644
 --- a/dlls/dinput/device.c
 +++ b/dlls/dinput/device.c
 @@ -20,6 +20,7 @@
@@ -137,8 +138,148 @@ diff --git a/dlls/dinput/device.c b/dlls/dinput/device.c
  #include <string.h>
  #include <math.h>
  
-@@ -41,6 +42,14 @@
- #define WM_WINE_NOTIFY_ACTIVITY WM_USER
+@@ -42,6 +43,14 @@
+ 
+ WINE_DEFAULT_DEBUG_CHANNEL(dinput);
+ 
++static BOOL input_poll_debug_enabled(void)
++{
++    static int enabled = -1;
++
++    if (enabled == -1) enabled = !!getenv( "WINE_INPUT_POLL_DEBUG" );
++    return enabled;
++}
++
+ /* Windows uses this GUID for guidProduct on non-keyboard/mouse devices.
+  * Data1 contains the device VID (low word) and PID (high word).
+  * Data4 ends with the ASCII bytes "PIDVID".
+@@ -478,6 +487,11 @@ static HRESULT WINAPI dinput_device_Acquire( IDirectInputDevice8W *iface )
+     HRESULT hr = DI_OK;
+     DWORD pid;
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.acquire iface=%p raw=%u coop=0x%x status=%u user_size=%u dev_size=%u event=%p guid=%s\n",
++             iface, impl->use_raw_input, impl->dwCoopLevel, impl->status,
++             impl->user_format.dwDataSize, impl->device_format.dwDataSize, impl->hEvent, debugstr_guid( &impl->guid ) );
++
+     TRACE( "iface %p.\n", iface );
+ 
+     EnterCriticalSection( &impl->crit );
+@@ -497,6 +511,10 @@ static HRESULT WINAPI dinput_device_Acquire( IDirectInputDevice8W *iface )
+     LeaveCriticalSection( &impl->crit );
+     if (hr != DI_OK) return hr;
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.acquire.result iface=%p hr=%#lx status=%u raw=%u coop=0x%x\n",
++             iface, hr, impl->status, impl->use_raw_input, impl->dwCoopLevel );
++
+     dinput_hooks_acquire_device( iface );
+ 
+     return hr;
+@@ -507,6 +525,11 @@ static HRESULT WINAPI dinput_device_Unacquire( IDirectInputDevice8W *iface )
+     struct dinput_device *impl = impl_from_IDirectInputDevice8W( iface );
+     HRESULT hr = DI_OK;
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.unacquire iface=%p raw=%u coop=0x%x status=%u user_size=%u dev_size=%u event=%p guid=%s\n",
++             iface, impl->use_raw_input, impl->dwCoopLevel, impl->status,
++             impl->user_format.dwDataSize, impl->device_format.dwDataSize, impl->hEvent, debugstr_guid( &impl->guid ) );
++
+     TRACE( "iface %p.\n", iface );
+ 
+     EnterCriticalSection( &impl->crit );
+@@ -545,6 +568,18 @@ static HRESULT WINAPI dinput_device_SetDataFormat( IDirectInputDevice8W *iface,
+     dinput_device_release_user_format( This );
+     res = dinput_device_init_user_format( This, format );
+ 
++    if (input_poll_debug_enabled())
++    {
++        ERR( "INPUTDBG dinput.set_data_format iface=%p guid=%s devtype=%#lx raw=%u fmt_size=%lu fmt_objs=%lu user_size=%lu user_objs=%lu hr=%#lx\n",
++             iface, debugstr_guid( &This->guid ), This->instance.dwDevType, This->use_raw_input,
++             format->dwDataSize, format->dwNumObjs, This->user_format.dwDataSize,
++             This->user_format.dwNumObjs, res );
++        for (i = 0; i < format->dwNumObjs; ++i)
++            ERR( "INPUTDBG dinput.setfmt.obj iface=%p idx=%lu ofs=%#lx type=%#lx flags=%#lx guid=%s\n",
++                 iface, i, format->rgodf[i].dwOfs, format->rgodf[i].dwType, format->rgodf[i].dwFlags,
++                 debugstr_guid( format->rgodf[i].pguid ) );
++    }
++
+     LeaveCriticalSection(&This->crit);
+     return res;
+ }
+@@ -586,6 +621,10 @@ static HRESULT WINAPI dinput_device_SetCooperativeLevel( IDirectInputDevice8W *i
+     }
+     LeaveCriticalSection(&This->crit);
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.set_coop iface=%p guid=%s hwnd=%p flags=%#lx hr=%#lx raw=%u status=%u\n",
++             iface, debugstr_guid( &This->guid ), hwnd, flags, hr, This->use_raw_input, This->status );
++
+     return hr;
+ }
+ 
+@@ -605,6 +644,13 @@ static HRESULT WINAPI dinput_device_GetDeviceInfo( IDirectInputDevice8W *iface,
+     memcpy( instance, &impl->instance, size );
+     instance->dwSize = size;
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.info iface=%p guid=%s devtype=%#lx raw=%u user_size=%u dev_size=%u inst_guid=%s product_guid=%s usage_page=%u usage=%u\n",
++             iface, debugstr_guid( &impl->guid ), impl->instance.dwDevType, impl->use_raw_input,
++             impl->user_format.dwDataSize, impl->device_format.dwDataSize,
++             debugstr_guid( &impl->instance.guidInstance ), debugstr_guid( &impl->instance.guidProduct ),
++             impl->instance.wUsagePage, impl->instance.wUsage );
++
+     return S_OK;
+ }
+ 
+@@ -612,6 +658,11 @@ static HRESULT WINAPI dinput_device_SetEventNotification( IDirectInputDevice8W *
+ {
+     struct dinput_device *This = impl_from_IDirectInputDevice8W( iface );
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.set_event iface=%p raw=%u coop=0x%x status=%u old_event=%p new_event=%p guid=%s\n",
++             iface, This->use_raw_input, This->dwCoopLevel, This->status,
++             This->hEvent, event, debugstr_guid( &This->guid ) );
++
+     TRACE( "iface %p, event %p.\n", iface, event );
+ 
+     EnterCriticalSection(&This->crit);
+@@ -682,6 +733,11 @@ static HRESULT WINAPI dinput_device_GetCapabilities( IDirectInputDevice8W *iface
+     memcpy( caps, &impl->caps, size );
+     caps->dwSize = size;
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.caps iface=%p guid=%s devtype=%#lx raw=%u caps_flags=%#lx axes=%lu buttons=%lu pov=%lu ffb_sample=%lu ffb_drv=%lu\n",
++             iface, debugstr_guid( &impl->guid ), impl->instance.dwDevType, impl->use_raw_input,
++             caps->dwFlags, caps->dwAxes, caps->dwButtons, caps->dwPOVs, caps->dwFFSamplePeriod, caps->dwFFDriverVersion );
++
+     return DI_OK;
+ }
+ 
+@@ -689,6 +745,10 @@ static HRESULT WINAPI dinput_device_QueryInterface( IDirectInputDevice8W *iface,
+ {
+     struct dinput_device *This = impl_from_IDirectInputDevice8W( iface );
+ 
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.qi iface=%p iid=%s guid=%s raw=%u coop=0x%x out=%p\n",
++             iface, debugstr_guid( iid ), debugstr_guid( &This->guid ), This->use_raw_input, This->dwCoopLevel, out );
++
+     TRACE( "iface %p, iid %s, out %p.\n", iface, debugstr_guid( iid ), out );
+ 
+     if (IsEqualGUID( &IID_IDirectInputDeviceA, iid ) ||
+diff --git a/dlls/dinput/dinput.c b/dlls/dinput/dinput.c
+--- a/dlls/dinput/dinput.c
++++ b/dlls/dinput/dinput.c
+@@ -22,6 +22,7 @@
+ 
+ #include <stddef.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #define COBJMACROS
+ #include "windef.h"
+@@ -34,6 +35,14 @@
+ #include "wine/debug.h"
  
  WINE_DEFAULT_DEBUG_CHANNEL(dinput);
 +
@@ -150,21 +291,96 @@ diff --git a/dlls/dinput/device.c b/dlls/dinput/device.c
 +    return enabled;
 +}
  
- /* Windows uses this GUID for guidProduct on non-keyboard/mouse devices.
-  * Data1 contains the device VID (low word) and PID (high word).
-@@ -1497,6 +1506,15 @@
-         hr = DI_OK;
-     }
-     LeaveCriticalSection( &impl->crit );
+ static inline struct dinput *impl_from_IDirectInput7W( IDirectInput7W *iface )
+ {
+@@ -285,6 +294,15 @@
+     else hr = hid_joystick_create_device( impl, guid, &device );
+ 
+     if (FAILED(hr)) return hr;
 +
-+    if (input_poll_debug_enabled() && SUCCEEDED(hr) && size >= 0x40)
++    if (input_poll_debug_enabled())
 +    {
-+        BYTE *bytes = data;
-+        ERR( "INPUTDBG dinput.get_state size=%lu hr=%#lx ESC=%02x 1=%02x SPACE=%02x "
-+             "A=%02x D=%02x S=%02x W=%02x LSHIFT=%02x RSHIFT=%02x LCTRL=%02x RCTRL=%02x\n",
-+             size, hr, bytes[0x01], bytes[0x02], bytes[0x39], bytes[0x1e], bytes[0x20],
-+             bytes[0x1f], bytes[0x11], bytes[0x2a], bytes[0x36], bytes[0x1d], bytes[0x9d] );
++        struct dinput_device *impl_device = CONTAINING_RECORD( device, struct dinput_device, IDirectInputDevice8W_iface );
++        ERR( "INPUTDBG dinput.create guid=%s iid=%s version=%#lx device=%p raw=%u devtype=%#lx dev_size=%lu user_size=%lu status=%u\n",
++             debugstr_guid( guid ), debugstr_guid( iid ), impl->dwVersion, device, impl_device->use_raw_input,
++             impl_device->instance.dwDevType, impl_device->device_format.dwDataSize,
++             impl_device->user_format.dwDataSize, impl_device->status );
 +    }
  
-     return hr;
+     hr = IDirectInputDevice8_QueryInterface( device, iid, out );
+     IDirectInputDevice8_Release( device );
+diff --git a/dlls/dinput/dinput_main.c b/dlls/dinput/dinput_main.c
+--- a/dlls/dinput/dinput_main.c
++++ b/dlls/dinput/dinput_main.c
+@@ -46,6 +46,14 @@
+ 
+ WINE_DEFAULT_DEBUG_CHANNEL(dinput);
+ 
++static BOOL input_poll_debug_enabled(void)
++{
++    static int enabled = -1;
++
++    if (enabled == -1) enabled = !!getenv( "WINE_INPUT_POLL_DEBUG" );
++    return enabled;
++}
++
+ #define INPUT_THREAD_NOTIFY     (WM_USER + 0x10)
+ #define NOTIFY_THREAD_STOP      0
+ #define NOTIFY_REFRESH_DEVICES  1
+@@ -180,6 +188,10 @@
+     for (i = state->events_count; i < state->devices_count; ++i)
+     {
+         struct dinput_device *device = state->devices[i];
++        if (input_poll_debug_enabled())
++            ERR( "INPUTDBG dinput.ll_dispatch iface=%p devtype=%#lx raw=%u coop=%#lx msg=%#Ix lparam=%#Ix\n",
++                 &device->IDirectInputDevice8W_iface, device->instance.dwDevType, device->use_raw_input,
++                 device->dwCoopLevel, wparam, lparam );
+         if (device->use_raw_input) continue;
+         if (device->instance.dwDevType & DIDEVTYPE_HID) continue;
+         switch (GET_DIDEVICE_TYPE( device->instance.dwDevType ))
+@@ -275,6 +287,10 @@
+         if (device->dwCoopLevel & DISCL_FOREGROUND) hook_device_window_foreground_changes( device );
+ 
+         if (!device->read_event || !device->vtbl->read) continue;
++        if (input_poll_debug_enabled())
++            ERR( "INPUTDBG dinput.route_read iface=%p devtype=%#lx raw=%u coop=%#lx read_event=%p\n",
++                 &device->IDirectInputDevice8W_iface, device->instance.dwDevType, device->use_raw_input,
++                 device->dwCoopLevel, device->read_event );
+         state->events[count] = device->read_event;
+         dinput_device_internal_addref( (state->devices[count] = device) );
+         if (++count >= state->devices_capacity) break;
+@@ -301,6 +317,11 @@
+             else rawinput_device = &rawinput_keyboard;
+             break;
+         }
++
++        if (input_poll_debug_enabled())
++            ERR( "INPUTDBG dinput.route iface=%p devtype=%#lx raw=%u coop=%#lx path=%s hwnd=%p\n",
++                 &device->IDirectInputDevice8W_iface, device->instance.dwDevType, device->use_raw_input,
++                 device->dwCoopLevel, rawinput_device ? "raw" : "ll", di_em_win );
+ 
+         if (rawinput_device)
+         {
+@@ -341,6 +362,11 @@
+ 
+     state->rawinput_devices[0] = rawinput_mouse;
+     state->rawinput_devices[1] = rawinput_keyboard;
++
++    if (input_poll_debug_enabled())
++        ERR( "INPUTDBG dinput.route_summary events=%u devices=%u kbd_ll=%u mouse_ll=%u raw_mouse_flags=%#x raw_kbd_flags=%#x\n",
++             state->events_count, state->devices_count, keyboard_ll_count, mouse_ll_count,
++             rawinput_mouse.dwFlags, rawinput_keyboard.dwFlags );
  }
+ 
+ static LRESULT WINAPI di_em_win_wndproc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
+@@ -364,6 +390,10 @@
+             for (i = state->events_count; i < state->devices_count; ++i)
+             {
+                 struct dinput_device *device = state->devices[i];
++                if (input_poll_debug_enabled())
++                    ERR( "INPUTDBG dinput.raw_dispatch iface=%p devtype=%#lx raw=%u coop=%#lx ritype=%u wparam=%#Ix\n",
++                         &device->IDirectInputDevice8W_iface, device->instance.dwDevType, device->use_raw_input,
++                         device->dwCoopLevel, ri.header.dwType, wparam );
+                 if (!device->use_raw_input) continue;
+                 if (device->instance.dwDevType & DIDEVTYPE_HID) continue;
+                 switch (GET_DIDEVICE_TYPE( device->instance.dwDevType ))

@@ -70,6 +70,11 @@ txt = txt.replace(
     'fi'
 )
 
+txt = txt.replace(
+    '    done\n  fi',
+    '    done\n    if [ -x ./config.status ]; then ./config.status; fi\n  fi'
+)
+
 with open(path, 'w') as f:
     f.write(txt)
 
