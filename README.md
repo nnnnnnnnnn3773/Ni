@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260311-dc4edba-run14](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run14) |
-| **Wine Commit** | [`dc4edba`](https://github.com/ValveSoftware/wine/commit/dc4edba058270197904cddfbff19b8e6ab822561) — mfmediaengine: Add IMFMediaEngineClassFactoryEx interface. |
+| **Release** | [🔗 proton-bleeding-edge-20260312-e73e158-run15](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-e73e158-run15) |
+| **Wine Commit** | [`e73e158`](https://github.com/ValveSoftware/wine/commit/e73e15800c79142ef0eb47d9ed6fe3129ef62231) — amend! winhttp: Stub WinHttpSetOption( WINHTTP_OPTION_DECOMPRESSION ). |
 | **Date** | 2026-03-12 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260311-dc4edba-run14) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-e73e158-run15) |
 <!-- PROTON-LATEST-END -->
 
 ---
