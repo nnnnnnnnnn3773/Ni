@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-11T21:25:19Z",
+  "triggered_at": "2026-03-12T08:33:30Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "e27d12e",
-      "new": "957c1fc",
-      "full": "957c1fc4201e0029c091f36604978d610d968e3a",
-      "msg": "Merge pull request #5357 from Sonicadvance1/106",
-      "date": "2026-03-11T21:12:38Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "f88108c",
+      "new": "1ad0b9c",
+      "full": "1ad0b9c737f2d029e8f41320d6c66fc1df164c70",
+      "msg": "[RV64_DYNAREC] fix GETEX for PMOV (#3624)",
+      "date": "2026-03-12T07:53:12Z"
     }
   ]
 }
