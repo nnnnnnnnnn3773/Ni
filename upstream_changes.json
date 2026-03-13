@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-13T06:41:22Z",
+  "triggered_at": "2026-03-13T07:39:31Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "4a4a03c",
-      "new": "cf74a99",
-      "full": "cf74a9945875b261f0843e1044c1caa3716d2f8d",
-      "msg": "[CI] Added *.def to CI workflow dispatch path (#3662)",
-      "date": "2026-03-13T06:33:17Z"
+      "old": "cf74a99",
+      "new": "dfbbf2c",
+      "full": "dfbbf2c0e5ce5063fc925360f7c24a0ea5e137c8",
+      "msg": "[ARM64_DYNAREC] Fixed scratch register conflict for BZHI opcode (#3661)",
+      "date": "2026-03-13T07:29:17Z"
     }
   ]
 }
