@@ -14,8 +14,7 @@
 +     */
 +    if (getenv( "WINE_ANDROID_ABSOLUTE_MOUSE" ) && atoi( getenv( "WINE_ANDROID_ABSOLUTE_MOUSE" ) ))
 +    {
-+        TRACE( "ignoring warp to %d,%d due to WINE_ANDROID_ABSOLUTE_MOUSE
-+", x, y );
++        TRACE( "ignoring warp to %d,%d due to WINE_ANDROID_ABSOLUTE_MOUSE\n", x, y );
 +        return TRUE;
 +    }
 +#endif

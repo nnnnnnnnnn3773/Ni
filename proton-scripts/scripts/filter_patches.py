@@ -27,8 +27,8 @@ FORCE_SKIP = {
 }
 
 ALREADY_APPLIED = {
-    # Handled by fix_window_c.py - skip this patch so git apply never sees it.
-    # The patch line numbers are too drifted against bleeding-edge to apply cleanly.
+    # Handled by fix_window_c.py / fix_mouse_c.py - skip these patches so
+    # git apply never sees their drift-prone hunks against bleeding-edge.
     "dlls_winex11_drv_window_c.patch":      ("dlls/winex11.drv/window.c",    "steam_proton"),
     "dlls_winex11_drv_mouse_c.patch":       ("dlls/winex11.drv/mouse.c",     ["clip_center", "needs_relative_motion", "get_send_mouse_flags"]),
 
@@ -124,6 +124,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
