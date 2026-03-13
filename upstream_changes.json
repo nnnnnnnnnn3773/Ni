@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-13T07:39:31Z",
+  "triggered_at": "2026-03-13T16:30:25Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "cf74a99",
-      "new": "dfbbf2c",
-      "full": "dfbbf2c0e5ce5063fc925360f7c24a0ea5e137c8",
-      "msg": "[ARM64_DYNAREC] Fixed scratch register conflict for BZHI opcode (#3661)",
-      "date": "2026-03-13T07:29:17Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "82091ed",
+      "new": "a0cc484",
+      "full": "a0cc484f561950cd2bdb5ea7979f953843b02f71",
+      "msg": "vkd3d-shader: Hook up compute shader derivatives quads.",
+      "date": "2026-03-13T16:23:22Z"
     }
   ]
 }
