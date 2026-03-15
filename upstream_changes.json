@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-14T18:26:58Z",
+  "triggered_at": "2026-03-15T16:22:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "08d376c",
-      "new": "a724bb7",
-      "full": "a724bb70fdae3edcf3c3e8096eaa0c96ba045d49",
-      "msg": "[TRACE] Improved F2 FF 25 opcode trace",
-      "date": "2026-03-14T17:22:22Z"
+      "old": "a724bb7",
+      "new": "601bba6",
+      "full": "601bba694a973f10f72c1ce782771b6bc0428ab9",
+      "msg": "[WRAPPERHELPER] Added support for versioned symbols (libpthread), other minor fe",
+      "date": "2026-03-15T15:25:45Z"
     }
   ]
 }
