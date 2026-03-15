@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-15T20:19:13Z",
+  "triggered_at": "2026-03-15T23:21:51Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "601bba6",
-      "new": "1f705fc",
-      "full": "1f705fc13a6f71f946c6fb0dded4cbe7d26e24c8",
-      "msg": "[WRAPPERHELPER] Added typedef translation pre-reservation (#3672)",
-      "date": "2026-03-15T19:55:53Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "6177ab9",
+      "new": "f894cd9",
+      "full": "f894cd90f30c8fcd9d881aaa4a7e04c0e58d8537",
+      "msg": "Merge pull request #5369 from Sonicadvance1/113",
+      "date": "2026-03-15T22:20:28Z"
     }
   ]
 }
