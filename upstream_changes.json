@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-15T16:22:15Z",
+  "triggered_at": "2026-03-15T20:19:13Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "a724bb7",
-      "new": "601bba6",
-      "full": "601bba694a973f10f72c1ce782771b6bc0428ab9",
-      "msg": "[WRAPPERHELPER] Added support for versioned symbols (libpthread), other minor fe",
-      "date": "2026-03-15T15:25:45Z"
+      "old": "601bba6",
+      "new": "1f705fc",
+      "full": "1f705fc13a6f71f946c6fb0dded4cbe7d26e24c8",
+      "msg": "[WRAPPERHELPER] Added typedef translation pre-reservation (#3672)",
+      "date": "2026-03-15T19:55:53Z"
     }
   ]
 }
