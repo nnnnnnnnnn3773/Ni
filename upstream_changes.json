@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-16T08:03:34Z",
+  "triggered_at": "2026-03-16T09:57:08Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "1f705fc",
-      "new": "52f0fd5",
-      "full": "52f0fd542100bad450dd52a8f28185c7b31b6039",
-      "msg": "[ARM64_DYNAREC] Fixed shrd16 deffered flags computation (for #3670)",
-      "date": "2026-03-16T07:32:29Z"
+      "old": "52f0fd5",
+      "new": "b2101b9",
+      "full": "b2101b9b7c177ecbd28876f45e0c3e8b97db8cdb",
+      "msg": "[WRAPPER] Reworked libgdk-pîxbuf-2 wrapping",
+      "date": "2026-03-16T09:56:46Z"
     }
   ]
 }
