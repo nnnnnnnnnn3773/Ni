@@ -119,8 +119,8 @@ jobs:
                               "Accept": "application/octet-stream",
                           }
                       )
-                      with tempfile.NamedTemporaryFile(delete=False, suffix="_" + orig_name) as tmp:
-                          tmp_path = tmp.name
+                      tmpdir   = tempfile.mkdtemp()
+                      tmp_path = os.path.join(tmpdir, mirror_name)
                       try:
                           with urllib.request.urlopen(req) as resp, open(tmp_path, "wb") as f:
                               while True:
@@ -130,7 +130,7 @@ jobs:
                                   f.write(chunk)
                           result = subprocess.run(
                               ["gh", "release", "upload", mirror_tag,
-                               f"{tmp_path}#{mirror_name}",
+                               tmp_path,
                                "--clobber"],
                               capture_output=True, text=True,
                           )
@@ -145,6 +145,7 @@ jobs:
                       finally:
                           if os.path.exists(tmp_path):
                               os.unlink(tmp_path)
+                          os.rmdir(tmpdir)
                   else:
                       mirror_url = f"{base_url}/{mirror_name}"
                       skip_count += 1
@@ -185,13 +186,39 @@ jobs:
           print(f"Total assets  in JSON: {drivers_json['total_assets']}")
           PY
 
-      - name: Commit drivers.json
+      - name: Write root kimchi_drivers.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MIRROR_TAG="kimchi-drivers"
+          NIGHTLIES_REPO="${GITHUB_REPOSITORY}"
+          gh release view "$MIRROR_TAG" --json assets \
+            -q '[.assets[] | {name: .name, url: ("https://github.com/'"${GITHUB_REPOSITORY}"'/releases/download/'"kimchi-drivers"'/" + .name), size: .size}] | sort_by(.name)' \
+            > /tmp/kimchi_asset_list.json
+          python3 <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          with open("/tmp/kimchi_asset_list.json") as f:
+              assets = json.load(f)
+          out = {
+              "updated_at":     datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "source":         "https://github.com/K11MCH1/AdrenoToolsDrivers",
+              "mirror_release": f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/releases/tag/kimchi-drivers",
+              "total_assets":   len(assets),
+              "assets":         assets,
+          }
+          with open("kimchi_drivers.json", "w") as f:
+              json.dump(out, f, indent=2)
+          print(f"Written kimchi_drivers.json — {len(assets)} assets")
+          PY
+
+      - name: Commit JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kimchi/drivers.json
-          git diff --staged --quiet && echo "No changes to drivers.json" && exit 0
+          git add kimchi/drivers.json kimchi_drivers.json
+          git diff --staged --quiet && echo "No changes" && exit 0
           COUNT=$(jq '.total_assets' kimchi/drivers.json)
-          git commit -m "chore: update kimchi/drivers.json — ${COUNT} assets ($(date -u +%Y-%m-%d))"
+          git commit -m "chore: update kimchi/drivers.json + kimchi_drivers.json — ${COUNT} assets ($(date -u +%Y-%m-%d))"
           git pull --rebase -X ours
           git push
