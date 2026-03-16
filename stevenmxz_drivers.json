@@ -1,313 +1,368 @@
-{
-  "updated_at": "2026-03-16T10:11:45Z",
-  "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
-  "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
-  "total_assets": 61,
-  "assets": [
-    {
-      "name": "26.0.0_Turnip_V26.0.0_Deck.zip",
-      "size": 2978570,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26.0.0_Turnip_V26.0.0_Deck.zip"
-    },
-    {
-      "name": "26.1.0v3_Turnip_v26.1.0_R3.zip",
-      "size": 3463398,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26.1.0v3_Turnip_v26.1.0_R3.zip"
-    },
-    {
-      "name": "26_0_0_cc1d942727c_Turnip-R1-26.0.0.zip",
-      "size": 3522828,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26_0_0_cc1d942727c_Turnip-R1-26.0.0.zip"
-    },
-    {
-      "name": "26_0_0_e38491eb185_ubwc_hint_turnip_20251022_26_0_0_ubwc_hint.zip",
-      "size": 3385945,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26_0_0_e38491eb185_ubwc_hint_turnip_20251022_26_0_0_ubwc_hint.zip"
-    },
-    {
-      "name": "Mesa-20251022-ff51e6d_turnip_20251022_ade4ee9aae2_danil.zip",
-      "size": 3405576,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ade4ee9aae2_danil.zip"
-    },
-    {
-      "name": "Mesa-20251022-ff51e6d_turnip_20251022_ff51e6d.zip",
-      "size": 3386381,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ff51e6d.zip"
-    },
-    {
-      "name": "Mesa-20251022-ff51e6d_turnip_20251022_ff51e6dc9ed_oneui.zip",
-      "size": 3385731,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ff51e6dc9ed_oneui.zip"
-    },
-    {
-      "name": "Mesa-20251025-74afb20_turnip_20251025_74afb20.zip",
-      "size": 3391710,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251025-74afb20_turnip_20251025_74afb20.zip"
-    },
-    {
-      "name": "Mesa-20251025-74afb20_turnip_20251025_74afb200d36_oneui.zip",
-      "size": 3390780,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251025-74afb20_turnip_20251025_74afb200d36_oneui.zip"
-    },
-    {
-      "name": "Mesa-20251028-32b646c_turnip_20251028_32b646c.zip",
-      "size": 3392427,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251028-32b646c_turnip_20251028_32b646c.zip"
-    },
-    {
-      "name": "Mesa-20251028-32b646c_turnip_20251028_ea24dce5e37_oneui.zip",
-      "size": 3404925,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251028-32b646c_turnip_20251028_ea24dce5e37_oneui.zip"
-    },
-    {
-      "name": "Mesa-20251101-2e8b89e_turnip_20251101_2e8b89e.zip",
-      "size": 3404781,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251101-2e8b89e_turnip_20251101_2e8b89e.zip"
-    },
-    {
-      "name": "Mesa-20251101-2e8b89e_turnip_20251101_2e8b89ec60f_oneui.zip",
-      "size": 3404914,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251101-2e8b89e_turnip_20251101_2e8b89ec60f_oneui.zip"
-    },
-    {
-      "name": "Mesa-Main-20251210-8b1340a_Turnip-Main-8b1340a.zip",
-      "size": 3441149,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-20251210-8b1340a_Turnip-Main-8b1340a.zip"
-    },
-    {
-      "name": "Mesa-Main-20260108-5ac41be_Turnip-Main-5ac41be.zip",
-      "size": 3451078,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-20260108-5ac41be_Turnip-Main-5ac41be.zip"
-    },
-    {
-      "name": "Mesa-Main-A6xxFix-20251210-3b4d2c4_turnip_main_20251210_3b4d2c4_a6xx_fix.zip",
-      "size": 3441569,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251210-3b4d2c4_turnip_main_20251210_3b4d2c4_a6xx_fix.zip"
-    },
-    {
-      "name": "Mesa-Main-A6xxFix-20251222-166923b_Turnip_v26.0.0_R2130.zip",
-      "size": 3605573,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251222-166923b_Turnip_v26.0.0_R2130.zip"
-    },
-    {
-      "name": "Mesa-Main-A6xxFix-20251225-b3c983b_Turnip_V26.0.0_2512.zip",
-      "size": 3605229,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251225-b3c983b_Turnip_V26.0.0_2512.zip"
-    },
-    {
-      "name": "Mesa-Main-VK14-A6xx-MR35894-20251116-a18fbd7_turnip_20251116_a18fbd7_vk14_a6xx_mr35894.zip",
-      "size": 3372897,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-VK14-A6xx-MR35894-20251116-a18fbd7_turnip_20251116_a18fbd7_vk14_a6xx_mr35894.zip"
-    },
-    {
-      "name": "PixelyIon-20251029-cf8e1b81a63_turnip_20251029_cf8e1b81a63.zip",
-      "size": 3409737,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/PixelyIon-20251029-cf8e1b81a63_turnip_20251029_cf8e1b81a63.zip"
-    },
-    {
-      "name": "Turnip-A830-v7-20260111-d858792_Turnip_Gen8_V7.zip",
-      "size": 3708321,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-A830-v7-20260111-d858792_Turnip_Gen8_V7.zip"
-    },
-    {
-      "name": "Turnip-Autotuner-20251228-05681ba_Turnip_Autotuner_05681ba.zip",
-      "size": 3489729,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Autotuner-20251228-05681ba_Turnip_Autotuner_05681ba.zip"
-    },
-    {
-      "name": "Turnip-DXVK-20260111-c15bde8_Turnip_Gen8_V6.zip",
-      "size": 3715531,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-DXVK-20260111-c15bde8_Turnip_Gen8_V6.zip"
-    },
-    {
-      "name": "Turnip-Gen8-20260110-81f4eb0_Turnip-Gen8-Hacks-81f4eb0.zip",
-      "size": 3506813,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Gen8-20260110-81f4eb0_Turnip-Gen8-Hacks-81f4eb0.zip"
-    },
-    {
-      "name": "Turnip-MR38808-20251213-f13bf85_Turnip_Deck.zip",
-      "size": 2978571,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-MR38808-20251213-f13bf85_Turnip_Deck.zip"
-    },
-    {
-      "name": "Turnip-PixelyIon-20251214-430a593_Turnip-PixelyIon-tu-newat-430a593.zip",
-      "size": 2859648,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-PixelyIon-20251214-430a593_Turnip-PixelyIon-tu-newat-430a593.zip"
-    },
-    {
-      "name": "Turnip-Release-281125_Turnip-281125.zip",
-      "size": 2828366,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-281125.zip"
-    },
-    {
-      "name": "Turnip-Release-281125_Turnip-OneUI-1125.zip",
-      "size": 2828769,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-OneUI-1125.zip"
-    },
-    {
-      "name": "Turnip-Release-281125_Turnip-a6xx-1125.zip",
-      "size": 2828480,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-a6xx-1125.zip"
-    },
-    {
-      "name": "Turnip-SDK33-A6xx-20251215-01cf905_Turnip-26_A12SDK33.zip",
-      "size": 2847873,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-SDK33-A6xx-20251215-01cf905_Turnip-26_A12SDK33.zip"
-    },
-    {
-      "name": "Turnip-SDK35-A6xx-20251215-01cf905_Turnip_Main_2615.zip",
-      "size": 2977845,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-SDK35-A6xx-20251215-01cf905_Turnip_Main_2615.zip"
-    },
-    {
-      "name": "Turnip_performance_Turnip_v26.0.0_dec-31-2025.zip",
-      "size": 3606920,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip_performance_Turnip_v26.0.0_dec-31-2025.zip"
-    },
-    {
-      "name": "m1_Turnip_v26.0.0_M1.zip",
-      "size": 3388463,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/m1_Turnip_v26.0.0_M1.zip"
-    },
-    {
-      "name": "v10_Turnip_Gen8_V10+MR.zip",
-      "size": 3707358,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v10_Turnip_Gen8_V10+MR.zip"
-    },
-    {
-      "name": "v10_Turnip_Gen8_V10.zip",
-      "size": 3706698,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v10_Turnip_Gen8_V10.zip"
-    },
-    {
-      "name": "v11_Turnip_Gen8_V11.zip",
-      "size": 3705848,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v11_Turnip_Gen8_V11.zip"
-    },
-    {
-      "name": "v12_Turnip_Gen8_V12.zip",
-      "size": 3706555,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v12_Turnip_Gen8_V12.zip"
-    },
-    {
-      "name": "v13_Turnip_Gen8_V13.zip",
-      "size": 3706058,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v13_Turnip_Gen8_V13.zip"
-    },
-    {
-      "name": "v14_Turnip_Gen8_V14.zip",
-      "size": 3707704,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v14_Turnip_Gen8_V14.zip"
-    },
-    {
-      "name": "v15_Turnip_Gen8_V15.zip",
-      "size": 3705530,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v15_Turnip_Gen8_V15.zip"
-    },
-    {
-      "name": "v16_Turnip_Gen8_V16.zip",
-      "size": 3705855,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v16_Turnip_Gen8_V16.zip"
-    },
-    {
-      "name": "v17_Turnip_Gen8_V17.zip",
-      "size": 3830466,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v17_Turnip_Gen8_V17.zip"
-    },
-    {
-      "name": "v18_Turnip_Gen8_V18.zip",
-      "size": 3830768,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v18_Turnip_Gen8_V18.zip"
-    },
-    {
-      "name": "v19_Turnip_Gen8_V19.zip",
-      "size": 3710902,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v19_Turnip_Gen8_V19.zip"
-    },
-    {
-      "name": "v20_Turnip_Gen8_V20.zip",
-      "size": 3715673,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v20_Turnip_Gen8_V20.zip"
-    },
-    {
-      "name": "v21_Turnip_Gen8_V21.zip",
-      "size": 3715282,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v21_Turnip_Gen8_V21.zip"
-    },
-    {
-      "name": "v22_Turnip_Gen8_V22.zip",
-      "size": 3715103,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v22_Turnip_Gen8_V22.zip"
-    },
-    {
-      "name": "v23_Turnip_Gen8_V23.zip",
-      "size": 3433099,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v23_Turnip_Gen8_V23.zip"
-    },
-    {
-      "name": "v26.1.0-R4_Turnip_v26.1.0_R4.zip",
-      "size": 3387393,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0-R4_Turnip_v26.1.0_R4.zip"
-    },
-    {
-      "name": "v26.1.0_Turnip_Gen8_V24.zip",
-      "size": 3460172,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_Gen8_V24.zip"
-    },
-    {
-      "name": "v26.1.0_Turnip_v26.0.0_Autotuner.zip",
-      "size": 3462450,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_v26.0.0_Autotuner.zip"
-    },
-    {
-      "name": "v26.1.0_Turnip_v26.1.0_R2.zip",
-      "size": 3465787,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_v26.1.0_R2.zip"
-    },
-    {
-      "name": "v26.1.2_Turnip_Gen8_V26.zip",
-      "size": 2564553,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.2_Turnip_Gen8_V26.zip"
-    },
-    {
-      "name": "v26.1_Turnip_v26.0.0_Autotuner.zip",
-      "size": 3461872,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.0.0_Autotuner.zip"
-    },
-    {
-      "name": "v26.1_Turnip_v26.1.0.zip",
-      "size": 3437325,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.1.0.zip"
-    },
-    {
-      "name": "v26.1_Turnip_v26.1.0_a6xx_fix.zip",
-      "size": 3438184,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.1.0_a6xx_fix.zip"
-    },
-    {
-      "name": "v27_Turnip_Gen8_V25.zip",
-      "size": 3467755,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v27_Turnip_Gen8_V25.zip"
-    },
-    {
-      "name": "v849_v849.zip",
-      "size": 18753304,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v849_v849.zip"
-    },
-    {
-      "name": "v849_v849_a6xx.zip",
-      "size": 18738855,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v849_v849_a6xx.zip"
-    },
-    {
-      "name": "v863.1_v863.1.zip",
-      "size": 17836215,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_v863.1.zip"
-    },
-    {
-      "name": "v9_Turnip_Gen8_V9.zip",
-      "size": 3708277,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v9_Turnip_Gen8_V9.zip"
-    }
-  ]
-}
+[
+  {
+    "type": "GpuDriver",
+    "verName": "v863.1 \u2014 v863.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_v863.1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v849 \u2014 v849.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v849_v849.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v849 \u2014 v849_a6xx.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v849_v849_a6xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1.2 \u2014 Turnip_Gen8_V26.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.2_Turnip_Gen8_V26.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1.0-R4 \u2014 Turnip_v26.1.0_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0-R4_Turnip_v26.1.0_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "26.1.0v3 \u2014 Turnip_v26.1.0_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26.1.0v3_Turnip_v26.1.0_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v27 \u2014 Turnip_Gen8_V25.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v27_Turnip_Gen8_V25.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1.0 \u2014 Turnip_Gen8_V24.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_Gen8_V24.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1.0 \u2014 Turnip_v26.0.0_Autotuner.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_v26.0.0_Autotuner.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1.0 \u2014 Turnip_v26.1.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_Turnip_v26.1.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1 \u2014 Turnip_v26.0.0_Autotuner.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.0.0_Autotuner.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1 \u2014 Turnip_v26.1.0.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.1.0.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.1 \u2014 Turnip_v26.1.0_a6xx_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1_Turnip_v26.1.0_a6xx_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23 \u2014 Turnip_Gen8_V23.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v23_Turnip_Gen8_V23.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "m1 \u2014 Turnip_v26.0.0_M1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/m1_Turnip_v26.0.0_M1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v22 \u2014 Turnip_Gen8_V22.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v22_Turnip_Gen8_V22.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v21 \u2014 Turnip_Gen8_V21.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v21_Turnip_Gen8_V21.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v20 \u2014 Turnip_Gen8_V20.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v20_Turnip_Gen8_V20.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v19 \u2014 Turnip_Gen8_V19.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v19_Turnip_Gen8_V19.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v18 \u2014 Turnip_Gen8_V18.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v18_Turnip_Gen8_V18.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v17 \u2014 Turnip_Gen8_V17.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v17_Turnip_Gen8_V17.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v16 \u2014 Turnip_Gen8_V16.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v16_Turnip_Gen8_V16.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v15 \u2014 Turnip_Gen8_V15.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v15_Turnip_Gen8_V15.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v14 \u2014 Turnip_Gen8_V14.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v14_Turnip_Gen8_V14.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v13 \u2014 Turnip_Gen8_V13.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v13_Turnip_Gen8_V13.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v12 \u2014 Turnip_Gen8_V12.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v12_Turnip_Gen8_V12.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v11 \u2014 Turnip_Gen8_V11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v11_Turnip_Gen8_V11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v10 \u2014 Turnip_Gen8_V10+MR.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v10_Turnip_Gen8_V10+MR.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v10 \u2014 Turnip_Gen8_V10.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v10_Turnip_Gen8_V10.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v9 \u2014 Turnip_Gen8_V9.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v9_Turnip_Gen8_V9.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-Gen8-20260110-81f4eb0 \u2014 Turnip-Gen8-Hacks-81f4eb0.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Gen8-20260110-81f4eb0_Turnip-Gen8-Hacks-81f4eb0.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-DXVK-20260111-c15bde8 \u2014 Turnip_Gen8_V6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-DXVK-20260111-c15bde8_Turnip_Gen8_V6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-A830-v7-20260111-d858792 \u2014 Turnip_Gen8_V7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-A830-v7-20260111-d858792_Turnip_Gen8_V7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-20260108-5ac41be \u2014 Turnip-Main-5ac41be.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-20260108-5ac41be_Turnip-Main-5ac41be.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_performance \u2014 Turnip_v26.0.0_dec-31-2025.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip_performance_Turnip_v26.0.0_dec-31-2025.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-Autotuner-20251228-05681ba \u2014 Turnip_Autotuner_05681ba.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Autotuner-20251228-05681ba_Turnip_Autotuner_05681ba.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "26.0.0 \u2014 Turnip_V26.0.0_Deck.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26.0.0_Turnip_V26.0.0_Deck.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-A6xxFix-20251225-b3c983b \u2014 Turnip_V26.0.0_2512.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251225-b3c983b_Turnip_V26.0.0_2512.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-A6xxFix-20251222-166923b \u2014 Turnip_v26.0.0_R2130.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251222-166923b_Turnip_v26.0.0_R2130.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-SDK35-A6xx-20251215-01cf905 \u2014 Turnip_Main_2615.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-SDK35-A6xx-20251215-01cf905_Turnip_Main_2615.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-SDK33-A6xx-20251215-01cf905 \u2014 Turnip-26_A12SDK33.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-SDK33-A6xx-20251215-01cf905_Turnip-26_A12SDK33.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-PixelyIon-20251214-430a593 \u2014 Turnip-PixelyIon-tu-newat-430a593.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-PixelyIon-20251214-430a593_Turnip-PixelyIon-tu-newat-430a593.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-MR38808-20251213-f13bf85 \u2014 Turnip_Deck.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-MR38808-20251213-f13bf85_Turnip_Deck.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-A6xxFix-20251210-3b4d2c4 \u2014 turnip_main_20251210_3b4d2c4_a6xx_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-A6xxFix-20251210-3b4d2c4_turnip_main_20251210_3b4d2c4_a6xx_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-20251210-8b1340a \u2014 Turnip-Main-8b1340a.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-20251210-8b1340a_Turnip-Main-8b1340a.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-Release-281125 \u2014 Turnip-281125.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-281125.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-Release-281125 \u2014 Turnip-a6xx-1125.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-a6xx-1125.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-Release-281125 \u2014 Turnip-OneUI-1125.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Turnip-Release-281125_Turnip-OneUI-1125.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-Main-VK14-A6xx-MR35894-20251116-a18fbd7 \u2014 turnip_20251116_a18fbd7_vk14_a6xx_mr35894.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-Main-VK14-A6xx-MR35894-20251116-a18fbd7_turnip_20251116_a18fbd7_vk14_a6xx_mr35894.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "PixelyIon-20251029-cf8e1b81a63 \u2014 turnip_20251029_cf8e1b81a63.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/PixelyIon-20251029-cf8e1b81a63_turnip_20251029_cf8e1b81a63.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251101-2e8b89e \u2014 turnip_20251101_2e8b89e.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251101-2e8b89e_turnip_20251101_2e8b89e.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251101-2e8b89e \u2014 turnip_20251101_2e8b89ec60f_oneui.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251101-2e8b89e_turnip_20251101_2e8b89ec60f_oneui.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251028-32b646c \u2014 turnip_20251028_32b646c.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251028-32b646c_turnip_20251028_32b646c.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251028-32b646c \u2014 turnip_20251028_ea24dce5e37_oneui.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251028-32b646c_turnip_20251028_ea24dce5e37_oneui.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251025-74afb20 \u2014 turnip_20251025_74afb20.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251025-74afb20_turnip_20251025_74afb20.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251025-74afb20 \u2014 turnip_20251025_74afb200d36_oneui.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251025-74afb20_turnip_20251025_74afb200d36_oneui.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251022-ff51e6d \u2014 turnip_20251022_ade4ee9aae2_danil.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ade4ee9aae2_danil.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251022-ff51e6d \u2014 turnip_20251022_ff51e6d.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ff51e6d.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Mesa-20251022-ff51e6d \u2014 turnip_20251022_ff51e6dc9ed_oneui.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/Mesa-20251022-ff51e6d_turnip_20251022_ff51e6dc9ed_oneui.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "26_0_0_e38491eb185_ubwc_hint \u2014 turnip_20251022_26_0_0_ubwc_hint.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26_0_0_e38491eb185_ubwc_hint_turnip_20251022_26_0_0_ubwc_hint.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "26_0_0_cc1d942727c \u2014 Turnip-R1-26.0.0.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26_0_0_cc1d942727c_Turnip-R1-26.0.0.zip"
+  }
+]

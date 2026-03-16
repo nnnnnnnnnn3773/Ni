@@ -1,1008 +1,1202 @@
-{
-  "updated_at": "2026-03-16T10:14:57Z",
-  "source": "https://github.com/K11MCH1/AdrenoToolsDrivers",
-  "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/kimchi-drivers",
-  "total_assets": 200,
-  "assets": [
-    {
-      "name": "09072024-2_adreno-777-adpkg.zip",
-      "size": 11834731,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024-2_adreno-777-adpkg.zip"
-    },
-    {
-      "name": "09072024_adreno-762.10-adpkg.zip",
-      "size": 15001344,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024_adreno-762.10-adpkg.zip"
-    },
-    {
-      "name": "09302024_vulkan-786-adpkg.zip",
-      "size": 11862164,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09302024_vulkan-786-adpkg.zip"
-    },
-    {
-      "name": "0972024_adreno-676.41-adpkg.zip",
-      "size": 12351559,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/0972024_adreno-676.41-adpkg.zip"
-    },
-    {
-      "name": "22.3.1-r1_Turnip-v22.3.1-R2.zip",
-      "size": 1877889,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.1-r1_Turnip-v22.3.1-R2.zip"
-    },
-    {
-      "name": "22.3.2-R1_Turnip-v22.3.2-R1.zip",
-      "size": 1877982,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.2-R1_Turnip-v22.3.2-R1.zip"
-    },
-    {
-      "name": "22.3.3-r1_Turnip-v22.3.3-r1.zip",
-      "size": 1881091,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r1_Turnip-v22.3.3-r1.zip"
-    },
-    {
-      "name": "22.3.3-r2_Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
-      "size": 1818243,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r2_Turnip-v22.3.3-r2-ft.lybxlpsv.zip"
-    },
-    {
-      "name": "22.3.5-r1_Turnip-v22.3.5-R1.zip",
-      "size": 1821575,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r1_Turnip-v22.3.5-R1.zip"
-    },
-    {
-      "name": "22.3.5-r2_Turnip-v22.3.5-R2.zip",
-      "size": 1828232,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r2_Turnip-v22.3.5-R2.zip"
-    },
-    {
-      "name": "22.3.6-r1_Turnip-v22.3.6-R1.zip",
-      "size": 1818432,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.6-r1_Turnip-v22.3.6-R1.zip"
-    },
-    {
-      "name": "24.0.0-R-X_turnip-24.0.0-devel.adpkg_R-X.zip",
-      "size": 1848524,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R-X_turnip-24.0.0-devel.adpkg_R-X.zip"
-    },
-    {
-      "name": "24.0.0-R11_turnip-24.0.0-devel.adpkg_R11.zip",
-      "size": 1859165,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R11_turnip-24.0.0-devel.adpkg_R11.zip"
-    },
-    {
-      "name": "24.0.0-R12_agressive_beta_extensions_turnip.zip",
-      "size": 1860740,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_beta_extensions_turnip.zip"
-    },
-    {
-      "name": "24.0.0-R12_agressive_turnip.zip",
-      "size": 1861222,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_turnip.zip"
-    },
-    {
-      "name": "24.0.0-R12_regular_turnip.zip",
-      "size": 1861925,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_regular_turnip.zip"
-    },
-    {
-      "name": "25.1.0-rc.03_turnip_v25.1.0_R3.zip",
-      "size": 3166482,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/25.1.0-rc.03_turnip_v25.1.0_R3.zip"
-    },
-    {
-      "name": "A7xx_R3_turnip-23.2.0-A7XX.adpkg_R3.zip",
-      "size": 2046064,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R3_turnip-23.2.0-A7XX.adpkg_R3.zip"
-    },
-    {
-      "name": "A7xx_R4_turnip-23.2.0-A7XX.adpkg_R4.zip",
-      "size": 2045891,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R4_turnip-23.2.0-A7XX.adpkg_R4.zip"
-    },
-    {
-      "name": "Turnip_22-r2_Turnip-v22.3.1-R2.zip",
-      "size": 1877889,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_22-r2_Turnip-v22.3.1-R2.zip"
-    },
-    {
-      "name": "Turnip_26_turnip-v26-adpkg.zip",
-      "size": 1780905,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_26_turnip-v26-adpkg.zip"
-    },
-    {
-      "name": "Turnip_mark1_turnip-skyline-fixes.adpkg.zip",
-      "size": 1601608,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark1_turnip-skyline-fixes.adpkg.zip"
-    },
-    {
-      "name": "Turnip_mark2_Turnip_ft._Mark_Skyline_Fixes_v2.zip",
-      "size": 1671022,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark2_Turnip_ft._Mark_Skyline_Fixes_v2.zip"
-    },
-    {
-      "name": "Turnip_mark3_turnip-kgsl-rework.adpkg.zip",
-      "size": 1708566,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark3_turnip-kgsl-rework.adpkg.zip"
-    },
-    {
-      "name": "Turnip_v12_turnip-v12-adpkg.zip",
-      "size": 1869519,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v12_turnip-v12-adpkg.zip"
-    },
-    {
-      "name": "Turnip_v24_turnip-v24-adpkg.zip",
-      "size": 1864358,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v24_turnip-v24-adpkg.zip"
-    },
-    {
-      "name": "Turnip_v25_turnip-v25-adpkg.zip",
-      "size": 1875111,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v25_turnip-v25-adpkg.zip"
-    },
-    {
-      "name": "fetcher_v1.2_adrenotools_driver_downloader.apk",
-      "size": 22213975,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/fetcher_v1.2_adrenotools_driver_downloader.apk"
-    },
-    {
-      "name": "turnip_A32_Turnip-23.3.0-vulkan-1.3.255.zip",
-      "size": 2076106,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_Turnip-23.3.0-vulkan-1.3.255.zip"
-    },
-    {
-      "name": "turnip_A32_turnip_24.2.0_a32.zip",
-      "size": 2113123,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_turnip_24.2.0_a32.zip"
-    },
-    {
-      "name": "unsupported_gpus_v1_MTd.experimental.Unsupported.a7xx.zip",
-      "size": 2191667,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/unsupported_gpus_v1_MTd.experimental.Unsupported.a7xx.zip"
-    },
-    {
-      "name": "v22.3.4-r1_Turnip-v22.3.4-r1.zip",
-      "size": 1877005,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r1_Turnip-v22.3.4-r1.zip"
-    },
-    {
-      "name": "v22.3.4-r2_Turnip-v22.3.4-r2.zip",
-      "size": 1878063,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r2_Turnip-v22.3.4-r2.zip"
-    },
-    {
-      "name": "v23.0.3_Turnip-23.0.3.adpkg.zip",
-      "size": 1869286,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.0.3_Turnip-23.0.3.adpkg.zip"
-    },
-    {
-      "name": "v23.1.0-dev_Turnip-23.1.0-dev.adpkg.zip",
-      "size": 1868800,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.1.0-dev_Turnip-23.1.0-dev.adpkg.zip"
-    },
-    {
-      "name": "v23.2.0-dev_turnip-23.2.0-devel.zip",
-      "size": 1878573,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0-dev_turnip-23.2.0-devel.zip"
-    },
-    {
-      "name": "v23.2.0_A7XX_2_turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
-      "size": 2053946,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_2_turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip"
-    },
-    {
-      "name": "v23.2.0_A7XX_turnip-23.2.0-A7XX.adpkg.zip",
-      "size": 2117910,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_turnip-23.2.0-A7XX.adpkg.zip"
-    },
-    {
-      "name": "v23.3.0-dev-A6XX_turnip-23.3.0-A6XX.adpkg.zip",
-      "size": 2030956,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev-A6XX_turnip-23.3.0-A6XX.adpkg.zip"
-    },
-    {
-      "name": "v23.3.0-dev_Turnip-23.3.0-vulkan-1.3.255.zip",
-      "size": 2076106,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev_Turnip-23.3.0-vulkan-1.3.255.zip"
-    },
-    {
-      "name": "v23.3.0_R5_turnip-23.3.0-A7XX.adpkg_R5.zip",
-      "size": 2095762,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R5_turnip-23.3.0-A7XX.adpkg_R5.zip"
-    },
-    {
-      "name": "v23.3.0_R6_turnip-23.3.0-A7XX.adpkg_R6.zip",
-      "size": 2102353,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R6_turnip-23.3.0-A7XX.adpkg_R6.zip"
-    },
-    {
-      "name": "v23.3.0_R7_turnip-23.3.0-A7XX.adpkg_R7.zip",
-      "size": 1815793,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R7_turnip-23.3.0-A7XX.adpkg_R7.zip"
-    },
-    {
-      "name": "v23.3.0_R8_turnip-23.3.0-A7XX.adpkg_R8.zip",
-      "size": 1813498,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R8_turnip-23.3.0-A7XX.adpkg_R8.zip"
-    },
-    {
-      "name": "v23.3.0_R9_turnip-23.3.0-adpkg_R9.zip",
-      "size": 1847389,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R9_turnip-23.3.0-adpkg_R9.zip"
-    },
-    {
-      "name": "v24.0.0_R13_turnip-24.0.0-devel.adpkg_R13.zip",
-      "size": 1869092,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R13_turnip-24.0.0-devel.adpkg_R13.zip"
-    },
-    {
-      "name": "v24.0.0_R14_Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
-      "size": 1865334,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R14_Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip"
-    },
-    {
-      "name": "v24.0.0_R15_Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
-      "size": 1887457,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R15_Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip"
-    },
-    {
-      "name": "v24.1.0_R16_Turnip-24.1.0.adpkg_R16.zip",
-      "size": 1892291,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R16_Turnip-24.1.0.adpkg_R16.zip"
-    },
-    {
-      "name": "v24.1.0_R17_Turnip-24.1.0.adpkg_R17.zip",
-      "size": 1897352,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_Turnip-24.1.0.adpkg_R17.zip"
-    },
-    {
-      "name": "v24.1.0_R17_turnip-24.1.0.adpkg_R17-v2.zip",
-      "size": 1908149,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_R17-v2.zip"
-    },
-    {
-      "name": "v24.1.0_R17_turnip-24.1.0.adpkg_a750.zip",
-      "size": 1908226,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_a750.zip"
-    },
-    {
-      "name": "v24.1.0_R18_Turnip-24.1.0.adpkg_R18.a6xx.zip",
-      "size": 1974488,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.a6xx.zip"
-    },
-    {
-      "name": "v24.1.0_R18_Turnip-24.1.0.adpkg_R18.zip",
-      "size": 1976403,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.zip"
-    },
-    {
-      "name": "v24.2.0_a32_patch_Turnip-24.2.0_Adreno_32_patch.zip",
-      "size": 2134193,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a32_patch_Turnip-24.2.0_Adreno_32_patch.zip"
-    },
-    {
-      "name": "v24.2.0_a735_turnip_v24.2.0_partial_a735_support_TEST.zip",
-      "size": 2218351,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a735_turnip_v24.2.0_partial_a735_support_TEST.zip"
-    },
-    {
-      "name": "v24.2.0_r19_preview_Turnip-24.2.0_weab-chan_R19_experimental.zip",
-      "size": 1999792,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_preview_Turnip-24.2.0_weab-chan_R19_experimental.zip"
-    },
-    {
-      "name": "v24.2.0_r19_turnip_24.2.0_adpkg_R19.zip",
-      "size": 2182719,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_turnip_24.2.0_adpkg_R19.zip"
-    },
-    {
-      "name": "v24.2.0_r20_turnip_v24.2.0_R20.zip",
-      "size": 2105118,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r20_turnip_v24.2.0_R20.zip"
-    },
-    {
-      "name": "v24.2.0_r21_turnip_v24.2.0_R21.zip",
-      "size": 2209303,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r21_turnip_v24.2.0_R21.zip"
-    },
-    {
-      "name": "v24.2.0_r22_turnip_v24.2.0_R22.zip",
-      "size": 2218296,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r22_turnip_v24.2.0_R22.zip"
-    },
-    {
-      "name": "v24.3.0_r10_turnip_v24.3.0-R10.zip",
-      "size": 2241038,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r10_turnip_v24.3.0-R10.zip"
-    },
-    {
-      "name": "v24.3.0_r11_turnip_v24.3.0-R11.zip",
-      "size": 2242402,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r11_turnip_v24.3.0-R11.zip"
-    },
-    {
-      "name": "v24.3.0_r12_turnip_v24.3.0-R12.zip",
-      "size": 2263996,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r12_turnip_v24.3.0-R12.zip"
-    },
-    {
-      "name": "v24.3.0_r1_turnip_v24.3.0_R1.zip",
-      "size": 2213518,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r1_turnip_v24.3.0_R1.zip"
-    },
-    {
-      "name": "v24.3.0_r2_turnip_v24.3.0_R2.zip",
-      "size": 2213716,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r2_turnip_v24.3.0_R2.zip"
-    },
-    {
-      "name": "v24.3.0_r3_turnip_v24.3.0_R3.zip",
-      "size": 2221208,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r3_turnip_v24.3.0_R3.zip"
-    },
-    {
-      "name": "v24.3.0_r4_turnip_v24.3.0_R4.zip",
-      "size": 2242369,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r4_turnip_v24.3.0_R4.zip"
-    },
-    {
-      "name": "v24.3.0_r5_turnip_v24.3.0_R5.zip",
-      "size": 2246830,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r5_turnip_v24.3.0_R5.zip"
-    },
-    {
-      "name": "v24.3.0_r6_turnip_v24.3.0_R6.zip",
-      "size": 2219808,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r6_turnip_v24.3.0_R6.zip"
-    },
-    {
-      "name": "v24.3.0_r7_turnip_v24.3.0_R7.zip",
-      "size": 2221276,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r7_turnip_v24.3.0_R7.zip"
-    },
-    {
-      "name": "v24.3.0_r8_turnip_v24.3.0_R8.zip",
-      "size": 2230237,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r8_turnip_v24.3.0_R8.zip"
-    },
-    {
-      "name": "v24.3.0_r9_turnip_v24.3.0_R9v2.zip",
-      "size": 2236892,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r9_turnip_v24.3.0_R9v2.zip"
-    },
-    {
-      "name": "v25.0.0_r1_turnip_v25.0.0_R1.zip",
-      "size": 2270271,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r1_turnip_v25.0.0_R1.zip"
-    },
-    {
-      "name": "v25.0.0_r2_turnip_v25.0.0_R2.zip",
-      "size": 2279750,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r2_turnip_v25.0.0_R2.zip"
-    },
-    {
-      "name": "v25.0.0_r3_turnip_v25.0.0_R3.zip",
-      "size": 2293600,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r3_turnip_v25.0.0_R3.zip"
-    },
-    {
-      "name": "v25.0.0_r4_turnip_v25.0.0_R4.zip",
-      "size": 2296892,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r4_turnip_v25.0.0_R4.zip"
-    },
-    {
-      "name": "v25.0.0_r5_turnip_v25.0.0_R5.zip",
-      "size": 2299693,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r5_turnip_v25.0.0_R5.zip"
-    },
-    {
-      "name": "v25.0.0_r6_turnip_v25.0.0_R6.zip",
-      "size": 2316286,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r6_turnip_v25.0.0_R6.zip"
-    },
-    {
-      "name": "v25.0.0_r7_turnip_v25.0.0_R7.zip",
-      "size": 2320247,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r7_turnip_v25.0.0_R7.zip"
-    },
-    {
-      "name": "v25.0.0_r8_turnip_v25.0.0_R8.zip",
-      "size": 2526123,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r8_turnip_v25.0.0_R8.zip"
-    },
-    {
-      "name": "v25.1.0-rc.01_turnip_v25.1.0_R1.zip",
-      "size": 2526127,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.01_turnip_v25.1.0_R1.zip"
-    },
-    {
-      "name": "v25.1.0-rc.02_turnip_v25.1.0_R2.zip",
-      "size": 2526127,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.02_turnip_v25.1.0_R2.zip"
-    },
-    {
-      "name": "v25.1.0-rc.04_turnip_v25.1.0_R4.zip",
-      "size": 3166685,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.04_turnip_v25.1.0_R4.zip"
-    },
-    {
-      "name": "v25.1.0-rc.05_turnip_v25.1.0_R5_patched.zip",
-      "size": 3168977,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.05_turnip_v25.1.0_R5_patched.zip"
-    },
-    {
-      "name": "v25.1.0-rc.06_turnip_v25.1.0_R6.zip",
-      "size": 3177230,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.06_turnip_v25.1.0_R6.zip"
-    },
-    {
-      "name": "v25.2.0-rc.01_turnip_v25.2.0_R1.zip",
-      "size": 3185082,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.01_turnip_v25.2.0_R1.zip"
-    },
-    {
-      "name": "v25.2.0-rc.02_turnip_v25.2.0_R2.zip",
-      "size": 3193808,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2.zip"
-    },
-    {
-      "name": "v25.2.0-rc.02_turnip_v25.2.0_R2_.forced_gmem.zip",
-      "size": 3190950,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2_.forced_gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.03_turnip_v25.2.0_R3_auto.zip",
-      "size": 3195856,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.03_turnip_v25.2.0_R3_gmem.zip",
-      "size": 3193487,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.04_turnip_v25.2.0_R4_auto_fix.zip",
-      "size": 3198158,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_auto_fix.zip"
-    },
-    {
-      "name": "v25.2.0-rc.04_turnip_v25.2.0_R4_gmem_fix.zip",
-      "size": 3195951,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_gmem_fix.zip"
-    },
-    {
-      "name": "v25.2.0-rc.05_turnip_v25.2.0_R5_auto.zip",
-      "size": 3201634,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.05_turnip_v25.2.0_R5_gmem.zip",
-      "size": 3200286,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.06_Turnip_v25.2.0_R6_Auto.zip",
-      "size": 3204315,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.06_Turnip_v25.2.0_R6_Gmem.zip",
-      "size": 3202909,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.07_Turnip_v25.2.0_R7_Auto.zip",
-      "size": 3209075,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.07_Turnip_v25.2.0_R7_Gmem.zip",
-      "size": 3205930,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.08_Turnip_v25.2.0_R8_Auto.zip",
-      "size": 3210254,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.08_Turnip_v25.2.0_R8_Gmem.zip",
-      "size": 3206633,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.09_Turnip_v25.2.0_R9_Auto.zip",
-      "size": 3206629,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.09_Turnip_v25.2.0_R9_Gmem.zip",
-      "size": 3206631,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.10_Turnip_v25.2.0_R10_Auto.zip",
-      "size": 3224119,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.10_Turnip_v25.2.0_R10_Gmem.zip",
-      "size": 3221382,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.11_Turnip_v25.2.0_R11_Auto.zip",
-      "size": 3238117,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Auto.zip"
-    },
-    {
-      "name": "v25.2.0-rc.11_Turnip_v25.2.0_R11_Gmem.zip",
-      "size": 3235776,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.12_Turnip_v25.2.0_R12.zip",
-      "size": 3330131,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12.zip"
-    },
-    {
-      "name": "v25.2.0-rc.12_Turnip_v25.2.0_R12_Gmem.zip",
-      "size": 3328330,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.13_Turnip_v25.2.0_R13.zip",
-      "size": 3333824,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13.zip"
-    },
-    {
-      "name": "v25.2.0-rc.13_Turnip_v25.2.0_R13_Gmem.zip",
-      "size": 3330102,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13_Gmem.zip"
-    },
-    {
-      "name": "v25.2.0-rc.14_Turnip_v25.2.0_R14.zip",
-      "size": 2739414,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14.zip"
-    },
-    {
-      "name": "v25.2.0-rc.14_Turnip_v25.2.0_R14_Gmem.zip",
-      "size": 2739415,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14_Gmem.zip"
-    },
-    {
-      "name": "v25.3.0-rc.01_Turnip_v25.3.0_R1.zip",
-      "size": 2514307,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.01_Turnip_v25.3.0_R1.zip"
-    },
-    {
-      "name": "v25.3.0-rc.02_Turnip_v25.3.0_R2.zip",
-      "size": 2516182,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2.zip"
-    },
-    {
-      "name": "v25.3.0-rc.02_Turnip_v25.3.0_R2_Gmem.zip",
-      "size": 2513380,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2_Gmem.zip"
-    },
-    {
-      "name": "v25.3.0-rc.03_Turnip_v25.3.0_R3_Auto.zip",
-      "size": 2522315,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Auto.zip"
-    },
-    {
-      "name": "v25.3.0-rc.03_Turnip_v25.3.0_R3_Gmem.zip",
-      "size": 2520004,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Gmem.zip"
-    },
-    {
-      "name": "v25.3.0-rc.04_Turnip_v25.3.0_R4_Auto.zip",
-      "size": 2527720,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Auto.zip"
-    },
-    {
-      "name": "v25.3.0-rc.04_Turnip_v25.3.0_R4_Gmem.zip",
-      "size": 2525137,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Gmem.zip"
-    },
-    {
-      "name": "v25.3.0-rc.05_Turnip_v25.3.0_R5_Auto.zip",
-      "size": 2534862,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_Auto.zip"
-    },
-    {
-      "name": "v25.3.0-rc.05_Turnip_v25.3.0_R5_one_ui7_fix.zip",
-      "size": 2534870,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_one_ui7_fix.zip"
-    },
-    {
-      "name": "v25.3.0-rc.06_Turnip_v25.3.0_R6.zip",
-      "size": 2547010,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6.zip"
-    },
-    {
-      "name": "v25.3.0-rc.06_Turnip_v25.3.0_R6_Gmem.zip",
-      "size": 2544211,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6_Gmem.zip"
-    },
-    {
-      "name": "v25.3.0-rc.07_Turnip_v25.3.0_R7.zip",
-      "size": 2562097,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R7.zip"
-    },
-    {
-      "name": "v25.3.0-rc.07_Turnip_v25.3.0_R8.zip",
-      "size": 2616875,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R8.zip"
-    },
-    {
-      "name": "v25.3.0-rc.08_Turnip_v25.3.0_R8.zip",
-      "size": 2616875,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.08_Turnip_v25.3.0_R8.zip"
-    },
-    {
-      "name": "v25.3.0-rc.09_Turnip_v25.3.0_R9.zip",
-      "size": 2618827,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.09_Turnip_v25.3.0_R9.zip"
-    },
-    {
-      "name": "v25.3.0-rc.10_Turnip_v25.3.0_R10.zip",
-      "size": 3374189,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.10_Turnip_v25.3.0_R10.zip"
-    },
-    {
-      "name": "v25.3.0-rc.11_Turnip_v25.3.0_R11.zip",
-      "size": 3365701,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.11_Turnip_v25.3.0_R11.zip"
-    },
-    {
-      "name": "v26.0.0-rc.01_Turnip_v26.0.0_R1.zip",
-      "size": 3435114,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1.zip"
-    },
-    {
-      "name": "v26.0.0-rc.01_Turnip_v26.0.0_R1_Autotuner.zip",
-      "size": 3443975,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Autotuner.zip"
-    },
-    {
-      "name": "v26.0.0-rc.01_Turnip_v26.0.0_R1_Gmem.zip",
-      "size": 3444130,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc.02_Turnip_v26.0.0_R2.zip",
-      "size": 3378211,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2.zip"
-    },
-    {
-      "name": "v26.0.0-rc.02_Turnip_v26.0.0_R2_Gmem.zip",
-      "size": 3378277,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc.02_Turnip_v26.0.0_R2_Sysmem.zip",
-      "size": 3378282,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v25.3.0_PREFER_SYSMEM.zip",
-      "size": 3376718,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PREFER_SYSMEM.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v25.3.0_PROFILED.zip",
-      "size": 3376715,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PROFILED.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v26.0.0_R3.zip",
-      "size": 3385449,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
-      "size": 3389038,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
-      "size": 3389206,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
-      "size": 3389207,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc04_Turnip_v26.0.0_R4.zip",
-      "size": 3442521,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4.zip"
-    },
-    {
-      "name": "v26.0.0-rc04_Turnip_v26.0.0_R4_Gmem.zip",
-      "size": 3442556,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc04_Turnip_v26.0.0_R4_Sysmem.zip",
-      "size": 3442552,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc05_Turnip_v26.0.0_R5.zip",
-      "size": 3436013,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5.zip"
-    },
-    {
-      "name": "v26.0.0-rc05_Turnip_v26.0.0_R5_Gmem.zip",
-      "size": 3435962,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc05_Turnip_v26.0.0_R5_Sysmem.zip",
-      "size": 3435965,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc06_Turnip_v26.0.0_R6.zip",
-      "size": 3553145,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6.zip"
-    },
-    {
-      "name": "v26.0.0-rc06_Turnip_v26.0.0_R6_Gmem.zip",
-      "size": 3552367,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc06_Turnip_v26.0.0_R6_Sysmem.zip",
-      "size": 3552386,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc07_Turnip_v26.0.0_R7.zip",
-      "size": 3481059,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7.zip"
-    },
-    {
-      "name": "v26.0.0-rc07_Turnip_v26.0.0_R7_Gmem.zip",
-      "size": 3481189,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc07_Turnip_v26.0.0_R7_Sysmem.zip",
-      "size": 3481064,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc08_Turnip_v26.0.0_R8.zip",
-      "size": 3478359,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8.zip"
-    },
-    {
-      "name": "v26.0.0-rc08_Turnip_v26.0.0_R8_Gmem.zip",
-      "size": 3478156,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Gmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc08_Turnip_v26.0.0_R8_Sysmem.zip",
-      "size": 3478168,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Sysmem.zip"
-    },
-    {
-      "name": "v26.0.0-rc08_turnip_a8xx.zip",
-      "size": 2477437,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_turnip_a8xx.zip"
-    },
-    {
-      "name": "v615.37_v615.37-patched.adpkg.zip",
-      "size": 10256973,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.37_v615.37-patched.adpkg.zip"
-    },
-    {
-      "name": "v615.4_v615v4-patched.adpkg.zip",
-      "size": 10254600,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.4_v615v4-patched.adpkg.zip"
-    },
-    {
-      "name": "v615.50_v615.50-adpkg.zip",
-      "size": 10209562,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.50_v615.50-adpkg.zip"
-    },
-    {
-      "name": "v615.65_adreno615.65.adpkg.zip",
-      "size": 9955479,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.65_adreno615.65.adpkg.zip"
-    },
-    {
-      "name": "v615.77_adreno615.77.adpkg.zip",
-      "size": 9956008,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.77_adreno615.77.adpkg.zip"
-    },
-    {
-      "name": "v615_0615-patched.adpkg.zip",
-      "size": 10397599,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615_0615-patched.adpkg.zip"
-    },
-    {
-      "name": "v667_v667-patched-adpkg.zip",
-      "size": 13495062,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v667_v667-patched-adpkg.zip"
-    },
-    {
-      "name": "v672_adreno672.adpkg.zip",
-      "size": 11417049,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v672_adreno672.adpkg.zip"
-    },
-    {
-      "name": "v676.12_adreno676.12.adpkg.zip",
-      "size": 11795260,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.12_adreno676.12.adpkg.zip"
-    },
-    {
-      "name": "v676.13_adreno676.13.adpkg.zip",
-      "size": 11478956,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.13_adreno676.13.adpkg.zip"
-    },
-    {
-      "name": "v676.16_adreno676.16.adpkg.zip",
-      "size": 12332309,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.16_adreno676.16.adpkg.zip"
-    },
-    {
-      "name": "v676.22FIX_adreno676.22.adpkg.zip",
-      "size": 11522023,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.22FIX_adreno676.22.adpkg.zip"
-    },
-    {
-      "name": "v676.32_adreno676.32.adpkg.zip",
-      "size": 11530276,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg.zip"
-    },
-    {
-      "name": "v676.32_adreno676.32.adpkg_alloc_fix.zip",
-      "size": 11530276,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg_alloc_fix.zip"
-    },
-    {
-      "name": "v676.39_adreno.676.39.adpkg.zip",
-      "size": 11527952,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.39_adreno.676.39.adpkg.zip"
-    },
-    {
-      "name": "v676.3_adreno676.3.adpkg.zip",
-      "size": 11881015,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.3_adreno676.3.adpkg.zip"
-    },
-    {
-      "name": "v676.40_adreno676.40.adpkg.zip",
-      "size": 11525714,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.40_adreno676.40.adpkg.zip"
-    },
-    {
-      "name": "v676.42_adreno676.42.adpkg.zip",
-      "size": 11545206,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.42_adreno676.42.adpkg.zip"
-    },
-    {
-      "name": "v676.47_adreno676.47.adpkg.zip",
-      "size": 11565519,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.47_adreno676.47.adpkg.zip"
-    },
-    {
-      "name": "v676.51_adreno676.51.adpkg.zip",
-      "size": 12233295,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.51_adreno676.51.adpkg.zip"
-    },
-    {
-      "name": "v676.53_adreno676.53.adpkg.zip",
-      "size": 12233865,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.53_adreno676.53.adpkg.zip"
-    },
-    {
-      "name": "v676.9_adreno676.9.adpkg.zip",
-      "size": 11831852,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.9_adreno676.9.adpkg.zip"
-    },
-    {
-      "name": "v676_adreno-v676-adpkg.zip",
-      "size": 13629353,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676_adreno-v676-adpkg.zip"
-    },
-    {
-      "name": "v682_adreno682.adpkg.zip",
-      "size": 13262181,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v682_adreno682.adpkg.zip"
-    },
-    {
-      "name": "v687_adreno687.adpkg.zip",
-      "size": 13327718,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v687_adreno687.adpkg.zip"
-    },
-    {
-      "name": "v690_adreno690.adpkg.zip",
-      "size": 13663164,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v690_adreno690.adpkg.zip"
-    },
-    {
-      "name": "v744.12_adreno744.12.adpkg.zip",
-      "size": 13234898,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.12_adreno744.12.adpkg.zip"
-    },
-    {
-      "name": "v744.16_adreno-744.16-adpkg.zip",
-      "size": 13228502,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.16_adreno-744.16-adpkg.zip"
-    },
-    {
-      "name": "v744.19_adreno-744.19-adpkg.zip",
-      "size": 13603177,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.19_adreno-744.19-adpkg.zip"
-    },
-    {
-      "name": "v744.4_adreno744.4.adpkg.zip",
-      "size": 13183571,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.4_adreno744.4.adpkg.zip"
-    },
-    {
-      "name": "v744.5_adreno744.5.adpkg.zip",
-      "size": 13183599,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.5_adreno744.5.adpkg.zip"
-    },
-    {
-      "name": "v744.8_Adreno744.8.adpkg.zip",
-      "size": 13189886,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.8_Adreno744.8.adpkg.zip"
-    },
-    {
-      "name": "v757_adreno757.adpkg.zip",
-      "size": 11095647,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v757_adreno757.adpkg.zip"
-    },
-    {
-      "name": "v805_vulkan-805-adpkg.zip",
-      "size": 12729489,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v805_vulkan-805-adpkg.zip"
-    },
-    {
-      "name": "v819.1_v819.zip",
-      "size": 13073446,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.1_v819.zip"
-    },
-    {
-      "name": "v819.2_8Elite2-842.6.zip",
-      "size": 12201469,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_8Elite2-842.6.zip"
-    },
-    {
-      "name": "v819.2_Qualcomm_819.2_adpkg.zip",
-      "size": 13076862,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_Qualcomm_819.2_adpkg.zip"
-    },
-    {
-      "name": "v837_Qualcomm_837_adpkg.zip",
-      "size": 12715427,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v837_Qualcomm_837_adpkg.zip"
-    },
-    {
-      "name": "v840_Qualcomm_840_adpkg.zip",
-      "size": 17385120,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v840_Qualcomm_840_adpkg.zip"
-    },
-    {
-      "name": "v842.6_8Elite2-842.6.zip",
-      "size": 12201469,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v842.6_8Elite2-842.6.zip"
-    },
-    {
-      "name": "v849_Qualcomm_849_adpkg.zip",
-      "size": 23687773,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v849_Qualcomm_849_adpkg.zip"
-    },
-    {
-      "name": "vk.1.3.261-A6XX_Turnip-23.3.0-VK.1.3.261-A6XX.zip",
-      "size": 2049896,
-      "url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/vk.1.3.261-A6XX_Turnip-23.3.0-VK.1.3.261-A6XX.zip"
-    }
-  ]
-}
+[
+  {
+    "type": "GpuDriver",
+    "verName": "v840 \u2014 Qualcomm_840_adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v840_Qualcomm_840_adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v837 \u2014 Qualcomm_837_adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v837_Qualcomm_837_adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc08 \u2014 turnip_a8xx.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_turnip_a8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc08 \u2014 Turnip_v26.0.0_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc08 \u2014 Turnip_v26.0.0_R8_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc08 \u2014 Turnip_v26.0.0_R8_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc07 \u2014 Turnip_v26.0.0_R7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc07 \u2014 Turnip_v26.0.0_R7_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc07 \u2014 Turnip_v26.0.0_R7_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc06 \u2014 Turnip_v26.0.0_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc06 \u2014 Turnip_v26.0.0_R6_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc06 \u2014 Turnip_v26.0.0_R6_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc05 \u2014 Turnip_v26.0.0_R5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc05 \u2014 Turnip_v26.0.0_R5_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc05 \u2014 Turnip_v26.0.0_R5_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc04 \u2014 Turnip_v26.0.0_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc04 \u2014 Turnip_v26.0.0_R4_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc04 \u2014 Turnip_v26.0.0_R4_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v25.3.0_PREFER_SYSMEM.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PREFER_SYSMEM.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v25.3.0_PROFILED.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PROFILED.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v26.0.0_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.03 \u2014 Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.02 \u2014 Turnip_v26.0.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.02 \u2014 Turnip_v26.0.0_R2_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.02 \u2014 Turnip_v26.0.0_R2_Sysmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Sysmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v849 \u2014 Qualcomm_849_adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v849_Qualcomm_849_adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.01 \u2014 Turnip_v26.0.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.01 \u2014 Turnip_v26.0.0_R1_Autotuner.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Autotuner.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v26.0.0-rc.01 \u2014 Turnip_v26.0.0_R1_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.11 \u2014 Turnip_v25.3.0_R11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.11_Turnip_v25.3.0_R11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v842.6 \u2014 8Elite2-842.6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v842.6_8Elite2-842.6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v819.2 \u2014 8Elite2-842.6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_8Elite2-842.6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v819.2 \u2014 Qualcomm_819.2_adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_Qualcomm_819.2_adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.10 \u2014 Turnip_v25.3.0_R10.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.10_Turnip_v25.3.0_R10.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.09 \u2014 Turnip_v25.3.0_R9.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.09_Turnip_v25.3.0_R9.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.08 \u2014 Turnip_v25.3.0_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.08_Turnip_v25.3.0_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.07 \u2014 Turnip_v25.3.0_R7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.07 \u2014 Turnip_v25.3.0_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.06 \u2014 Turnip_v25.3.0_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.06 \u2014 Turnip_v25.3.0_R6_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.05 \u2014 Turnip_v25.3.0_R5_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.05 \u2014 Turnip_v25.3.0_R5_one_ui7_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_one_ui7_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.04 \u2014 Turnip_v25.3.0_R4_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.04 \u2014 Turnip_v25.3.0_R4_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.03 \u2014 Turnip_v25.3.0_R3_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.03 \u2014 Turnip_v25.3.0_R3_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.02 \u2014 Turnip_v25.3.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.02 \u2014 Turnip_v25.3.0_R2_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.3.0-rc.01 \u2014 Turnip_v25.3.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.01_Turnip_v25.3.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.14 \u2014 Turnip_v25.2.0_R14.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.14 \u2014 Turnip_v25.2.0_R14_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.13 \u2014 Turnip_v25.2.0_R13.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.13 \u2014 Turnip_v25.2.0_R13_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.12 \u2014 Turnip_v25.2.0_R12.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.12 \u2014 Turnip_v25.2.0_R12_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.11 \u2014 Turnip_v25.2.0_R11_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.11 \u2014 Turnip_v25.2.0_R11_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.10 \u2014 Turnip_v25.2.0_R10_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.10 \u2014 Turnip_v25.2.0_R10_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.09 \u2014 Turnip_v25.2.0_R9_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.09 \u2014 Turnip_v25.2.0_R9_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.08 \u2014 Turnip_v25.2.0_R8_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.08 \u2014 Turnip_v25.2.0_R8_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.07 \u2014 Turnip_v25.2.0_R7_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.07 \u2014 Turnip_v25.2.0_R7_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.06 \u2014 Turnip_v25.2.0_R6_Auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.06 \u2014 Turnip_v25.2.0_R6_Gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.05 \u2014 turnip_v25.2.0_R5_auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.05 \u2014 turnip_v25.2.0_R5_gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.04 \u2014 turnip_v25.2.0_R4_auto_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_auto_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.04 \u2014 turnip_v25.2.0_R4_gmem_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_gmem_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.03 \u2014 turnip_v25.2.0_R3_auto.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_auto.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.03 \u2014 turnip_v25.2.0_R3_gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.02 \u2014 turnip_v25.2.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.02 \u2014 turnip_v25.2.0_R2_.forced_gmem.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2_.forced_gmem.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.2.0-rc.01 \u2014 turnip_v25.2.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.01_turnip_v25.2.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.1.0-rc.06 \u2014 turnip_v25.1.0_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.06_turnip_v25.1.0_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.1.0-rc.05 \u2014 turnip_v25.1.0_R5_patched.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.05_turnip_v25.1.0_R5_patched.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.1.0-rc.04 \u2014 turnip_v25.1.0_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.04_turnip_v25.1.0_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.1.0-rc.02 \u2014 turnip_v25.1.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.02_turnip_v25.1.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.1.0-rc.01 \u2014 turnip_v25.1.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.01_turnip_v25.1.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "25.1.0-rc.03 \u2014 turnip_v25.1.0_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/25.1.0-rc.03_turnip_v25.1.0_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "fetcher_v1.2 \u2014 adrenotools_driver_downloader.apk",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/fetcher_v1.2_adrenotools_driver_downloader.apk"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v819.1 \u2014 v819.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.1_v819.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v805 \u2014 vulkan-805-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v805_vulkan-805-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r8 \u2014 turnip_v25.0.0_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r8_turnip_v25.0.0_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r7 \u2014 turnip_v25.0.0_R7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r7_turnip_v25.0.0_R7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r6 \u2014 turnip_v25.0.0_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r6_turnip_v25.0.0_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r5 \u2014 turnip_v25.0.0_R5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r5_turnip_v25.0.0_R5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r4 \u2014 turnip_v25.0.0_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r4_turnip_v25.0.0_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r3 \u2014 turnip_v25.0.0_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r3_turnip_v25.0.0_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r2 \u2014 turnip_v25.0.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r2_turnip_v25.0.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v25.0.0_r1 \u2014 turnip_v25.0.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r1_turnip_v25.0.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r9 \u2014 turnip_v24.3.0_R9v2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r9_turnip_v24.3.0_R9v2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r8 \u2014 turnip_v24.3.0_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r8_turnip_v24.3.0_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r7 \u2014 turnip_v24.3.0_R7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r7_turnip_v24.3.0_R7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r6 \u2014 turnip_v24.3.0_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r6_turnip_v24.3.0_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r5 \u2014 turnip_v24.3.0_R5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r5_turnip_v24.3.0_R5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r4 \u2014 turnip_v24.3.0_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r4_turnip_v24.3.0_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r12 \u2014 turnip_v24.3.0-R12.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r12_turnip_v24.3.0-R12.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r11 \u2014 turnip_v24.3.0-R11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r11_turnip_v24.3.0-R11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r10 \u2014 turnip_v24.3.0-R10.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r10_turnip_v24.3.0-R10.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "0972024 \u2014 adreno-676.41-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/0972024_adreno-676.41-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "09302024 \u2014 vulkan-786-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09302024_vulkan-786-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "09072024-2 \u2014 adreno-777-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024-2_adreno-777-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "09072024 \u2014 adreno-762.10-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024_adreno-762.10-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r3 \u2014 turnip_v24.3.0_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r3_turnip_v24.3.0_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r2 \u2014 turnip_v24.3.0_R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r2_turnip_v24.3.0_R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.3.0_r1 \u2014 turnip_v24.3.0_R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r1_turnip_v24.3.0_R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_r22 \u2014 turnip_v24.2.0_R22.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r22_turnip_v24.2.0_R22.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_a735 \u2014 turnip_v24.2.0_partial_a735_support_TEST.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a735_turnip_v24.2.0_partial_a735_support_TEST.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.19 \u2014 adreno-744.19-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.19_adreno-744.19-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_r21 \u2014 turnip_v24.2.0_R21.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r21_turnip_v24.2.0_R21.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_r20 \u2014 turnip_v24.2.0_R20.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r20_turnip_v24.2.0_R20.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_r19_preview \u2014 Turnip-24.2.0_weab-chan_R19_experimental.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_preview_Turnip-24.2.0_weab-chan_R19_experimental.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_r19 \u2014 turnip_24.2.0_adpkg_R19.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_turnip_24.2.0_adpkg_R19.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.2.0_a32_patch \u2014 Turnip-24.2.0_Adreno_32_patch.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a32_patch_Turnip-24.2.0_Adreno_32_patch.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R18 \u2014 Turnip-24.1.0.adpkg_R18.a6xx.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.a6xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R18 \u2014 Turnip-24.1.0.adpkg_R18.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "unsupported_gpus_v1 \u2014 MTd.experimental.Unsupported.a7xx.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/unsupported_gpus_v1_MTd.experimental.Unsupported.a7xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "turnip_A32 \u2014 Turnip-23.3.0-vulkan-1.3.255.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_Turnip-23.3.0-vulkan-1.3.255.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "turnip_A32 \u2014 turnip_24.2.0_a32.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_turnip_24.2.0_a32.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.16 \u2014 adreno-744.16-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.16_adreno-744.16-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v757 \u2014 adreno757.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v757_adreno757.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.12 \u2014 adreno744.12.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.12_adreno744.12.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.8 \u2014 Adreno744.8.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.8_Adreno744.8.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.5 \u2014 adreno744.5.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.5_adreno744.5.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v744.4 \u2014 adreno744.4.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.4_adreno744.4.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.53 \u2014 adreno676.53.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.53_adreno676.53.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.51 \u2014 adreno676.51.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.51_adreno676.51.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.47 \u2014 adreno676.47.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.47_adreno676.47.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615.77 \u2014 adreno615.77.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.77_adreno615.77.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R17 \u2014 turnip-24.1.0.adpkg_a750.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_a750.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R17 \u2014 turnip-24.1.0.adpkg_R17-v2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_R17-v2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R17 \u2014 Turnip-24.1.0.adpkg_R17.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_Turnip-24.1.0.adpkg_R17.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.1.0_R16 \u2014 Turnip-24.1.0.adpkg_R16.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R16_Turnip-24.1.0.adpkg_R16.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.0.0_R15 \u2014 Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R15_Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.0.0_R14 \u2014 Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R14_Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v24.0.0_R13 \u2014 turnip-24.0.0-devel.adpkg_R13.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R13_turnip-24.0.0-devel.adpkg_R13.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "24.0.0-R12 \u2014 agressive_beta_extensions_turnip.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_beta_extensions_turnip.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "24.0.0-R12 \u2014 agressive_turnip.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_turnip.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "24.0.0-R12 \u2014 regular_turnip.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_regular_turnip.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "24.0.0-R11 \u2014 turnip-24.0.0-devel.adpkg_R11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R11_turnip-24.0.0-devel.adpkg_R11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "24.0.0-R-X \u2014 turnip-24.0.0-devel.adpkg_R-X.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R-X_turnip-24.0.0-devel.adpkg_R-X.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0_R9 \u2014 turnip-23.3.0-adpkg_R9.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R9_turnip-23.3.0-adpkg_R9.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0_R8 \u2014 turnip-23.3.0-A7XX.adpkg_R8.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R8_turnip-23.3.0-A7XX.adpkg_R8.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0_R7 \u2014 turnip-23.3.0-A7XX.adpkg_R7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R7_turnip-23.3.0-A7XX.adpkg_R7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0_R6 \u2014 turnip-23.3.0-A7XX.adpkg_R6.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R6_turnip-23.3.0-A7XX.adpkg_R6.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0_R5 \u2014 turnip-23.3.0-A7XX.adpkg_R5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R5_turnip-23.3.0-A7XX.adpkg_R5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.42 \u2014 adreno676.42.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.42_adreno676.42.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.40 \u2014 adreno676.40.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.40_adreno676.40.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.39 \u2014 adreno.676.39.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.39_adreno.676.39.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.32 \u2014 adreno676.32.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.32 \u2014 adreno676.32.adpkg_alloc_fix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg_alloc_fix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0-dev-A6XX \u2014 turnip-23.3.0-A6XX.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev-A6XX_turnip-23.3.0-A6XX.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.3.0-dev \u2014 Turnip-23.3.0-vulkan-1.3.255.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev_Turnip-23.3.0-vulkan-1.3.255.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.2.0_A7XX_2 \u2014 turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_2_turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.2.0_A7XX \u2014 turnip-23.2.0-A7XX.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_turnip-23.2.0-A7XX.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "vk.1.3.261-A6XX \u2014 Turnip-23.3.0-VK.1.3.261-A6XX.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/vk.1.3.261-A6XX_Turnip-23.3.0-VK.1.3.261-A6XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "A7xx_R4 \u2014 turnip-23.2.0-A7XX.adpkg_R4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R4_turnip-23.2.0-A7XX.adpkg_R4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "A7xx_R3 \u2014 turnip-23.2.0-A7XX.adpkg_R3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R3_turnip-23.2.0-A7XX.adpkg_R3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v690 \u2014 adreno690.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v690_adreno690.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v682 \u2014 adreno682.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v682_adreno682.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.16 \u2014 adreno676.16.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.16_adreno676.16.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.13 \u2014 adreno676.13.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.13_adreno676.13.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.22FIX \u2014 adreno676.22.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.22FIX_adreno676.22.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615.65 \u2014 adreno615.65.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.65_adreno615.65.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.2.0-dev \u2014 turnip-23.2.0-devel.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0-dev_turnip-23.2.0-devel.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.1.0-dev \u2014 Turnip-23.1.0-dev.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.1.0-dev_Turnip-23.1.0-dev.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v23.0.3 \u2014 Turnip-23.0.3.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.0.3_Turnip-23.0.3.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v687 \u2014 adreno687.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v687_adreno687.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.12 \u2014 adreno676.12.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.12_adreno676.12.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.9 \u2014 adreno676.9.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.9_adreno676.9.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676.3 \u2014 adreno676.3.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.3_adreno676.3.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v676 \u2014 adreno-v676-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676_adreno-v676-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v672 \u2014 adreno672.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v672_adreno672.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v667 \u2014 v667-patched-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v667_v667-patched-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615.50 \u2014 v615.50-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.50_v615.50-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615.37 \u2014 v615.37-patched.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.37_v615.37-patched.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615.4 \u2014 v615v4-patched.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.4_v615v4-patched.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v615 \u2014 0615-patched.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615_0615-patched.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.6-r1 \u2014 Turnip-v22.3.6-R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.6-r1_Turnip-v22.3.6-R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.5-r2 \u2014 Turnip-v22.3.5-R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r2_Turnip-v22.3.5-R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.5-r1 \u2014 Turnip-v22.3.5-R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r1_Turnip-v22.3.5-R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v22.3.4-r2 \u2014 Turnip-v22.3.4-r2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r2_Turnip-v22.3.4-r2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "v22.3.4-r1 \u2014 Turnip-v22.3.4-r1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r1_Turnip-v22.3.4-r1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.3-r2 \u2014 Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r2_Turnip-v22.3.3-r2-ft.lybxlpsv.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.3-r1 \u2014 Turnip-v22.3.3-r1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r1_Turnip-v22.3.3-r1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.2-R1 \u2014 Turnip-v22.3.2-R1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.2-R1_Turnip-v22.3.2-R1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "22.3.1-r1 \u2014 Turnip-v22.3.1-R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.1-r1_Turnip-v22.3.1-R2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_v25 \u2014 turnip-v25-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v25_turnip-v25-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_v24 \u2014 turnip-v24-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v24_turnip-v24-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_v12 \u2014 turnip-v12-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v12_turnip-v12-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_mark3 \u2014 turnip-kgsl-rework.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark3_turnip-kgsl-rework.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_mark2 \u2014 Turnip_ft._Mark_Skyline_Fixes_v2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark2_Turnip_ft._Mark_Skyline_Fixes_v2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_mark1 \u2014 turnip-skyline-fixes.adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark1_turnip-skyline-fixes.adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_26 \u2014 turnip-v26-adpkg.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_26_turnip-v26-adpkg.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_22-r2 \u2014 Turnip-v22.3.1-R2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_22-r2_Turnip-v22.3.1-R2.zip"
+  }
+]

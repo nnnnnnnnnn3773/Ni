@@ -187,29 +187,25 @@ jobs:
           PY
 
       - name: Write root kimchi_drivers.json
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          MIRROR_TAG="kimchi-drivers"
-          NIGHTLIES_REPO="${GITHUB_REPOSITORY}"
-          gh release view "$MIRROR_TAG" --json assets \
-            -q '[.assets[] | {name: .name, url: ("https://github.com/'"${GITHUB_REPOSITORY}"'/releases/download/'"kimchi-drivers"'/" + .name), size: .size}] | sort_by(.name)' \
-            > /tmp/kimchi_asset_list.json
           python3 <<'PY'
-          import json, os
-          from datetime import datetime, timezone
-          with open("/tmp/kimchi_asset_list.json") as f:
-              assets = json.load(f)
-          out = {
-              "updated_at":     datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-              "source":         "https://github.com/K11MCH1/AdrenoToolsDrivers",
-              "mirror_release": f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/releases/tag/kimchi-drivers",
-              "total_assets":   len(assets),
-              "assets":         assets,
-          }
+          import json
+          with open("kimchi/drivers.json") as f:
+              data = json.load(f)
+          entries = []
+          for rel in data["releases"]:
+              for asset in rel["assets"]:
+                  if not asset.get("mirror_url"):
+                      continue
+                  entries.append({
+                      "type":      "GpuDriver",
+                      "verName":   f"{rel['tag']} — {asset['name']}",
+                      "verCode":   "0",
+                      "remoteUrl": asset["mirror_url"],
+                  })
           with open("kimchi_drivers.json", "w") as f:
-              json.dump(out, f, indent=2)
-          print(f"Written kimchi_drivers.json — {len(assets)} assets")
+              json.dump(entries, f, indent=2)
+          print(f"Written kimchi_drivers.json — {len(entries)} entries")
           PY
 
       - name: Rebuild drivers.json
