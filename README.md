@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260316-22e444f-run33](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run33) |
-| **Wine Commit** | [`22e444f`](https://github.com/ValveSoftware/wine/commit/22e444ffcf4b73bcf5742d3f1d5af9d436d2ea0c) — mfmediaengine: Keep the last presentation sample on flush. |
+| **Release** | [🔗 proton-bleeding-edge-20260316-9e68235-run34](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-9e68235-run34) |
+| **Wine Commit** | [`9e68235`](https://github.com/ValveSoftware/wine/commit/9e682354748c33b66c1c83bc7a7699da09cbe33c) — fixup! HACK: proton: ntdll: Strip gameoverlayrenderer.so from LD_PRELOAD before  |
 | **Date** | 2026-03-16 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run33) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-9e68235-run34) |
 <!-- PROTON-LATEST-END -->
 
 ---
