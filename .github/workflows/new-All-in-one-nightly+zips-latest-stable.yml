@@ -1128,13 +1128,11 @@ jobs:
           done
 
           # Update release notes to point at the actual nightly tag
-          gh release edit "$LATEST_TAG" \
-            --notes "Always points to the most recent all-in-one nightly build.
-
-**Current build:** \`${{ env.TAG_NAME }}\`
-**Built:** $(date -u '+%Y-%m-%d %H:%M UTC')
-
-[View full release notes](https://github.com/${REPO}/releases/tag/${{ env.TAG_NAME }})"
+          BUILT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          RELEASE_URL="https://github.com/${REPO}/releases/tag/${{ env.TAG_NAME }}"
+          printf 'Always points to the most recent all-in-one nightly build.\n\n**Current build:** `%s`\n**Built:** %s\n\n[View full release notes](%s)\n' \
+            "${{ env.TAG_NAME }}" "$BUILT_DATE" "$RELEASE_URL" > nightly_latest_notes.md
+          gh release edit "$LATEST_TAG" --notes-file nightly_latest_notes.md
 
           echo "nightly-latest updated to ${{ env.TAG_NAME }}"
 
