@@ -1,0 +1,2686 @@
+{
+  "updated_at": "2026-03-16T09:13:29Z",
+  "source": "https://github.com/K11MCH1/AdrenoToolsDrivers",
+  "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/kimchi-drivers",
+  "total_releases": 154,
+  "total_assets": 200,
+  "releases": [
+    {
+      "tag": "v840",
+      "name": "Qualcomm Driver v840",
+      "published_at": "2026-01-14T13:54:43Z",
+      "assets": [
+        {
+          "name": "Qualcomm_840_adpkg.zip",
+          "mirror_name": "v840_Qualcomm_840_adpkg.zip",
+          "size": 17385120,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v840/Qualcomm_840_adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v840_Qualcomm_840_adpkg.zip",
+          "published_at": "2026-01-14T13:54:33Z"
+        }
+      ]
+    },
+    {
+      "tag": "v837",
+      "name": "Qualcomm Driver v837",
+      "published_at": "2026-01-14T13:17:24Z",
+      "assets": [
+        {
+          "name": "Qualcomm_837_adpkg.zip",
+          "mirror_name": "v837_Qualcomm_837_adpkg.zip",
+          "size": 12715427,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v837/Qualcomm_837_adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v837_Qualcomm_837_adpkg.zip",
+          "published_at": "2026-01-14T13:15:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc08",
+      "name": "v26.0.0 - Revision 8 + super beta 8xx support",
+      "published_at": "2026-01-08T01:03:08Z",
+      "assets": [
+        {
+          "name": "turnip_a8xx.zip",
+          "mirror_name": "v26.0.0-rc08_turnip_a8xx.zip",
+          "size": 2477437,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/turnip_a8xx.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_turnip_a8xx.zip",
+          "published_at": "2026-01-08T13:48:15Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R8.zip",
+          "mirror_name": "v26.0.0-rc08_Turnip_v26.0.0_R8.zip",
+          "size": 3478359,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/Turnip_v26.0.0_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8.zip",
+          "published_at": "2026-01-08T04:14:16Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R8_Gmem.zip",
+          "mirror_name": "v26.0.0-rc08_Turnip_v26.0.0_R8_Gmem.zip",
+          "size": 3478156,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/Turnip_v26.0.0_R8_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Gmem.zip",
+          "published_at": "2026-01-08T04:14:27Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R8_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc08_Turnip_v26.0.0_R8_Sysmem.zip",
+          "size": 3478168,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc08/Turnip_v26.0.0_R8_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc08_Turnip_v26.0.0_R8_Sysmem.zip",
+          "published_at": "2026-01-08T04:14:23Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc07",
+      "name": "v26.0.0 - Revision 7",
+      "published_at": "2025-12-26T01:13:15Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R7.zip",
+          "mirror_name": "v26.0.0-rc07_Turnip_v26.0.0_R7.zip",
+          "size": 3481059,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc07/Turnip_v26.0.0_R7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7.zip",
+          "published_at": "2025-12-26T01:13:00Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R7_Gmem.zip",
+          "mirror_name": "v26.0.0-rc07_Turnip_v26.0.0_R7_Gmem.zip",
+          "size": 3481189,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc07/Turnip_v26.0.0_R7_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Gmem.zip",
+          "published_at": "2025-12-26T09:11:41Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R7_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc07_Turnip_v26.0.0_R7_Sysmem.zip",
+          "size": 3481064,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc07/Turnip_v26.0.0_R7_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc07_Turnip_v26.0.0_R7_Sysmem.zip",
+          "published_at": "2025-12-26T01:13:08Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc06",
+      "name": "v26.0.0 - Revision 6",
+      "published_at": "2025-12-10T10:44:34Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R6.zip",
+          "mirror_name": "v26.0.0-rc06_Turnip_v26.0.0_R6.zip",
+          "size": 3553145,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc06/Turnip_v26.0.0_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6.zip",
+          "published_at": "2025-12-10T10:44:24Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R6_Gmem.zip",
+          "mirror_name": "v26.0.0-rc06_Turnip_v26.0.0_R6_Gmem.zip",
+          "size": 3552367,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc06/Turnip_v26.0.0_R6_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Gmem.zip",
+          "published_at": "2025-12-10T14:22:26Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R6_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc06_Turnip_v26.0.0_R6_Sysmem.zip",
+          "size": 3552386,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc06/Turnip_v26.0.0_R6_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc06_Turnip_v26.0.0_R6_Sysmem.zip",
+          "published_at": "2025-12-10T10:44:28Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc05",
+      "name": "v26.0.0 - Revision 5",
+      "published_at": "2025-11-29T14:01:16Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R5.zip",
+          "mirror_name": "v26.0.0-rc05_Turnip_v26.0.0_R5.zip",
+          "size": 3436013,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc05/Turnip_v26.0.0_R5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5.zip",
+          "published_at": "2025-11-29T14:00:50Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R5_Gmem.zip",
+          "mirror_name": "v26.0.0-rc05_Turnip_v26.0.0_R5_Gmem.zip",
+          "size": 3435962,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc05/Turnip_v26.0.0_R5_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Gmem.zip",
+          "published_at": "2025-11-29T14:01:00Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R5_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc05_Turnip_v26.0.0_R5_Sysmem.zip",
+          "size": 3435965,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc05/Turnip_v26.0.0_R5_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc05_Turnip_v26.0.0_R5_Sysmem.zip",
+          "published_at": "2025-11-29T14:00:54Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc04",
+      "name": "v26.0.0 - Revision 4",
+      "published_at": "2025-11-22T04:43:31Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R4.zip",
+          "mirror_name": "v26.0.0-rc04_Turnip_v26.0.0_R4.zip",
+          "size": 3442521,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc04/Turnip_v26.0.0_R4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4.zip",
+          "published_at": "2025-11-22T04:42:11Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R4_Gmem.zip",
+          "mirror_name": "v26.0.0-rc04_Turnip_v26.0.0_R4_Gmem.zip",
+          "size": 3442556,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc04/Turnip_v26.0.0_R4_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Gmem.zip",
+          "published_at": "2025-11-22T04:42:13Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R4_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc04_Turnip_v26.0.0_R4_Sysmem.zip",
+          "size": 3442552,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc04/Turnip_v26.0.0_R4_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc04_Turnip_v26.0.0_R4_Sysmem.zip",
+          "published_at": "2025-11-22T04:42:19Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc.03",
+      "name": "v26.0.0 - Revision 3 + v25.3.0 with NEW Autotuner",
+      "published_at": "2025-11-12T15:12:33Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_PREFER_SYSMEM.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v25.3.0_PREFER_SYSMEM.zip",
+          "size": 3376718,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v25.3.0_PREFER_SYSMEM.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PREFER_SYSMEM.zip",
+          "published_at": "2025-11-12T15:10:14Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_PROFILED.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v25.3.0_PROFILED.zip",
+          "size": 3376715,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v25.3.0_PROFILED.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v25.3.0_PROFILED.zip",
+          "published_at": "2025-11-12T15:10:10Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R3.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v26.0.0_R3.zip",
+          "size": 3385449,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v26.0.0_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3.zip",
+          "published_at": "2025-11-12T15:09:45Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
+          "size": 3389038,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix.zip",
+          "published_at": "2025-11-12T15:09:53Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
+          "size": 3389206,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Gmem.zip",
+          "published_at": "2025-11-12T15:09:58Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
+          "size": 3389207,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.03/Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.03_Turnip_v26.0.0_R3_CB_Perf_Fix_Sysmem.zip",
+          "published_at": "2025-11-12T15:10:03Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc.02",
+      "name": "v26.0.0 - Revision 2",
+      "published_at": "2025-10-29T02:43:25Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R2.zip",
+          "mirror_name": "v26.0.0-rc.02_Turnip_v26.0.0_R2.zip",
+          "size": 3378211,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.02/Turnip_v26.0.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2.zip",
+          "published_at": "2025-10-29T02:43:17Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R2_Gmem.zip",
+          "mirror_name": "v26.0.0-rc.02_Turnip_v26.0.0_R2_Gmem.zip",
+          "size": 3378277,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.02/Turnip_v26.0.0_R2_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Gmem.zip",
+          "published_at": "2025-10-29T02:43:19Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R2_Sysmem.zip",
+          "mirror_name": "v26.0.0-rc.02_Turnip_v26.0.0_R2_Sysmem.zip",
+          "size": 3378282,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.02/Turnip_v26.0.0_R2_Sysmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.02_Turnip_v26.0.0_R2_Sysmem.zip",
+          "published_at": "2025-10-29T02:43:21Z"
+        }
+      ]
+    },
+    {
+      "tag": "v849",
+      "name": "Qualcomm Driver v849",
+      "published_at": "2025-10-26T02:08:01Z",
+      "assets": [
+        {
+          "name": "Qualcomm_849_adpkg.zip",
+          "mirror_name": "v849_Qualcomm_849_adpkg.zip",
+          "size": 23687773,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v849/Qualcomm_849_adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v849_Qualcomm_849_adpkg.zip",
+          "published_at": "2025-10-26T02:07:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.0.0-rc.01",
+      "name": "v26.0.0 - Revision 1",
+      "published_at": "2025-10-20T17:01:20Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.0.0_R1.zip",
+          "mirror_name": "v26.0.0-rc.01_Turnip_v26.0.0_R1.zip",
+          "size": 3435114,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.01/Turnip_v26.0.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1.zip",
+          "published_at": "2025-10-20T16:58:06Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R1_Autotuner.zip",
+          "mirror_name": "v26.0.0-rc.01_Turnip_v26.0.0_R1_Autotuner.zip",
+          "size": 3443975,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.01/Turnip_v26.0.0_R1_Autotuner.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Autotuner.zip",
+          "published_at": "2025-10-21T16:00:29Z"
+        },
+        {
+          "name": "Turnip_v26.0.0_R1_Gmem.zip",
+          "mirror_name": "v26.0.0-rc.01_Turnip_v26.0.0_R1_Gmem.zip",
+          "size": 3444130,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v26.0.0-rc.01/Turnip_v26.0.0_R1_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v26.0.0-rc.01_Turnip_v26.0.0_R1_Gmem.zip",
+          "published_at": "2025-10-21T16:00:31Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.11",
+      "name": " v25.3.0 - Revision 11",
+      "published_at": "2025-10-09T00:10:43Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R11.zip",
+          "mirror_name": "v25.3.0-rc.11_Turnip_v25.3.0_R11.zip",
+          "size": 3365701,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.11/Turnip_v25.3.0_R11.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.11_Turnip_v25.3.0_R11.zip",
+          "published_at": "2025-10-09T00:10:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v842.6",
+      "name": "Qualcomm Driver v842.6",
+      "published_at": "2025-09-30T10:56:28Z",
+      "assets": [
+        {
+          "name": "8Elite2-842.6.zip",
+          "mirror_name": "v842.6_8Elite2-842.6.zip",
+          "size": 12201469,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v842.6/8Elite2-842.6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v842.6_8Elite2-842.6.zip",
+          "published_at": "2025-09-30T10:56:17Z"
+        }
+      ]
+    },
+    {
+      "tag": "v819.2",
+      "name": "Qualcomm v819.2",
+      "published_at": "2025-08-13T03:02:55Z",
+      "assets": [
+        {
+          "name": "8Elite2-842.6.zip",
+          "mirror_name": "v819.2_8Elite2-842.6.zip",
+          "size": 12201469,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v819.2/8Elite2-842.6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_8Elite2-842.6.zip",
+          "published_at": "2025-09-30T10:56:09Z"
+        },
+        {
+          "name": "Qualcomm_819.2_adpkg.zip",
+          "mirror_name": "v819.2_Qualcomm_819.2_adpkg.zip",
+          "size": 13076862,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v819.2/Qualcomm_819.2_adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.2_Qualcomm_819.2_adpkg.zip",
+          "published_at": "2025-08-13T03:02:53Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.10",
+      "name": " v25.3.0 - Revision 10",
+      "published_at": "2025-10-01T12:57:56Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R10.zip",
+          "mirror_name": "v25.3.0-rc.10_Turnip_v25.3.0_R10.zip",
+          "size": 3374189,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.10/Turnip_v25.3.0_R10.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.10_Turnip_v25.3.0_R10.zip",
+          "published_at": "2025-10-01T12:57:21Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.09",
+      "name": " v25.3.0 - Revision 9",
+      "published_at": "2025-09-24T15:28:55Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R9.zip",
+          "mirror_name": "v25.3.0-rc.09_Turnip_v25.3.0_R9.zip",
+          "size": 2618827,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.09/Turnip_v25.3.0_R9.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.09_Turnip_v25.3.0_R9.zip",
+          "published_at": "2025-09-24T15:28:42Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.08",
+      "name": " v25.3.0 - Revision 8",
+      "published_at": "2025-09-19T15:30:38Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R8.zip",
+          "mirror_name": "v25.3.0-rc.08_Turnip_v25.3.0_R8.zip",
+          "size": 2616875,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.08/Turnip_v25.3.0_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.08_Turnip_v25.3.0_R8.zip",
+          "published_at": "2025-09-19T15:30:17Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.07",
+      "name": " v25.3.0 - Revision 7",
+      "published_at": "2025-09-09T00:38:59Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R7.zip",
+          "mirror_name": "v25.3.0-rc.07_Turnip_v25.3.0_R7.zip",
+          "size": 2562097,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.07/Turnip_v25.3.0_R7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R7.zip",
+          "published_at": "2025-09-09T00:38:32Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R8.zip",
+          "mirror_name": "v25.3.0-rc.07_Turnip_v25.3.0_R8.zip",
+          "size": 2616875,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.07/Turnip_v25.3.0_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.07_Turnip_v25.3.0_R8.zip",
+          "published_at": "2025-09-19T15:29:09Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.06",
+      "name": " v25.3.0 - Revision 6",
+      "published_at": "2025-08-27T02:35:33Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R6.zip",
+          "mirror_name": "v25.3.0-rc.06_Turnip_v25.3.0_R6.zip",
+          "size": 2547010,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.06/Turnip_v25.3.0_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6.zip",
+          "published_at": "2025-08-27T02:34:44Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R6_Gmem.zip",
+          "mirror_name": "v25.3.0-rc.06_Turnip_v25.3.0_R6_Gmem.zip",
+          "size": 2544211,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.06/Turnip_v25.3.0_R6_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.06_Turnip_v25.3.0_R6_Gmem.zip",
+          "published_at": "2025-08-27T02:34:49Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.05",
+      "name": " v25.3.0 - Revision 5",
+      "published_at": "2025-08-18T10:29:08Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R5_Auto.zip",
+          "mirror_name": "v25.3.0-rc.05_Turnip_v25.3.0_R5_Auto.zip",
+          "size": 2534862,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.05/Turnip_v25.3.0_R5_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_Auto.zip",
+          "published_at": "2025-08-18T10:27:53Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R5_one_ui7_fix.zip",
+          "mirror_name": "v25.3.0-rc.05_Turnip_v25.3.0_R5_one_ui7_fix.zip",
+          "size": 2534870,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.05/Turnip_v25.3.0_R5_one_ui7_fix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.05_Turnip_v25.3.0_R5_one_ui7_fix.zip",
+          "published_at": "2025-08-18T10:28:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.04",
+      "name": "v25.3.0 - Revision 4",
+      "published_at": "2025-08-09T15:25:50Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R4_Auto.zip",
+          "mirror_name": "v25.3.0-rc.04_Turnip_v25.3.0_R4_Auto.zip",
+          "size": 2527720,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.04/Turnip_v25.3.0_R4_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Auto.zip",
+          "published_at": "2025-08-09T23:30:03Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R4_Gmem.zip",
+          "mirror_name": "v25.3.0-rc.04_Turnip_v25.3.0_R4_Gmem.zip",
+          "size": 2525137,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.04/Turnip_v25.3.0_R4_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.04_Turnip_v25.3.0_R4_Gmem.zip",
+          "published_at": "2025-08-09T23:30:08Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.03",
+      "name": "v25.3.0 - Revision 3",
+      "published_at": "2025-07-31T16:44:23Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R3_Auto.zip",
+          "mirror_name": "v25.3.0-rc.03_Turnip_v25.3.0_R3_Auto.zip",
+          "size": 2522315,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.03/Turnip_v25.3.0_R3_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Auto.zip",
+          "published_at": "2025-07-31T16:44:00Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R3_Gmem.zip",
+          "mirror_name": "v25.3.0-rc.03_Turnip_v25.3.0_R3_Gmem.zip",
+          "size": 2520004,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.03/Turnip_v25.3.0_R3_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.03_Turnip_v25.3.0_R3_Gmem.zip",
+          "published_at": "2025-07-31T16:44:03Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.02",
+      "name": "v25.3.0 - Revision 2",
+      "published_at": "2025-07-24T03:07:17Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R2.zip",
+          "mirror_name": "v25.3.0-rc.02_Turnip_v25.3.0_R2.zip",
+          "size": 2516182,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.02/Turnip_v25.3.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2.zip",
+          "published_at": "2025-07-24T03:07:07Z"
+        },
+        {
+          "name": "Turnip_v25.3.0_R2_Gmem.zip",
+          "mirror_name": "v25.3.0-rc.02_Turnip_v25.3.0_R2_Gmem.zip",
+          "size": 2513380,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.02/Turnip_v25.3.0_R2_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.02_Turnip_v25.3.0_R2_Gmem.zip",
+          "published_at": "2025-07-24T03:07:11Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.3.0-rc.01",
+      "name": "v25.3.0 - Revision 1",
+      "published_at": "2025-07-18T03:33:06Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.3.0_R1.zip",
+          "mirror_name": "v25.3.0-rc.01_Turnip_v25.3.0_R1.zip",
+          "size": 2514307,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.3.0-rc.01/Turnip_v25.3.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.3.0-rc.01_Turnip_v25.3.0_R1.zip",
+          "published_at": "2025-07-18T03:32:32Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.14",
+      "name": "v25.2.0 - Revision 14",
+      "published_at": "2025-07-16T11:09:10Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R14.zip",
+          "mirror_name": "v25.2.0-rc.14_Turnip_v25.2.0_R14.zip",
+          "size": 2739414,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.14/Turnip_v25.2.0_R14.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14.zip",
+          "published_at": "2025-07-16T11:08:45Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R14_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.14_Turnip_v25.2.0_R14_Gmem.zip",
+          "size": 2739415,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.14/Turnip_v25.2.0_R14_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.14_Turnip_v25.2.0_R14_Gmem.zip",
+          "published_at": "2025-07-16T11:08:48Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.13",
+      "name": "v25.2.0 - Revision 13",
+      "published_at": "2025-07-10T14:51:45Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R13.zip",
+          "mirror_name": "v25.2.0-rc.13_Turnip_v25.2.0_R13.zip",
+          "size": 3333824,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.13/Turnip_v25.2.0_R13.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13.zip",
+          "published_at": "2025-07-10T14:49:12Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R13_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.13_Turnip_v25.2.0_R13_Gmem.zip",
+          "size": 3330102,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.13/Turnip_v25.2.0_R13_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.13_Turnip_v25.2.0_R13_Gmem.zip",
+          "published_at": "2025-07-10T14:49:14Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.12",
+      "name": "07042025",
+      "published_at": "2025-07-04T00:10:02Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R12.zip",
+          "mirror_name": "v25.2.0-rc.12_Turnip_v25.2.0_R12.zip",
+          "size": 3330131,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.12/Turnip_v25.2.0_R12.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12.zip",
+          "published_at": "2025-07-04T00:09:44Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R12_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.12_Turnip_v25.2.0_R12_Gmem.zip",
+          "size": 3328330,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.12/Turnip_v25.2.0_R12_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.12_Turnip_v25.2.0_R12_Gmem.zip",
+          "published_at": "2025-07-04T00:09:47Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.11",
+      "name": "06252025",
+      "published_at": "2025-06-25T14:06:00Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R11_Auto.zip",
+          "mirror_name": "v25.2.0-rc.11_Turnip_v25.2.0_R11_Auto.zip",
+          "size": 3238117,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.11/Turnip_v25.2.0_R11_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Auto.zip",
+          "published_at": "2025-06-25T18:08:46Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R11_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.11_Turnip_v25.2.0_R11_Gmem.zip",
+          "size": 3235776,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.11/Turnip_v25.2.0_R11_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.11_Turnip_v25.2.0_R11_Gmem.zip",
+          "published_at": "2025-06-25T18:08:50Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.10",
+      "name": "06182025",
+      "published_at": "2025-06-18T11:15:01Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R10_Auto.zip",
+          "mirror_name": "v25.2.0-rc.10_Turnip_v25.2.0_R10_Auto.zip",
+          "size": 3224119,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.10/Turnip_v25.2.0_R10_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Auto.zip",
+          "published_at": "2025-06-18T11:14:54Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R10_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.10_Turnip_v25.2.0_R10_Gmem.zip",
+          "size": 3221382,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.10/Turnip_v25.2.0_R10_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.10_Turnip_v25.2.0_R10_Gmem.zip",
+          "published_at": "2025-06-18T11:14:58Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.09",
+      "name": "06122025",
+      "published_at": "2025-06-12T00:09:28Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R9_Auto.zip",
+          "mirror_name": "v25.2.0-rc.09_Turnip_v25.2.0_R9_Auto.zip",
+          "size": 3206629,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.09/Turnip_v25.2.0_R9_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Auto.zip",
+          "published_at": "2025-06-11T23:45:54Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R9_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.09_Turnip_v25.2.0_R9_Gmem.zip",
+          "size": 3206631,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.09/Turnip_v25.2.0_R9_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.09_Turnip_v25.2.0_R9_Gmem.zip",
+          "published_at": "2025-06-11T23:46:00Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.08",
+      "name": "06042025",
+      "published_at": "2025-06-04T14:52:51Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R8_Auto.zip",
+          "mirror_name": "v25.2.0-rc.08_Turnip_v25.2.0_R8_Auto.zip",
+          "size": 3210254,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.08/Turnip_v25.2.0_R8_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Auto.zip",
+          "published_at": "2025-06-04T14:51:38Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R8_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.08_Turnip_v25.2.0_R8_Gmem.zip",
+          "size": 3206633,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.08/Turnip_v25.2.0_R8_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.08_Turnip_v25.2.0_R8_Gmem.zip",
+          "published_at": "2025-06-04T14:52:29Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.07",
+      "name": "05292025",
+      "published_at": "2025-05-28T23:50:52Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R7_Auto.zip",
+          "mirror_name": "v25.2.0-rc.07_Turnip_v25.2.0_R7_Auto.zip",
+          "size": 3209075,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.07/Turnip_v25.2.0_R7_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Auto.zip",
+          "published_at": "2025-05-28T23:48:26Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R7_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.07_Turnip_v25.2.0_R7_Gmem.zip",
+          "size": 3205930,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.07/Turnip_v25.2.0_R7_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.07_Turnip_v25.2.0_R7_Gmem.zip",
+          "published_at": "2025-05-28T23:50:26Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.06",
+      "name": "05212025",
+      "published_at": "2025-05-21T13:10:23Z",
+      "assets": [
+        {
+          "name": "Turnip_v25.2.0_R6_Auto.zip",
+          "mirror_name": "v25.2.0-rc.06_Turnip_v25.2.0_R6_Auto.zip",
+          "size": 3204315,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.06/Turnip_v25.2.0_R6_Auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Auto.zip",
+          "published_at": "2025-05-21T13:09:59Z"
+        },
+        {
+          "name": "Turnip_v25.2.0_R6_Gmem.zip",
+          "mirror_name": "v25.2.0-rc.06_Turnip_v25.2.0_R6_Gmem.zip",
+          "size": 3202909,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.06/Turnip_v25.2.0_R6_Gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.06_Turnip_v25.2.0_R6_Gmem.zip",
+          "published_at": "2025-05-21T13:10:03Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.05",
+      "name": "05152025",
+      "published_at": "2025-05-14T15:36:43Z",
+      "assets": [
+        {
+          "name": "turnip_v25.2.0_R5_auto.zip",
+          "mirror_name": "v25.2.0-rc.05_turnip_v25.2.0_R5_auto.zip",
+          "size": 3201634,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.05/turnip_v25.2.0_R5_auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_auto.zip",
+          "published_at": "2025-05-14T15:36:22Z"
+        },
+        {
+          "name": "turnip_v25.2.0_R5_gmem.zip",
+          "mirror_name": "v25.2.0-rc.05_turnip_v25.2.0_R5_gmem.zip",
+          "size": 3200286,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.05/turnip_v25.2.0_R5_gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.05_turnip_v25.2.0_R5_gmem.zip",
+          "published_at": "2025-05-14T15:36:26Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.04",
+      "name": "05072025",
+      "published_at": "2025-05-07T12:32:11Z",
+      "assets": [
+        {
+          "name": "turnip_v25.2.0_R4_auto_fix.zip",
+          "mirror_name": "v25.2.0-rc.04_turnip_v25.2.0_R4_auto_fix.zip",
+          "size": 3198158,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.04/turnip_v25.2.0_R4_auto_fix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_auto_fix.zip",
+          "published_at": "2025-05-08T07:35:04Z"
+        },
+        {
+          "name": "turnip_v25.2.0_R4_gmem_fix.zip",
+          "mirror_name": "v25.2.0-rc.04_turnip_v25.2.0_R4_gmem_fix.zip",
+          "size": 3195951,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.04/turnip_v25.2.0_R4_gmem_fix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.04_turnip_v25.2.0_R4_gmem_fix.zip",
+          "published_at": "2025-05-08T07:35:07Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.03",
+      "name": "05012025",
+      "published_at": "2025-05-01T02:08:22Z",
+      "assets": [
+        {
+          "name": "turnip_v25.2.0_R3_auto.zip",
+          "mirror_name": "v25.2.0-rc.03_turnip_v25.2.0_R3_auto.zip",
+          "size": 3195856,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.03/turnip_v25.2.0_R3_auto.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_auto.zip",
+          "published_at": "2025-05-01T02:07:56Z"
+        },
+        {
+          "name": "turnip_v25.2.0_R3_gmem.zip",
+          "mirror_name": "v25.2.0-rc.03_turnip_v25.2.0_R3_gmem.zip",
+          "size": 3193487,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.03/turnip_v25.2.0_R3_gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.03_turnip_v25.2.0_R3_gmem.zip",
+          "published_at": "2025-05-01T02:07:58Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.02",
+      "name": "04232025",
+      "published_at": "2025-04-23T14:08:52Z",
+      "assets": [
+        {
+          "name": "turnip_v25.2.0_R2.zip",
+          "mirror_name": "v25.2.0-rc.02_turnip_v25.2.0_R2.zip",
+          "size": 3193808,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.02/turnip_v25.2.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2.zip",
+          "published_at": "2025-04-23T15:26:22Z"
+        },
+        {
+          "name": "turnip_v25.2.0_R2_.forced_gmem.zip",
+          "mirror_name": "v25.2.0-rc.02_turnip_v25.2.0_R2_.forced_gmem.zip",
+          "size": 3190950,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.02/turnip_v25.2.0_R2_.forced_gmem.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.02_turnip_v25.2.0_R2_.forced_gmem.zip",
+          "published_at": "2025-04-23T23:51:48Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.2.0-rc.01",
+      "name": "04182025",
+      "published_at": "2025-04-18T05:34:01Z",
+      "assets": [
+        {
+          "name": "turnip_v25.2.0_R1.zip",
+          "mirror_name": "v25.2.0-rc.01_turnip_v25.2.0_R1.zip",
+          "size": 3185082,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.2.0-rc.01/turnip_v25.2.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.2.0-rc.01_turnip_v25.2.0_R1.zip",
+          "published_at": "2025-04-18T11:33:31Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.1.0-rc.06",
+      "name": "04102025",
+      "published_at": "2025-04-10T04:00:15Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R6.zip",
+          "mirror_name": "v25.1.0-rc.06_turnip_v25.1.0_R6.zip",
+          "size": 3177230,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.1.0-rc.06/turnip_v25.1.0_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.06_turnip_v25.1.0_R6.zip",
+          "published_at": "2025-04-10T03:59:06Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.1.0-rc.05",
+      "name": "04012025",
+      "published_at": "2025-04-01T00:49:34Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R5_patched.zip",
+          "mirror_name": "v25.1.0-rc.05_turnip_v25.1.0_R5_patched.zip",
+          "size": 3168977,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.1.0-rc.05/turnip_v25.1.0_R5_patched.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.05_turnip_v25.1.0_R5_patched.zip",
+          "published_at": "2025-04-01T00:48:04Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.1.0-rc.04",
+      "name": "03252025",
+      "published_at": "2025-03-25T09:12:05Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R4.zip",
+          "mirror_name": "v25.1.0-rc.04_turnip_v25.1.0_R4.zip",
+          "size": 3166685,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.1.0-rc.04/turnip_v25.1.0_R4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.04_turnip_v25.1.0_R4.zip",
+          "published_at": "2025-03-25T09:12:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.1.0-rc.02",
+      "name": "02172025",
+      "published_at": "2025-02-17T12:52:58Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R2.zip",
+          "mirror_name": "v25.1.0-rc.02_turnip_v25.1.0_R2.zip",
+          "size": 2526127,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.1.0-rc.02/turnip_v25.1.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.02_turnip_v25.1.0_R2.zip",
+          "published_at": "2025-02-17T12:52:22Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.1.0-rc.01",
+      "name": "02062025",
+      "published_at": "2025-02-06T08:16:23Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R1.zip",
+          "mirror_name": "v25.1.0-rc.01_turnip_v25.1.0_R1.zip",
+          "size": 2526127,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.1.0-rc.01/turnip_v25.1.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.1.0-rc.01_turnip_v25.1.0_R1.zip",
+          "published_at": "2025-02-06T08:16:17Z"
+        }
+      ]
+    },
+    {
+      "tag": "25.1.0-rc.03",
+      "name": "03212025",
+      "published_at": "2025-03-21T07:11:38Z",
+      "assets": [
+        {
+          "name": "turnip_v25.1.0_R3.zip",
+          "mirror_name": "25.1.0-rc.03_turnip_v25.1.0_R3.zip",
+          "size": 3166482,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/25.1.0-rc.03/turnip_v25.1.0_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/25.1.0-rc.03_turnip_v25.1.0_R3.zip",
+          "published_at": "2025-03-23T12:30:51Z"
+        }
+      ]
+    },
+    {
+      "tag": "fetcher_v1.2",
+      "name": "Adrenotools Drivers Downloader v1.2",
+      "published_at": "2025-05-28T11:55:23Z",
+      "assets": [
+        {
+          "name": "adrenotools_driver_downloader.apk",
+          "mirror_name": "fetcher_v1.2_adrenotools_driver_downloader.apk",
+          "size": 22213975,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/fetcher_v1.2/adrenotools_driver_downloader.apk",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/fetcher_v1.2_adrenotools_driver_downloader.apk",
+          "published_at": "2025-05-28T11:53:24Z"
+        }
+      ]
+    },
+    {
+      "tag": "v819.1",
+      "name": "05272025",
+      "published_at": "2025-05-27T13:54:59Z",
+      "assets": [
+        {
+          "name": "v819.zip",
+          "mirror_name": "v819.1_v819.zip",
+          "size": 13073446,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v819.1/v819.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v819.1_v819.zip",
+          "published_at": "2025-05-27T13:54:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v805",
+      "name": " Qualcomm driver v805",
+      "published_at": "2025-02-22T14:39:12Z",
+      "assets": [
+        {
+          "name": "vulkan-805-adpkg.zip",
+          "mirror_name": "v805_vulkan-805-adpkg.zip",
+          "size": 12729489,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v805/vulkan-805-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v805_vulkan-805-adpkg.zip",
+          "published_at": "2025-02-22T14:39:03Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r8",
+      "name": "01222025",
+      "published_at": "2025-01-22T12:28:29Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R8.zip",
+          "mirror_name": "v25.0.0_r8_turnip_v25.0.0_R8.zip",
+          "size": 2526123,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r8/turnip_v25.0.0_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r8_turnip_v25.0.0_R8.zip",
+          "published_at": "2025-01-22T12:26:00Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r7",
+      "name": "01152025",
+      "published_at": "2025-01-15T06:39:54Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R7.zip",
+          "mirror_name": "v25.0.0_r7_turnip_v25.0.0_R7.zip",
+          "size": 2320247,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r7/turnip_v25.0.0_R7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r7_turnip_v25.0.0_R7.zip",
+          "published_at": "2025-01-16T14:38:17Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r6",
+      "name": "01042025",
+      "published_at": "2025-01-03T16:52:52Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R6.zip",
+          "mirror_name": "v25.0.0_r6_turnip_v25.0.0_R6.zip",
+          "size": 2316286,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r6/turnip_v25.0.0_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r6_turnip_v25.0.0_R6.zip",
+          "published_at": "2025-01-03T16:48:47Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r5",
+      "name": "12142024",
+      "published_at": "2024-12-14T08:56:57Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R5.zip",
+          "mirror_name": "v25.0.0_r5_turnip_v25.0.0_R5.zip",
+          "size": 2299693,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r5/turnip_v25.0.0_R5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r5_turnip_v25.0.0_R5.zip",
+          "published_at": "2024-12-14T08:56:13Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r4",
+      "name": "1242024",
+      "published_at": "2024-12-04T01:16:25Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R4.zip",
+          "mirror_name": "v25.0.0_r4_turnip_v25.0.0_R4.zip",
+          "size": 2296892,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r4/turnip_v25.0.0_R4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r4_turnip_v25.0.0_R4.zip",
+          "published_at": "2024-12-04T01:12:04Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r3",
+      "name": "Mesa Turnip driver v25.0.0 - Revision 3",
+      "published_at": "2024-11-27T13:48:37Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R3.zip",
+          "mirror_name": "v25.0.0_r3_turnip_v25.0.0_R3.zip",
+          "size": 2293600,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r3/turnip_v25.0.0_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r3_turnip_v25.0.0_R3.zip",
+          "published_at": "2024-11-27T13:47:20Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r2",
+      "name": " Mesa Turnip driver v25.0.0 - Revision 2",
+      "published_at": "2024-11-19T14:35:22Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R2.zip",
+          "mirror_name": "v25.0.0_r2_turnip_v25.0.0_R2.zip",
+          "size": 2279750,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r2/turnip_v25.0.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r2_turnip_v25.0.0_R2.zip",
+          "published_at": "2024-11-19T14:34:51Z"
+        }
+      ]
+    },
+    {
+      "tag": "v25.0.0_r1",
+      "name": "Mesa Turnip driver v25.0.0 - Revision 1",
+      "published_at": "2024-11-08T12:00:35Z",
+      "assets": [
+        {
+          "name": "turnip_v25.0.0_R1.zip",
+          "mirror_name": "v25.0.0_r1_turnip_v25.0.0_R1.zip",
+          "size": 2270271,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v25.0.0_r1/turnip_v25.0.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v25.0.0_r1_turnip_v25.0.0_R1.zip",
+          "published_at": "2024-11-08T12:00:32Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r9",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 9v2",
+      "published_at": "2024-09-29T12:35:27Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R9v2.zip",
+          "mirror_name": "v24.3.0_r9_turnip_v24.3.0_R9v2.zip",
+          "size": 2236892,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r9/turnip_v24.3.0_R9v2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r9_turnip_v24.3.0_R9v2.zip",
+          "published_at": "2024-09-29T12:35:22Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r8",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 8",
+      "published_at": "2024-09-19T00:59:56Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R8.zip",
+          "mirror_name": "v24.3.0_r8_turnip_v24.3.0_R8.zip",
+          "size": 2230237,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r8/turnip_v24.3.0_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r8_turnip_v24.3.0_R8.zip",
+          "published_at": "2024-09-19T00:58:27Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r7",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 7",
+      "published_at": "2024-09-12T08:09:27Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R7.zip",
+          "mirror_name": "v24.3.0_r7_turnip_v24.3.0_R7.zip",
+          "size": 2221276,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r7/turnip_v24.3.0_R7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r7_turnip_v24.3.0_R7.zip",
+          "published_at": "2024-09-12T08:09:25Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r6",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 6",
+      "published_at": "2024-09-05T10:39:44Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R6.zip",
+          "mirror_name": "v24.3.0_r6_turnip_v24.3.0_R6.zip",
+          "size": 2219808,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r6/turnip_v24.3.0_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r6_turnip_v24.3.0_R6.zip",
+          "published_at": "2024-09-05T10:39:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r5",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 5",
+      "published_at": "2024-08-28T18:05:14Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R5.zip",
+          "mirror_name": "v24.3.0_r5_turnip_v24.3.0_R5.zip",
+          "size": 2246830,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r5/turnip_v24.3.0_R5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r5_turnip_v24.3.0_R5.zip",
+          "published_at": "2024-08-28T18:04:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r4",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 4",
+      "published_at": "2024-08-21T15:08:50Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R4.zip",
+          "mirror_name": "v24.3.0_r4_turnip_v24.3.0_R4.zip",
+          "size": 2242369,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r4/turnip_v24.3.0_R4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r4_turnip_v24.3.0_R4.zip",
+          "published_at": "2024-08-21T15:08:48Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r12",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 12",
+      "published_at": "2024-10-24T07:10:30Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0-R12.zip",
+          "mirror_name": "v24.3.0_r12_turnip_v24.3.0-R12.zip",
+          "size": 2263996,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r12/turnip_v24.3.0-R12.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r12_turnip_v24.3.0-R12.zip",
+          "published_at": "2024-10-24T07:10:14Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r11",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 11",
+      "published_at": "2024-10-09T13:34:42Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0-R11.zip",
+          "mirror_name": "v24.3.0_r11_turnip_v24.3.0-R11.zip",
+          "size": 2242402,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r11/turnip_v24.3.0-R11.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r11_turnip_v24.3.0-R11.zip",
+          "published_at": "2024-10-09T13:34:33Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r10",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 10",
+      "published_at": "2024-10-04T10:04:50Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0-R10.zip",
+          "mirror_name": "v24.3.0_r10_turnip_v24.3.0-R10.zip",
+          "size": 2241038,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r10/turnip_v24.3.0-R10.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r10_turnip_v24.3.0-R10.zip",
+          "published_at": "2024-10-04T10:04:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "0972024",
+      "name": "0972024",
+      "published_at": "2024-09-07T06:10:41Z",
+      "assets": [
+        {
+          "name": "adreno-676.41-adpkg.zip",
+          "mirror_name": "0972024_adreno-676.41-adpkg.zip",
+          "size": 12351559,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/0972024/adreno-676.41-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/0972024_adreno-676.41-adpkg.zip",
+          "published_at": "2024-09-07T06:10:21Z"
+        }
+      ]
+    },
+    {
+      "tag": "09302024",
+      "name": "Qualcomm driver v768",
+      "published_at": "2024-09-29T23:45:10Z",
+      "assets": [
+        {
+          "name": "vulkan-786-adpkg.zip",
+          "mirror_name": "09302024_vulkan-786-adpkg.zip",
+          "size": 11862164,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/09302024/vulkan-786-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09302024_vulkan-786-adpkg.zip",
+          "published_at": "2024-09-29T23:44:37Z"
+        }
+      ]
+    },
+    {
+      "tag": "09072024-2",
+      "name": "Qualcomm driver v777",
+      "published_at": "2024-09-07T06:14:21Z",
+      "assets": [
+        {
+          "name": "adreno-777-adpkg.zip",
+          "mirror_name": "09072024-2_adreno-777-adpkg.zip",
+          "size": 11834731,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/09072024-2/adreno-777-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024-2_adreno-777-adpkg.zip",
+          "published_at": "2024-09-07T06:14:19Z"
+        }
+      ]
+    },
+    {
+      "tag": "09072024",
+      "name": "Qualcomm driver v762.10",
+      "published_at": "2024-09-07T06:13:08Z",
+      "assets": [
+        {
+          "name": "adreno-762.10-adpkg.zip",
+          "mirror_name": "09072024_adreno-762.10-adpkg.zip",
+          "size": 15001344,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/09072024/adreno-762.10-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/09072024_adreno-762.10-adpkg.zip",
+          "published_at": "2024-09-07T06:12:58Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r3",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 3",
+      "published_at": "2024-08-13T13:32:37Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R3.zip",
+          "mirror_name": "v24.3.0_r3_turnip_v24.3.0_R3.zip",
+          "size": 2221208,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r3/turnip_v24.3.0_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r3_turnip_v24.3.0_R3.zip",
+          "published_at": "2024-08-13T13:32:20Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r2",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 2",
+      "published_at": "2024-08-07T13:54:49Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R2.zip",
+          "mirror_name": "v24.3.0_r2_turnip_v24.3.0_R2.zip",
+          "size": 2213716,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r2/turnip_v24.3.0_R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r2_turnip_v24.3.0_R2.zip",
+          "published_at": "2024-08-07T13:54:10Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.3.0_r1",
+      "name": "Mesa Turnip driver v24.3.0 - Revision 1",
+      "published_at": "2024-07-31T15:03:46Z",
+      "assets": [
+        {
+          "name": "turnip_v24.3.0_R1.zip",
+          "mirror_name": "v24.3.0_r1_turnip_v24.3.0_R1.zip",
+          "size": 2213518,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.3.0_r1/turnip_v24.3.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.3.0_r1_turnip_v24.3.0_R1.zip",
+          "published_at": "2024-07-31T14:58:49Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_r22",
+      "name": "Mesa Turnip driver v24.2.0 - Revision 22",
+      "published_at": "2024-07-26T02:36:13Z",
+      "assets": [
+        {
+          "name": "turnip_v24.2.0_R22.zip",
+          "mirror_name": "v24.2.0_r22_turnip_v24.2.0_R22.zip",
+          "size": 2218296,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_r22/turnip_v24.2.0_R22.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r22_turnip_v24.2.0_R22.zip",
+          "published_at": "2024-07-26T02:32:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_a735",
+      "name": "Mesa Turnip driver v24.2.0 - a735 basic support",
+      "published_at": "2024-07-27T23:26:41Z",
+      "assets": [
+        {
+          "name": "turnip_v24.2.0_partial_a735_support_TEST.zip",
+          "mirror_name": "v24.2.0_a735_turnip_v24.2.0_partial_a735_support_TEST.zip",
+          "size": 2218351,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_a735/turnip_v24.2.0_partial_a735_support_TEST.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a735_turnip_v24.2.0_partial_a735_support_TEST.zip",
+          "published_at": "2024-07-27T23:25:14Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.19",
+      "name": "Qualcomm driver v744.19",
+      "published_at": "2024-04-10T01:27:23Z",
+      "assets": [
+        {
+          "name": "adreno-744.19-adpkg.zip",
+          "mirror_name": "v744.19_adreno-744.19-adpkg.zip",
+          "size": 13603177,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.19/adreno-744.19-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.19_adreno-744.19-adpkg.zip",
+          "published_at": "2024-04-10T01:27:20Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_r21",
+      "name": "Mesa Turnip driver v24.2.0 - Revision 21",
+      "published_at": "2024-07-17T04:10:05Z",
+      "assets": [
+        {
+          "name": "turnip_v24.2.0_R21.zip",
+          "mirror_name": "v24.2.0_r21_turnip_v24.2.0_R21.zip",
+          "size": 2209303,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_r21/turnip_v24.2.0_R21.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r21_turnip_v24.2.0_R21.zip",
+          "published_at": "2024-07-17T04:08:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_r20",
+      "name": "Mesa Turnip driver v24.2.0 - Revision 20",
+      "published_at": "2024-07-10T00:06:51Z",
+      "assets": [
+        {
+          "name": "turnip_v24.2.0_R20.zip",
+          "mirror_name": "v24.2.0_r20_turnip_v24.2.0_R20.zip",
+          "size": 2105118,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_r20/turnip_v24.2.0_R20.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r20_turnip_v24.2.0_R20.zip",
+          "published_at": "2024-07-10T00:06:49Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_r19_preview",
+      "name": "Mesa Turnip driver v24.2.0 Experimental R19",
+      "published_at": "2024-05-26T11:14:21Z",
+      "assets": [
+        {
+          "name": "Turnip-24.2.0_weab-chan_R19_experimental.zip",
+          "mirror_name": "v24.2.0_r19_preview_Turnip-24.2.0_weab-chan_R19_experimental.zip",
+          "size": 1999792,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_r19_preview/Turnip-24.2.0_weab-chan_R19_experimental.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_preview_Turnip-24.2.0_weab-chan_R19_experimental.zip",
+          "published_at": "2024-05-26T11:12:39Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_r19",
+      "name": "Mesa Turnip driver v24.2.0 - Revision 19",
+      "published_at": "2024-06-09T12:51:32Z",
+      "assets": [
+        {
+          "name": "turnip_24.2.0_adpkg_R19.zip",
+          "mirror_name": "v24.2.0_r19_turnip_24.2.0_adpkg_R19.zip",
+          "size": 2182719,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_r19/turnip_24.2.0_adpkg_R19.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_r19_turnip_24.2.0_adpkg_R19.zip",
+          "published_at": "2024-06-09T12:50:11Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.2.0_a32_patch",
+      "name": "Mesa Turnip driver v24.2.0 + Adreno A32 Support",
+      "published_at": "2024-05-04T02:07:38Z",
+      "assets": [
+        {
+          "name": "Turnip-24.2.0_Adreno_32_patch.zip",
+          "mirror_name": "v24.2.0_a32_patch_Turnip-24.2.0_Adreno_32_patch.zip",
+          "size": 2134193,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.2.0_a32_patch/Turnip-24.2.0_Adreno_32_patch.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.2.0_a32_patch_Turnip-24.2.0_Adreno_32_patch.zip",
+          "published_at": "2024-05-04T02:07:35Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.1.0_R18",
+      "name": "Mesa Turnip driver v24.1.0 - Revision 18",
+      "published_at": "2024-03-19T10:43:46Z",
+      "assets": [
+        {
+          "name": "Turnip-24.1.0.adpkg_R18.a6xx.zip",
+          "mirror_name": "v24.1.0_R18_Turnip-24.1.0.adpkg_R18.a6xx.zip",
+          "size": 1974488,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R18/Turnip-24.1.0.adpkg_R18.a6xx.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.a6xx.zip",
+          "published_at": "2024-03-21T02:04:20Z"
+        },
+        {
+          "name": "Turnip-24.1.0.adpkg_R18.zip",
+          "mirror_name": "v24.1.0_R18_Turnip-24.1.0.adpkg_R18.zip",
+          "size": 1976403,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R18/Turnip-24.1.0.adpkg_R18.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R18_Turnip-24.1.0.adpkg_R18.zip",
+          "published_at": "2024-03-21T02:03:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "unsupported_gpus_v1",
+      "name": "Mesa Turnip driver - Unsupported a7xx GPUs - Experimental",
+      "published_at": "2024-07-11T00:12:01Z",
+      "assets": [
+        {
+          "name": "MTd.experimental.Unsupported.a7xx.zip",
+          "mirror_name": "unsupported_gpus_v1_MTd.experimental.Unsupported.a7xx.zip",
+          "size": 2191667,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/unsupported_gpus_v1/MTd.experimental.Unsupported.a7xx.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/unsupported_gpus_v1_MTd.experimental.Unsupported.a7xx.zip",
+          "published_at": "2024-07-11T00:12:01Z"
+        }
+      ]
+    },
+    {
+      "tag": "turnip_A32",
+      "name": "Mesa Turnip drivers Adreno A32 Special Edition",
+      "published_at": "2024-07-03T12:48:03Z",
+      "assets": [
+        {
+          "name": "Turnip-23.3.0-vulkan-1.3.255.zip",
+          "mirror_name": "turnip_A32_Turnip-23.3.0-vulkan-1.3.255.zip",
+          "size": 2076106,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/turnip_A32/Turnip-23.3.0-vulkan-1.3.255.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_Turnip-23.3.0-vulkan-1.3.255.zip",
+          "published_at": "2024-07-03T12:41:10Z"
+        },
+        {
+          "name": "turnip_24.2.0_a32.zip",
+          "mirror_name": "turnip_A32_turnip_24.2.0_a32.zip",
+          "size": 2113123,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/turnip_A32/turnip_24.2.0_a32.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/turnip_A32_turnip_24.2.0_a32.zip",
+          "published_at": "2024-07-03T12:39:56Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.16",
+      "name": "Qualcomm driver v744.16",
+      "published_at": "2024-02-23T08:09:05Z",
+      "assets": [
+        {
+          "name": "adreno-744.16-adpkg.zip",
+          "mirror_name": "v744.16_adreno-744.16-adpkg.zip",
+          "size": 13228502,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.16/adreno-744.16-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.16_adreno-744.16-adpkg.zip",
+          "published_at": "2024-02-23T08:06:24Z"
+        }
+      ]
+    },
+    {
+      "tag": "v757",
+      "name": " Qualcomm driver v757",
+      "published_at": "2024-01-27T03:18:44Z",
+      "assets": [
+        {
+          "name": "adreno757.adpkg.zip",
+          "mirror_name": "v757_adreno757.adpkg.zip",
+          "size": 11095647,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v757/adreno757.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v757_adreno757.adpkg.zip",
+          "published_at": "2024-01-27T03:18:41Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.12",
+      "name": "Qualcomm driver v744.12",
+      "published_at": "2024-01-09T01:35:10Z",
+      "assets": [
+        {
+          "name": "adreno744.12.adpkg.zip",
+          "mirror_name": "v744.12_adreno744.12.adpkg.zip",
+          "size": 13234898,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.12/adreno744.12.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.12_adreno744.12.adpkg.zip",
+          "published_at": "2024-01-09T01:34:22Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.8",
+      "name": "Qualcomm driver v744.8",
+      "published_at": "2023-12-22T11:07:16Z",
+      "assets": [
+        {
+          "name": "Adreno744.8.adpkg.zip",
+          "mirror_name": "v744.8_Adreno744.8.adpkg.zip",
+          "size": 13189886,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.8/Adreno744.8.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.8_Adreno744.8.adpkg.zip",
+          "published_at": "2023-12-22T11:07:13Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.5",
+      "name": "Qualcomm drivers v744.5",
+      "published_at": "2023-12-22T11:05:56Z",
+      "assets": [
+        {
+          "name": "adreno744.5.adpkg.zip",
+          "mirror_name": "v744.5_adreno744.5.adpkg.zip",
+          "size": 13183599,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.5/adreno744.5.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.5_adreno744.5.adpkg.zip",
+          "published_at": "2023-12-22T11:05:37Z"
+        }
+      ]
+    },
+    {
+      "tag": "v744.4",
+      "name": "Qualcomm driver v744.4",
+      "published_at": "2023-12-22T11:04:43Z",
+      "assets": [
+        {
+          "name": "adreno744.4.adpkg.zip",
+          "mirror_name": "v744.4_adreno744.4.adpkg.zip",
+          "size": 13183571,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v744.4/adreno744.4.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v744.4_adreno744.4.adpkg.zip",
+          "published_at": "2023-12-22T10:57:27Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.53",
+      "name": "Qualcomm driver v676.53",
+      "published_at": "2024-02-21T02:55:38Z",
+      "assets": [
+        {
+          "name": "adreno676.53.adpkg.zip",
+          "mirror_name": "v676.53_adreno676.53.adpkg.zip",
+          "size": 12233865,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.53/adreno676.53.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.53_adreno676.53.adpkg.zip",
+          "published_at": "2024-02-21T02:55:36Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.51",
+      "name": "Qualcomm driver v676.51",
+      "published_at": "2024-01-08T14:10:42Z",
+      "assets": [
+        {
+          "name": "adreno676.51.adpkg.zip",
+          "mirror_name": "v676.51_adreno676.51.adpkg.zip",
+          "size": 12233295,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.51/adreno676.51.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.51_adreno676.51.adpkg.zip",
+          "published_at": "2024-01-08T14:10:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.47",
+      "name": "Qualcomm driver v676.47",
+      "published_at": "2023-12-21T13:44:26Z",
+      "assets": [
+        {
+          "name": "adreno676.47.adpkg.zip",
+          "mirror_name": "v676.47_adreno676.47.adpkg.zip",
+          "size": 11565519,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.47/adreno676.47.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.47_adreno676.47.adpkg.zip",
+          "published_at": "2023-12-21T13:44:16Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615.77",
+      "name": "Qualcomm driver v615.77",
+      "published_at": "2023-12-21T13:31:50Z",
+      "assets": [
+        {
+          "name": "adreno615.77.adpkg.zip",
+          "mirror_name": "v615.77_adreno615.77.adpkg.zip",
+          "size": 9956008,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.77/adreno615.77.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.77_adreno615.77.adpkg.zip",
+          "published_at": "2023-12-21T13:19:03Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.1.0_R17",
+      "name": "Mesa Turnip driver v24.1.0 - Revision 17",
+      "published_at": "2024-02-12T06:40:30Z",
+      "assets": [
+        {
+          "name": "turnip-24.1.0.adpkg_a750.zip",
+          "mirror_name": "v24.1.0_R17_turnip-24.1.0.adpkg_a750.zip",
+          "size": 1908226,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R17/turnip-24.1.0.adpkg_a750.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_a750.zip",
+          "published_at": "2024-02-12T06:30:56Z"
+        },
+        {
+          "name": "turnip-24.1.0.adpkg_R17-v2.zip",
+          "mirror_name": "v24.1.0_R17_turnip-24.1.0.adpkg_R17-v2.zip",
+          "size": 1908149,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R17/turnip-24.1.0.adpkg_R17-v2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_turnip-24.1.0.adpkg_R17-v2.zip",
+          "published_at": "2024-02-13T09:08:22Z"
+        },
+        {
+          "name": "Turnip-24.1.0.adpkg_R17.zip",
+          "mirror_name": "v24.1.0_R17_Turnip-24.1.0.adpkg_R17.zip",
+          "size": 1897352,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R17/Turnip-24.1.0.adpkg_R17.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R17_Turnip-24.1.0.adpkg_R17.zip",
+          "published_at": "2024-02-12T06:29:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.1.0_R16",
+      "name": "Mesa Turnip driver v24.1.0 - Revision 16",
+      "published_at": "2024-01-22T07:59:29Z",
+      "assets": [
+        {
+          "name": "Turnip-24.1.0.adpkg_R16.zip",
+          "mirror_name": "v24.1.0_R16_Turnip-24.1.0.adpkg_R16.zip",
+          "size": 1892291,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.1.0_R16/Turnip-24.1.0.adpkg_R16.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.1.0_R16_Turnip-24.1.0.adpkg_R16.zip",
+          "published_at": "2024-01-22T07:59:05Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.0.0_R15",
+      "name": "Mesa Turnip driver v24.0.0 - Revision 15",
+      "published_at": "2024-01-09T01:25:24Z",
+      "assets": [
+        {
+          "name": "Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
+          "mirror_name": "v24.0.0_R15_Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
+          "size": 1887457,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.0.0_R15/Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R15_Mesa.Turnip.driver.v24.0.0.-.Revision.15.zip",
+          "published_at": "2024-01-09T01:24:58Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.0.0_R14",
+      "name": "Mesa Turnip driver v24.0.0 - Revision 14",
+      "published_at": "2023-12-30T11:24:24Z",
+      "assets": [
+        {
+          "name": "Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
+          "mirror_name": "v24.0.0_R14_Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
+          "size": 1865334,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.0.0_R14/Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R14_Mesa.Turnip.driver.v24.0.0.-.Revision.14.zip",
+          "published_at": "2023-12-30T11:24:08Z"
+        }
+      ]
+    },
+    {
+      "tag": "v24.0.0_R13",
+      "name": " Mesa Turnip driver v24.0.0 - Revision 13",
+      "published_at": "2023-12-24T14:54:04Z",
+      "assets": [
+        {
+          "name": "turnip-24.0.0-devel.adpkg_R13.zip",
+          "mirror_name": "v24.0.0_R13_turnip-24.0.0-devel.adpkg_R13.zip",
+          "size": 1869092,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v24.0.0_R13/turnip-24.0.0-devel.adpkg_R13.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v24.0.0_R13_turnip-24.0.0-devel.adpkg_R13.zip",
+          "published_at": "2023-12-24T14:53:58Z"
+        }
+      ]
+    },
+    {
+      "tag": "24.0.0-R12",
+      "name": "Mesa Turnip Driver v24.0.0 - Revision 12",
+      "published_at": "2023-12-05T13:07:34Z",
+      "assets": [
+        {
+          "name": "agressive_beta_extensions_turnip.zip",
+          "mirror_name": "24.0.0-R12_agressive_beta_extensions_turnip.zip",
+          "size": 1860740,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/24.0.0-R12/agressive_beta_extensions_turnip.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_beta_extensions_turnip.zip",
+          "published_at": "2023-12-05T14:11:27Z"
+        },
+        {
+          "name": "agressive_turnip.zip",
+          "mirror_name": "24.0.0-R12_agressive_turnip.zip",
+          "size": 1861222,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/24.0.0-R12/agressive_turnip.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_agressive_turnip.zip",
+          "published_at": "2023-12-05T14:11:22Z"
+        },
+        {
+          "name": "regular_turnip.zip",
+          "mirror_name": "24.0.0-R12_regular_turnip.zip",
+          "size": 1861925,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/24.0.0-R12/regular_turnip.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R12_regular_turnip.zip",
+          "published_at": "2023-12-05T14:11:16Z"
+        }
+      ]
+    },
+    {
+      "tag": "24.0.0-R11",
+      "name": "Mesa Turnip Driver v24.0.0 - Revision 11",
+      "published_at": "2023-11-26T05:39:32Z",
+      "assets": [
+        {
+          "name": "turnip-24.0.0-devel.adpkg_R11.zip",
+          "mirror_name": "24.0.0-R11_turnip-24.0.0-devel.adpkg_R11.zip",
+          "size": 1859165,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/24.0.0-R11/turnip-24.0.0-devel.adpkg_R11.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R11_turnip-24.0.0-devel.adpkg_R11.zip",
+          "published_at": "2023-11-26T05:38:08Z"
+        }
+      ]
+    },
+    {
+      "tag": "24.0.0-R-X",
+      "name": "Mesa Turnip Driver v24.0.0 - Revision X",
+      "published_at": "2023-11-10T12:40:25Z",
+      "assets": [
+        {
+          "name": "turnip-24.0.0-devel.adpkg_R-X.zip",
+          "mirror_name": "24.0.0-R-X_turnip-24.0.0-devel.adpkg_R-X.zip",
+          "size": 1848524,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/24.0.0-R-X/turnip-24.0.0-devel.adpkg_R-X.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/24.0.0-R-X_turnip-24.0.0-devel.adpkg_R-X.zip",
+          "published_at": "2023-11-10T12:38:29Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0_R9",
+      "name": "Mesa Turnip Driver v23.3.0 - Revision 9",
+      "published_at": "2023-10-30T03:04:43Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-adpkg_R9.zip",
+          "mirror_name": "v23.3.0_R9_turnip-23.3.0-adpkg_R9.zip",
+          "size": 1847389,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0_R9/turnip-23.3.0-adpkg_R9.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R9_turnip-23.3.0-adpkg_R9.zip",
+          "published_at": "2023-10-30T03:03:27Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0_R8",
+      "name": "Mesa Turnip Driver v23.3.0 - Revision 8",
+      "published_at": "2023-10-24T15:48:24Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-A7XX.adpkg_R8.zip",
+          "mirror_name": "v23.3.0_R8_turnip-23.3.0-A7XX.adpkg_R8.zip",
+          "size": 1813498,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0_R8/turnip-23.3.0-A7XX.adpkg_R8.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R8_turnip-23.3.0-A7XX.adpkg_R8.zip",
+          "published_at": "2023-10-24T15:53:16Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0_R7",
+      "name": "Mesa Turnip Driver v23.3.0 + A7xx basic support - Revision 7",
+      "published_at": "2023-10-13T14:21:07Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-A7XX.adpkg_R7.zip",
+          "mirror_name": "v23.3.0_R7_turnip-23.3.0-A7XX.adpkg_R7.zip",
+          "size": 1815793,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0_R7/turnip-23.3.0-A7XX.adpkg_R7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R7_turnip-23.3.0-A7XX.adpkg_R7.zip",
+          "published_at": "2023-10-13T14:19:00Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0_R6",
+      "name": "Mesa Turnip Driver v23.3.0 + A7xx basic support - Revision 6",
+      "published_at": "2023-09-11T01:54:41Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-A7XX.adpkg_R6.zip",
+          "mirror_name": "v23.3.0_R6_turnip-23.3.0-A7XX.adpkg_R6.zip",
+          "size": 2102353,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0_R6/turnip-23.3.0-A7XX.adpkg_R6.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R6_turnip-23.3.0-A7XX.adpkg_R6.zip",
+          "published_at": "2023-09-11T01:54:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0_R5",
+      "name": " Mesa Turnip Driver v23.2.0 + A7xx basic support - Revision 5",
+      "published_at": "2023-08-14T12:39:30Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-A7XX.adpkg_R5.zip",
+          "mirror_name": "v23.3.0_R5_turnip-23.3.0-A7XX.adpkg_R5.zip",
+          "size": 2095762,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0_R5/turnip-23.3.0-A7XX.adpkg_R5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0_R5_turnip-23.3.0-A7XX.adpkg_R5.zip",
+          "published_at": "2023-08-14T12:39:14Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.42",
+      "name": " Qualcomm Driver v676.42",
+      "published_at": "2023-09-20T04:43:39Z",
+      "assets": [
+        {
+          "name": "adreno676.42.adpkg.zip",
+          "mirror_name": "v676.42_adreno676.42.adpkg.zip",
+          "size": 11545206,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.42/adreno676.42.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.42_adreno676.42.adpkg.zip",
+          "published_at": "2023-09-20T04:43:23Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.40",
+      "name": "Qualcomm Driver v676.40",
+      "published_at": "2023-09-10T13:54:46Z",
+      "assets": [
+        {
+          "name": "adreno676.40.adpkg.zip",
+          "mirror_name": "v676.40_adreno676.40.adpkg.zip",
+          "size": 11525714,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.40/adreno676.40.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.40_adreno676.40.adpkg.zip",
+          "published_at": "2023-09-10T13:54:41Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.39",
+      "name": "Qualcomm driver v676.39",
+      "published_at": "2023-08-20T14:28:00Z",
+      "assets": [
+        {
+          "name": "adreno.676.39.adpkg.zip",
+          "mirror_name": "v676.39_adreno.676.39.adpkg.zip",
+          "size": 11527952,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.39/adreno.676.39.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.39_adreno.676.39.adpkg.zip",
+          "published_at": "2023-08-20T14:27:28Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.32",
+      "name": " Qualcomm driver v676.32",
+      "published_at": "2023-06-16T12:21:36Z",
+      "assets": [
+        {
+          "name": "adreno676.32.adpkg.zip",
+          "mirror_name": "v676.32_adreno676.32.adpkg.zip",
+          "size": 11530276,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.32/adreno676.32.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg.zip",
+          "published_at": "2023-06-16T12:21:14Z"
+        },
+        {
+          "name": "adreno676.32.adpkg_alloc_fix.zip",
+          "mirror_name": "v676.32_adreno676.32.adpkg_alloc_fix.zip",
+          "size": 11530276,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.32/adreno676.32.adpkg_alloc_fix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.32_adreno676.32.adpkg_alloc_fix.zip",
+          "published_at": "2023-06-29T13:14:26Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0-dev-A6XX",
+      "name": "Mesa Turnip Driver - v23.3.0-dev, Vulkan 1.3.258",
+      "published_at": "2023-07-22T03:42:03Z",
+      "assets": [
+        {
+          "name": "turnip-23.3.0-A6XX.adpkg.zip",
+          "mirror_name": "v23.3.0-dev-A6XX_turnip-23.3.0-A6XX.adpkg.zip",
+          "size": 2030956,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0-dev-A6XX/turnip-23.3.0-A6XX.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev-A6XX_turnip-23.3.0-A6XX.adpkg.zip",
+          "published_at": "2023-07-22T03:41:40Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.3.0-dev",
+      "name": "Mesa Turnip Driver - v23.3.0-dev, Vulkan 1.3.255 + a7xx basic support",
+      "published_at": "2023-07-18T03:34:28Z",
+      "assets": [
+        {
+          "name": "Turnip-23.3.0-vulkan-1.3.255.zip",
+          "mirror_name": "v23.3.0-dev_Turnip-23.3.0-vulkan-1.3.255.zip",
+          "size": 2076106,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.3.0-dev/Turnip-23.3.0-vulkan-1.3.255.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.3.0-dev_Turnip-23.3.0-vulkan-1.3.255.zip",
+          "published_at": "2023-07-18T03:34:26Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.2.0_A7XX_2",
+      "name": "Mesa Turnip Driver v23.2.0 + a7xx basic support v2 FIX2",
+      "published_at": "2023-06-22T12:21:43Z",
+      "assets": [
+        {
+          "name": "turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
+          "mirror_name": "v23.2.0_A7XX_2_turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
+          "size": 2053946,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.2.0_A7XX_2/turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_2_turnip-23.2.0-A7XX.adpkg_v2_FIX2.zip",
+          "published_at": "2023-06-23T10:19:52Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.2.0_A7XX",
+      "name": "Turnip Vulkan Driver v23.2.0 + a7xx basic support",
+      "published_at": "2023-06-08T11:07:33Z",
+      "assets": [
+        {
+          "name": "turnip-23.2.0-A7XX.adpkg.zip",
+          "mirror_name": "v23.2.0_A7XX_turnip-23.2.0-A7XX.adpkg.zip",
+          "size": 2117910,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.2.0_A7XX/turnip-23.2.0-A7XX.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0_A7XX_turnip-23.2.0-A7XX.adpkg.zip",
+          "published_at": "2023-06-08T11:06:53Z"
+        }
+      ]
+    },
+    {
+      "tag": "vk.1.3.261-A6XX",
+      "name": "Mesa Turnip Driver - v23.3.0-dev, Vulkan 1.3.261",
+      "published_at": "2023-08-05T08:35:21Z",
+      "assets": [
+        {
+          "name": "Turnip-23.3.0-VK.1.3.261-A6XX.zip",
+          "mirror_name": "vk.1.3.261-A6XX_Turnip-23.3.0-VK.1.3.261-A6XX.zip",
+          "size": 2049896,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/vk.1.3.261-A6XX/Turnip-23.3.0-VK.1.3.261-A6XX.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/vk.1.3.261-A6XX_Turnip-23.3.0-VK.1.3.261-A6XX.zip",
+          "published_at": "2023-08-05T08:35:42Z"
+        }
+      ]
+    },
+    {
+      "tag": "A7xx_R4",
+      "name": "Mesa Turnip Driver v23.2.0 + A7xx basic support - Revision 4",
+      "published_at": "2023-07-11T10:52:38Z",
+      "assets": [
+        {
+          "name": "turnip-23.2.0-A7XX.adpkg_R4.zip",
+          "mirror_name": "A7xx_R4_turnip-23.2.0-A7XX.adpkg_R4.zip",
+          "size": 2045891,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/A7xx_R4/turnip-23.2.0-A7XX.adpkg_R4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R4_turnip-23.2.0-A7XX.adpkg_R4.zip",
+          "published_at": "2023-07-11T10:52:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "A7xx_R3",
+      "name": "Mesa Turnip Driver v23.2.0 + A7xx basic support - Revision 3",
+      "published_at": "2023-06-30T10:01:06Z",
+      "assets": [
+        {
+          "name": "turnip-23.2.0-A7XX.adpkg_R3.zip",
+          "mirror_name": "A7xx_R3_turnip-23.2.0-A7XX.adpkg_R3.zip",
+          "size": 2046064,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/A7xx_R3/turnip-23.2.0-A7XX.adpkg_R3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/A7xx_R3_turnip-23.2.0-A7XX.adpkg_R3.zip",
+          "published_at": "2023-06-30T10:00:35Z"
+        }
+      ]
+    },
+    {
+      "tag": "v690",
+      "name": "Qualcomm driver v690",
+      "published_at": "2023-04-18T16:32:40Z",
+      "assets": [
+        {
+          "name": "adreno690.adpkg.zip",
+          "mirror_name": "v690_adreno690.adpkg.zip",
+          "size": 13663164,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v690/adreno690.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v690_adreno690.adpkg.zip",
+          "published_at": "2023-04-18T16:32:34Z"
+        }
+      ]
+    },
+    {
+      "tag": "v682",
+      "name": "Qualcomm driver v682",
+      "published_at": "2023-04-26T10:10:02Z",
+      "assets": [
+        {
+          "name": "adreno682.adpkg.zip",
+          "mirror_name": "v682_adreno682.adpkg.zip",
+          "size": 13262181,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v682/adreno682.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v682_adreno682.adpkg.zip",
+          "published_at": "2023-04-26T10:09:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.16",
+      "name": "Qualcomm driver v676.16",
+      "published_at": "2023-05-10T22:28:36Z",
+      "assets": [
+        {
+          "name": "adreno676.16.adpkg.zip",
+          "mirror_name": "v676.16_adreno676.16.adpkg.zip",
+          "size": 12332309,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.16/adreno676.16.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.16_adreno676.16.adpkg.zip",
+          "published_at": "2023-05-10T22:28:13Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.13",
+      "name": "Qualcomm driver v676.13",
+      "published_at": "2023-04-26T10:05:57Z",
+      "assets": [
+        {
+          "name": "adreno676.13.adpkg.zip",
+          "mirror_name": "v676.13_adreno676.13.adpkg.zip",
+          "size": 11478956,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.13/adreno676.13.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.13_adreno676.13.adpkg.zip",
+          "published_at": "2023-04-26T10:04:36Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.22FIX",
+      "name": "Qualcomm driver v676.22 FIX",
+      "published_at": "2023-05-16T09:22:48Z",
+      "assets": [
+        {
+          "name": "adreno676.22.adpkg.zip",
+          "mirror_name": "v676.22FIX_adreno676.22.adpkg.zip",
+          "size": 11522023,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.22FIX/adreno676.22.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.22FIX_adreno676.22.adpkg.zip",
+          "published_at": "2023-05-16T09:22:27Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615.65",
+      "name": " Qualcomm driver v615.65",
+      "published_at": "2023-05-12T10:06:25Z",
+      "assets": [
+        {
+          "name": "adreno615.65.adpkg.zip",
+          "mirror_name": "v615.65_adreno615.65.adpkg.zip",
+          "size": 9955479,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.65/adreno615.65.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.65_adreno615.65.adpkg.zip",
+          "published_at": "2023-05-12T10:06:21Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.2.0-dev",
+      "name": "Freedreno Turnip Vulkan Driver v23.2.0 - (5/5/23) - FIXED",
+      "published_at": "2023-05-12T10:13:13Z",
+      "assets": [
+        {
+          "name": "turnip-23.2.0-devel.zip",
+          "mirror_name": "v23.2.0-dev_turnip-23.2.0-devel.zip",
+          "size": 1878573,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.2.0-dev/turnip-23.2.0-devel.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.2.0-dev_turnip-23.2.0-devel.zip",
+          "published_at": "2023-06-04T13:10:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.1.0-dev",
+      "name": "Mesa3D Turnip Driver v23.1.0-dev",
+      "published_at": "2023-04-18T16:36:47Z",
+      "assets": [
+        {
+          "name": "Turnip-23.1.0-dev.adpkg.zip",
+          "mirror_name": "v23.1.0-dev_Turnip-23.1.0-dev.adpkg.zip",
+          "size": 1868800,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.1.0-dev/Turnip-23.1.0-dev.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.1.0-dev_Turnip-23.1.0-dev.adpkg.zip",
+          "published_at": "2023-04-18T16:36:45Z"
+        }
+      ]
+    },
+    {
+      "tag": "v23.0.3",
+      "name": "Mesa3D Turnip Driver v23.0.3",
+      "published_at": "2023-04-22T12:52:02Z",
+      "assets": [
+        {
+          "name": "Turnip-23.0.3.adpkg.zip",
+          "mirror_name": "v23.0.3_Turnip-23.0.3.adpkg.zip",
+          "size": 1869286,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v23.0.3/Turnip-23.0.3.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v23.0.3_Turnip-23.0.3.adpkg.zip",
+          "published_at": "2023-04-22T12:51:57Z"
+        }
+      ]
+    },
+    {
+      "tag": "v687",
+      "name": " Qualcomm driver v687",
+      "published_at": "2023-03-11T10:39:51Z",
+      "assets": [
+        {
+          "name": "adreno687.adpkg.zip",
+          "mirror_name": "v687_adreno687.adpkg.zip",
+          "size": 13327718,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v687/adreno687.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v687_adreno687.adpkg.zip",
+          "published_at": "2023-03-11T10:39:49Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.12",
+      "name": "Qualcomm driver v676.12",
+      "published_at": "2023-02-24T12:14:01Z",
+      "assets": [
+        {
+          "name": "adreno676.12.adpkg.zip",
+          "mirror_name": "v676.12_adreno676.12.adpkg.zip",
+          "size": 11795260,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.12/adreno676.12.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.12_adreno676.12.adpkg.zip",
+          "published_at": "2023-02-24T12:13:55Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.9",
+      "name": " Qualcomm driver v676.9",
+      "published_at": "2023-02-09T11:14:45Z",
+      "assets": [
+        {
+          "name": "adreno676.9.adpkg.zip",
+          "mirror_name": "v676.9_adreno676.9.adpkg.zip",
+          "size": 11831852,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.9/adreno676.9.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.9_adreno676.9.adpkg.zip",
+          "published_at": "2023-02-09T11:14:18Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676.3",
+      "name": " Qualcomm driver v676.3",
+      "published_at": "2023-02-09T11:12:39Z",
+      "assets": [
+        {
+          "name": "adreno676.3.adpkg.zip",
+          "mirror_name": "v676.3_adreno676.3.adpkg.zip",
+          "size": 11881015,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676.3/adreno676.3.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676.3_adreno676.3.adpkg.zip",
+          "published_at": "2023-02-09T11:12:16Z"
+        }
+      ]
+    },
+    {
+      "tag": "v676",
+      "name": "Qualcomm driver v676",
+      "published_at": "2022-12-14T06:21:40Z",
+      "assets": [
+        {
+          "name": "adreno-v676-adpkg.zip",
+          "mirror_name": "v676_adreno-v676-adpkg.zip",
+          "size": 13629353,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v676/adreno-v676-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v676_adreno-v676-adpkg.zip",
+          "published_at": "2022-12-14T06:21:34Z"
+        }
+      ]
+    },
+    {
+      "tag": "v672",
+      "name": "Qualcomm driver v672",
+      "published_at": "2022-12-07T15:20:21Z",
+      "assets": [
+        {
+          "name": "adreno672.adpkg.zip",
+          "mirror_name": "v672_adreno672.adpkg.zip",
+          "size": 11417049,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v672/adreno672.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v672_adreno672.adpkg.zip",
+          "published_at": "2022-12-07T15:19:42Z"
+        }
+      ]
+    },
+    {
+      "tag": "v667",
+      "name": "Qualcomm driver v667",
+      "published_at": "2022-12-29T12:25:16Z",
+      "assets": [
+        {
+          "name": "v667-patched-adpkg.zip",
+          "mirror_name": "v667_v667-patched-adpkg.zip",
+          "size": 13495062,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v667/v667-patched-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v667_v667-patched-adpkg.zip",
+          "published_at": "2022-12-29T12:23:43Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615.50",
+      "name": "Qualcomm driver v615.50",
+      "published_at": "2022-12-29T12:26:55Z",
+      "assets": [
+        {
+          "name": "v615.50-adpkg.zip",
+          "mirror_name": "v615.50_v615.50-adpkg.zip",
+          "size": 10209562,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.50/v615.50-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.50_v615.50-adpkg.zip",
+          "published_at": "2022-12-29T12:26:52Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615.37",
+      "name": "Qualcomm driver v615.37",
+      "published_at": "2022-12-07T15:18:23Z",
+      "assets": [
+        {
+          "name": "v615.37-patched.adpkg.zip",
+          "mirror_name": "v615.37_v615.37-patched.adpkg.zip",
+          "size": 10256973,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.37/v615.37-patched.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.37_v615.37-patched.adpkg.zip",
+          "published_at": "2022-12-07T15:17:31Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615.4",
+      "name": "Qualcomm driver v615.4",
+      "published_at": "2022-12-07T15:16:50Z",
+      "assets": [
+        {
+          "name": "v615v4-patched.adpkg.zip",
+          "mirror_name": "v615.4_v615v4-patched.adpkg.zip",
+          "size": 10254600,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615.4/v615v4-patched.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615.4_v615v4-patched.adpkg.zip",
+          "published_at": "2022-12-07T15:16:35Z"
+        }
+      ]
+    },
+    {
+      "tag": "v615",
+      "name": "Qualcomm driver v615",
+      "published_at": "2022-12-07T15:12:32Z",
+      "assets": [
+        {
+          "name": "0615-patched.adpkg.zip",
+          "mirror_name": "v615_0615-patched.adpkg.zip",
+          "size": 10397599,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v615/0615-patched.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v615_0615-patched.adpkg.zip",
+          "published_at": "2022-12-07T15:12:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.6-r1",
+      "name": "Turnip-v22.3.6-r1",
+      "published_at": "2023-02-24T12:15:13Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.6-R1.zip",
+          "mirror_name": "22.3.6-r1_Turnip-v22.3.6-R1.zip",
+          "size": 1818432,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.6-r1/Turnip-v22.3.6-R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.6-r1_Turnip-v22.3.6-R1.zip",
+          "published_at": "2023-02-24T12:43:56Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.5-r2",
+      "name": "Turnip-v22.3.5-r2",
+      "published_at": "2023-02-17T14:29:15Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.5-R2.zip",
+          "mirror_name": "22.3.5-r2_Turnip-v22.3.5-R2.zip",
+          "size": 1828232,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.5-r2/Turnip-v22.3.5-R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r2_Turnip-v22.3.5-R2.zip",
+          "published_at": "2023-02-17T14:28:42Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.5-r1",
+      "name": "Turnip-v22.3.5-r1",
+      "published_at": "2023-02-10T15:12:50Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.5-R1.zip",
+          "mirror_name": "22.3.5-r1_Turnip-v22.3.5-R1.zip",
+          "size": 1821575,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.5-r1/Turnip-v22.3.5-R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.5-r1_Turnip-v22.3.5-R1.zip",
+          "published_at": "2023-02-10T15:12:47Z"
+        }
+      ]
+    },
+    {
+      "tag": "v22.3.4-r2",
+      "name": "Turnip-v22.3.4-r2",
+      "published_at": "2023-02-09T11:10:17Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.4-r2.zip",
+          "mirror_name": "v22.3.4-r2_Turnip-v22.3.4-r2.zip",
+          "size": 1878063,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v22.3.4-r2/Turnip-v22.3.4-r2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r2_Turnip-v22.3.4-r2.zip",
+          "published_at": "2023-02-09T11:10:15Z"
+        }
+      ]
+    },
+    {
+      "tag": "v22.3.4-r1",
+      "name": "Turnip-v22.3.4-r1",
+      "published_at": "2023-02-09T11:08:54Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.4-r1.zip",
+          "mirror_name": "v22.3.4-r1_Turnip-v22.3.4-r1.zip",
+          "size": 1877005,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/v22.3.4-r1/Turnip-v22.3.4-r1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/v22.3.4-r1_Turnip-v22.3.4-r1.zip",
+          "published_at": "2023-02-09T11:08:26Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.3-r2",
+      "name": "Turnip v22.3.3-r2 - ft.lybxlpsv",
+      "published_at": "2023-01-17T11:22:44Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
+          "mirror_name": "22.3.3-r2_Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
+          "size": 1818243,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.3-r2/Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r2_Turnip-v22.3.3-r2-ft.lybxlpsv.zip",
+          "published_at": "2023-01-17T11:22:41Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.3-r1",
+      "name": "Turnip v22.3.3-R1",
+      "published_at": "2023-01-14T07:02:47Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.3-r1.zip",
+          "mirror_name": "22.3.3-r1_Turnip-v22.3.3-r1.zip",
+          "size": 1881091,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.3-r1/Turnip-v22.3.3-r1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.3-r1_Turnip-v22.3.3-r1.zip",
+          "published_at": "2023-01-14T07:02:45Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.2-r2",
+      "name": "Turnip v22.3.2-R2.zip",
+      "published_at": "2023-01-09T08:05:02Z",
+      "assets": []
+    },
+    {
+      "tag": "22.3.2-R1",
+      "name": "Turnip v22.3.2-R1",
+      "published_at": "2023-01-09T08:03:56Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.2-R1.zip",
+          "mirror_name": "22.3.2-R1_Turnip-v22.3.2-R1.zip",
+          "size": 1877982,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.2-R1/Turnip-v22.3.2-R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.2-R1_Turnip-v22.3.2-R1.zip",
+          "published_at": "2023-01-09T08:03:50Z"
+        }
+      ]
+    },
+    {
+      "tag": "22.3.1-r1",
+      "name": "Turnip-v22.3.1-R2",
+      "published_at": "2023-01-09T08:02:05Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.1-R2.zip",
+          "mirror_name": "22.3.1-r1_Turnip-v22.3.1-R2.zip",
+          "size": 1877889,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/22.3.1-r1/Turnip-v22.3.1-R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/22.3.1-r1_Turnip-v22.3.1-R2.zip",
+          "published_at": "2023-01-09T08:01:39Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_v25",
+      "name": "Turnip Driver version 25",
+      "published_at": "2022-12-14T06:17:39Z",
+      "assets": [
+        {
+          "name": "turnip-v25-adpkg.zip",
+          "mirror_name": "Turnip_v25_turnip-v25-adpkg.zip",
+          "size": 1875111,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_v25/turnip-v25-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v25_turnip-v25-adpkg.zip",
+          "published_at": "2022-12-14T06:18:09Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_v24",
+      "name": "Turnip driver version 24",
+      "published_at": "2022-12-07T15:07:18Z",
+      "assets": [
+        {
+          "name": "turnip-v24-adpkg.zip",
+          "mirror_name": "Turnip_v24_turnip-v24-adpkg.zip",
+          "size": 1864358,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_v24/turnip-v24-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v24_turnip-v24-adpkg.zip",
+          "published_at": "2022-12-07T15:15:34Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_v12",
+      "name": "Turnip driver version 12",
+      "published_at": "2022-12-07T15:02:02Z",
+      "assets": [
+        {
+          "name": "turnip-v12-adpkg.zip",
+          "mirror_name": "Turnip_v12_turnip-v12-adpkg.zip",
+          "size": 1869519,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_v12/turnip-v12-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_v12_turnip-v12-adpkg.zip",
+          "published_at": "2022-12-07T15:02:00Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_mark3",
+      "name": "Turnip-KGSL Rework",
+      "published_at": "2023-03-06T15:34:05Z",
+      "assets": [
+        {
+          "name": "turnip-kgsl-rework.adpkg.zip",
+          "mirror_name": "Turnip_mark3_turnip-kgsl-rework.adpkg.zip",
+          "size": 1708566,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_mark3/turnip-kgsl-rework.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark3_turnip-kgsl-rework.adpkg.zip",
+          "published_at": "2023-03-06T15:33:36Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_mark2",
+      "name": "Turnip driver by Mark v2",
+      "published_at": "2022-12-07T15:05:58Z",
+      "assets": [
+        {
+          "name": "Turnip_ft._Mark_Skyline_Fixes_v2.zip",
+          "mirror_name": "Turnip_mark2_Turnip_ft._Mark_Skyline_Fixes_v2.zip",
+          "size": 1671022,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_mark2/Turnip_ft._Mark_Skyline_Fixes_v2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark2_Turnip_ft._Mark_Skyline_Fixes_v2.zip",
+          "published_at": "2022-12-07T15:04:50Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_mark1",
+      "name": "Turnip driver by Mark v1",
+      "published_at": "2022-12-07T15:04:17Z",
+      "assets": [
+        {
+          "name": "turnip-skyline-fixes.adpkg.zip",
+          "mirror_name": "Turnip_mark1_turnip-skyline-fixes.adpkg.zip",
+          "size": 1601608,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_mark1/turnip-skyline-fixes.adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_mark1_turnip-skyline-fixes.adpkg.zip",
+          "published_at": "2022-12-07T15:02:35Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_26",
+      "name": "Turnip Driver version 26",
+      "published_at": "2022-12-15T23:44:24Z",
+      "assets": [
+        {
+          "name": "turnip-v26-adpkg.zip",
+          "mirror_name": "Turnip_26_turnip-v26-adpkg.zip",
+          "size": 1780905,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_26/turnip-v26-adpkg.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_26_turnip-v26-adpkg.zip",
+          "published_at": "2022-12-15T23:44:07Z"
+        }
+      ]
+    },
+    {
+      "tag": "Turnip_22-r2",
+      "name": "Turnip Driver v22.3.1-r2",
+      "published_at": "2022-12-29T12:30:29Z",
+      "assets": [
+        {
+          "name": "Turnip-v22.3.1-R2.zip",
+          "mirror_name": "Turnip_22-r2_Turnip-v22.3.1-R2.zip",
+          "size": 1877889,
+          "original_url": "https://github.com/K11MCH1/AdrenoToolsDrivers/releases/download/Turnip_22-r2/Turnip-v22.3.1-R2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/kimchi-drivers/Turnip_22-r2_Turnip-v22.3.1-R2.zip",
+          "published_at": "2022-12-29T12:27:36Z"
+        }
+      ]
+    }
+  ]
+}
