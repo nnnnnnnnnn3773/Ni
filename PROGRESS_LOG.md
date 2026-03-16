@@ -168,3 +168,25 @@
 - `README.md`
 - `.github/workflows/proton-bleeding-edge-nightly.yml`
 - `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
+
+---
+
+## Session — 2026-03-16
+
+### [feat] — Kimchi Driver Mirror workflow (2026-03-16)
+**Commit:** `0d9bd05`
+
+#### What changed
+
+**New file: `.github/workflows/kimchi-driver-mirror.yml`**
+- Mirrors all releases from K11MCH1/AdrenoToolsDrivers (154 releases, 200 assets, ~938 MB total)
+- Runs daily at 06:00 UTC + `workflow_dispatch` (optional `force_full_sync` boolean input)
+- **Storage:** actual `.zip` files uploaded as assets on a persistent `kimchi-drivers` release (pre-release, never deleted); filenames prefixed with sanitized tag name to avoid collisions (e.g. `v26.0.0-rc08_Turnip_v26.0.0_R8.zip`)
+- **Index:** `kimchi/drivers.json` committed to repo — contains `updated_at`, `source`, `mirror_release`, `total_releases`, `total_assets`, and per-release asset list with `name`, `mirror_name`, `size`, `original_url`, `mirror_url`, `published_at`
+- **Incremental:** skips assets already present in the mirror release (by name) or already in `drivers.json` with a `mirror_url`; `force_full_sync` re-downloads everything
+- `timeout-minutes: 360` — initial full sync can take up to 6h
+- `git pull --rebase -X ours` on drivers.json commit step
+
+#### Files touched
+- `.github/workflows/kimchi-driver-mirror.yml` (new)
+- `kimchi/drivers.json` (created on first run)
