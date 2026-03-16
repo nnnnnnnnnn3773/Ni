@@ -1,0 +1,131 @@
+name: Nightlies Components JSON
+
+on:
+  workflow_run:
+    workflows: ["All-in-One Emulation Nightlies"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate nightlies_components.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${GITHUB_REPOSITORY}"
+
+          python3 <<'PY'
+          import json, os, subprocess
+          from datetime import datetime, timezone
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+
+          # Static releases with their component type
+          STATIC_RELEASES = [
+              ("Box64",                    "Box64"),
+              ("Box64-Bionic",             "Box64"),
+              ("Box64-Hybrid",             "Box64"),
+              ("Wowbox64",                 "WOWBox64"),
+              ("DXVK-SAREK-ASYNC",         "DXVK"),
+              ("DXVK-SAREK-ASYNC-ARM64EC", "DXVK"),
+              ("Dxvk",                     "DXVK"),
+              ("Dxvk-arm64ec",             "DXVK"),
+              ("Dxvk-gplasync",            "DXVK"),
+              ("Dxvk-gplasync-arm64ec",    "DXVK"),
+              ("FexCore",                  "FEXCore"),
+              ("VKD3D-PROTON-ARM",         "VKD3D"),
+              ("Vkd3d-proton",             "VKD3D"),
+          ]
+
+          def detect_nightly_type(name):
+              n = name.lower()
+              if "wow64" in n or "wowbox" in n:
+                  return "WOWBox64"
+              if "box64" in n:
+                  return "Box64"
+              if "dxvk" in n:
+                  return "DXVK"
+              if "vkd3d" in n:
+                  return "VKD3D"
+              if "fex" in n:
+                  return "FEXCore"
+              return None  # skip (glslang, etc.)
+
+          def fetch_assets(tag):
+              result = subprocess.run(
+                  ["gh", "release", "view", tag, "--json", "assets",
+                   "-q", ".assets[] | {name: .name, url: .url}"],
+                  capture_output=True, text=True
+              )
+              if result.returncode != 0:
+                  print(f"  WARNING: could not fetch {tag}: {result.stderr.strip()}")
+                  return []
+              lines = result.stdout.strip().splitlines()
+              assets = []
+              for line in lines:
+                  if line.strip():
+                      assets.append(json.loads(line))
+              return assets
+
+          entries = []
+
+          # Static releases
+          for tag, comp_type in STATIC_RELEASES:
+              print(f"Fetching {tag}...")
+              assets = fetch_assets(tag)
+              for asset in assets:
+                  name = asset["name"]
+                  if not (name.endswith(".wcp") or name.endswith(".zip")):
+                      continue
+                  ver_name = name.rsplit(".", 1)[0]
+                  entries.append({
+                      "type":      comp_type,
+                      "verName":   ver_name,
+                      "verCode":   "0",
+                      "remoteUrl": f"https://github.com/{repo}/releases/download/{tag}/{name}",
+                  })
+              print(f"  {len(assets)} assets")
+
+          # nightly-latest
+          print("Fetching nightly-latest...")
+          nightly_assets = fetch_assets("nightly-latest")
+          for asset in nightly_assets:
+              name = asset["name"]
+              if not (name.endswith(".wcp") or name.endswith(".zip")):
+                  continue
+              comp_type = detect_nightly_type(name)
+              if not comp_type:
+                  continue
+              ver_name = name.rsplit(".", 1)[0]
+              entries.append({
+                  "type":      comp_type,
+                  "verName":   ver_name,
+                  "verCode":   "0",
+                  "remoteUrl": f"https://github.com/{repo}/releases/download/nightly-latest/{name}",
+              })
+          print(f"  {len(nightly_assets)} assets")
+
+          with open("nightlies_components.json", "w") as f:
+              json.dump(entries, f, indent=2)
+
+          print(f"\nWritten nightlies_components.json — {len(entries)} entries")
+          PY
+
+      - name: Commit nightlies_components.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nightlies_components.json
+          git diff --staged --quiet && echo "No changes" && exit 0
+          COUNT=$(jq 'length' nightlies_components.json)
+          git commit -m "chore: update nightlies_components.json — ${COUNT} entries ($(date -u +%Y-%m-%d))"
+          git pull --rebase -X ours
+          git push

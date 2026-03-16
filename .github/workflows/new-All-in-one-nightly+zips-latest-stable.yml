@@ -1098,6 +1098,46 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Update nightly-latest persistent release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${GITHUB_REPOSITORY}"
+          LATEST_TAG="nightly-latest"
+
+          # Create release if it doesn't exist
+          if ! gh release view "$LATEST_TAG" &>/dev/null; then
+            gh release create "$LATEST_TAG" \
+              --title "Nightly Latest (Always Current)" \
+              --notes "Always points to the most recent all-in-one nightly build. Updated automatically on every new nightly." \
+              --prerelease
+            echo "Created $LATEST_TAG release"
+          fi
+
+          # Delete all existing assets so we can upload fresh ones
+          gh release view "$LATEST_TAG" --json assets -q '.assets[].id' | while read id; do
+            gh api -X DELETE "repos/${REPO}/releases/assets/${id}" || true
+          done
+          echo "Cleared old assets from $LATEST_TAG"
+
+          # Upload all wcp and zip artifacts
+          for f in ./artifacts/*.wcp ./artifacts/*.zip; do
+            [ -f "$f" ] || continue
+            gh release upload "$LATEST_TAG" "$f" --clobber
+            echo "Uploaded $(basename $f) to $LATEST_TAG"
+          done
+
+          # Update release notes to point at the actual nightly tag
+          gh release edit "$LATEST_TAG" \
+            --notes "Always points to the most recent all-in-one nightly build.
+
+**Current build:** \`${{ env.TAG_NAME }}\`
+**Built:** $(date -u '+%Y-%m-%d %H:%M UTC')
+
+[View full release notes](https://github.com/${REPO}/releases/tag/${{ env.TAG_NAME }})"
+
+          echo "nightly-latest updated to ${{ env.TAG_NAME }}"
+
       - name: Update README with latest nightly
         env:
           FEX_VERSION: ${{ needs.build-fex.outputs.version }}
