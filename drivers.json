@@ -1762,5 +1762,227 @@
     "verName": "Turnip_MTR_v2.0.0-p_Axxx",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v2.0.0-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa_v26.1.0-git_3 \u2014 mesa-turnip-main-V26.1.0-git_3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_3_mesa-turnip-main-V26.1.0-git_3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa_v26.1.0-git-hotfix \u2014 mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git-hotfix_mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa_v26.1.0-git-hotfix \u2014 mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git-hotfix_mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa_v26.1.0-git \u2014 mesa-turnip-flushall-V26.1.0-git.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_mesa-turnip-flushall-V26.1.0-git.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa_v26.1.0-git \u2014 mesa-turnip-main-V26.1.0-git.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_mesa-turnip-main-V26.1.0-git.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v23 \u2014 a8xx-gen8-V23.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v23_a8xx-gen8-V23.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v22 \u2014 a8xx-gen8-V22.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v22_a8xx-gen8-V22.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa26_v2 \u2014 mesa-turnip-main-V2.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa26_v2_mesa-turnip-main-V2.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "mesa26_v1 \u2014 mesa-turnip-main-V1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa26_v1_mesa-turnip-main-V1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v21 \u2014 a8xx-gen8-V21.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v21_a8xx-gen8-V21.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.7 \u2014 a8xx-gen8-V20.7.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.7_a8xx-gen8-V20.7.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.6-nolrz \u2014 a8xx-gen8-V20.6-nolrz.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.6-nolrz_a8xx-gen8-V20.6-nolrz.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.5 \u2014 a8xx-gen8-V20.5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.5_a8xx-gen8-V20.5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.4 \u2014 a8xx-gen8-V20.4.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.4_a8xx-gen8-V20.4.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.3 \u2014 a8xx-gen8-V20.3.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.3_a8xx-gen8-V20.3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.2-versioning \u2014 a8xx-gen8-V20.2-versioning.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.2-versioning_a8xx-gen8-V20.2-versioning.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20.1-full-rework \u2014 a8xx-gen8-V20.1-full-rework.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.1-full-rework_a8xx-gen8-V20.1-full-rework.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v20 \u2014 a8xx-gen8-V20.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20_a8xx-gen8-V20.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v19 \u2014 a8xx-gen8-V19.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v19_a8xx-gen8-V19.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v18 \u2014 a8xx-gen8-V18.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v18_a8xx-gen8-V18.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v16 \u2014 a8xx-gen8-V16.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v16_a8xx-gen8-V16.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v15.1 \u2014 a8xx-gen8-V15.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v15.1_a8xx-gen8-V15.1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v15 \u2014 a8xx-gen8-V15.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v15_a8xx-gen8-V15.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_vgralloc-exp \u2014 a8xx-gen8-hacks-Vgralloc-exp.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_vgralloc-exp_a8xx-gen8-hacks-Vgralloc-exp.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v13.1 \u2014 a8xx-gen8-hacks-V13.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v13.1_a8xx-gen8-hacks-V13.1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v13 \u2014 a8xx-gen8-hacks-V13.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v13_a8xx-gen8-hacks-V13.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v12.1 \u2014 a8xx-gen8-hacks-V12.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12.1_a8xx-gen8-hacks-V12.1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v12.1 \u2014 a8xx-gen8-yuck-V12.1.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12.1_a8xx-gen8-yuck-V12.1.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v12 \u2014 a8xx-gen8-hacks-V12.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12_a8xx-gen8-hacks-V12.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v12 \u2014 a8xx-gen8-yuck-V12.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12_a8xx-gen8-yuck-V12.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v11-sdkfix \u2014 a8xx-gen8-hacks-V11-sdkfix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11-sdkfix_a8xx-gen8-hacks-V11-sdkfix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v11-sdkfix \u2014 a8xx-gen8-yuck-V11-sdkfix.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11-sdkfix_a8xx-gen8-yuck-V11-sdkfix.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v11 \u2014 a8xx-gen8-hacks-V11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11_a8xx-gen8-hacks-V11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "tu_v11 \u2014 a8xx-gen8-yuck-V11.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11_a8xx-gen8-yuck-V11.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "github_run \u2014 a8xx-gen8-hacks.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_a8xx-gen8-hacks.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "github_run \u2014 a8xx-gen8-yuck.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_a8xx-gen8-yuck.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "github_run \u2014 libvulkan_freedreno.so",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_libvulkan_freedreno.so"
   }
 ]

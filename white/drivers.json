@@ -1,0 +1,514 @@
+{
+  "updated_at": "2026-03-16T12:40:41Z",
+  "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
+  "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
+  "total_releases": 30,
+  "total_assets": 37,
+  "releases": [
+    {
+      "tag": "mesa_v26.1.0-git_3",
+      "name": "Mesa Turnip v26.1.0-git_3",
+      "published_at": "2026-03-02T18:22:09Z",
+      "assets": [
+        {
+          "name": "mesa-turnip-main-V26.1.0-git_3.zip",
+          "mirror_name": "mesa_v26.1.0-git_3_mesa-turnip-main-V26.1.0-git_3.zip",
+          "size": 2456917,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa_v26.1.0-git_3/mesa-turnip-main-V26.1.0-git_3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_3_mesa-turnip-main-V26.1.0-git_3.zip",
+          "published_at": "2026-03-02T18:22:10Z"
+        }
+      ]
+    },
+    {
+      "tag": "mesa_v26.1.0-git-hotfix",
+      "name": "Mesa Turnip v26.1.0-git-hotfix",
+      "published_at": "2026-02-13T18:34:04Z",
+      "assets": [
+        {
+          "name": "mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip",
+          "mirror_name": "mesa_v26.1.0-git-hotfix_mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip",
+          "size": 2452701,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa_v26.1.0-git-hotfix/mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git-hotfix_mesa-turnip-main-flushall-V26.1.0-git-hotfix.zip",
+          "published_at": "2026-02-13T18:34:05Z"
+        },
+        {
+          "name": "mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip",
+          "mirror_name": "mesa_v26.1.0-git-hotfix_mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip",
+          "size": 2452561,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa_v26.1.0-git-hotfix/mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git-hotfix_mesa-turnip-main-noflushall-V26.1.0-git-hotfix.zip",
+          "published_at": "2026-02-13T18:34:05Z"
+        }
+      ]
+    },
+    {
+      "tag": "mesa_v26.1.0-git",
+      "name": "Mesa Turnip v26.1.0-git",
+      "published_at": "2026-02-09T09:10:38Z",
+      "assets": [
+        {
+          "name": "mesa-turnip-flushall-V26.1.0-git.zip",
+          "mirror_name": "mesa_v26.1.0-git_mesa-turnip-flushall-V26.1.0-git.zip",
+          "size": 2455885,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa_v26.1.0-git/mesa-turnip-flushall-V26.1.0-git.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_mesa-turnip-flushall-V26.1.0-git.zip",
+          "published_at": "2026-02-09T09:10:39Z"
+        },
+        {
+          "name": "mesa-turnip-main-V26.1.0-git.zip",
+          "mirror_name": "mesa_v26.1.0-git_mesa-turnip-main-V26.1.0-git.zip",
+          "size": 2455805,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa_v26.1.0-git/mesa-turnip-main-V26.1.0-git.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_mesa-turnip-main-V26.1.0-git.zip",
+          "published_at": "2026-02-09T09:10:39Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v23",
+      "name": "Turnip A8XX v23",
+      "published_at": "2026-01-30T20:17:01Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V23.zip",
+          "mirror_name": "tu_v23_a8xx-gen8-V23.zip",
+          "size": 2858552,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v23/a8xx-gen8-V23.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v23_a8xx-gen8-V23.zip",
+          "published_at": "2026-01-30T20:17:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v22",
+      "name": "Turnip A8XX v22",
+      "published_at": "2026-01-25T10:45:20Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V22.zip",
+          "mirror_name": "tu_v22_a8xx-gen8-V22.zip",
+          "size": 2827502,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v22/a8xx-gen8-V22.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v22_a8xx-gen8-V22.zip",
+          "published_at": "2026-01-25T10:45:20Z"
+        }
+      ]
+    },
+    {
+      "tag": "mesa26_v2",
+      "name": "Mesa 26.0 Turnip v2",
+      "published_at": "2026-01-30T19:58:33Z",
+      "assets": [
+        {
+          "name": "mesa-turnip-main-V2.zip",
+          "mirror_name": "mesa26_v2_mesa-turnip-main-V2.zip",
+          "size": 2810413,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa26_v2/mesa-turnip-main-V2.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa26_v2_mesa-turnip-main-V2.zip",
+          "published_at": "2026-01-30T19:58:34Z"
+        }
+      ]
+    },
+    {
+      "tag": "mesa26_v1",
+      "name": "Mesa 26.0 Turnip v1",
+      "published_at": "2026-01-22T06:55:22Z",
+      "assets": [
+        {
+          "name": "mesa-turnip-main-V1.zip",
+          "mirror_name": "mesa26_v1_mesa-turnip-main-V1.zip",
+          "size": 2810236,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/mesa26_v1/mesa-turnip-main-V1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa26_v1_mesa-turnip-main-V1.zip",
+          "published_at": "2026-01-22T06:55:22Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v21",
+      "name": "Turnip A8XX v21",
+      "published_at": "2026-01-20T06:10:23Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V21.zip",
+          "mirror_name": "tu_v21_a8xx-gen8-V21.zip",
+          "size": 2810417,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v21/a8xx-gen8-V21.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v21_a8xx-gen8-V21.zip",
+          "published_at": "2026-01-20T06:10:24Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.7",
+      "name": "Turnip A8XX v20.7",
+      "published_at": "2026-01-19T19:08:20Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.7.zip",
+          "mirror_name": "tu_v20.7_a8xx-gen8-V20.7.zip",
+          "size": 2771908,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.7/a8xx-gen8-V20.7.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.7_a8xx-gen8-V20.7.zip",
+          "published_at": "2026-01-19T19:08:21Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.6-nolrz",
+      "name": "Turnip A8XX v20.6-nolrz",
+      "published_at": "2026-01-18T19:16:17Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.6-nolrz.zip",
+          "mirror_name": "tu_v20.6-nolrz_a8xx-gen8-V20.6-nolrz.zip",
+          "size": 2771512,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.6-nolrz/a8xx-gen8-V20.6-nolrz.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.6-nolrz_a8xx-gen8-V20.6-nolrz.zip",
+          "published_at": "2026-01-18T19:16:18Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.5",
+      "name": "Turnip A8XX v20.5",
+      "published_at": "2026-01-17T20:08:42Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.5.zip",
+          "mirror_name": "tu_v20.5_a8xx-gen8-V20.5.zip",
+          "size": 2771501,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.5/a8xx-gen8-V20.5.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.5_a8xx-gen8-V20.5.zip",
+          "published_at": "2026-01-17T20:08:42Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.4",
+      "name": "Turnip A8XX v20.4",
+      "published_at": "2026-01-17T15:23:02Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.4.zip",
+          "mirror_name": "tu_v20.4_a8xx-gen8-V20.4.zip",
+          "size": 2771499,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.4/a8xx-gen8-V20.4.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.4_a8xx-gen8-V20.4.zip",
+          "published_at": "2026-01-17T15:23:02Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.3",
+      "name": "Turnip A8XX v20.3",
+      "published_at": "2026-01-16T21:38:47Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.3.zip",
+          "mirror_name": "tu_v20.3_a8xx-gen8-V20.3.zip",
+          "size": 2770913,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.3/a8xx-gen8-V20.3.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.3_a8xx-gen8-V20.3.zip",
+          "published_at": "2026-01-16T21:38:48Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.2-versioning",
+      "name": "Turnip A8XX v20.2-versioning",
+      "published_at": "2026-01-16T21:28:26Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.2-versioning.zip",
+          "mirror_name": "tu_v20.2-versioning_a8xx-gen8-V20.2-versioning.zip",
+          "size": 2771613,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.2-versioning/a8xx-gen8-V20.2-versioning.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.2-versioning_a8xx-gen8-V20.2-versioning.zip",
+          "published_at": "2026-01-16T21:28:27Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20.1-full-rework",
+      "name": "Turnip A8XX v20.1-full-rework",
+      "published_at": "2026-01-16T19:32:30Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.1-full-rework.zip",
+          "mirror_name": "tu_v20.1-full-rework_a8xx-gen8-V20.1-full-rework.zip",
+          "size": 2771682,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20.1-full-rework/a8xx-gen8-V20.1-full-rework.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20.1-full-rework_a8xx-gen8-V20.1-full-rework.zip",
+          "published_at": "2026-01-16T19:32:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v20",
+      "name": "Turnip A8XX v20",
+      "published_at": "2026-01-16T10:57:07Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V20.zip",
+          "mirror_name": "tu_v20_a8xx-gen8-V20.zip",
+          "size": 2769340,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v20/a8xx-gen8-V20.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v20_a8xx-gen8-V20.zip",
+          "published_at": "2026-01-16T10:57:08Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v19",
+      "name": "Turnip A8XX v19",
+      "published_at": "2026-01-15T19:25:54Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V19.zip",
+          "mirror_name": "tu_v19_a8xx-gen8-V19.zip",
+          "size": 2767835,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v19/a8xx-gen8-V19.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v19_a8xx-gen8-V19.zip",
+          "published_at": "2026-01-15T19:25:55Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v18",
+      "name": "Turnip A8XX v18",
+      "published_at": "2026-01-15T14:42:27Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V18.zip",
+          "mirror_name": "tu_v18_a8xx-gen8-V18.zip",
+          "size": 2767509,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v18/a8xx-gen8-V18.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v18_a8xx-gen8-V18.zip",
+          "published_at": "2026-01-15T14:42:28Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v16",
+      "name": "Turnip A8XX v16",
+      "published_at": "2026-01-14T10:45:17Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V16.zip",
+          "mirror_name": "tu_v16_a8xx-gen8-V16.zip",
+          "size": 2766322,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v16/a8xx-gen8-V16.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v16_a8xx-gen8-V16.zip",
+          "published_at": "2026-01-14T10:45:18Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v15.1",
+      "name": "Turnip A8XX v15.1",
+      "published_at": "2026-01-13T20:51:32Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V15.1.zip",
+          "mirror_name": "tu_v15.1_a8xx-gen8-V15.1.zip",
+          "size": 2765817,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v15.1/a8xx-gen8-V15.1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v15.1_a8xx-gen8-V15.1.zip",
+          "published_at": "2026-01-13T20:51:32Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v15",
+      "name": "Turnip A8XX v15",
+      "published_at": "2026-01-13T15:55:21Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V15.zip",
+          "mirror_name": "tu_v15_a8xx-gen8-V15.zip",
+          "size": 2765363,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v15/a8xx-gen8-V15.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v15_a8xx-gen8-V15.zip",
+          "published_at": "2026-01-13T15:55:22Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_vgralloc-exp",
+      "name": "Turnip A8XX vgralloc-exp",
+      "published_at": "2026-01-13T08:32:47Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-Vgralloc-exp.zip",
+          "mirror_name": "tu_vgralloc-exp_a8xx-gen8-hacks-Vgralloc-exp.zip",
+          "size": 2765571,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_vgralloc-exp/a8xx-gen8-hacks-Vgralloc-exp.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_vgralloc-exp_a8xx-gen8-hacks-Vgralloc-exp.zip",
+          "published_at": "2026-01-13T08:32:48Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v13.1",
+      "name": "Turnip A8XX v13.1",
+      "published_at": "2026-01-13T05:39:03Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V13.1.zip",
+          "mirror_name": "tu_v13.1_a8xx-gen8-hacks-V13.1.zip",
+          "size": 2765594,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v13.1/a8xx-gen8-hacks-V13.1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v13.1_a8xx-gen8-hacks-V13.1.zip",
+          "published_at": "2026-01-13T05:39:04Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v13",
+      "name": "Turnip A8XX v13",
+      "published_at": "2026-01-12T22:03:32Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V13.zip",
+          "mirror_name": "tu_v13_a8xx-gen8-hacks-V13.zip",
+          "size": 2765533,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v13/a8xx-gen8-hacks-V13.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v13_a8xx-gen8-hacks-V13.zip",
+          "published_at": "2026-01-12T22:03:33Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v12.1",
+      "name": "Turnip A8XX v12.1",
+      "published_at": "2026-01-12T20:46:59Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V12.1.zip",
+          "mirror_name": "tu_v12.1_a8xx-gen8-hacks-V12.1.zip",
+          "size": 2765578,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v12.1/a8xx-gen8-hacks-V12.1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12.1_a8xx-gen8-hacks-V12.1.zip",
+          "published_at": "2026-01-12T20:46:59Z"
+        },
+        {
+          "name": "a8xx-gen8-yuck-V12.1.zip",
+          "mirror_name": "tu_v12.1_a8xx-gen8-yuck-V12.1.zip",
+          "size": 2766298,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v12.1/a8xx-gen8-yuck-V12.1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12.1_a8xx-gen8-yuck-V12.1.zip",
+          "published_at": "2026-01-12T20:46:59Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v12",
+      "name": "Turnip A8XX v12",
+      "published_at": "2026-01-12T19:35:37Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V12.zip",
+          "mirror_name": "tu_v12_a8xx-gen8-hacks-V12.zip",
+          "size": 2766006,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v12/a8xx-gen8-hacks-V12.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12_a8xx-gen8-hacks-V12.zip",
+          "published_at": "2026-01-12T19:35:38Z"
+        },
+        {
+          "name": "a8xx-gen8-yuck-V12.zip",
+          "mirror_name": "tu_v12_a8xx-gen8-yuck-V12.zip",
+          "size": 2766886,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v12/a8xx-gen8-yuck-V12.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v12_a8xx-gen8-yuck-V12.zip",
+          "published_at": "2026-01-12T19:35:38Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v11-sdkfix",
+      "name": "Turnip A8XX v11-sdkfix",
+      "published_at": "2026-01-12T17:58:51Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V11-sdkfix.zip",
+          "mirror_name": "tu_v11-sdkfix_a8xx-gen8-hacks-V11-sdkfix.zip",
+          "size": 2765872,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v11-sdkfix/a8xx-gen8-hacks-V11-sdkfix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11-sdkfix_a8xx-gen8-hacks-V11-sdkfix.zip",
+          "published_at": "2026-01-12T17:58:52Z"
+        },
+        {
+          "name": "a8xx-gen8-yuck-V11-sdkfix.zip",
+          "mirror_name": "tu_v11-sdkfix_a8xx-gen8-yuck-V11-sdkfix.zip",
+          "size": 2766948,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v11-sdkfix/a8xx-gen8-yuck-V11-sdkfix.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11-sdkfix_a8xx-gen8-yuck-V11-sdkfix.zip",
+          "published_at": "2026-01-12T17:58:52Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v11",
+      "name": "Turnip A8XX v11",
+      "published_at": "2026-01-12T17:33:07Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks-V11.zip",
+          "mirror_name": "tu_v11_a8xx-gen8-hacks-V11.zip",
+          "size": 2765293,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v11/a8xx-gen8-hacks-V11.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11_a8xx-gen8-hacks-V11.zip",
+          "published_at": "2026-01-12T17:33:08Z"
+        },
+        {
+          "name": "a8xx-gen8-yuck-V11.zip",
+          "mirror_name": "tu_v11_a8xx-gen8-yuck-V11.zip",
+          "size": 2765923,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v11/a8xx-gen8-yuck-V11.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v11_a8xx-gen8-yuck-V11.zip",
+          "published_at": "2026-01-12T17:33:09Z"
+        }
+      ]
+    },
+    {
+      "tag": "tu_v10-exp",
+      "name": "Action Release",
+      "published_at": "2026-01-12T16:55:00Z",
+      "assets": []
+    },
+    {
+      "tag": "github_run",
+      "name": "Action Release",
+      "published_at": "2026-01-12T15:56:35Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-hacks.zip",
+          "mirror_name": "github_run_a8xx-gen8-hacks.zip",
+          "size": 2765645,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/github_run/a8xx-gen8-hacks.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_a8xx-gen8-hacks.zip",
+          "published_at": "2026-01-12T16:35:36Z"
+        },
+        {
+          "name": "a8xx-gen8-yuck.zip",
+          "mirror_name": "github_run_a8xx-gen8-yuck.zip",
+          "size": 2766547,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/github_run/a8xx-gen8-yuck.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_a8xx-gen8-yuck.zip",
+          "published_at": "2026-01-12T16:35:36Z"
+        },
+        {
+          "name": "libvulkan_freedreno.so",
+          "mirror_name": "github_run_libvulkan_freedreno.so",
+          "size": 14026792,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/github_run/libvulkan_freedreno.so",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_libvulkan_freedreno.so",
+          "published_at": "2026-03-15T21:01:00Z"
+        }
+      ]
+    }
+  ]
+}
