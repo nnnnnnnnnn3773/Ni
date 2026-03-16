@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260316-22e444f-run32](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run32) |
+| **Release** | [🔗 proton-bleeding-edge-20260316-22e444f-run33](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run33) |
 | **Wine Commit** | [`22e444f`](https://github.com/ValveSoftware/wine/commit/22e444ffcf4b73bcf5742d3f1d5af9d436d2ea0c) — mfmediaengine: Keep the last presentation sample on flush. |
 | **Date** | 2026-03-16 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run32) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run33) |
 <!-- PROTON-LATEST-END -->
 
 ---
