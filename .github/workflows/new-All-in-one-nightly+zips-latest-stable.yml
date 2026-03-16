@@ -1091,7 +1091,7 @@ jobs:
           name: ${{ env.RELEASE_NAME }}
           prerelease: false
           make_latest: true
-          body_path: release_body.md
+          body_path: ${{ github.workspace }}/release_body.md
           files: |
             ./artifacts/*.wcp
             ./artifacts/*.zip
