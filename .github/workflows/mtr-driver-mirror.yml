@@ -1,0 +1,256 @@
+name: MTR Driver Mirror
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Daily at 08:00 UTC (2h after kimchi)
+  workflow_dispatch:
+    inputs:
+      force_full_sync:
+        description: 'Re-download all assets even if already mirrored'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60  # ~87 MB total
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure mtr-drivers release exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! gh release view "mtr-drivers" &>/dev/null; then
+            gh release create "mtr-drivers" \
+              --title "MTR Drivers Mirror" \
+              --notes "Auto-mirror of drivers from maxjivi05/Components/Drivers. Updated daily. Do not delete — this is the backing store for mtr/drivers.json." \
+              --prerelease
+            echo "Created mtr-drivers release"
+          else
+            echo "mtr-drivers release already exists"
+          fi
+
+      - name: Download and mirror drivers
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_FULL_SYNC: ${{ inputs.force_full_sync || 'false' }}
+        run: |
+          mkdir -p mtr
+
+          export SOURCE_REPO="maxjivi05/Components"
+          export SOURCE_PATH="Drivers"
+          export NIGHTLIES_REPO="${GITHUB_REPOSITORY}"
+          export MIRROR_TAG="mtr-drivers"
+
+          echo "=== Fetching MTR driver file list ==="
+          gh api "repos/$SOURCE_REPO/contents/$SOURCE_PATH" > /tmp/mtr_files.json
+          echo "Total files: $(jq length /tmp/mtr_files.json)"
+
+          echo "=== Fetching existing mirror asset list ==="
+          gh release view "$MIRROR_TAG" --json assets -q '[.assets[].name]' > /tmp/mirror_assets.json
+          echo "Already mirrored: $(jq length /tmp/mirror_assets.json) files"
+
+          python3 <<'PY'
+          import json, os, subprocess, sys, urllib.request, tempfile
+          from datetime import datetime, timezone
+
+          source_repo    = os.environ["SOURCE_REPO"]
+          source_path    = os.environ["SOURCE_PATH"]
+          nightlies_repo = os.environ["NIGHTLIES_REPO"]
+          mirror_tag     = "mtr-drivers"
+          gh_token       = os.environ["GH_TOKEN"]
+          force_full     = os.environ.get("FORCE_FULL_SYNC", "false").lower() == "true"
+          base_url       = f"https://github.com/{nightlies_repo}/releases/download/{mirror_tag}"
+
+          with open("/tmp/mtr_files.json") as f:
+              files = [f for f in json.load(f) if f["type"] == "file"]
+          with open("/tmp/mirror_assets.json") as f:
+              mirror_asset_names = set(json.load(f))
+
+          # Load existing mtr/drivers.json to know what was already mirrored
+          existing_path = "mtr/drivers.json"
+          existing_mirrored = set()
+          if os.path.exists(existing_path) and not force_full:
+              with open(existing_path) as f:
+                  existing = json.load(f)
+              for asset in existing.get("assets", []):
+                  mn = asset.get("name", "")
+                  if mn and asset.get("mirror_url"):
+                      existing_mirrored.add(mn)
+
+          new_count  = 0
+          skip_count = 0
+          fail_count = 0
+          out_assets = []
+
+          for item in files:
+              name     = item["name"]
+              orig_url = item["download_url"]
+              size     = item.get("size", 0)
+              size_mb  = size // 1024 // 1024
+
+              already_done = (
+                  name in mirror_asset_names or
+                  name in existing_mirrored
+              ) and not force_full
+
+              if not already_done:
+                  print(f"  Downloading {name} ({size_mb} MB)...")
+                  req = urllib.request.Request(
+                      orig_url,
+                      headers={"Authorization": f"token {gh_token}"},
+                  )
+                  tmpdir   = tempfile.mkdtemp()
+                  tmp_path = os.path.join(tmpdir, name)
+                  try:
+                      with urllib.request.urlopen(req) as resp, open(tmp_path, "wb") as f:
+                          while True:
+                              chunk = resp.read(2 * 1024 * 1024)
+                              if not chunk:
+                                  break
+                              f.write(chunk)
+                      result = subprocess.run(
+                          ["gh", "release", "upload", mirror_tag,
+                           tmp_path,
+                           "--clobber"],
+                          capture_output=True, text=True,
+                      )
+                      if result.returncode != 0:
+                          print(f"  ERROR uploading {name}: {result.stderr.strip()}", file=sys.stderr)
+                          mirror_url = None
+                          fail_count += 1
+                      else:
+                          mirror_url = f"{base_url}/{name}"
+                          new_count += 1
+                          print(f"  Uploaded: {name}")
+                  finally:
+                      if os.path.exists(tmp_path):
+                          os.unlink(tmp_path)
+                      os.rmdir(tmpdir)
+              else:
+                  mirror_url = f"{base_url}/{name}"
+                  skip_count += 1
+
+              out_assets.append({
+                  "name":         name,
+                  "size":         size,
+                  "original_url": orig_url,
+                  "mirror_url":   mirror_url,
+              })
+
+          drivers_json = {
+              "updated_at":     datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "source":         f"https://github.com/{source_repo}/tree/main/{source_path}",
+              "mirror_release": f"https://github.com/{nightlies_repo}/releases/tag/{mirror_tag}",
+              "total_assets":   len(out_assets),
+              "assets":         out_assets,
+          }
+
+          with open(existing_path, "w") as f:
+              json.dump(drivers_json, f, indent=2)
+
+          print(f"\n=== Done ===")
+          print(f"New uploads:  {new_count}")
+          print(f"Skipped:      {skip_count}  (already mirrored)")
+          print(f"Failed:       {fail_count}")
+          print(f"Total assets in JSON: {len(out_assets)}")
+          PY
+
+      - name: Write root mtr_drivers.json
+        run: |
+          python3 <<'PY'
+          import json
+          with open("mtr/drivers.json") as f:
+              data = json.load(f)
+          entries = []
+          for asset in data["assets"]:
+              if not asset.get("mirror_url"):
+                  continue
+              # verName = filename without extension
+              ver_name = asset["name"].rsplit(".", 1)[0]
+              entries.append({
+                  "type":      "GpuDriver",
+                  "verName":   ver_name,
+                  "verCode":   "0",
+                  "remoteUrl": asset["mirror_url"],
+              })
+          with open("mtr_drivers.json", "w") as f:
+              json.dump(entries, f, indent=2)
+          print(f"Written mtr_drivers.json — {len(entries)} entries")
+          PY
+
+      - name: Rebuild drivers.json
+        run: |
+          python3 <<'PY'
+          import json
+          entries = []
+          # kimchi
+          try:
+              with open("kimchi/drivers.json") as f:
+                  data = json.load(f)
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} — {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          except FileNotFoundError:
+              pass
+          # stevenmxz
+          try:
+              with open("stevenMXZ/drivers.json") as f:
+                  data = json.load(f)
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} — {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          except FileNotFoundError:
+              pass
+          # mtr
+          try:
+              with open("mtr/drivers.json") as f:
+                  data = json.load(f)
+              for asset in data["assets"]:
+                  if not asset.get("mirror_url"):
+                      continue
+                  entries.append({
+                      "type":      "GpuDriver",
+                      "verName":   asset["name"].rsplit(".", 1)[0],
+                      "verCode":   "0",
+                      "remoteUrl": asset["mirror_url"],
+                  })
+          except FileNotFoundError:
+              pass
+          with open("drivers.json", "w") as f:
+              json.dump(entries, f, indent=2)
+          print(f"Rebuilt drivers.json — {len(entries)} entries")
+          PY
+
+      - name: Commit JSON files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mtr/drivers.json mtr_drivers.json drivers.json
+          git diff --staged --quiet && echo "No changes" && exit 0
+          COUNT=$(jq '.total_assets' mtr/drivers.json)
+          TOTAL=$(jq 'length' drivers.json)
+          git commit -m "chore: update mtr mirrors + drivers.json — ${COUNT} mtr, ${TOTAL} total ($(date -u +%Y-%m-%d))"
+          git pull --rebase -X ours
+          git push

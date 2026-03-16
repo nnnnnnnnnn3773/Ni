@@ -213,10 +213,7 @@ jobs:
           python3 <<'PY'
           import json
           entries = []
-          for path, mirror_tag in [
-              ("kimchi/drivers.json",    "kimchi-drivers"),
-              ("stevenMXZ/drivers.json", "stevenmxz-drivers"),
-          ]:
+          for path in ["kimchi/drivers.json", "stevenMXZ/drivers.json"]:
               try:
                   with open(path) as f:
                       data = json.load(f)
@@ -232,6 +229,20 @@ jobs:
                           "verCode":   "0",
                           "remoteUrl": asset["mirror_url"],
                       })
+          try:
+              with open("mtr/drivers.json") as f:
+                  data = json.load(f)
+              for asset in data["assets"]:
+                  if not asset.get("mirror_url"):
+                      continue
+                  entries.append({
+                      "type":      "GpuDriver",
+                      "verName":   asset["name"].rsplit(".", 1)[0],
+                      "verCode":   "0",
+                      "remoteUrl": asset["mirror_url"],
+                  })
+          except FileNotFoundError:
+              pass
           with open("drivers.json", "w") as f:
               json.dump(entries, f, indent=2)
           print(f"Rebuilt drivers.json — {len(entries)} entries")
