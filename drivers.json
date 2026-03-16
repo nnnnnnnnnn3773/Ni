@@ -1564,5 +1564,203 @@
     "verName": "26_0_0_cc1d942727c \u2014 Turnip-R1-26.0.0.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26_0_0_cc1d942727c_Turnip-R1-26.0.0.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.5_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.5_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.5_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.5_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.1_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.1_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.1_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.1_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.2_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.2_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.2_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.2_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.3_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.3_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.3_A840P_Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.3_A840P_Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.3_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.3_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.4_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.4_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.4_A840P_Test",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.4_A840P_Test.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.4_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.4_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.5_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.5_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.5_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.5_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.7_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.7_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.7a_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.7a_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A840-a",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A840-a.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A840",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A840.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A840P-a",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A840P-a.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A8XX-a",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A8XX-a.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8.8_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8.8_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8_A840P",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8_A840P.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8_A840P_RC3",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8_A840P_RC3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8_A8XX",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8_A8XX.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.8_A8XX_RC3",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.8_A8XX_RC3.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.9.0_Axxx_Smart",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.9.0_Axxx_Smart.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.9.1-b_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.9.1-b_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.9.1-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.9.1-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.9.2-b_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.9.2-b_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v1.9.2-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v1.9.2-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v2.0.0-b_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v2.0.0-b_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v2.0.0-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v2.0.0-p_Axxx.zip"
   }
 ]
