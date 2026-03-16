@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260312-b310f0c-run29](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-b310f0c-run29) |
-| **Wine Commit** | [`b310f0c`](https://github.com/ValveSoftware/wine/commit/b310f0cb430231afb8401915ddadb4304fce0065) — win32u: Disable undecorated windows hack for Rei and the Floating City. |
-| **Date** | 2026-03-12 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260312-b310f0c-run29) |
+| **Release** | [🔗 proton-bleeding-edge-20260316-22e444f-run30](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run30) |
+| **Wine Commit** | [`22e444f`](https://github.com/ValveSoftware/wine/commit/22e444ffcf4b73bcf5742d3f1d5af9d436d2ea0c) — mfmediaengine: Keep the last presentation sample on flush. |
+| **Date** | 2026-03-16 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260316-22e444f-run30) |
 <!-- PROTON-LATEST-END -->
 
 ---
