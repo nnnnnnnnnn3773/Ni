@@ -210,13 +210,43 @@ jobs:
           print(f"Written stevenmxz_drivers.json — {len(assets)} assets")
           PY
 
+      - name: Rebuild drivers.json
+        run: |
+          python3 <<'PY'
+          import json
+          entries = []
+          for path, mirror_tag in [
+              ("kimchi/drivers.json",    "kimchi-drivers"),
+              ("stevenMXZ/drivers.json", "stevenmxz-drivers"),
+          ]:
+              try:
+                  with open(path) as f:
+                      data = json.load(f)
+              except FileNotFoundError:
+                  continue
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} — {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          with open("drivers.json", "w") as f:
+              json.dump(entries, f, indent=2)
+          print(f"Rebuilt drivers.json — {len(entries)} entries")
+          PY
+
       - name: Commit JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stevenMXZ/drivers.json stevenmxz_drivers.json
+          git add stevenMXZ/drivers.json stevenmxz_drivers.json drivers.json
           git diff --staged --quiet && echo "No changes" && exit 0
           COUNT=$(jq '.total_assets' stevenMXZ/drivers.json)
-          git commit -m "chore: update stevenMXZ/drivers.json + stevenmxz_drivers.json — ${COUNT} assets ($(date -u +%Y-%m-%d))"
+          TOTAL=$(jq 'length' drivers.json)
+          git commit -m "chore: update stevenmxz mirrors + drivers.json — ${COUNT} stevenmxz, ${TOTAL} total ($(date -u +%Y-%m-%d))"
           git pull --rebase -X ours
           git push

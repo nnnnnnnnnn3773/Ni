@@ -212,13 +212,43 @@ jobs:
           print(f"Written kimchi_drivers.json — {len(assets)} assets")
           PY
 
+      - name: Rebuild drivers.json
+        run: |
+          python3 <<'PY'
+          import json
+          entries = []
+          for path, tag, mirror_tag in [
+              ("kimchi/drivers.json",    None, "kimchi-drivers"),
+              ("stevenMXZ/drivers.json", None, "stevenmxz-drivers"),
+          ]:
+              try:
+                  with open(path) as f:
+                      data = json.load(f)
+              except FileNotFoundError:
+                  continue
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} — {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          with open("drivers.json", "w") as f:
+              json.dump(entries, f, indent=2)
+          print(f"Rebuilt drivers.json — {len(entries)} entries")
+          PY
+
       - name: Commit JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kimchi/drivers.json kimchi_drivers.json
+          git add kimchi/drivers.json kimchi_drivers.json drivers.json
           git diff --staged --quiet && echo "No changes" && exit 0
           COUNT=$(jq '.total_assets' kimchi/drivers.json)
-          git commit -m "chore: update kimchi/drivers.json + kimchi_drivers.json — ${COUNT} assets ($(date -u +%Y-%m-%d))"
+          TOTAL=$(jq 'length' drivers.json)
+          git commit -m "chore: update kimchi mirrors + drivers.json — ${COUNT} kimchi, ${TOTAL} total ($(date -u +%Y-%m-%d))"
           git pull --rebase -X ours
           git push
