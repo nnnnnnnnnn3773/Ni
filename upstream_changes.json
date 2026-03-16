@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-16T14:16:55Z",
+  "triggered_at": "2026-03-16T15:58:21Z",
   "changed": [
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "a0cc484",
-      "new": "08fe93b",
-      "full": "08fe93b5ff2791bb2e50af281172cd0a5922add9",
-      "msg": "vkd3d-shader: Add quirk for non-uniform quad broadcasts in compute.",
-      "date": "2026-03-16T13:36:17Z"
+      "old": "08fe93b",
+      "new": "1d98840",
+      "full": "1d988403ce14f498bd36869d3fd9466a00441196",
+      "msg": "vkd3d: Be more intelligent about depth-stencil independent resolves.",
+      "date": "2026-03-16T15:10:40Z"
     }
   ]
 }
