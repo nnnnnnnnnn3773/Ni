@@ -243,6 +243,21 @@ jobs:
                   })
           except FileNotFoundError:
               pass
+          try:
+              with open("white/drivers.json") as f:
+                  data = json.load(f)
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} — {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          except FileNotFoundError:
+              pass
           with open("drivers.json", "w") as f:
               json.dump(entries, f, indent=2)
           print(f"Rebuilt drivers.json — {len(entries)} entries")
