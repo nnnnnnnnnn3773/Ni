@@ -44,9 +44,9 @@ jobs:
         run: |
           mkdir -p kimchi
 
-          SOURCE_REPO="K11MCH1/AdrenoToolsDrivers"
-          NIGHTLIES_REPO="${GITHUB_REPOSITORY}"
-          MIRROR_TAG="kimchi-drivers"
+          export SOURCE_REPO="K11MCH1/AdrenoToolsDrivers"
+          export NIGHTLIES_REPO="${GITHUB_REPOSITORY}"
+          export MIRROR_TAG="kimchi-drivers"
 
           echo "=== Fetching all K11MCH1 releases ==="
           gh api "repos/$SOURCE_REPO/releases" --paginate > /tmp/all_releases.json
