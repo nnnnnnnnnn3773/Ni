@@ -100,6 +100,58 @@ jobs:
             [ -n "$OLD_WINE_LINE" ] && NEW_HASHES="${NEW_HASHES}${OLD_WINE_LINE#*: }\n" || true
           fi
 
+          # ── Driver mirror sources ──
+          # Release-based: kimchi, stevenmxz, white — track latest release tag
+          # Directory-based: mtr — track HEAD commit of main
+
+          KIMCHI_KEY="https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release"
+          SMXZ_KEY="https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release"
+          WHITE_KEY="https://github.com/whitebelyash/freedreno_turnip-CI@latest-release"
+          MTR_KEY="https://github.com/maxjivi05/Components@main"
+
+          KIMCHI_TAG=$(gh api repos/K11MCH1/AdrenoToolsDrivers/releases/latest -q '.tag_name' 2>/dev/null || echo "")
+          SMXZ_TAG=$(gh api repos/StevenMXZ/Adreno-Tools-Drivers/releases/latest -q '.tag_name' 2>/dev/null || echo "")
+          WHITE_TAG=$(gh api repos/whitebelyash/freedreno_turnip-CI/releases/latest -q '.tag_name' 2>/dev/null || echo "")
+          MTR_HASH=$(git ls-remote "https://github.com/maxjivi05/Components" HEAD | awk '{print $1}')
+
+          OLD_KIMCHI=$(grep "^${KIMCHI_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+          OLD_SMXZ=$(grep "^${SMXZ_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+          OLD_WHITE=$(grep "^${WHITE_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+          OLD_MTR=$(grep "^${MTR_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+
+          KIMCHI_CHANGED=false
+          SMXZ_CHANGED=false
+          WHITE_CHANGED=false
+          MTR_CHANGED=false
+
+          if [ -n "$KIMCHI_TAG" ]; then
+            [ -n "$OLD_KIMCHI" ] && [ "$KIMCHI_TAG" != "$OLD_KIMCHI" ] && KIMCHI_CHANGED=true && echo "K11MCH1 new release: $OLD_KIMCHI → $KIMCHI_TAG"
+            NEW_HASHES="${NEW_HASHES}${KIMCHI_KEY}: ${KIMCHI_TAG}\n"
+          else
+            [ -n "$OLD_KIMCHI" ] && NEW_HASHES="${NEW_HASHES}${KIMCHI_KEY}: ${OLD_KIMCHI}\n" || true
+          fi
+
+          if [ -n "$SMXZ_TAG" ]; then
+            [ -n "$OLD_SMXZ" ] && [ "$SMXZ_TAG" != "$OLD_SMXZ" ] && SMXZ_CHANGED=true && echo "StevenMXZ new release: $OLD_SMXZ → $SMXZ_TAG"
+            NEW_HASHES="${NEW_HASHES}${SMXZ_KEY}: ${SMXZ_TAG}\n"
+          else
+            [ -n "$OLD_SMXZ" ] && NEW_HASHES="${NEW_HASHES}${SMXZ_KEY}: ${OLD_SMXZ}\n" || true
+          fi
+
+          if [ -n "$WHITE_TAG" ]; then
+            [ -n "$OLD_WHITE" ] && [ "$WHITE_TAG" != "$OLD_WHITE" ] && WHITE_CHANGED=true && echo "whitebelyash new release: $OLD_WHITE → $WHITE_TAG"
+            NEW_HASHES="${NEW_HASHES}${WHITE_KEY}: ${WHITE_TAG}\n"
+          else
+            [ -n "$OLD_WHITE" ] && NEW_HASHES="${NEW_HASHES}${WHITE_KEY}: ${OLD_WHITE}\n" || true
+          fi
+
+          if [ -n "$MTR_HASH" ]; then
+            [ -n "$OLD_MTR" ] && [ "$MTR_HASH" != "$OLD_MTR" ] && MTR_CHANGED=true && echo "maxjivi05/Components changed: ${OLD_MTR:0:7} → ${MTR_HASH:0:7}"
+            NEW_HASHES="${NEW_HASHES}${MTR_KEY}: ${MTR_HASH}\n"
+          else
+            [ -n "$OLD_MTR" ] && NEW_HASHES="${NEW_HASHES}${MTR_KEY}: ${OLD_MTR}\n" || true
+          fi
+
           # ── Write combined hash file ──
           printf '%b' "$NEW_HASHES" > new_hashes.txt
 
@@ -116,8 +168,12 @@ jobs:
               '{"triggered_at":$ts,"changed":$changed}' > upstream_changes.json
           fi
 
-          echo "changed=$ANY_CHANGED"         >> $GITHUB_OUTPUT
-          echo "wine_changed=$WINE_CHANGED"   >> $GITHUB_OUTPUT
+          echo "changed=$ANY_CHANGED"             >> $GITHUB_OUTPUT
+          echo "wine_changed=$WINE_CHANGED"       >> $GITHUB_OUTPUT
+          echo "kimchi_changed=$KIMCHI_CHANGED"   >> $GITHUB_OUTPUT
+          echo "smxz_changed=$SMXZ_CHANGED"       >> $GITHUB_OUTPUT
+          echo "white_changed=$WHITE_CHANGED"     >> $GITHUB_OUTPUT
+          echo "mtr_changed=$MTR_CHANGED"         >> $GITHUB_OUTPUT
           echo "anything_changed=$ANYTHING_CHANGED" >> $GITHUB_OUTPUT
 
       - name: Commit Updated Hashes
@@ -143,3 +199,31 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh workflow run "proton-bleeding-edge-nightly.yml"
+
+      - name: Trigger Kimchi Driver Mirror
+        if: steps.check.outputs.kimchi_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "kimchi-driver-mirror.yml"
+
+      - name: Trigger StevenMXZ Driver Mirror
+        if: steps.check.outputs.smxz_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "stevenmxz-driver-mirror.yml"
+
+      - name: Trigger White Driver Mirror
+        if: steps.check.outputs.white_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "white-driver-mirror.yml"
+
+      - name: Trigger MTR Driver Mirror
+        if: steps.check.outputs.mtr_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run "mtr-driver-mirror.yml"
