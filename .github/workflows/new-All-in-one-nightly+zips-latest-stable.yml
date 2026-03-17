@@ -1115,8 +1115,9 @@ jobs:
           fi
 
           # Delete all existing assets so we can upload fresh ones
-          gh release view "$LATEST_TAG" --json assets -q '.assets[].id' | while read id; do
-            gh api -X DELETE "repos/${REPO}/releases/assets/${id}" || true
+          RELEASE_ID=$(gh api "repos/${REPO}/releases/tags/${LATEST_TAG}" --jq '.id')
+          gh api "repos/${REPO}/releases/${RELEASE_ID}/assets" --paginate --jq '.[].id' | while read asset_id; do
+            gh api -X DELETE "repos/${REPO}/releases/assets/${asset_id}" || true
           done
           echo "Cleared old assets from $LATEST_TAG"
 
