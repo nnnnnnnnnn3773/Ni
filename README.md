@@ -36,10 +36,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260317-6d1b420-run39](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-6d1b420-run39) |
-| **Wine Commit** | [`6d1b420`](https://github.com/ValveSoftware/wine/commit/6d1b420e3c396a1ebd74b973a3f913c16b15920c) — amend! mfmediaengine: Keep the last presentation sample on flush. |
-| **Date** | 2026-03-16 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-6d1b420-run39) |
+| **Release** | [🔗 proton-bleeding-edge-20260317-e36d548-run40](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-e36d548-run40) |
+| **Wine Commit** | [`e36d548`](https://github.com/ValveSoftware/wine/commit/e36d5482fd796f292e328cf37a41a7cc8d8ab8b8) — win32u: Align absolute mouse event coords to virtual resolution pixels. |
+| **Date** | 2026-03-17 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-e36d548-run40) |
 <!-- PROTON-LATEST-END -->
 
 ---
