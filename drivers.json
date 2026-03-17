@@ -1201,6 +1201,12 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "v26.1.0-R5 \u2014 Turnip_v26.1.0_R5.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0-R5_Turnip_v26.1.0_R5.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "v863.1 \u2014 v863.1.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v863.1_v863.1.zip"
