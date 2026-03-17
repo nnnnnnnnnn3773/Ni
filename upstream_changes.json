@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-17T06:54:44Z",
+  "triggered_at": "2026-03-17T10:42:10Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "d3db6a0",
-      "new": "a0ed780",
-      "full": "a0ed780f728e4bd272b82ac6338dd50818b6f6d7",
-      "msg": "[INTERP] Fixed RDRAND and RDPID (#3674)",
-      "date": "2026-03-17T05:59:05Z"
+      "old": "a0ed780",
+      "new": "a3b63db",
+      "full": "a3b63db1ed40c4534397d1fa17329d0bdfa468b3",
+      "msg": "[CI] Do not build GCC 8 anymore",
+      "date": "2026-03-17T10:32:27Z"
     }
   ]
 }
