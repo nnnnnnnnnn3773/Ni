@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-17T10:42:10Z",
+  "triggered_at": "2026-03-17T11:38:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "a0ed780",
-      "new": "a3b63db",
-      "full": "a3b63db1ed40c4534397d1fa17329d0bdfa468b3",
-      "msg": "[CI] Do not build GCC 8 anymore",
-      "date": "2026-03-17T10:32:27Z"
+      "old": "a3b63db",
+      "new": "f91b774",
+      "full": "f91b77444052d509ab8564718224829a2f71bf81",
+      "msg": "[WRAPPER] Reworked pthread wrapping with wrapperhelper",
+      "date": "2026-03-17T10:45:10Z"
     }
   ]
 }
