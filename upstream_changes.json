@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-17T12:51:22Z",
+  "triggered_at": "2026-03-17T14:15:12Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "f91b774",
-      "new": "d6c16ae",
-      "full": "d6c16aee4b5bf9570c11a56cf6358d2e47aab008",
-      "msg": "[WRAPPER] Reworked dbus wrapping with wrapperhelper",
-      "date": "2026-03-17T12:47:09Z"
+      "old": "d6c16ae",
+      "new": "7e1fc89",
+      "full": "7e1fc8924cebdf410a43c5a790a87b9c814a4cd5",
+      "msg": "[CI] Completly removed all trace of ARM64-GCC-8 build",
+      "date": "2026-03-17T12:51:44Z"
+    },
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "cc02edb",
+      "new": "e4ae6ce",
+      "full": "e4ae6ce635fe98d0cb1dbd1120a5f276c137ce6e",
+      "msg": "Merge pull request #5373 from Sonicadvance1/115",
+      "date": "2026-03-17T14:10:46Z"
     }
   ]
 }
