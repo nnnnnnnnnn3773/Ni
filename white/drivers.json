@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T12:40:41Z",
+  "updated_at": "2026-03-17T09:50:02Z",
   "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
   "total_releases": 30,
@@ -503,10 +503,10 @@
         {
           "name": "libvulkan_freedreno.so",
           "mirror_name": "github_run_libvulkan_freedreno.so",
-          "size": 14026792,
+          "size": 14027224,
           "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/github_run/libvulkan_freedreno.so",
           "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_libvulkan_freedreno.so",
-          "published_at": "2026-03-15T21:01:00Z"
+          "published_at": "2026-03-16T21:11:38Z"
         }
       ]
     }
