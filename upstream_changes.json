@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-17T11:38:15Z",
+  "triggered_at": "2026-03-17T12:51:22Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "a3b63db",
-      "new": "f91b774",
-      "full": "f91b77444052d509ab8564718224829a2f71bf81",
-      "msg": "[WRAPPER] Reworked pthread wrapping with wrapperhelper",
-      "date": "2026-03-17T10:45:10Z"
+      "old": "f91b774",
+      "new": "d6c16ae",
+      "full": "d6c16aee4b5bf9570c11a56cf6358d2e47aab008",
+      "msg": "[WRAPPER] Reworked dbus wrapping with wrapperhelper",
+      "date": "2026-03-17T12:47:09Z"
     }
   ]
 }
