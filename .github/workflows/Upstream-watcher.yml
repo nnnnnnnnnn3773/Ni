@@ -78,6 +78,36 @@ jobs:
             NEW_HASHES="${NEW_HASHES}${repo}: ${HASH}\n"
           done
 
+          # ── Mesa main — tracked for Turnip nightly (GitLab) ──
+          MESA_KEY="https://gitlab.freedesktop.org/mesa/mesa@main"
+          MESA_HASH=$(git ls-remote https://gitlab.freedesktop.org/mesa/mesa HEAD | awk '{print $1}')
+          OLD_MESA=$(grep "^${MESA_KEY}:" "$HASH_FILE" 2>/dev/null | awk '{print $2}')
+
+          if [ -n "$MESA_HASH" ]; then
+            if [ -n "$OLD_MESA" ] && [ "$MESA_HASH" != "$OLD_MESA" ]; then
+              ANY_CHANGED=true
+              MESA_INFO=$(curl -s "https://gitlab.freedesktop.org/api/v4/projects/mesa%2Fmesa/repository/commits/${MESA_HASH}")
+              MESA_MSG=$(echo "$MESA_INFO" | jq -r '.title // "N/A"' | cut -c1-80)
+              MESA_DATE=$(echo "$MESA_INFO" | jq -r '.committed_date // "unknown"')
+              CHANGED_JSON=$(echo "$CHANGED_JSON" | jq \
+                --arg repo  "mesa/mesa" \
+                --arg name  "Mesa (Turnip)" \
+                --arg old   "${OLD_MESA:0:7}" \
+                --arg new   "${MESA_HASH:0:7}" \
+                --arg full  "$MESA_HASH" \
+                --arg msg   "$MESA_MSG" \
+                --arg date  "$MESA_DATE" \
+                '. + [{"repo":$repo,"name":$name,"old":$old,"new":$new,"full":$full,"msg":$msg,"date":$date}]')
+              echo "Mesa main changed: ${OLD_MESA:0:7} → ${MESA_HASH:0:7}"
+            elif [ -z "$OLD_MESA" ]; then
+              echo "Mesa main first seen: ${MESA_HASH:0:7} (recording, no build triggered)"
+            fi
+            NEW_HASHES="${NEW_HASHES}${MESA_KEY}: ${MESA_HASH}\n"
+          else
+            echo "WARNING: could not fetch mesa/mesa HEAD"
+            [ -n "$OLD_MESA" ] && NEW_HASHES="${NEW_HASHES}${MESA_KEY}: ${OLD_MESA}\n" || true
+          fi
+
           # ── Wine bleeding-edge — tracked separately for the Proton nightly ──
           WINE_REPO="https://github.com/ValveSoftware/wine"
           WINE_KEY="${WINE_REPO}@bleeding-edge"
