@@ -538,5 +538,11 @@
     "verName": "VKD3D-Proton-arm64ec-3.0b-baad03e5",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-baad03e5.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.1.0-20260318-32a818d",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260318/Turnip-v26.1.0-20260318-32a818d.zip"
   }
 ]
