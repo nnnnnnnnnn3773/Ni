@@ -115,6 +115,7 @@ jobs:
 
           # Banners-Turnip — latest release GPU driver
           print("Fetching Banners-Turnip latest release...")
+          turnip_driver_entries = []
           result = subprocess.run(
               ["gh", "release", "view", "--repo", "The412Banner/Banners-Turnip",
                "--json", "tagName,assets",
@@ -131,29 +132,94 @@ jobs:
                   if "turnip" not in name.lower():
                       continue
                   ver_name = name.rsplit(".", 1)[0]
-                  entries.append({
+                  entry = {
                       "type":      "GpuDriver",
                       "verName":   ver_name,
                       "verCode":   "0",
                       "remoteUrl": asset["url"],
-                  })
+                  }
+                  entries.append(entry)
+                  turnip_driver_entries.append(entry)
                   print(f"  Added Turnip: {name} (tag {turnip_tag})")
           else:
               print(f"  WARNING: could not fetch Banners-Turnip latest: {result.stderr.strip()}")
 
           with open("nightlies_components.json", "w") as f:
               json.dump(entries, f, indent=2)
-
           print(f"\nWritten nightlies_components.json — {len(entries)} entries")
+
+          # Write banners-turnip_drivers.json (flat GpuDriver array, read by mirror workflows)
+          with open("banners-turnip_drivers.json", "w") as f:
+              json.dump(turnip_driver_entries, f, indent=2)
+          print(f"Written banners-turnip_drivers.json — {len(turnip_driver_entries)} entries")
+
+          # Rebuild drivers.json from all per-source JSONs + Banners-Turnip
+          print("\nRebuilding drivers.json...")
+          driver_entries = []
+
+          for path in ["kimchi/drivers.json", "stevenMXZ/drivers.json"]:
+              try:
+                  with open(path) as f:
+                      data = json.load(f)
+                  for rel in data["releases"]:
+                      for asset in rel["assets"]:
+                          if not asset.get("mirror_url"):
+                              continue
+                          driver_entries.append({
+                              "type":      "GpuDriver",
+                              "verName":   f"{rel['tag']} \u2014 {asset['name']}",
+                              "verCode":   "0",
+                              "remoteUrl": asset["mirror_url"],
+                          })
+              except FileNotFoundError:
+                  print(f"  WARNING: {path} not found, skipping")
+
+          try:
+              with open("mtr/drivers.json") as f:
+                  data = json.load(f)
+              for asset in data["assets"]:
+                  if not asset.get("mirror_url"):
+                      continue
+                  driver_entries.append({
+                      "type":      "GpuDriver",
+                      "verName":   asset["name"].rsplit(".", 1)[0],
+                      "verCode":   "0",
+                      "remoteUrl": asset["mirror_url"],
+                  })
+          except FileNotFoundError:
+              print("  WARNING: mtr/drivers.json not found, skipping")
+
+          try:
+              with open("white/drivers.json") as f:
+                  data = json.load(f)
+              for rel in data["releases"]:
+                  for asset in rel["assets"]:
+                      if not asset.get("mirror_url"):
+                          continue
+                      driver_entries.append({
+                          "type":      "GpuDriver",
+                          "verName":   f"{rel['tag']} \u2014 {asset['name']}",
+                          "verCode":   "0",
+                          "remoteUrl": asset["mirror_url"],
+                      })
+          except FileNotFoundError:
+              print("  WARNING: white/drivers.json not found, skipping")
+
+          driver_entries.extend(turnip_driver_entries)
+
+          with open("drivers.json", "w") as f:
+              json.dump(driver_entries, f, indent=2)
+          print(f"Rebuilt drivers.json — {len(driver_entries)} entries")
           PY
 
-      - name: Commit nightlies_components.json
+      - name: Commit updated JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add nightlies_components.json
+          git add nightlies_components.json banners-turnip_drivers.json drivers.json
           git diff --staged --quiet && echo "No changes" && exit 0
-          COUNT=$(jq 'length' nightlies_components.json)
-          git commit -m "chore: update nightlies_components.json — ${COUNT} entries ($(date -u +%Y-%m-%d))"
+          NC=$(jq 'length' nightlies_components.json)
+          DRV=$(jq 'length' drivers.json)
+          git commit -m "chore: update nightlies_components.json (${NC}) + drivers.json (${DRV} drivers) ($(date -u +%Y-%m-%d))"
           git pull --rebase -X ours
           git push

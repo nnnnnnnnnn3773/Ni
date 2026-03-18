@@ -258,6 +258,12 @@ jobs:
                       })
           except FileNotFoundError:
               pass
+          try:
+              with open("banners-turnip_drivers.json") as f:
+                  for entry in json.load(f):
+                      entries.append(entry)
+          except FileNotFoundError:
+              pass
           with open("drivers.json", "w") as f:
               json.dump(entries, f, indent=2)
           print(f"Rebuilt drivers.json — {len(entries)} entries")
