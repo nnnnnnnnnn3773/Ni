@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-17T21:29:48Z",
+  "triggered_at": "2026-03-18T01:24:02Z",
   "changed": [
     {
       "repo": "FEX-Emu/FEX",
       "name": "FEX",
-      "old": "f3e9042",
-      "new": "6a6a823",
-      "full": "6a6a82385e72d50d9cb5cc78cc68e586832dd881",
-      "msg": "Merge pull request #5381 from neobrain/fix_jit_restarts",
-      "date": "2026-03-17T20:47:42Z"
+      "old": "6a6a823",
+      "new": "494dd64",
+      "full": "494dd64c5020bd7627873864e03cc9bc1dbedcd9",
+      "msg": "Merge pull request #5372 from CxnYusuf/add-fisttp-tests",
+      "date": "2026-03-17T23:55:56Z"
     }
   ]
 }
