@@ -190,3 +190,19 @@
 #### Files touched
 - `.github/workflows/kimchi-driver-mirror.yml` (new)
 - `kimchi/drivers.json` (created on first run)
+
+---
+
+## Session — 2026-03-18
+
+### [fix] — Replace DXVK-NVAPI with Turnip in upstream status table (2026-03-18)
+**Commit:** `e238ebb`
+
+#### What changed
+- Removed `jp7677/dxvk-nvapi` from `REPOS` array in `create-release` job status table
+- Replaced with `The412Banner/Banners-Turnip`
+- `NAMES` array updated: `"DXVK-NVAPI"` → `"Turnip (Banners)"`
+- Upstream status table now shows Turnip commit status instead of the removed NVAPI project
+
+#### Files touched
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
