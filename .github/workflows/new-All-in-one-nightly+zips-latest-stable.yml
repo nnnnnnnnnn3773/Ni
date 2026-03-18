@@ -983,7 +983,7 @@ jobs:
             "FEX-Emu/FEX"
             "HansKristian-Work/vkd3d-proton"
             "doitsujin/dxvk"
-            "jp7677/dxvk-nvapi"
+            "The412Banner/Banners-Turnip"
           )
           NAMES=(
             "Box64 (Official)"
@@ -991,7 +991,7 @@ jobs:
             "FEX"
             "VKD3D-Proton"
             "DXVK"
-            "DXVK-NVAPI"
+            "Turnip (Banners)"
           )
 
           CUTOFF_24H=$(date -u -d '24 hours ago' +%s)
