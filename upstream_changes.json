@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-18T01:24:02Z",
+  "triggered_at": "2026-03-18T08:38:25Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "6a6a823",
-      "new": "494dd64",
-      "full": "494dd64c5020bd7627873864e03cc9bc1dbedcd9",
-      "msg": "Merge pull request #5372 from CxnYusuf/add-fisttp-tests",
-      "date": "2026-03-17T23:55:56Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "7e1fc89",
+      "new": "4e5c914",
+      "full": "4e5c914ccfe9bce3805f832691a6848ad5a94a9a",
+      "msg": "[PPC64LE_DYNAREC] Add OR (0x08-0x0D), AND (0x20-0x25), XOR (0x30-0x35) and SUB (",
+      "date": "2026-03-18T08:20:21Z"
     }
   ]
 }
