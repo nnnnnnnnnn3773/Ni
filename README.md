@@ -47,6 +47,7 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 
 ## 📱 My Other Projects
 
+- [**BannerHub**](https://github.com/The412Banner/bannerhub) — A fully patched GameHub 5.3.5 ReVanced build with a built-in Component Manager, BCI launcher button, online component downloader, performance toggles, and more.
 - [**Banners Component Injector**](https://github.com/The412Banner/BannersComponentInjector) — A no-root Android app to browse, download, and seamlessly inject these WCP components directly into GameHub Lite and other Winlator variants.
 - [**Banners No-PC Retroid Overclock**](https://github.com/The412Banner/Banners-No-PC-Retroid-Overclock) — Rooting and overclocking tools for Retroid Snapdragon 865 devices.
 - [**Ayaneo PocketFit Tools**](https://github.com/The412Banner/Ayaneo-PocketFit-tools) — A helper repository for rooting your Ayaneo Pocket Fit.
@@ -75,6 +76,7 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 | [**Official GameHub Lite**](https://github.com/Producdevity/gamehub-lite/releases) | A community-maintained modified version of GameHub for educational purposes. |
 | [**Unofficial GameHub Lite**](https://github.com/ItzDFPlayer/gamehub-lite) | A fork of the Official GameHub Lite updated to run on the GameHub v5.3.5 build with v5.3.3 features. |
 | [**GameHub Brasil**](https://github.com/winlatorbrasil/gamehub-brasil/releases) | A Brazilian fork of GameHub, adapted and maintained with a focus on performance, compatibility, and accessibility. |
+| [**BannerHub**](https://github.com/The412Banner/bannerhub/releases) | A patched GameHub 5.3.5 ReVanced build featuring a Component Manager, online component downloader, BCI launcher, and performance toggles. |
 
 ---
 
