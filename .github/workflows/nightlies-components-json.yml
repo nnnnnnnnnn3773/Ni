@@ -59,12 +59,12 @@ jobs:
                   return "FEXCore"
               return None  # skip (glslang, etc.)
 
-          def fetch_assets(tag):
-              result = subprocess.run(
-                  ["gh", "release", "view", tag, "--json", "assets",
-                   "-q", ".assets[] | {name: .name, url: .url}"],
-                  capture_output=True, text=True
-              )
+          def fetch_assets(tag, repo=None):
+              cmd = ["gh", "release", "view", tag, "--json", "assets",
+                     "-q", ".assets[] | {name: .name, url: .url}"]
+              if repo:
+                  cmd += ["--repo", repo]
+              result = subprocess.run(cmd, capture_output=True, text=True)
               if result.returncode != 0:
                   print(f"  WARNING: could not fetch {tag}: {result.stderr.strip()}")
                   return []
@@ -112,6 +112,34 @@ jobs:
                   "remoteUrl": f"https://github.com/{repo}/releases/download/nightly-latest/{name}",
               })
           print(f"  {len(nightly_assets)} assets")
+
+          # Banners-Turnip — latest release GPU driver
+          print("Fetching Banners-Turnip latest release...")
+          result = subprocess.run(
+              ["gh", "release", "view", "--repo", "The412Banner/Banners-Turnip",
+               "--json", "tagName,assets",
+               "-q", "{tag: .tagName, assets: [.assets[] | {name: .name, url: .url}]}"],
+              capture_output=True, text=True
+          )
+          if result.returncode == 0 and result.stdout.strip():
+              data = json.loads(result.stdout.strip())
+              turnip_tag = data["tag"]
+              for asset in data["assets"]:
+                  name = asset["name"]
+                  if not name.endswith(".zip"):
+                      continue
+                  if "turnip" not in name.lower():
+                      continue
+                  ver_name = name.rsplit(".", 1)[0]
+                  entries.append({
+                      "type":      "GpuDriver",
+                      "verName":   ver_name,
+                      "verCode":   "0",
+                      "remoteUrl": asset["url"],
+                  })
+                  print(f"  Added Turnip: {name} (tag {turnip_tag})")
+          else:
+              print(f"  WARNING: could not fetch Banners-Turnip latest: {result.stderr.strip()}")
 
           with open("nightlies_components.json", "w") as f:
               json.dump(entries, f, indent=2)
