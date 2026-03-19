@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-19T08:33:20Z",
+  "triggered_at": "2026-03-19T10:32:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "7b70778",
-      "new": "3d8fcd9",
-      "full": "3d8fcd97808167993b8b6fbfecb13cadee5a34cb",
-      "msg": "[PPC64LE_DYNAREC] Add GETED/GETEB/GETGB/GETGBEB/WBACK/GBBACK/EBBACK helper macro",
-      "date": "2026-03-19T08:18:01Z"
+      "old": "3d8fcd9",
+      "new": "37bd00b",
+      "full": "37bd00b656e251677c6a36cfa23e35a22629ab06",
+      "msg": "[LA64_DYNAREC] Fixed AVX to SSE migration (#3682)",
+      "date": "2026-03-19T10:26:07Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "57c05f7",
-      "new": "1e77a22",
-      "full": "1e77a2218ad59452608c5bb1fd6ab446ac750021",
-      "msg": "radv/ci: update restricted trace checksum",
-      "date": "2026-03-19T07:41:30.000+00:00"
+      "old": "1e77a22",
+      "new": "00fe22a",
+      "full": "00fe22aa6a04d16c92af2a4ec9c018c320351b55",
+      "msg": "ci: Capture weston logs",
+      "date": "2026-03-19T09:58:59.000+01:00"
     }
   ]
 }
