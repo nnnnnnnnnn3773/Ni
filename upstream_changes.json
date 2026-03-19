@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-18T22:25:42Z",
+  "triggered_at": "2026-03-19T07:41:26Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "53702f9",
-      "new": "c18fb3c",
-      "full": "c18fb3cb78a4d2632fb0c369ed378999e14d10e8",
-      "msg": "Merge pull request #5382 from Sonicadvance1/118",
-      "date": "2026-03-18T22:07:08Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "4e5c914",
+      "new": "7b70778",
+      "full": "7b7077826fa58461dcc20a139ac09b26a38e02a5",
+      "msg": "[LA64_DYNAREC] Fixed x87 FISTTP fastround=0 path (#3681)",
+      "date": "2026-03-19T07:39:18Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "402bd37",
+      "new": "57c05f7",
+      "full": "57c05f72f956ff706c2ce14121671e2c40f85c41",
+      "msg": "nir/opt_large_constants: only use 16bit float alu when supported",
+      "date": "2026-03-19T06:59:18.000+00:00"
     }
   ]
 }
