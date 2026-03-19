@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-03-19T12:42:29Z",
+  "triggered_at": "2026-03-19T14:04:00Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "37bd00b",
+      "new": "9401712",
+      "full": "9401712b3cc12f04af17767a0f6a912c110e1191",
+      "msg": "Add native wrapper for libmvec.so.1 (_ZGVbN2v_sin, _ZGVbN2v_cos) (#3683)",
+      "date": "2026-03-19T13:41:09Z"
+    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "1179007",
-      "new": "bd16556",
-      "full": "bd16556a4f48deb16c34228adc1928e954f20823",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-03-19T12:32:21Z"
+      "old": "bd16556",
+      "new": "ad18f0c",
+      "full": "ad18f0cfe7533b4d4e37a382f9f554533dcb069b",
+      "msg": "vkd3d: Add build instructions for native aarch64.",
+      "date": "2026-03-19T13:47:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "00fe22a",
-      "new": "982f567",
-      "full": "982f567b196851a401c2c9f04b4360ba4b5eda85",
-      "msg": "pan/lib: drop redundant assign",
-      "date": "2026-03-19T12:00:47.000+00:00"
+      "old": "982f567",
+      "new": "384d128",
+      "full": "384d12816459996fbac5722e9fdb29527662cafb",
+      "msg": "ci: fix scheduled pipelines",
+      "date": "2026-03-19T13:23:00.000+00:00"
     }
   ]
 }
