@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-19T18:44:27Z",
+  "triggered_at": "2026-03-19T19:41:29Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ea731cd",
-      "new": "d038bfa",
-      "full": "d038bfa1c1e1fb9d5535f0e9cedda4897b6df66c",
-      "msg": "util: Use same method to clear bits in u_foreach_bit as util_bitcount",
-      "date": "2026-03-19T17:30:25.000+00:00"
+      "old": "d038bfa",
+      "new": "6e39982",
+      "full": "6e39982b326c913b72a8abb03a8756387874c8e2",
+      "msg": "d3d12: d3d12_video_encode_support_caps was assigning a stack variable address to",
+      "date": "2026-03-19T19:06:51.000+00:00"
     }
   ]
 }
