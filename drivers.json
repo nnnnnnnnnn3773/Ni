@@ -1990,5 +1990,17 @@
     "verName": "github_run \u2014 libvulkan_freedreno.so",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_libvulkan_freedreno.so"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.1.0-20260319-r11-A8xx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260319-r11/Turnip-v26.1.0-20260319-r11-A8xx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip-v26.1.0-20260319-r11",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260319-r11/Turnip-v26.1.0-20260319-r11.zip"
   }
 ]
