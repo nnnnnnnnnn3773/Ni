@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-19T10:32:19Z",
+  "triggered_at": "2026-03-19T12:42:29Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3d8fcd9",
-      "new": "37bd00b",
-      "full": "37bd00b656e251677c6a36cfa23e35a22629ab06",
-      "msg": "[LA64_DYNAREC] Fixed AVX to SSE migration (#3682)",
-      "date": "2026-03-19T10:26:07Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "1179007",
+      "new": "bd16556",
+      "full": "bd16556a4f48deb16c34228adc1928e954f20823",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-03-19T12:32:21Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1e77a22",
-      "new": "00fe22a",
-      "full": "00fe22aa6a04d16c92af2a4ec9c018c320351b55",
-      "msg": "ci: Capture weston logs",
-      "date": "2026-03-19T09:58:59.000+01:00"
+      "old": "00fe22a",
+      "new": "982f567",
+      "full": "982f567b196851a401c2c9f04b4360ba4b5eda85",
+      "msg": "pan/lib: drop redundant assign",
+      "date": "2026-03-19T12:00:47.000+00:00"
     }
   ]
 }
