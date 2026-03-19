@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-19T20:28:42Z",
+  "triggered_at": "2026-03-19T21:28:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6e39982",
-      "new": "48be91d",
-      "full": "48be91d14baf24fe1246b4597fd7895d4a91c4a8",
-      "msg": "freedreno/common: Fix upstream a830 chip_id",
-      "date": "2026-03-19T19:58:20.000+00:00"
+      "old": "48be91d",
+      "new": "8afb289",
+      "full": "8afb28952ca561a97bdc4d3c9fa0ea589e271446",
+      "msg": "intel/dev: update mesa_defs.json from workaround database",
+      "date": "2026-03-19T20:58:37.000+00:00"
     }
   ]
 }
