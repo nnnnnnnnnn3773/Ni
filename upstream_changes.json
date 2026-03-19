@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-19T07:41:26Z",
+  "triggered_at": "2026-03-19T08:33:20Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "4e5c914",
-      "new": "7b70778",
-      "full": "7b7077826fa58461dcc20a139ac09b26a38e02a5",
-      "msg": "[LA64_DYNAREC] Fixed x87 FISTTP fastround=0 path (#3681)",
-      "date": "2026-03-19T07:39:18Z"
+      "old": "7b70778",
+      "new": "3d8fcd9",
+      "full": "3d8fcd97808167993b8b6fbfecb13cadee5a34cb",
+      "msg": "[PPC64LE_DYNAREC] Add GETED/GETEB/GETGB/GETGBEB/WBACK/GBBACK/EBBACK helper macro",
+      "date": "2026-03-19T08:18:01Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "402bd37",
-      "new": "57c05f7",
-      "full": "57c05f72f956ff706c2ce14121671e2c40f85c41",
-      "msg": "nir/opt_large_constants: only use 16bit float alu when supported",
-      "date": "2026-03-19T06:59:18.000+00:00"
+      "old": "57c05f7",
+      "new": "1e77a22",
+      "full": "1e77a2218ad59452608c5bb1fd6ab446ac750021",
+      "msg": "radv/ci: update restricted trace checksum",
+      "date": "2026-03-19T07:41:30.000+00:00"
     }
   ]
 }
