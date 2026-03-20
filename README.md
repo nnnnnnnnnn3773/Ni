@@ -142,3 +142,6 @@ Third-party components used for packaging retain their original upstream license
 - **Freedreno Turnip Driver:** [Mesa3D](https://mesa3d.org/)
 
 *Thank you to Max and Nick for their help with GitHub Actions workflows!*
+
+---
+<sub>☕ [Support on Ko-fi](https://ko-fi.com/the412banner)</sub>
