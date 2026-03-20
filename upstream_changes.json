@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-20T19:32:24Z",
+  "triggered_at": "2026-03-20T20:23:11Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "e09ae01",
-      "new": "26e1cf5",
-      "full": "26e1cf5e0b3d29d91ccedc75698f8e1d8c2bd52e",
-      "msg": "Added a new syscall",
-      "date": "2026-03-20T19:21:53Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f190d3b",
-      "new": "87bac26",
-      "full": "87bac263c95914b0a1f95b205d29741704659ead",
-      "msg": "panvk: Advertise VK_EXT_conditional_rendering",
-      "date": "2026-03-20T19:12:20.000+00:00"
+      "old": "87bac26",
+      "new": "4b2022a",
+      "full": "4b2022a8f58aab6d06c04457b6d334714cecf744",
+      "msg": "llvmpipe: fix color fbfetch",
+      "date": "2026-03-20T20:02:35.000+00:00"
     }
   ]
 }
