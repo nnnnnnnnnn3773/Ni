@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-03-20T09:33:12Z",
+  "triggered_at": "2026-03-20T10:30:18Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "9401712",
-      "new": "73ce741",
-      "full": "73ce74140ae2fcfea31ba4bb2f9ce4bb3db41c89",
-      "msg": "[LA64_DYNAREC] Fixed scratch conflicts for VCVTPS2PH opcode (#3687)",
-      "date": "2026-03-20T08:35:55Z"
+      "old": "73ce741",
+      "new": "34134c1",
+      "full": "34134c16853e479c2b13c666496276a4a9540c5a",
+      "msg": "[LA64_DYNAREC] Fixed avx_get_reg for readonly 128bit case (#3688)",
+      "date": "2026-03-20T10:17:17Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ad18f0c",
+      "new": "f88fb16",
+      "full": "f88fb162e5937f58c7e785574232ec332a1fb6dd",
+      "msg": "vkd3d: Ensure that init command buffer can use fallback queue family.",
+      "date": "2026-03-20T09:48:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fd556e5",
-      "new": "6cfe6ea",
-      "full": "6cfe6eaa79d16db92e3b1a75812a0dd392c183b0",
-      "msg": "nir/opt_algebraic: create ldexp from exp2",
-      "date": "2026-03-20T08:15:08.000+00:00"
+      "old": "6cfe6ea",
+      "new": "e3015d7",
+      "full": "e3015d7d5a6da693d8b35f25c993dabd5d3bada7",
+      "msg": "radv/meta: decompress source resolve images slighly earlier",
+      "date": "2026-03-20T09:56:49.000+00:00"
     }
   ]
 }
