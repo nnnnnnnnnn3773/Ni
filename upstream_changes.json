@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-03-20T15:35:48Z",
+  "triggered_at": "2026-03-20T16:33:56Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "8f07d10",
-      "new": "ca122f4",
-      "full": "ca122f4ce289603df75c5dae4015e0775cecde45",
-      "msg": "[ELF] Added 28445ORIGIN handling, same as",
-      "date": "2026-03-20T15:33:46Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "357081f",
-      "new": "a2d12dd",
-      "full": "a2d12dd9cbeb8076248524872ada87ab4933aa66",
-      "msg": "vkd3d-shader: Add precise FMA quirk for Death Stranding 2.",
-      "date": "2026-03-20T14:43:56Z"
+      "old": "ca122f4",
+      "new": "e09ae01",
+      "full": "e09ae017d4edc0800b6b3e824a711d0387e5ad47",
+      "msg": "[WRAPPER] Added 1 more funciton libcairo",
+      "date": "2026-03-20T16:00:51Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "089cd9d",
-      "new": "3df9ec7",
-      "full": "3df9ec7ae31092ab4a51b1df02ec8048c51c72aa",
-      "msg": "pvr: Fixup for deqp-vk.api 2d.optimal.* conformance",
-      "date": "2026-03-20T14:57:21.000+00:00"
+      "old": "3df9ec7",
+      "new": "929eb9a",
+      "full": "929eb9a021110a41860a84e4728e67b4fd625dea",
+      "msg": "mesa/renderbuffer: always add PIPE_BIND_SAMPLER_VIEW to rendering textures",
+      "date": "2026-03-20T15:15:32.000+00:00"
     }
   ]
 }
