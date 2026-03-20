@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-03-20T13:56:14Z",
+  "triggered_at": "2026-03-20T15:35:48Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8f07d10",
+      "new": "ca122f4",
+      "full": "ca122f4ce289603df75c5dae4015e0775cecde45",
+      "msg": "[ELF] Added 28445ORIGIN handling, same as",
+      "date": "2026-03-20T15:33:46Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "357081f",
+      "new": "a2d12dd",
+      "full": "a2d12dd9cbeb8076248524872ada87ab4933aa66",
+      "msg": "vkd3d-shader: Add precise FMA quirk for Death Stranding 2.",
+      "date": "2026-03-20T14:43:56Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e2ebcba",
-      "new": "089cd9d",
-      "full": "089cd9d88e9bbde7979114993ac856bc4f90a4f4",
-      "msg": "frontends/va: Fix leaks when create_video_codec fails",
-      "date": "2026-03-20T13:02:23.000+00:00"
+      "old": "089cd9d",
+      "new": "3df9ec7",
+      "full": "3df9ec7ae31092ab4a51b1df02ec8048c51c72aa",
+      "msg": "pvr: Fixup for deqp-vk.api 2d.optimal.* conformance",
+      "date": "2026-03-20T14:57:21.000+00:00"
     }
   ]
 }
