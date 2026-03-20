@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-20T16:33:56Z",
+  "triggered_at": "2026-03-20T17:30:03Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ca122f4",
-      "new": "e09ae01",
-      "full": "e09ae017d4edc0800b6b3e824a711d0387e5ad47",
-      "msg": "[WRAPPER] Added 1 more funciton libcairo",
-      "date": "2026-03-20T16:00:51Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3df9ec7",
-      "new": "929eb9a",
-      "full": "929eb9a021110a41860a84e4728e67b4fd625dea",
-      "msg": "mesa/renderbuffer: always add PIPE_BIND_SAMPLER_VIEW to rendering textures",
-      "date": "2026-03-20T15:15:32.000+00:00"
+      "old": "929eb9a",
+      "new": "e2bf574",
+      "full": "e2bf57458993e36eaa6e16581a1f2d556bd87355",
+      "msg": "radv: use nir_shader::uses_printf for lowering printf",
+      "date": "2026-03-20T17:02:40.000+00:00"
     }
   ]
 }
