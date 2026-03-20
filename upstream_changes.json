@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-20T20:23:11Z",
+  "triggered_at": "2026-03-20T21:23:05Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "87bac26",
-      "new": "4b2022a",
-      "full": "4b2022a8f58aab6d06c04457b6d334714cecf744",
-      "msg": "llvmpipe: fix color fbfetch",
-      "date": "2026-03-20T20:02:35.000+00:00"
+      "old": "4b2022a",
+      "new": "cba5841",
+      "full": "cba5841d61a5f8439f0a00531cb8f42e4817611b",
+      "msg": "nak: Do not allow load_helper_invocation reordering",
+      "date": "2026-03-20T20:19:35.000+00:00"
     }
   ]
 }
