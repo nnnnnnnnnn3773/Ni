@@ -37,10 +37,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260317-e36d548-run49](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-e36d548-run49) |
-| **Wine Commit** | [`e36d548`](https://github.com/ValveSoftware/wine/commit/e36d5482fd796f292e328cf37a41a7cc8d8ab8b8) — win32u: Align absolute mouse event coords to virtual resolution pixels. |
-| **Date** | 2026-03-17 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260317-e36d548-run49) |
+| **Release** | [🔗 proton-bleeding-edge-20260319-a7df5e7-run51](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260319-a7df5e7-run51) |
+| **Wine Commit** | [`a7df5e7`](https://github.com/ValveSoftware/wine/commit/a7df5e7785ec61186c5f93aa6997af660d007a44) — comctl32/static: Set HALFTONE StretchBlt mode in STATIC_PaintBitmapfn(). |
+| **Date** | 2026-03-20 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260319-a7df5e7-run51) |
 <!-- PROTON-LATEST-END -->
 
 ---
