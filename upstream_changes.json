@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-20T11:25:17Z",
+  "triggered_at": "2026-03-20T12:38:50Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "34134c1",
-      "new": "ac2e119",
-      "full": "ac2e11908c6f406d039e240383cb3131abe15027",
-      "msg": "[WRAPPER] Added 1 more symbol to gtk-2-x11",
-      "date": "2026-03-20T11:12:31Z"
+      "old": "ac2e119",
+      "new": "8f07d10",
+      "full": "8f07d10c0ab36f463fec4326b768b4ea40c93d39",
+      "msg": "[WRAPPER] Revised needed libs for libgio-2.0.so",
+      "date": "2026-03-20T11:30:58Z"
     },
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "e3015d7",
-      "new": "e2ebcba",
-      "full": "e2ebcba11b8d606a7e292282aabdacdd529b6e0c",
-      "msg": "aco/tests: fix assembler/isel tests with LLVM 23",
-      "date": "2026-03-20T10:24:06.000+00:00"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "f88fb16",
+      "new": "357081f",
+      "full": "357081fe25cfd4e6d9347390618020dc6613d978",
+      "msg": "vkd3d: Enable transfer queue by default.",
+      "date": "2026-03-20T11:43:53Z"
     }
   ]
 }
