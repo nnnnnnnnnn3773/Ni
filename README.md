@@ -37,10 +37,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260319-a7df5e7-run54](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260319-a7df5e7-run54) |
-| **Wine Commit** | [`a7df5e7`](https://github.com/ValveSoftware/wine/commit/a7df5e7785ec61186c5f93aa6997af660d007a44) — comctl32/static: Set HALFTONE StretchBlt mode in STATIC_PaintBitmapfn(). |
+| **Release** | [🔗 proton-bleeding-edge-20260320-6eb714f-run56](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run56) |
+| **Wine Commit** | [`6eb714f`](https://github.com/ValveSoftware/wine/commit/6eb714fb10b7a657097eff120d3af3840aff2e52) — user32: Add a stub for SkipPointerFrameMessages(). |
 | **Date** | 2026-03-20 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260319-a7df5e7-run54) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run56) |
 <!-- PROTON-LATEST-END -->
 
 ---
