@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-20T17:30:03Z",
+  "triggered_at": "2026-03-20T18:36:14Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "929eb9a",
-      "new": "e2bf574",
-      "full": "e2bf57458993e36eaa6e16581a1f2d556bd87355",
-      "msg": "radv: use nir_shader::uses_printf for lowering printf",
-      "date": "2026-03-20T17:02:40.000+00:00"
+      "old": "e2bf574",
+      "new": "f190d3b",
+      "full": "f190d3b6ded459b1f4bbc2df93d39b2c0f8127a8",
+      "msg": "lvp: refactor image plane initialization",
+      "date": "2026-03-20T17:53:30.000+00:00"
     }
   ]
 }
