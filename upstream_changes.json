@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-20T05:44:37Z",
+  "triggered_at": "2026-03-20T09:33:12Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "8c72aa7",
-      "new": "5c4c468",
-      "full": "5c4c468d13261cd74829d00305f29b0a49a6e597",
-      "msg": "Merge pull request #5387 from Sonicadvance1/122",
-      "date": "2026-03-20T04:58:09Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9401712",
+      "new": "73ce741",
+      "full": "73ce74140ae2fcfea31ba4bb2f9ce4bb3db41c89",
+      "msg": "[LA64_DYNAREC] Fixed scratch conflicts for VCVTPS2PH opcode (#3687)",
+      "date": "2026-03-20T08:35:55Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "fd556e5",
+      "new": "6cfe6ea",
+      "full": "6cfe6eaa79d16db92e3b1a75812a0dd392c183b0",
+      "msg": "nir/opt_algebraic: create ldexp from exp2",
+      "date": "2026-03-20T08:15:08.000+00:00"
     }
   ]
 }
