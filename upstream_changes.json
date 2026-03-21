@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-03-21T09:24:22Z",
+  "triggered_at": "2026-03-21T13:37:00Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "a2d12dd",
+      "new": "bd3f5e3",
+      "full": "bd3f5e3d245c3ad2c775e51a5f6118a0197f9650",
+      "msg": "Add VKD3D_CONFIG=no_nvx to preemptively disable NVX extensions",
+      "date": "2026-03-21T13:04:29Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "3730b70",
+      "new": "973433f",
+      "full": "973433f31089a130e23c03ebf8c407d6625b6454",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-03-21T12:37:57Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "558053e",
-      "new": "6b26cc2",
-      "full": "6b26cc2df3d6024b8eebe8b6fc1f720a139a79e9",
-      "msg": "ethosu: Fix buffer overrun in stridedslice",
-      "date": "2026-03-21T08:32:20.000+00:00"
+      "old": "6b26cc2",
+      "new": "06fc27b",
+      "full": "06fc27b5a4259264f01d8b6180fbf8c9611cb0cc",
+      "msg": "nir: test loop analyze sets exact trip flags correctly",
+      "date": "2026-03-21T11:46:14.000+00:00"
     }
   ]
 }
