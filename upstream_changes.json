@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-21T15:18:32Z",
+  "triggered_at": "2026-03-21T16:19:36Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "26e1cf5",
-      "new": "690dfbb",
-      "full": "690dfbb35e3eeb1c4f8cdc96fc443d7fad6555d6",
-      "msg": "Various changes for SteamRT3",
-      "date": "2026-03-21T14:26:10Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "06fc27b",
+      "new": "718afd7",
+      "full": "718afd787c682798e879ce748419b8222b8676f3",
+      "msg": "clc: Fix static link with clang>=22",
+      "date": "2026-03-21T12:36:22.000+00:00"
     }
   ]
 }
