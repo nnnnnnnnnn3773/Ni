@@ -1771,6 +1771,18 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "Turnip_MTR_v3.0.0-b_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-b_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
+    "verName": "Turnip_MTR_v3.0.0-p_Axxx",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-p_Axxx.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "mesa_v26.1.0-git_3 \u2014 mesa-turnip-main-V26.1.0-git_3.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_3_mesa-turnip-main-V26.1.0-git_3.zip"

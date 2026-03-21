@@ -195,6 +195,26 @@
 
 ## Session — 2026-03-18
 
+## Session — 2026-03-21
+
+### [feat] — MTR manual_entries.json + v3.0.0 drivers (2026-03-21)
+**Commit:** TBD
+
+#### What changed
+- Created `mtr/manual_entries.json` — static list of manually added drivers that survive workflow reruns; any entry whose filename isn't already in the source repo sync is appended to `mtr/drivers.json` after each run
+- Added new "Merge manual entries" step to `mtr-driver-mirror.yml` — runs between "Download and mirror" and "Write root mtr_drivers.json"; reads `mtr/manual_entries.json` and appends missing entries by name
+- Updated commit step to also stage `mtr/manual_entries.json`
+- Added `Turnip_MTR_v3.0.0-b_Axxx.zip` and `Turnip_MTR_v3.0.0-p_Axxx.zip` (manually uploaded to mtr-drivers release, not yet in maxjivi05's repo) to all three JSON files: `mtr/drivers.json`, `mtr_drivers.json`, `drivers.json`
+
+#### Files touched
+- `mtr/manual_entries.json` (new)
+- `mtr/drivers.json` (total_assets 33→35, two v3.0.0 entries added)
+- `mtr_drivers.json` (two v3.0.0 entries added)
+- `drivers.json` (two v3.0.0 entries inserted after v2.0.0-p)
+- `.github/workflows/mtr-driver-mirror.yml` (new "Merge manual entries" step + manual_entries.json staged in commit)
+
+---
+
 ### [fix] — Replace DXVK-NVAPI with Turnip in upstream status table (2026-03-18)
 **Commit:** `e238ebb`
 

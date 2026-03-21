@@ -163,6 +163,40 @@ jobs:
           print(f"Total assets in JSON: {len(out_assets)}")
           PY
 
+      - name: Merge manual entries
+        run: |
+          python3 <<'PY'
+          import json, os
+
+          manual_path = "mtr/manual_entries.json"
+          drivers_path = "mtr/drivers.json"
+
+          if not os.path.exists(manual_path):
+              print("No manual_entries.json found, skipping")
+              exit(0)
+
+          with open(manual_path) as f:
+              manual = json.load(f)
+          with open(drivers_path) as f:
+              data = json.load(f)
+
+          existing_names = {a["name"] for a in data["assets"]}
+          added = 0
+          for entry in manual:
+              if entry["name"] not in existing_names:
+                  data["assets"].append(entry)
+                  existing_names.add(entry["name"])
+                  added += 1
+
+          if added > 0:
+              data["total_assets"] = len(data["assets"])
+              with open(drivers_path, "w") as f:
+                  json.dump(data, f, indent=2)
+              print(f"Merged {added} manual entries into mtr/drivers.json")
+          else:
+              print("All manual entries already present, nothing to add")
+          PY
+
       - name: Write root mtr_drivers.json
         run: |
           python3 <<'PY'
@@ -268,7 +302,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mtr/drivers.json mtr_drivers.json drivers.json
+          git add mtr/drivers.json mtr/manual_entries.json mtr_drivers.json drivers.json
           git diff --staged --quiet && echo "No changes" && exit 0
           COUNT=$(jq '.total_assets' mtr/drivers.json)
           TOTAL=$(jq 'length' drivers.json)
