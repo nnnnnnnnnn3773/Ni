@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-21T01:14:45Z",
+  "triggered_at": "2026-03-21T09:24:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cba5841",
-      "new": "558053e",
-      "full": "558053ef20a9bed57b5569e61137d0da41b32621",
-      "msg": "isl: Apply VALIGN_8 fast-clear restriction on Xe3P+",
-      "date": "2026-03-20T21:25:39.000+00:00"
+      "old": "558053e",
+      "new": "6b26cc2",
+      "full": "6b26cc2df3d6024b8eebe8b6fc1f720a139a79e9",
+      "msg": "ethosu: Fix buffer overrun in stridedslice",
+      "date": "2026-03-21T08:32:20.000+00:00"
     }
   ]
 }
