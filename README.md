@@ -37,10 +37,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260320-6eb714f-run58](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run58) |
+| **Release** | [🔗 proton-bleeding-edge-20260320-6eb714f-run59](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run59) |
 | **Wine Commit** | [`6eb714f`](https://github.com/ValveSoftware/wine/commit/6eb714fb10b7a657097eff120d3af3840aff2e52) — user32: Add a stub for SkipPointerFrameMessages(). |
 | **Date** | 2026-03-20 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run58) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260320-6eb714f-run59) |
 <!-- PROTON-LATEST-END -->
 
 ---
