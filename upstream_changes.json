@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-21T16:19:36Z",
+  "triggered_at": "2026-03-21T19:17:49Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "06fc27b",
-      "new": "718afd7",
-      "full": "718afd787c682798e879ce748419b8222b8676f3",
-      "msg": "clc: Fix static link with clang>=22",
-      "date": "2026-03-21T12:36:22.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "690dfbb",
+      "new": "5d9e853",
+      "full": "5d9e853496652720f9dc6ec7457fe29ba94b7f0e",
+      "msg": "[WRAPPER] Ported the steam vulkan hack to 64-bit (#3692)",
+      "date": "2026-03-21T19:12:50Z"
     }
   ]
 }
