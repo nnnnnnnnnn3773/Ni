@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-20T21:23:05Z",
+  "triggered_at": "2026-03-21T01:14:45Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4b2022a",
-      "new": "cba5841",
-      "full": "cba5841d61a5f8439f0a00531cb8f42e4817611b",
-      "msg": "nak: Do not allow load_helper_invocation reordering",
-      "date": "2026-03-20T20:19:35.000+00:00"
+      "old": "cba5841",
+      "new": "558053e",
+      "full": "558053ef20a9bed57b5569e61137d0da41b32621",
+      "msg": "isl: Apply VALIGN_8 fast-clear restriction on Xe3P+",
+      "date": "2026-03-20T21:25:39.000+00:00"
     }
   ]
 }
