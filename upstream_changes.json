@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-22T10:19:28Z",
+  "triggered_at": "2026-03-22T12:32:40Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d81a70b",
-      "new": "8c4e6aa",
-      "full": "8c4e6aa4c0436c9e390442333d6d07d33af00649",
-      "msg": "docs: delete now-unused html_redirects extension",
-      "date": "2026-03-22T10:25:39.000+01:00"
+      "old": "8c4e6aa",
+      "new": "e7f6c8a",
+      "full": "e7f6c8ab7ed2ff61185caa3082c693284b0cbcaa",
+      "msg": "fd: make RD dump output path configurable through FD_RD_DUMP_PATH",
+      "date": "2026-03-22T11:03:04.000+00:00"
     }
   ]
 }
