@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-22T01:23:42Z",
+  "triggered_at": "2026-03-22T07:33:34Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "718afd7",
-      "new": "f9a10c4",
-      "full": "f9a10c46fafecf97800d6cc41986ce1bc60430a9",
-      "msg": "nir/inline_uniforms: track visited state per component",
-      "date": "2026-03-21T17:55:40.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "5d9e853",
+      "new": "4986517",
+      "full": "498651733994afe84bc377ee2a7ff00d7c708a4b",
+      "msg": "[RCFILE] Fix one game profile (#3695)",
+      "date": "2026-03-22T06:45:50Z"
     }
   ]
 }
