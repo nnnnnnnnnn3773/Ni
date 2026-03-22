@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-22T15:18:39Z",
+  "triggered_at": "2026-03-22T17:19:08Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "4986517",
-      "new": "279c650",
-      "full": "279c65057a214d4b5d5f0830c1cb2752abb019b4",
-      "msg": "[DYNAREC] Cancel current FillBlock on fork child, as there is only 1 thread runn",
-      "date": "2026-03-22T14:48:22Z"
+      "old": "279c650",
+      "new": "1c9ab05",
+      "full": "1c9ab05a1bc9a5ceec54e2c2055004a93b292080",
+      "msg": "This should fix non-Dynarec builds",
+      "date": "2026-03-22T16:56:27Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "973433f",
+      "new": "1ebe643",
+      "full": "1ebe643cc2a3144e172d2b7762412b0982a48f6c",
+      "msg": "[CI] Run steamrt container with --user 1001",
+      "date": "2026-03-22T17:12:42Z"
     }
   ]
 }
