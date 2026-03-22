@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-21T19:17:49Z",
+  "triggered_at": "2026-03-22T01:23:42Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "690dfbb",
-      "new": "5d9e853",
-      "full": "5d9e853496652720f9dc6ec7457fe29ba94b7f0e",
-      "msg": "[WRAPPER] Ported the steam vulkan hack to 64-bit (#3692)",
-      "date": "2026-03-21T19:12:50Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "718afd7",
+      "new": "f9a10c4",
+      "full": "f9a10c46fafecf97800d6cc41986ce1bc60430a9",
+      "msg": "nir/inline_uniforms: track visited state per component",
+      "date": "2026-03-21T17:55:40.000+00:00"
     }
   ]
 }
