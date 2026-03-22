@@ -495,6 +495,21 @@ jobs:
           find artifacts -name "*.wcp.xz.sha256"  -exec cp {} release/ \;
           ls -lah release/
 
+      - name: Delete previous releases for same wine hash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_HASH: ${{ steps.meta.outputs.git_hash }}
+          GIT_DATE: ${{ steps.meta.outputs.git_date }}
+        run: |
+          PREFIX="proton-bleeding-edge-${GIT_DATE}-${GIT_HASH}-run"
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json tagName \
+            --jq '.[].tagName' \
+          | grep "^${PREFIX}" \
+          | while read -r tag; do
+              echo "Deleting duplicate release: $tag"
+              gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
+            done
+
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
