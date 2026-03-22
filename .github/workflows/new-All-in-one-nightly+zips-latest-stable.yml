@@ -1276,3 +1276,10 @@ jobs:
                 "timestamp": "${{ github.event.repository.updated_at }}"
               }]
             }'
+
+      - name: Trigger nightlies_components.json update
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run nightlies-components-json.yml --repo "$GITHUB_REPOSITORY"
