@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-22T17:19:08Z",
+  "triggered_at": "2026-03-22T18:25:58Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "279c650",
-      "new": "1c9ab05",
-      "full": "1c9ab05a1bc9a5ceec54e2c2055004a93b292080",
-      "msg": "This should fix non-Dynarec builds",
-      "date": "2026-03-22T16:56:27Z"
+      "old": "1c9ab05",
+      "new": "b2e87cf",
+      "full": "b2e87cfc16bee17f49b58687617476da8d471136",
+      "msg": "[WRAPPER] Fixed 5d9e8534 (#3696)",
+      "date": "2026-03-22T17:22:40Z"
     },
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "973433f",
-      "new": "1ebe643",
-      "full": "1ebe643cc2a3144e172d2b7762412b0982a48f6c",
-      "msg": "[CI] Run steamrt container with --user 1001",
-      "date": "2026-03-22T17:12:42Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "5c4c468",
+      "new": "bc533c8",
+      "full": "bc533c80500ec1bc138ab68db7154d2bbeb2b99d",
+      "msg": "Merge pull request #5393 from neobrain/fix_code_cache_glibc_assert",
+      "date": "2026-03-22T18:07:27Z"
     }
   ]
 }
