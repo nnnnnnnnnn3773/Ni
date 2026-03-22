@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-22T09:24:57Z",
+  "triggered_at": "2026-03-22T10:19:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f9a10c4",
-      "new": "d81a70b",
-      "full": "d81a70b3af7c914c04b9a7dda49011f9568a32de",
-      "msg": "docs: fix various pep8 issues",
-      "date": "2026-03-22T09:48:57.000+01:00"
+      "old": "d81a70b",
+      "new": "8c4e6aa",
+      "full": "8c4e6aa4c0436c9e390442333d6d07d33af00649",
+      "msg": "docs: delete now-unused html_redirects extension",
+      "date": "2026-03-22T10:25:39.000+01:00"
     }
   ]
 }
