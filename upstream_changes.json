@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-23T20:30:34Z",
+  "triggered_at": "2026-03-23T21:28:43Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "65a436c",
+      "new": "6da963a",
+      "full": "6da963a6954eb66531821165a863668acfadff33",
+      "msg": "Merge pull request #5394 from neobrain/fix_eager_relocation_parsing",
+      "date": "2026-03-23T21:01:20Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d664f6a",
-      "new": "3f870d6",
-      "full": "3f870d62b0eea707c22ca79fa87e4707d40b0c33",
-      "msg": "nir: Consider if uses in nir_def_all_uses_*",
-      "date": "2026-03-23T19:29:42.000+00:00"
+      "old": "3f870d6",
+      "new": "52d9075",
+      "full": "52d90752c299361bbf397e7c20ae36cd4c1dc14e",
+      "msg": "r300/ci: update expectations",
+      "date": "2026-03-23T21:06:32.000+00:00"
     }
   ]
 }
