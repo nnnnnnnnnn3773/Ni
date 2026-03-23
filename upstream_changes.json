@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-23T14:09:31Z",
+  "triggered_at": "2026-03-23T15:53:34Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "64df236",
-      "new": "00e4f02",
-      "full": "00e4f02a2ae92d0de8548aa72db35e85fd7a0f1f",
-      "msg": "Imrproved game launch from SteamRT3",
-      "date": "2026-03-23T13:34:25Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "9d8f645",
+      "new": "1fcafda",
+      "full": "1fcafda90214d872186e3697e1d1a00d0f27b147",
+      "msg": "vkd3d: Return DXGI_ERROR_DEVICE_REMOVED from CreateCommandQueue on removed devic",
+      "date": "2026-03-23T14:22:19Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "760ac32",
-      "new": "8d3a223",
-      "full": "8d3a223eed19309120f5718fee35034f405193e0",
-      "msg": "ci: Drop legacy-wayland option for debian-arm32",
-      "date": "2026-03-23T13:13:50.000+00:00"
+      "old": "8d3a223",
+      "new": "3a503b4",
+      "full": "3a503b48985d87dd12033dcae927d13fa60ac6d4",
+      "msg": "anv: limit aux disabling on concurrent images to pre-Xe2",
+      "date": "2026-03-23T15:13:02.000+00:00"
     }
   ]
 }
