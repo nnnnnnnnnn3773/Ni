@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-23T16:49:00Z",
+  "triggered_at": "2026-03-23T17:44:43Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "bc533c8",
-      "new": "65a436c",
-      "full": "65a436ca98bf219a9541d3be80c4d0e6dfe335f8",
-      "msg": "Merge pull request #5392 from neobrain/fix_code_cache_dupfd",
-      "date": "2026-03-23T16:42:45Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "1fcafda",
+      "new": "0e90384",
+      "full": "0e903842690a719a1414e1b741d297fe16448ef2",
+      "msg": "vkd3d: Recycle VkCommandBuffer instead of freeing them.",
+      "date": "2026-03-23T16:49:31Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3a503b4",
-      "new": "2e2d0f6",
-      "full": "2e2d0f623e1a0e5dbb6db92bb7b8cf4ae2e127e5",
-      "msg": "pan/bi: Drop bifrost_nir_lower_blend_components()",
-      "date": "2026-03-23T15:58:46.000+00:00"
+      "old": "2e2d0f6",
+      "new": "d6958a5",
+      "full": "d6958a5e432c5d15ae66c3d53806fe17f9ef866e",
+      "msg": "gallium: kill off pipe_surface::context",
+      "date": "2026-03-23T16:58:15.000+00:00"
     }
   ]
 }
