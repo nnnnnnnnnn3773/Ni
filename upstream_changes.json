@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-23T07:57:18Z",
+  "triggered_at": "2026-03-23T08:52:37Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "b2e87cf",
+      "new": "52cd1d0",
+      "full": "52cd1d09e0aac9dff5aa07a9cb1938a759b88b4d",
+      "msg": "[RV64_DYNAREC] Fixed 66 0F 3A ROUND opcodes sign-bit preserving (#3702)",
+      "date": "2026-03-23T08:16:25Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e7f6c8a",
-      "new": "533b962",
-      "full": "533b962b29640c204d5511ea8eff544fd0415d1b",
-      "msg": "driconf: rename sha1 option to blake3",
-      "date": "2026-03-23T07:03:28.000+00:00"
+      "old": "533b962",
+      "new": "8e274e5",
+      "full": "8e274e51057cb87d066b0675b4af528ba54faa29",
+      "msg": "pan/ci: move flake from fails to flakes file",
+      "date": "2026-03-23T08:00:39.000+00:00"
     }
   ]
 }
