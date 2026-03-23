@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-03-23T08:52:37Z",
+  "triggered_at": "2026-03-23T09:55:33Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "b2e87cf",
-      "new": "52cd1d0",
-      "full": "52cd1d09e0aac9dff5aa07a9cb1938a759b88b4d",
-      "msg": "[RV64_DYNAREC] Fixed 66 0F 3A ROUND opcodes sign-bit preserving (#3702)",
-      "date": "2026-03-23T08:16:25Z"
+      "old": "52cd1d0",
+      "new": "40d796a",
+      "full": "40d796a52f7b765cc4bd430dcbf84e3e638fd6f0",
+      "msg": "[WRAPPER] Added 1 more gnutls function (for #3704)",
+      "date": "2026-03-23T09:44:33Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "bd3f5e3",
+      "new": "551a7dd",
+      "full": "551a7dd22003d8db8e2613547c82e5184b27f542",
+      "msg": "vkd3d: Update shader hash for Wuthering Waves 3.2",
+      "date": "2026-03-23T09:41:31Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "533b962",
-      "new": "8e274e5",
-      "full": "8e274e51057cb87d066b0675b4af528ba54faa29",
-      "msg": "pan/ci: move flake from fails to flakes file",
-      "date": "2026-03-23T08:00:39.000+00:00"
+      "old": "8e274e5",
+      "new": "559a35d",
+      "full": "559a35dcb379e103eecfdb0c23bfc2b8214f8a83",
+      "msg": "aco: skip fract for sin/cos on gfx6-8 if the src is already in range",
+      "date": "2026-03-23T09:27:32.000+00:00"
     }
   ]
 }
