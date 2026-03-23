@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-22T18:25:58Z",
+  "triggered_at": "2026-03-23T01:24:10Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "1c9ab05",
-      "new": "b2e87cf",
-      "full": "b2e87cfc16bee17f49b58687617476da8d471136",
-      "msg": "[WRAPPER] Fixed 5d9e8534 (#3696)",
-      "date": "2026-03-22T17:22:40Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "5c4c468",
-      "new": "bc533c8",
-      "full": "bc533c80500ec1bc138ab68db7154d2bbeb2b99d",
-      "msg": "Merge pull request #5393 from neobrain/fix_code_cache_glibc_assert",
-      "date": "2026-03-22T18:07:27Z"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "1ebe643",
+      "new": "1676dca",
+      "full": "1676dcaf342a9b13af86c0464ad46235687727a6",
+      "msg": "[dxvk] Fix build failure with Clang 22",
+      "date": "2026-03-22T23:51:02Z"
     }
   ]
 }
