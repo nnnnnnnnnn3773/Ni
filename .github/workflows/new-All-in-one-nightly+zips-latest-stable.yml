@@ -867,6 +867,7 @@ jobs:
     needs: [build-box64-matrix, build-fex, build-vkd3d, build-dxvk, build-vkd3d-arm64ec, build-dxvk-arm64ec]
     permissions:
       contents: write
+      actions: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
