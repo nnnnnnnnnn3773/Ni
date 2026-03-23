@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-03-23T11:38:19Z",
+  "triggered_at": "2026-03-23T12:45:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "40d796a",
+      "new": "64df236",
+      "full": "64df23678217d912ee30868a79c094f4f67f663b",
+      "msg": "[ELFLOADER] Changed a bit how RPATH in elf are handled",
+      "date": "2026-03-23T12:34:48Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "70a40e1",
+      "new": "9d8f645",
+      "full": "9d8f645baa979f018064bb670874048fa24930b7",
+      "msg": "tests: Skip CBV-as-raw-buffer mismatch on NVIDIA Linux.",
+      "date": "2026-03-23T12:13:16Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9f22428",
-      "new": "c60e5df",
-      "full": "c60e5df7986ac5f3498ffa6200b94338aa8276bb",
-      "msg": "aco: drop optimizer peephole TODO comment",
-      "date": "2026-03-23T11:03:59.000+00:00"
+      "old": "c60e5df",
+      "new": "760ac32",
+      "full": "760ac320be4fe9f62eb3e1df688d937359e396b6",
+      "msg": "panvk: trivial fix to remove repeated assignment",
+      "date": "2026-03-23T11:47:39.000+00:00"
     }
   ]
 }
