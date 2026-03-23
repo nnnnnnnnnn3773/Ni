@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-23T17:44:43Z",
+  "triggered_at": "2026-03-23T18:40:56Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "1fcafda",
-      "new": "0e90384",
-      "full": "0e903842690a719a1414e1b741d297fe16448ef2",
-      "msg": "vkd3d: Recycle VkCommandBuffer instead of freeing them.",
-      "date": "2026-03-23T16:49:31Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2e2d0f6",
-      "new": "d6958a5",
-      "full": "d6958a5e432c5d15ae66c3d53806fe17f9ef866e",
-      "msg": "gallium: kill off pipe_surface::context",
-      "date": "2026-03-23T16:58:15.000+00:00"
+      "old": "d6958a5",
+      "new": "d664f6a",
+      "full": "d664f6a1e4739d0fd1adc9428793b218e4581abe",
+      "msg": "gallivm: remove dead code in lp_build_add",
+      "date": "2026-03-23T17:58:32.000+00:00"
     }
   ]
 }
