@@ -37,10 +37,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260321-1729f00-run69](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260321-1729f00-run69) |
-| **Wine Commit** | [`1729f00`](https://github.com/ValveSoftware/wine/commit/1729f00e17e879f98f9df1f2bca86bc5d21a65df) — netprofm: HACK: Throttle list_manager_GetConnectivity() for Death Stranding 2. |
-| **Date** | 2026-03-21 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260321-1729f00-run69) |
+| **Release** | [🔗 proton-bleeding-edge-20260323-309e572-run70](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-309e572-run70) |
+| **Wine Commit** | [`309e572`](https://github.com/ValveSoftware/wine/commit/309e5721ab79a242d3e650c531890c3664a17c1b) — kernelbase: HACK: Force disable direct composition for Blaite. |
+| **Date** | 2026-03-23 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-309e572-run70) |
 <!-- PROTON-LATEST-END -->
 
 ---
