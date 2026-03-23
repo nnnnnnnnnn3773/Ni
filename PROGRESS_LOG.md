@@ -6,6 +6,20 @@
 
 ---
 
+## Session — 2026-03-23
+
+### [fix] — Add actions: write permission to Create Nightly Release job (2026-03-23)
+**Commit:** `278522f`
+
+#### What changed
+- `new-All-in-one-nightly+zips-latest-stable.yml`: added `actions: write` to the `Create Nightly Release` job's `permissions` block
+- Root cause: `gh workflow run nightlies-components-json.yml` requires `actions: write` on `GITHUB_TOKEN`; job only had `contents: write`, causing HTTP 403 on every run
+
+#### Files touched
+- `.github/workflows/new-All-in-one-nightly+zips-latest-stable.yml`
+
+---
+
 ## Session — 2026-03-06
 
 ### [feat] — Dynamic release notes + upstream change tracking (2026-03-06)
