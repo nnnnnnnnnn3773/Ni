@@ -1,10 +1,25 @@
 {
-  "updated_at": "2026-03-23T09:57:08Z",
+  "updated_at": "2026-03-23T21:29:00Z",
   "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
-  "total_releases": 30,
-  "total_assets": 37,
+  "total_releases": 31,
+  "total_assets": 38,
   "releases": [
+    {
+      "tag": "tu_vdont_use",
+      "name": "Turnip A8XX vdont_use",
+      "published_at": "2026-03-23T21:15:37Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-clean-26-Vdont_use.zip",
+          "mirror_name": "tu_vdont_use_a8xx-gen8-clean-26-Vdont_use.zip",
+          "size": 2456121,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_vdont_use/a8xx-gen8-clean-26-Vdont_use.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_vdont_use_a8xx-gen8-clean-26-Vdont_use.zip",
+          "published_at": "2026-03-23T21:15:38Z"
+        }
+      ]
+    },
     {
       "tag": "mesa_v26.1.0-git_3",
       "name": "Mesa Turnip v26.1.0-git_3",
@@ -503,10 +518,10 @@
         {
           "name": "libvulkan_freedreno.so",
           "mirror_name": "github_run_libvulkan_freedreno.so",
-          "size": 14027224,
+          "size": 14026920,
           "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/github_run/libvulkan_freedreno.so",
           "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/github_run_libvulkan_freedreno.so",
-          "published_at": "2026-03-16T21:11:38Z"
+          "published_at": "2026-03-23T21:03:46Z"
         }
       ]
     }

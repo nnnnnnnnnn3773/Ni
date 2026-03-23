@@ -1783,6 +1783,12 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "tu_vdont_use \u2014 a8xx-gen8-clean-26-Vdont_use.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_vdont_use_a8xx-gen8-clean-26-Vdont_use.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "mesa_v26.1.0-git_3 \u2014 mesa-turnip-main-V26.1.0-git_3.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/mesa_v26.1.0-git_3_mesa-turnip-main-V26.1.0-git_3.zip"
