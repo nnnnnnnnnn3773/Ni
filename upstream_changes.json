@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-03-23T09:55:33Z",
+  "triggered_at": "2026-03-23T10:45:45Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "52cd1d0",
-      "new": "40d796a",
-      "full": "40d796a52f7b765cc4bd430dcbf84e3e638fd6f0",
-      "msg": "[WRAPPER] Added 1 more gnutls function (for #3704)",
-      "date": "2026-03-23T09:44:33Z"
-    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "bd3f5e3",
-      "new": "551a7dd",
-      "full": "551a7dd22003d8db8e2613547c82e5184b27f542",
-      "msg": "vkd3d: Update shader hash for Wuthering Waves 3.2",
-      "date": "2026-03-23T09:41:31Z"
+      "old": "551a7dd",
+      "new": "70a40e1",
+      "full": "70a40e17fb5a5e21c6c7c59c0b6fe3d5bafd1640",
+      "msg": "vkd3d: Fix data race in pipeline library internal hash map lookup (#2900)",
+      "date": "2026-03-23T09:58:11Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8e274e5",
-      "new": "559a35d",
-      "full": "559a35dcb379e103eecfdb0c23bfc2b8214f8a83",
-      "msg": "aco: skip fract for sin/cos on gfx6-8 if the src is already in range",
-      "date": "2026-03-23T09:27:32.000+00:00"
+      "old": "559a35d",
+      "new": "9f22428",
+      "full": "9f224289b06357c69d181bec5b6c3a21f00c6ca2",
+      "msg": "radv: remove adding a BO to the per-cmdbuf list when unnecessary",
+      "date": "2026-03-23T09:50:41.000+00:00"
     }
   ]
 }
