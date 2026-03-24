@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T12:52:37Z",
+  "triggered_at": "2026-03-24T14:15:43Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8a20cbb",
-      "new": "acd7337",
-      "full": "acd7337b313c70e2e56cf70b34e67e794799e51b",
-      "msg": "ci: Run Intel shader-db on Lunar Lake and Panther Lake",
-      "date": "2026-03-24T11:11:59.000+00:00"
+      "old": "acd7337",
+      "new": "89b36fe",
+      "full": "89b36fe180570257344682bcd1eaac38b8ec48f4",
+      "msg": "util/list: fix formatting",
+      "date": "2026-03-24T12:58:43.000+00:00"
     }
   ]
 }
