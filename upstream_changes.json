@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T15:58:41Z",
+  "triggered_at": "2026-03-24T17:00:31Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "89b36fe",
-      "new": "89229f0",
-      "full": "89229f08bb84a07b999d6ecee221d2924e917e0f",
-      "msg": "broadcom/common: fix V3D 7.1 TFU ICFG IFORMAT values",
-      "date": "2026-03-24T14:55:50.000+00:00"
+      "old": "89229f0",
+      "new": "204af7e",
+      "full": "204af7e09fb93b7c808871d9d5616064d4e2993c",
+      "msg": "intel/nir: Replace tg4 with txl/txb/tex when splitting texture residency",
+      "date": "2026-03-24T16:06:29.000+00:00"
     }
   ]
 }
