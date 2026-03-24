@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T05:54:58Z",
+  "triggered_at": "2026-03-24T06:54:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b5e0237",
-      "new": "c75256b",
-      "full": "c75256b2ab777b711dfc824f8a6a451bfdabd3d7",
-      "msg": "intel/compiler: move validation assert after brw_shader_debug_log",
-      "date": "2026-03-24T04:54:31.000+00:00"
+      "old": "c75256b",
+      "new": "7fa0add",
+      "full": "7fa0add77d9fb6eec38f359b2d375ed0036025d3",
+      "msg": "pvr: re-indent pseudocode for DDMADT behavior",
+      "date": "2026-03-24T14:11:35.000+08:00"
     }
   ]
 }
