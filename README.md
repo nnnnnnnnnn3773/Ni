@@ -37,10 +37,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260323-309e572-run70](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-309e572-run70) |
-| **Wine Commit** | [`309e572`](https://github.com/ValveSoftware/wine/commit/309e5721ab79a242d3e650c531890c3664a17c1b) — kernelbase: HACK: Force disable direct composition for Blaite. |
+| **Release** | [🔗 proton-bleeding-edge-20260323-aa64c9d-run71](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-aa64c9d-run71) |
+| **Wine Commit** | [`aa64c9d`](https://github.com/ValveSoftware/wine/commit/aa64c9deed68035bdf583df2279235e0238974d8) — ntdll: Do not keep next handler pointer outside of lock in call_vectored_handler |
 | **Date** | 2026-03-23 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-309e572-run70) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260323-aa64c9d-run71) |
 <!-- PROTON-LATEST-END -->
 
 ---
