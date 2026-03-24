@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T19:49:03Z",
+  "triggered_at": "2026-03-24T21:30:10Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2160e75",
-      "new": "e46f596",
-      "full": "e46f596325aef4c14811de706541297c4030949d",
-      "msg": "nir/mem_access_bit_sizes: Handle global_bounded",
-      "date": "2026-03-24T18:55:30.000+00:00"
+      "old": "e46f596",
+      "new": "dd3e153",
+      "full": "dd3e153a103fe26df39874a1934b612788c78fad",
+      "msg": "nvk: fix BindImageMemory2 per-bind status result",
+      "date": "2026-03-24T21:00:50.000+00:00"
     }
   ]
 }
