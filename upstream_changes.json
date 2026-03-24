@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T22:22:49Z",
+  "triggered_at": "2026-03-24T23:24:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dd3e153",
-      "new": "ee4a854",
-      "full": "ee4a8548a2b93ebd8895a81b4419583eb90b5cce",
-      "msg": "docs/panfrost: fix outdated path to complete GPUs list",
-      "date": "2026-03-24T22:17:31.000+00:00"
+      "old": "ee4a854",
+      "new": "5b8ebb8",
+      "full": "5b8ebb8553d19dd0a91bfe83b199f2dc8bbc11d9",
+      "msg": "panvk: remove unused flag",
+      "date": "2026-03-24T22:23:23.000+00:00"
     }
   ]
 }
