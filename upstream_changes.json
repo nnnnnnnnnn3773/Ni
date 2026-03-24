@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T04:11:06Z",
+  "triggered_at": "2026-03-24T05:54:58Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "731e5e4",
-      "new": "b5e0237",
-      "full": "b5e023777cee73d1cca597588185c70eadfb19d3",
-      "msg": "brw: Change the flags written by some CMP",
-      "date": "2026-03-24T01:31:26.000+00:00"
+      "old": "b5e0237",
+      "new": "c75256b",
+      "full": "c75256b2ab777b711dfc824f8a6a451bfdabd3d7",
+      "msg": "intel/compiler: move validation assert after brw_shader_debug_log",
+      "date": "2026-03-24T04:54:31.000+00:00"
     }
   ]
 }
