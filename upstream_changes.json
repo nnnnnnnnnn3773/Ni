@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-24T09:47:18Z",
+  "triggered_at": "2026-03-24T10:42:49Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "6da963a",
+      "new": "5149ebc",
+      "full": "5149ebc70e95522707d15df9ba55e481c3ddfb7a",
+      "msg": "Merge pull request #5389 from Sonicadvance1/124",
+      "date": "2026-03-24T10:12:10Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7fa0add",
-      "new": "17a9ee7",
-      "full": "17a9ee7152822f23ffc3022b5a3b0ecc117a8011",
-      "msg": "aco/optimizer: apply dpp to v_dot before RA for gfx10.3",
-      "date": "2026-03-24T09:05:40.000+00:00"
+      "old": "17a9ee7",
+      "new": "8a20cbb",
+      "full": "8a20cbbf249b6199ef479a8da0f712f5f7d6e184",
+      "msg": "ci: vmware farm is offline, stop using it",
+      "date": "2026-03-24T10:02:41.000+00:00"
     }
   ]
 }
