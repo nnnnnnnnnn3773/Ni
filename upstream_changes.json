@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T06:54:44Z",
+  "triggered_at": "2026-03-24T09:47:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c75256b",
-      "new": "7fa0add",
-      "full": "7fa0add77d9fb6eec38f359b2d375ed0036025d3",
-      "msg": "pvr: re-indent pseudocode for DDMADT behavior",
-      "date": "2026-03-24T14:11:35.000+08:00"
+      "old": "7fa0add",
+      "new": "17a9ee7",
+      "full": "17a9ee7152822f23ffc3022b5a3b0ecc117a8011",
+      "msg": "aco/optimizer: apply dpp to v_dot before RA for gfx10.3",
+      "date": "2026-03-24T09:05:40.000+00:00"
     }
   ]
 }
