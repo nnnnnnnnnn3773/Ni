@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-24T17:00:31Z",
+  "triggered_at": "2026-03-24T18:51:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "00e4f02",
+      "new": "518f065",
+      "full": "518f065591510da254e25cb75e0d0d132c52207b",
+      "msg": "[ARM64_DYNAREC] Improved xmm/ymm unneeded flagging",
+      "date": "2026-03-24T17:38:56Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "89229f0",
-      "new": "204af7e",
-      "full": "204af7e09fb93b7c808871d9d5616064d4e2993c",
-      "msg": "intel/nir: Replace tg4 with txl/txb/tex when splitting texture residency",
-      "date": "2026-03-24T16:06:29.000+00:00"
+      "old": "204af7e",
+      "new": "2160e75",
+      "full": "2160e751e3001e398f53038635c61baa447a006f",
+      "msg": "vulkan/runtime: fix incorrect entrypoint call for CmdCopyImageToBuffer2",
+      "date": "2026-03-24T17:47:01.000+00:00"
     }
   ]
 }
