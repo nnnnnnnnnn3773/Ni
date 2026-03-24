@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-23T23:24:38Z",
+  "triggered_at": "2026-03-24T01:18:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "218be90",
-      "new": "0658e5e",
-      "full": "0658e5e1412a34b572e11ce118880c8b1f848895",
-      "msg": "vulkan: fix memory leak in vkQueueBeginDebugUtilsLabelEXT()",
-      "date": "2026-03-23T22:41:49.000+00:00"
+      "old": "0658e5e",
+      "new": "731e5e4",
+      "full": "731e5e466a4c60ab42ad86afa5638558abcd6b7f",
+      "msg": "zink+lvp/ci: document recent flakes",
+      "date": "2026-03-23T23:38:32.000+00:00"
     }
   ]
 }
