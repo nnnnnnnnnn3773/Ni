@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-25T05:55:58Z",
+  "triggered_at": "2026-03-25T07:48:57Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "c5a949e",
-      "new": "1ce1345",
-      "full": "1ce1345fc416840988f10950a85e3ed6c665b22b",
-      "msg": "Revert \"ci: vmware farm is offline, stop using it\"",
-      "date": "2026-03-25T05:29:29.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "518f065",
+      "new": "8dde29f",
+      "full": "8dde29fedfc2ac2f1912f0d8c765389fb9c7b501",
+      "msg": "[PPC64LE_DYNAREC] Add ALU immediate opcodes (0x80-0x83) (#3706)",
+      "date": "2026-03-25T07:11:56Z"
     }
   ]
 }
