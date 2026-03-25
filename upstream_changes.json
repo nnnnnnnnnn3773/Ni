@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-24T23:24:03Z",
+  "triggered_at": "2026-03-25T04:12:20Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ee4a854",
-      "new": "5b8ebb8",
-      "full": "5b8ebb8553d19dd0a91bfe83b199f2dc8bbc11d9",
-      "msg": "panvk: remove unused flag",
-      "date": "2026-03-24T22:23:23.000+00:00"
+      "old": "5b8ebb8",
+      "new": "c5a949e",
+      "full": "c5a949e7940b26af9db7641bd373a4e841c7549c",
+      "msg": "panvk: Drop lower_load_fs_input",
+      "date": "2026-03-25T03:11:56.000+00:00"
     }
   ]
 }
