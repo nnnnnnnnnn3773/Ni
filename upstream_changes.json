@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-25T04:12:20Z",
+  "triggered_at": "2026-03-25T05:55:58Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5b8ebb8",
-      "new": "c5a949e",
-      "full": "c5a949e7940b26af9db7641bd373a4e841c7549c",
-      "msg": "panvk: Drop lower_load_fs_input",
-      "date": "2026-03-25T03:11:56.000+00:00"
+      "old": "c5a949e",
+      "new": "1ce1345",
+      "full": "1ce1345fc416840988f10950a85e3ed6c665b22b",
+      "msg": "Revert \"ci: vmware farm is offline, stop using it\"",
+      "date": "2026-03-25T05:29:29.000+00:00"
     }
   ]
 }
