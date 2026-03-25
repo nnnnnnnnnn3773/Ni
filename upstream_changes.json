@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-25T09:44:38Z",
+  "triggered_at": "2026-03-25T10:40:36Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8dde29f",
-      "new": "be199c5",
-      "full": "be199c581287b1c7d0ed665ce45b3db616722aac",
-      "msg": "Prevent inifinte redirection when alt is used to redirect an x64 function, like ",
-      "date": "2026-03-25T08:55:27Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "0e90384",
+      "new": "617c570",
+      "full": "617c570114f0d8f9bc490209844bf8610873c6e0",
+      "msg": "vkd3d: Do not recreate swapchain if we're forcing modes.",
+      "date": "2026-03-25T10:29:37Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "be65d69",
-      "new": "76eae60",
-      "full": "76eae60b07c5d624e0f314322046f8979aa7d248",
-      "msg": "pvr: Remove two unused function",
-      "date": "2026-03-25T09:23:33.000+00:00"
+      "old": "76eae60",
+      "new": "dfbaded",
+      "full": "dfbadedc02c910265108f375daa1648de15df866",
+      "msg": "ac/nir/meta_cs_blit: use uint16 for coordinates to fix 64K blits",
+      "date": "2026-03-25T09:39:20.000+00:00"
     }
   ]
 }
