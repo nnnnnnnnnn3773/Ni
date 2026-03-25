@@ -4,11 +4,11 @@
   "versionName": "proton-bleeding-edge-20260324-a77d91c-arm64ec",
   "wcp": {
     "fileName": "proton-proton-bleeding-edge-20260324-a77d91c-arm64ec.wcp",
-    "sha256": "19498d0b67aadab9e1bfc00174e6ec75861c58ae4aa35e5ec2042c73b6388437"
+    "sha256": "e9924662f8a18ef792d8955dd77b0d9a17a00ac94b4ac1cfb19b87bd583265ca"
   },
   "wcpxz": {
     "fileName": "proton-wine-proton-bleeding-edge-20260324-a77d91c-arm64ec.wcp.xz",
-    "sha256": "45f37588d0f6f181ddc6933e7803612310d1a6f6e344b90c204adf0d7b7dcd02"
+    "sha256": "03adcc5d7b527bd0b63a33ebe5595427531c7c627c22c9953106fdac57ccecda"
   },
-  "releaseTag": "proton-bleeding-edge-20260324-a77d91c-run78"
+  "releaseTag": "proton-bleeding-edge-20260324-a77d91c-run79"
 }
