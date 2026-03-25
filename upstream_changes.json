@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-25T08:40:04Z",
+  "triggered_at": "2026-03-25T09:44:38Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "8dde29f",
+      "new": "be199c5",
+      "full": "be199c581287b1c7d0ed665ce45b3db616722aac",
+      "msg": "Prevent inifinte redirection when alt is used to redirect an x64 function, like ",
+      "date": "2026-03-25T08:55:27Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1ce1345",
-      "new": "be65d69",
-      "full": "be65d69b02a23bb1da9f54f391995d2e4c87944d",
-      "msg": "ci/venus: Skip crashing Android CTS test on ANV",
-      "date": "2026-03-25T07:51:08.000+00:00"
+      "old": "be65d69",
+      "new": "76eae60",
+      "full": "76eae60b07c5d624e0f314322046f8979aa7d248",
+      "msg": "pvr: Remove two unused function",
+      "date": "2026-03-25T09:23:33.000+00:00"
     }
   ]
 }
