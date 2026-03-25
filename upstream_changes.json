@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-25T07:48:57Z",
+  "triggered_at": "2026-03-25T08:40:04Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "518f065",
-      "new": "8dde29f",
-      "full": "8dde29fedfc2ac2f1912f0d8c765389fb9c7b501",
-      "msg": "[PPC64LE_DYNAREC] Add ALU immediate opcodes (0x80-0x83) (#3706)",
-      "date": "2026-03-25T07:11:56Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "1ce1345",
+      "new": "be65d69",
+      "full": "be65d69b02a23bb1da9f54f391995d2e4c87944d",
+      "msg": "ci/venus: Skip crashing Android CTS test on ANV",
+      "date": "2026-03-25T07:51:08.000+00:00"
     }
   ]
 }
