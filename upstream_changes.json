@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-25T17:51:26Z",
+  "triggered_at": "2026-03-25T18:44:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1a68099",
-      "new": "32bd3a6",
-      "full": "32bd3a6e4e738d298fd79900d9c4bafc3683fd3f",
-      "msg": "gfxstream: simple compile fix",
-      "date": "2026-03-25T17:33:56.000+00:00"
+      "old": "32bd3a6",
+      "new": "a6992c7",
+      "full": "a6992c7bbeee4e5e1ddd3555a0d2a25b8113f7d5",
+      "msg": "nv50,nvc0: Avoid uninitialized cbuf reads in blits",
+      "date": "2026-03-25T17:48:43.000+00:00"
     }
   ]
 }
