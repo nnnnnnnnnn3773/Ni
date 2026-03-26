@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-26T09:54:33Z",
+  "triggered_at": "2026-03-26T10:44:40Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "db34a92",
-      "new": "44fa9c8",
-      "full": "44fa9c8326b4e545499f2eecb3a5654355d3ea24",
-      "msg": "nir/lower_tex: Reinstate LSB to MSB shift",
-      "date": "2026-03-26T09:05:40.000+00:00"
+      "old": "44fa9c8",
+      "new": "441bb8b",
+      "full": "441bb8b947d069dc730e664f9d29a1ed7a80b010",
+      "msg": "pvr: drop master for the display FD if it's not needed",
+      "date": "2026-03-26T17:39:01.000+08:00"
     }
   ]
 }
