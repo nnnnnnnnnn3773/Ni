@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-03-26T17:54:34Z",
+  "triggered_at": "2026-03-26T18:55:06Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "bff0cf4",
-      "new": "d7c86ca",
-      "full": "d7c86cadf6e935d24f77c66dc3ba7c1cb32f1d8d",
-      "msg": "[INTERP] Added F3 0F AD opcode (for #3717)",
-      "date": "2026-03-26T17:44:59Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "cc9d6cc",
-      "new": "e808096",
-      "full": "e808096d5d9532f31f8b35b44fed263ae6c0502d",
-      "msg": "vkd3d: Add sync bug workaround for Crimson Desert.",
-      "date": "2026-03-26T16:05:45Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "06e5026",
-      "new": "c2fc7d4",
-      "full": "c2fc7d49e8210bd199e079857d9997796487dd64",
-      "msg": "pan/bi: Rework mem_vectorize_cb",
-      "date": "2026-03-26T16:28:40.000+00:00"
+      "old": "c2fc7d4",
+      "new": "fe558d8",
+      "full": "fe558d83281bc509fe097f8836627825786d041b",
+      "msg": "nvk: fix barrier cache invalidation",
+      "date": "2026-03-26T18:29:16.000+00:00"
     }
   ]
 }
