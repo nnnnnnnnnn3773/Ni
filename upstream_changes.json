@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-26T08:51:55Z",
+  "triggered_at": "2026-03-26T09:54:33Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5506656",
-      "new": "66ccc3f",
-      "full": "66ccc3f65d0fe08e495b4b785503c2044b07ebd6",
-      "msg": "[LA64_DYNAREC] Fixed SSE PCMPEQQ opcode (#3714)",
-      "date": "2026-03-26T08:41:25Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "db34a92",
+      "new": "44fa9c8",
+      "full": "44fa9c8326b4e545499f2eecb3a5654355d3ea24",
+      "msg": "nir/lower_tex: Reinstate LSB to MSB shift",
+      "date": "2026-03-26T09:05:40.000+00:00"
     }
   ]
 }
