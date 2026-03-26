@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-26T11:43:16Z",
+  "triggered_at": "2026-03-26T12:55:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "66ccc3f",
-      "new": "aaa5883",
-      "full": "aaa5883f72c48e5b0fa6f19bc63a75793bc3d569",
-      "msg": "[TEST] Tracked MMX registers (#3715)",
-      "date": "2026-03-26T10:55:33Z"
+      "old": "aaa5883",
+      "new": "cb36247",
+      "full": "cb362477e886e66960df7dc111b69f4fb053c726",
+      "msg": "[WRAPPER] Fixed Display and xcb_connexion tracking",
+      "date": "2026-03-26T12:34:26Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "441bb8b",
+      "new": "18a6352",
+      "full": "18a63522d60b547ffba50ae6e344a29b1329dd08",
+      "msg": "v3dv: fix mutable resolve attachment format mismatch",
+      "date": "2026-03-26T13:25:16.000+01:00"
     }
   ]
 }
