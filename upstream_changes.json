@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-26T14:22:23Z",
+  "triggered_at": "2026-03-26T16:04:52Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "cb36247",
-      "new": "bff0cf4",
-      "full": "bff0cf46da0387788773dc288afb17c4974b5c3e",
-      "msg": "[INTERP] Added support for F2 0F C1 opcode (for #3717)",
-      "date": "2026-03-26T14:18:48Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "c3bc3dc",
+      "new": "cc9d6cc",
+      "full": "cc9d6cc7c765dfeaed2981f77ab8e75ba662629c",
+      "msg": "vkd3d: Add missing barrier in Spider Man 2.",
+      "date": "2026-03-26T15:51:26Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "18a6352",
-      "new": "0d8e235",
-      "full": "0d8e2354edd632c3a26f871fa22b0d4e7f2922ec",
-      "msg": "nir: add fp_math_ctrl to convert_alu_types",
-      "date": "2026-03-26T13:15:50.000+00:00"
+      "old": "0d8e235",
+      "new": "06e5026",
+      "full": "06e5026e28e38f46bf3b1c32a61fecf943b1f51e",
+      "msg": "docs: add GL_NV_timeline_semaphore support for radeonsi",
+      "date": "2026-03-26T14:26:56.000+00:00"
     }
   ]
 }
