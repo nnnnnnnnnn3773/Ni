@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-03-26T16:04:52Z",
+  "triggered_at": "2026-03-26T17:54:34Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "bff0cf4",
+      "new": "d7c86ca",
+      "full": "d7c86cadf6e935d24f77c66dc3ba7c1cb32f1d8d",
+      "msg": "[INTERP] Added F3 0F AD opcode (for #3717)",
+      "date": "2026-03-26T17:44:59Z"
+    },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "c3bc3dc",
-      "new": "cc9d6cc",
-      "full": "cc9d6cc7c765dfeaed2981f77ab8e75ba662629c",
-      "msg": "vkd3d: Add missing barrier in Spider Man 2.",
-      "date": "2026-03-26T15:51:26Z"
+      "old": "cc9d6cc",
+      "new": "e808096",
+      "full": "e808096d5d9532f31f8b35b44fed263ae6c0502d",
+      "msg": "vkd3d: Add sync bug workaround for Crimson Desert.",
+      "date": "2026-03-26T16:05:45Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0d8e235",
-      "new": "06e5026",
-      "full": "06e5026e28e38f46bf3b1c32a61fecf943b1f51e",
-      "msg": "docs: add GL_NV_timeline_semaphore support for radeonsi",
-      "date": "2026-03-26T14:26:56.000+00:00"
+      "old": "06e5026",
+      "new": "c2fc7d4",
+      "full": "c2fc7d49e8210bd199e079857d9997796487dd64",
+      "msg": "pan/bi: Rework mem_vectorize_cb",
+      "date": "2026-03-26T16:28:40.000+00:00"
     }
   ]
 }
