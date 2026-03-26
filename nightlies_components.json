@@ -457,39 +457,39 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-6c2b83765",
+    "verName": "Box64-Hybrid-Bionic-6c8909247",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-6c2b83765.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-6c8909247.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-6c2b83765",
+    "verName": "Box64-Hybrid-Bionic-6c8909247",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-6c2b83765.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-6c8909247.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-6b1c6eda0",
+    "verName": "Box64-Hybrid-Native-920bb9cfb",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-6b1c6eda0.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-920bb9cfb.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-6b1c6eda0",
+    "verName": "Box64-Hybrid-Native-920bb9cfb",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-6b1c6eda0.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-920bb9cfb.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-bc6f3e160",
+    "verName": "Box64-Hybrid-WOW64-f1df3ac2d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-bc6f3e160.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-f1df3ac2d.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-bc6f3e160",
+    "verName": "Box64-Hybrid-WOW64-f1df3ac2d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-bc6f3e160.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-f1df3ac2d.zip"
   },
   {
     "type": "DXVK",
@@ -517,15 +517,15 @@
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2603-Nightly-6bd476fb0",
+    "verName": "FEX-2603-Nightly-3ef677537",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2603-Nightly-6bd476fb0.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2603-Nightly-3ef677537.wcp"
   },
   {
     "type": "FEXCore",
-    "verName": "FEX-2603-Nightly-6bd476fb0",
+    "verName": "FEX-2603-Nightly-3ef677537",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2603-Nightly-6bd476fb0.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/FEX-2603-Nightly-3ef677537.zip"
   },
   {
     "type": "VKD3D",
@@ -553,14 +553,14 @@
   },
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260326-r97-A8xx",
+    "verName": "Turnip-v26.1.0-20260326-r98-A8xx",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r97/Turnip-v26.1.0-20260326-r97-A8xx.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r98/Turnip-v26.1.0-20260326-r98-A8xx.zip"
   },
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260326-r97",
+    "verName": "Turnip-v26.1.0-20260326-r98",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r97/Turnip-v26.1.0-20260326-r97.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r98/Turnip-v26.1.0-20260326-r98.zip"
   }
 ]
