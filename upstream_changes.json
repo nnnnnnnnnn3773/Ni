@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-26T10:44:40Z",
+  "triggered_at": "2026-03-26T11:43:16Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "44fa9c8",
-      "new": "441bb8b",
-      "full": "441bb8b947d069dc730e664f9d29a1ed7a80b010",
-      "msg": "pvr: drop master for the display FD if it's not needed",
-      "date": "2026-03-26T17:39:01.000+08:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "66ccc3f",
+      "new": "aaa5883",
+      "full": "aaa5883f72c48e5b0fa6f19bc63a75793bc3d569",
+      "msg": "[TEST] Tracked MMX registers (#3715)",
+      "date": "2026-03-26T10:55:33Z"
     }
   ]
 }
