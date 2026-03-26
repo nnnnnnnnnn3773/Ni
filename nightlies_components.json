@@ -421,75 +421,75 @@
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.1-bff0cf46d-Bionic",
+    "verName": "Box64-0.4.1-d7c86cadf-Bionic",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-Bionic.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-Bionic.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.1-bff0cf46d-Bionic",
+    "verName": "Box64-0.4.1-d7c86cadf-Bionic",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-Bionic.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-Bionic.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.1-bff0cf46d-Native",
+    "verName": "Box64-0.4.1-d7c86cadf-Native",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-Native.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-Native.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-0.4.1-bff0cf46d-Native",
+    "verName": "Box64-0.4.1-d7c86cadf-Native",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-Native.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-Native.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-0.4.1-bff0cf46d-WOW64",
+    "verName": "Box64-0.4.1-d7c86cadf-WOW64",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-WOW64.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-WOW64.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-0.4.1-bff0cf46d-WOW64",
+    "verName": "Box64-0.4.1-d7c86cadf-WOW64",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-bff0cf46d-WOW64.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-0.4.1-d7c86cadf-WOW64.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-2e918a624",
+    "verName": "Box64-Hybrid-Bionic-03c51648c",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-2e918a624.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-03c51648c.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Bionic-2e918a624",
+    "verName": "Box64-Hybrid-Bionic-03c51648c",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-2e918a624.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Bionic-03c51648c.zip"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-94bb527e2",
+    "verName": "Box64-Hybrid-Native-4f575b13a",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-94bb527e2.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-4f575b13a.wcp"
   },
   {
     "type": "Box64",
-    "verName": "Box64-Hybrid-Native-94bb527e2",
+    "verName": "Box64-Hybrid-Native-4f575b13a",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-94bb527e2.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-Native-4f575b13a.zip"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-df3fb406c",
+    "verName": "Box64-Hybrid-WOW64-6649e2912",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-df3fb406c.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-6649e2912.wcp"
   },
   {
     "type": "WOWBox64",
-    "verName": "Box64-Hybrid-WOW64-df3fb406c",
+    "verName": "Box64-Hybrid-WOW64-6649e2912",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-df3fb406c.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/Box64-Hybrid-WOW64-6649e2912.zip"
   },
   {
     "type": "DXVK",
@@ -529,38 +529,38 @@
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0b-cc9d6cc7",
+    "verName": "VKD3D-Proton-3.0b-e808096d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0b-cc9d6cc7.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0b-e808096d.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-3.0b-cc9d6cc7",
+    "verName": "VKD3D-Proton-3.0b-e808096d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0b-cc9d6cc7.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-3.0b-e808096d.zip"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0b-cc9d6cc7",
+    "verName": "VKD3D-Proton-arm64ec-3.0b-e808096d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-cc9d6cc7.wcp"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-e808096d.wcp"
   },
   {
     "type": "VKD3D",
-    "verName": "VKD3D-Proton-arm64ec-3.0b-cc9d6cc7",
+    "verName": "VKD3D-Proton-arm64ec-3.0b-e808096d",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-cc9d6cc7.zip"
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/nightly-latest/VKD3D-Proton-arm64ec-3.0b-e808096d.zip"
   },
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260326-r94-A8xx",
+    "verName": "Turnip-v26.1.0-20260326-r95-A8xx",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r94/Turnip-v26.1.0-20260326-r94-A8xx.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r95/Turnip-v26.1.0-20260326-r95-A8xx.zip"
   },
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260326-r94",
+    "verName": "Turnip-v26.1.0-20260326-r95",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r94/Turnip-v26.1.0-20260326-r94.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260326-r95/Turnip-v26.1.0-20260326-r95.zip"
   }
 ]
