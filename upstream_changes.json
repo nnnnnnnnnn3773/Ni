@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-26T22:20:10Z",
+  "triggered_at": "2026-03-26T23:23:58Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "6bd476f",
-      "new": "3ef6775",
-      "full": "3ef677537d1573c85dab4b507f805a1e7babe2af",
-      "msg": "Merge pull request #5397 from neobrain/fix_elfreads",
-      "date": "2026-03-26T21:33:26Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d5b9411",
-      "new": "32ca98a",
-      "full": "32ca98a26e890b167a613bbc8b9ba3d779f628f8",
-      "msg": "panvk: Advertise VK_EXT_shader_atomic_float",
-      "date": "2026-03-26T21:28:49.000+00:00"
+      "old": "32ca98a",
+      "new": "fa523ae",
+      "full": "fa523aedd0ab96cb4262f3d63e2d8fd75a112efb",
+      "msg": "brw: fence SLM writes between workgroups",
+      "date": "2026-03-26T22:38:55.000+00:00"
     }
   ]
 }
