@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-26T12:55:15Z",
+  "triggered_at": "2026-03-26T14:22:23Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "aaa5883",
-      "new": "cb36247",
-      "full": "cb362477e886e66960df7dc111b69f4fb053c726",
-      "msg": "[WRAPPER] Fixed Display and xcb_connexion tracking",
-      "date": "2026-03-26T12:34:26Z"
+      "old": "cb36247",
+      "new": "bff0cf4",
+      "full": "bff0cf46da0387788773dc288afb17c4974b5c3e",
+      "msg": "[INTERP] Added support for F2 0F C1 opcode (for #3717)",
+      "date": "2026-03-26T14:18:48Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "441bb8b",
-      "new": "18a6352",
-      "full": "18a63522d60b547ffba50ae6e344a29b1329dd08",
-      "msg": "v3dv: fix mutable resolve attachment format mismatch",
-      "date": "2026-03-26T13:25:16.000+01:00"
+      "old": "18a6352",
+      "new": "0d8e235",
+      "full": "0d8e2354edd632c3a26f871fa22b0d4e7f2922ec",
+      "msg": "nir: add fp_math_ctrl to convert_alu_types",
+      "date": "2026-03-26T13:15:50.000+00:00"
     }
   ]
 }
