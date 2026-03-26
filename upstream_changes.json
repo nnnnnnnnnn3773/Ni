@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-26T07:57:10Z",
+  "triggered_at": "2026-03-26T08:51:55Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "e4270f1",
-      "new": "5506656",
-      "full": "5506656a398aafc1e57dbff84a4831ec186f3a6b",
-      "msg": "[LA64_DYNAREC] Removed assert in x87_get_current_cache ([RV64_DYNAREC] too) (#37",
-      "date": "2026-03-26T07:53:40Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "a6992c7",
-      "new": "db34a92",
-      "full": "db34a92c48bbec348391b6e3804ad4c9ad1a84ad",
-      "msg": "intel/tools: Add xe3p format for intel_monitor",
-      "date": "2026-03-26T07:31:09.000+00:00"
+      "old": "5506656",
+      "new": "66ccc3f",
+      "full": "66ccc3f65d0fe08e495b4b785503c2044b07ebd6",
+      "msg": "[LA64_DYNAREC] Fixed SSE PCMPEQQ opcode (#3714)",
+      "date": "2026-03-26T08:41:25Z"
     }
   ]
 }
