@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-27T18:44:55Z",
+  "triggered_at": "2026-03-27T19:36:32Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "ce3afa4",
+      "new": "5469887",
+      "full": "54698875f0f5092c3c8aaf0fc0488c7302af6891",
+      "msg": "[WRAPPER] Added libsmbclient.so wrapping",
+      "date": "2026-03-27T19:02:54Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "32d04bc",
-      "new": "b76678c",
-      "full": "b76678cddd18190a3bfc609b260422f65a784f9e",
-      "msg": "freedreno/a6xx: Fix supported-blit fmt check",
-      "date": "2026-03-27T17:48:21.000+00:00"
+      "old": "b76678c",
+      "new": "691cfe4",
+      "full": "691cfe40fa76dc63d65fb9e9aca764e703faf9cb",
+      "msg": "v3d: use devinfo->page_size for state uploader default size",
+      "date": "2026-03-27T18:54:29.000+00:00"
     }
   ]
 }
