@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-26T23:23:58Z",
+  "triggered_at": "2026-03-27T07:55:29Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d7c86ca",
+      "new": "ca7fc7b",
+      "full": "ca7fc7b60b34e0835b743838a945c811ec50a248",
+      "msg": "[INTERP] Fixed cvtf32_16 (#3718)",
+      "date": "2026-03-27T07:43:53Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "32ca98a",
-      "new": "fa523ae",
-      "full": "fa523aedd0ab96cb4262f3d63e2d8fd75a112efb",
-      "msg": "brw: fence SLM writes between workgroups",
-      "date": "2026-03-26T22:38:55.000+00:00"
+      "old": "fa523ae",
+      "new": "eecb379",
+      "full": "eecb37962cb50186cd1861b8e7341a4b9e2b23fd",
+      "msg": "radv/amdgpu: always return VK_ERROR_INVALID_EXTERNAL_HANDLE for host ptr imports",
+      "date": "2026-03-27T07:07:31.000+00:00"
     }
   ]
 }
