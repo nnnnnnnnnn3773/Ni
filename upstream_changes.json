@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-27T07:55:29Z",
+  "triggered_at": "2026-03-27T08:42:26Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "d7c86ca",
-      "new": "ca7fc7b",
-      "full": "ca7fc7b60b34e0835b743838a945c811ec50a248",
-      "msg": "[INTERP] Fixed cvtf32_16 (#3718)",
-      "date": "2026-03-27T07:43:53Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "fa523ae",
-      "new": "eecb379",
-      "full": "eecb37962cb50186cd1861b8e7341a4b9e2b23fd",
-      "msg": "radv/amdgpu: always return VK_ERROR_INVALID_EXTERNAL_HANDLE for host ptr imports",
-      "date": "2026-03-27T07:07:31.000+00:00"
+      "old": "ca7fc7b",
+      "new": "6f1d048",
+      "full": "6f1d048924f24d067d8de8b129cb1e6998fb44a7",
+      "msg": "[ARM64_DYNAREC] Small optim to VMASKMOVP[S/D] opcodes",
+      "date": "2026-03-27T08:41:56Z"
     }
   ]
 }
