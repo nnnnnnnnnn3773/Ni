@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-27T09:45:49Z",
+  "triggered_at": "2026-03-27T11:36:22Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "6f1d048",
+      "new": "f713cc5",
+      "full": "f713cc5840dc51684fb635193ece80479675788e",
+      "msg": "[WRAPPER] Improved hack to have SteamRT3 launching games properly",
+      "date": "2026-03-27T11:18:12Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "eecb379",
-      "new": "e23fcc1",
-      "full": "e23fcc146480536c231a00cd0b4a51b15ffc0d85",
-      "msg": "ethosu: implement ml_device_destroy for standalone ML device",
-      "date": "2026-03-27T09:35:40.000+01:00"
+      "old": "e23fcc1",
+      "new": "56a6528",
+      "full": "56a652874437ebd31542df3813d6d65e7a54da54",
+      "msg": "r300/ci: expectation update",
+      "date": "2026-03-27T10:48:55.000+01:00"
     }
   ]
 }
