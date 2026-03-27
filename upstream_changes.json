@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-27T08:42:26Z",
+  "triggered_at": "2026-03-27T09:45:49Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ca7fc7b",
-      "new": "6f1d048",
-      "full": "6f1d048924f24d067d8de8b129cb1e6998fb44a7",
-      "msg": "[ARM64_DYNAREC] Small optim to VMASKMOVP[S/D] opcodes",
-      "date": "2026-03-27T08:41:56Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "eecb379",
+      "new": "e23fcc1",
+      "full": "e23fcc146480536c231a00cd0b4a51b15ffc0d85",
+      "msg": "ethosu: implement ml_device_destroy for standalone ML device",
+      "date": "2026-03-27T09:35:40.000+01:00"
     }
   ]
 }
