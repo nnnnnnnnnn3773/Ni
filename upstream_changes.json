@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-27T19:36:32Z",
+  "triggered_at": "2026-03-27T20:29:13Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ce3afa4",
-      "new": "5469887",
-      "full": "54698875f0f5092c3c8aaf0fc0488c7302af6891",
-      "msg": "[WRAPPER] Added libsmbclient.so wrapping",
-      "date": "2026-03-27T19:02:54Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b76678c",
-      "new": "691cfe4",
-      "full": "691cfe40fa76dc63d65fb9e9aca764e703faf9cb",
-      "msg": "v3d: use devinfo->page_size for state uploader default size",
-      "date": "2026-03-27T18:54:29.000+00:00"
+      "old": "691cfe4",
+      "new": "c0e0591",
+      "full": "c0e059199920f407ee8cc395f6d82efa3f400d7f",
+      "msg": "pan/compiler: Replace frag_coord_zw_pan with var_special_pan",
+      "date": "2026-03-27T19:23:02.000+00:00"
     }
   ]
 }
