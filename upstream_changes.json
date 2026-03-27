@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-27T17:43:01Z",
+  "triggered_at": "2026-03-27T18:44:55Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dede14c",
-      "new": "32d04bc",
-      "full": "32d04bcdcd279554e719f80565cd61f93a741373",
-      "msg": "vulkan: return pQueue with matching flags",
-      "date": "2026-03-27T17:08:01.000+00:00"
+      "old": "32d04bc",
+      "new": "b76678c",
+      "full": "b76678cddd18190a3bfc609b260422f65a784f9e",
+      "msg": "freedreno/a6xx: Fix supported-blit fmt check",
+      "date": "2026-03-27T17:48:21.000+00:00"
     }
   ]
 }
