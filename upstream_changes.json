@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-27T14:06:23Z",
+  "triggered_at": "2026-03-27T15:43:45Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "f713cc5",
-      "new": "79a34b3",
-      "full": "79a34b3d9cc727ad166b316be0054031fcb7ee10",
-      "msg": "[WRAPPER] Added back some left out generated change",
-      "date": "2026-03-27T12:51:42Z"
+      "old": "79a34b3",
+      "new": "8757bd2",
+      "full": "8757bd2b5d9ab40b873451097aae80cff96fdbb3",
+      "msg": "[WRAPPER] Fine-tuned libproxy dependancies",
+      "date": "2026-03-27T15:22:38Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "56a6528",
-      "new": "ae2968c",
-      "full": "ae2968c4ec94cf3fe36a7d4ce60302ae06913e4f",
-      "msg": "aco: allow spilling to LDS in RT shaders without stack pointer",
-      "date": "2026-03-27T13:08:44.000+00:00"
+      "old": "ae2968c",
+      "new": "566e4c2",
+      "full": "566e4c25d923e0dc9ef1191223acca235c91b814",
+      "msg": "radv/ci: fix radv-slow-skips.txt path",
+      "date": "2026-03-27T14:53:37.000+00:00"
     }
   ]
 }
