@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-27T20:29:13Z",
+  "triggered_at": "2026-03-27T21:27:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "691cfe4",
-      "new": "c0e0591",
-      "full": "c0e059199920f407ee8cc395f6d82efa3f400d7f",
-      "msg": "pan/compiler: Replace frag_coord_zw_pan with var_special_pan",
-      "date": "2026-03-27T19:23:02.000+00:00"
+      "old": "c0e0591",
+      "new": "ea783b4",
+      "full": "ea783b4691b096b3c90e6248e9e670ac422a42ce",
+      "msg": "vulkan/wsi/headless: implement wait_for_present for swapchain",
+      "date": "2026-03-27T19:55:11.000+00:00"
     }
   ]
 }
