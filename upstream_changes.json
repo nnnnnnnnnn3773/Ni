@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-27T16:43:58Z",
+  "triggered_at": "2026-03-27T17:43:01Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "8757bd2",
-      "new": "ce3afa4",
-      "full": "ce3afa470eec33e03bf19fbb3923069d8e81e3ff",
-      "msg": "[WRAPPER] Added near-complete libssh.so.4 wrapping",
-      "date": "2026-03-27T16:23:29Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "566e4c2",
-      "new": "dede14c",
-      "full": "dede14cce3f7d4776a9a5be9fa17920771460555",
-      "msg": "radv: advertise VK_KHR_device_address_commands",
-      "date": "2026-03-27T16:17:02.000+00:00"
+      "old": "dede14c",
+      "new": "32d04bc",
+      "full": "32d04bcdcd279554e719f80565cd61f93a741373",
+      "msg": "vulkan: return pQueue with matching flags",
+      "date": "2026-03-27T17:08:01.000+00:00"
     }
   ]
 }
