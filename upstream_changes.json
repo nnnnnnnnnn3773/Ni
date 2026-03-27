@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-27T15:43:45Z",
+  "triggered_at": "2026-03-27T16:43:58Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "79a34b3",
-      "new": "8757bd2",
-      "full": "8757bd2b5d9ab40b873451097aae80cff96fdbb3",
-      "msg": "[WRAPPER] Fine-tuned libproxy dependancies",
-      "date": "2026-03-27T15:22:38Z"
+      "old": "8757bd2",
+      "new": "ce3afa4",
+      "full": "ce3afa470eec33e03bf19fbb3923069d8e81e3ff",
+      "msg": "[WRAPPER] Added near-complete libssh.so.4 wrapping",
+      "date": "2026-03-27T16:23:29Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ae2968c",
-      "new": "566e4c2",
-      "full": "566e4c25d923e0dc9ef1191223acca235c91b814",
-      "msg": "radv/ci: fix radv-slow-skips.txt path",
-      "date": "2026-03-27T14:53:37.000+00:00"
+      "old": "566e4c2",
+      "new": "dede14c",
+      "full": "dede14cce3f7d4776a9a5be9fa17920771460555",
+      "msg": "radv: advertise VK_KHR_device_address_commands",
+      "date": "2026-03-27T16:17:02.000+00:00"
     }
   ]
 }
