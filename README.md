@@ -21,15 +21,15 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260328-055619](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260328-055619) |
+| **Release** | [🔗 nightly-20260328-083432](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260328-083432) |
 | **FEXCore** | [`b77ddcf1a`](https://github.com/FEX-Emu/FEX/commit/b77ddcf1a) — FEX-2603-Nightly-b77ddcf1a |
 | **VKD3D-Proton (Std)** | [`e808096d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/e808096d) |
 | **VKD3D-Proton (ARM64EC)** | [`e808096d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/e808096d) |
 | **DXVK (GPLAsync)** | [`1676dcaf`](https://github.com/doitsujin/dxvk/commit/1676dcaf) |
 | **DXVK (ARM64EC)** | [`1676dcaf`](https://github.com/doitsujin/dxvk/commit/1676dcaf) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.1.0-20260328](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.1.0-20260328) — Turnip 26.1.0 — 20260328 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260328-055619) |
+| **Turnip** | [v26.1.0-20260328-r112](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.1.0-20260328-r112) — Turnip 26.1.0 — 20260328 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260328-083432) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
