@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-27T21:27:07Z",
+  "triggered_at": "2026-03-28T05:51:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c0e0591",
-      "new": "ea783b4",
-      "full": "ea783b4691b096b3c90e6248e9e670ac422a42ce",
-      "msg": "vulkan/wsi/headless: implement wait_for_present for swapchain",
-      "date": "2026-03-27T19:55:11.000+00:00"
+      "old": "ea783b4",
+      "new": "8d5ba04",
+      "full": "8d5ba04e65bff10708a0b7b869110e17660b22b6",
+      "msg": "panvk/csf: use different resource registers for precomp vs user dispatch",
+      "date": "2026-03-28T03:53:41.000+00:00"
     }
   ]
 }
