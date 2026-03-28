@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-28T08:29:46Z",
+  "triggered_at": "2026-03-28T09:29:20Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "5469887",
-      "new": "961484f",
-      "full": "961484f463e8d2e4c61e4734988e18c680001e4e",
-      "msg": "[LA64_DYNAREC] Fixed F0 80 /4 LOCK AND opcode (#3721)",
-      "date": "2026-03-28T08:11:10Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "8d5ba04",
-      "new": "468113e",
-      "full": "468113efd46e674011f632cccda14e07ef4edd21",
-      "msg": "fd/replay: kgsl context should use no-fault tolerance, report reset state",
-      "date": "2026-03-28T07:58:05.000+00:00"
+      "old": "961484f",
+      "new": "3c39180",
+      "full": "3c3918073f20849dcf1d0ee76e24b3ef00ce7c90",
+      "msg": "[ARM64_DYNAREC] Fixed 16-bit LOCK XOR opcode (#3723)",
+      "date": "2026-03-28T09:24:08Z"
     }
   ]
 }
