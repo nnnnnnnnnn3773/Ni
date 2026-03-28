@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T21:22:17Z",
+  "triggered_at": "2026-03-28T22:20:27Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c361c82",
-      "new": "a2e42ef",
-      "full": "a2e42eff520bd20fdd0edff70c10e0be626d6ee1",
-      "msg": "ci/panvk: update expectations with new flakes",
-      "date": "2026-03-28T20:16:09.000+00:00"
+      "old": "a2e42ef",
+      "new": "6fb2611",
+      "full": "6fb261147bbb4cc488ea9f16fb3b6fe02105332e",
+      "msg": "freedreno: Add a829",
+      "date": "2026-03-28T21:19:58.000+00:00"
     }
   ]
 }
