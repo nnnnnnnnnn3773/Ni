@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T12:35:26Z",
+  "triggered_at": "2026-03-28T16:23:53Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "468113e",
-      "new": "ee031d6",
-      "full": "ee031d67b48f6ab656b681803a3c663ee6c7cc52",
-      "msg": "pvr: fix dirty tracking for stencil ops",
-      "date": "2026-03-28T19:39:01.000+08:00"
+      "old": "ee031d6",
+      "new": "1f9bc71",
+      "full": "1f9bc71051fdc10486aa8f587d744c58c2b22d4c",
+      "msg": "radv/rt: Remove RADV_OFFSET_UNUSED",
+      "date": "2026-03-28T16:48:46.000+01:00"
     }
   ]
 }
