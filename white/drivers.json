@@ -1,10 +1,25 @@
 {
-  "updated_at": "2026-03-28T09:30:45Z",
+  "updated_at": "2026-03-28T20:20:47Z",
   "source": "https://github.com/whitebelyash/freedreno_turnip-CI",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/white-drivers",
-  "total_releases": 31,
-  "total_assets": 38,
+  "total_releases": 32,
+  "total_assets": 39,
   "releases": [
+    {
+      "tag": "tu_v24",
+      "name": "Turnip A8XX v24",
+      "published_at": "2026-03-28T19:51:33Z",
+      "assets": [
+        {
+          "name": "a8xx-gen8-V24.zip",
+          "mirror_name": "tu_v24_a8xx-gen8-V24.zip",
+          "size": 2488214,
+          "original_url": "https://github.com/whitebelyash/freedreno_turnip-CI/releases/download/tu_v24/a8xx-gen8-V24.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v24_a8xx-gen8-V24.zip",
+          "published_at": "2026-03-28T19:51:33Z"
+        }
+      ]
+    },
     {
       "tag": "tu_vdont_use",
       "name": "Turnip A8XX vdont_use",

@@ -1,6 +1,12 @@
 [
   {
     "type": "GpuDriver",
+    "verName": "tu_v24 \u2014 a8xx-gen8-V24.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_v24_a8xx-gen8-V24.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "tu_vdont_use \u2014 a8xx-gen8-clean-26-Vdont_use.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/white-drivers/tu_vdont_use_a8xx-gen8-clean-26-Vdont_use.zip"
