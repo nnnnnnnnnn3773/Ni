@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T18:29:09Z",
+  "triggered_at": "2026-03-28T19:24:02Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "52fd5ed",
-      "new": "c85b3d6",
-      "full": "c85b3d6252dfee2ed782c3e27fb000da1a266479",
-      "msg": "[WRAPPER] Fix XML_ParserCreate_MM wrapping (#3686)",
-      "date": "2026-03-28T17:29:40Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "1f9bc71",
+      "new": "c361c82",
+      "full": "c361c82a5aed062e710d8c908388a42914120548",
+      "msg": "radeonsi: draw using a single triangle in u_blitter",
+      "date": "2026-03-28T18:47:55.000+00:00"
     }
   ]
 }
