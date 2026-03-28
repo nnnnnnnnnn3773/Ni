@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T16:23:53Z",
+  "triggered_at": "2026-03-28T17:22:14Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "ee031d6",
-      "new": "1f9bc71",
-      "full": "1f9bc71051fdc10486aa8f587d744c58c2b22d4c",
-      "msg": "radv/rt: Remove RADV_OFFSET_UNUSED",
-      "date": "2026-03-28T16:48:46.000+01:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "26dcfc7",
+      "new": "52fd5ed",
+      "full": "52fd5ed05263e800ddcebc0703904bc0dedad9f2",
+      "msg": "[ARM64_DYNAREC] Fixed 16-bit LOCK OR opcode (#3728)",
+      "date": "2026-03-28T16:53:40Z"
     }
   ]
 }
