@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T09:29:20Z",
+  "triggered_at": "2026-03-28T11:21:28Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "961484f",
-      "new": "3c39180",
-      "full": "3c3918073f20849dcf1d0ee76e24b3ef00ce7c90",
-      "msg": "[ARM64_DYNAREC] Fixed 16-bit LOCK XOR opcode (#3723)",
-      "date": "2026-03-28T09:24:08Z"
+      "old": "3c39180",
+      "new": "26dcfc7",
+      "full": "26dcfc7320510750c829f5b7c3a8cbf14ff224a2",
+      "msg": "[ARM64_DYNAREC] Aligned UD flags with interpreter for ANDN opcode (#3724)",
+      "date": "2026-03-28T10:36:12Z"
     }
   ]
 }
