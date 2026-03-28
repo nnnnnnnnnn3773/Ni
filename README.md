@@ -4,6 +4,11 @@
 
 <h1 align="center">The412Banner Nightly Repo for Winlator & Emulation</h1>
 
+<p align="center">
+  <a href="https://github.com/The412Banner/Nightlies/actions/workflows/new-All-in-one-nightly+zips-latest-stable.yml"><img src="https://github.com/The412Banner/Nightlies/actions/workflows/new-All-in-one-nightly+zips-latest-stable.yml/badge.svg" alt="All-in-One Nightly"></a>
+  <a href="https://github.com/The412Banner/Nightlies/actions/workflows/proton-bleeding-edge-nightly.yml"><img src="https://github.com/The412Banner/Nightlies/actions/workflows/proton-bleeding-edge-nightly.yml/badge.svg" alt="Proton Bleeding Edge"></a>
+</p>
+
 Welcome to my nightly repository for Windows-emulation components on Android. This repository automatically builds and packages the latest upstream commits from projects like DXVK, VKD3D-Proton, Box64, and FEXCore into ready-to-use `.wcp` (Winlator Component Package) files.
 
 > **Note:** Nightly workflows run automatically and update every hour, and a full daily build is processed at **03:30 AM EST / 08:30 AM UTC**.
