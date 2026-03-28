@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T19:24:02Z",
+  "triggered_at": "2026-03-28T21:22:17Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1f9bc71",
-      "new": "c361c82",
-      "full": "c361c82a5aed062e710d8c908388a42914120548",
-      "msg": "radeonsi: draw using a single triangle in u_blitter",
-      "date": "2026-03-28T18:47:55.000+00:00"
+      "old": "c361c82",
+      "new": "a2e42ef",
+      "full": "a2e42eff520bd20fdd0edff70c10e0be626d6ee1",
+      "msg": "ci/panvk: update expectations with new flakes",
+      "date": "2026-03-28T20:16:09.000+00:00"
     }
   ]
 }
