@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T11:21:28Z",
+  "triggered_at": "2026-03-28T12:35:26Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3c39180",
-      "new": "26dcfc7",
-      "full": "26dcfc7320510750c829f5b7c3a8cbf14ff224a2",
-      "msg": "[ARM64_DYNAREC] Aligned UD flags with interpreter for ANDN opcode (#3724)",
-      "date": "2026-03-28T10:36:12Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "468113e",
+      "new": "ee031d6",
+      "full": "ee031d67b48f6ab656b681803a3c663ee6c7cc52",
+      "msg": "pvr: fix dirty tracking for stencil ops",
+      "date": "2026-03-28T19:39:01.000+08:00"
     }
   ]
 }
