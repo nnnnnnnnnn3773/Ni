@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-28T17:22:14Z",
+  "triggered_at": "2026-03-28T18:29:09Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "26dcfc7",
-      "new": "52fd5ed",
-      "full": "52fd5ed05263e800ddcebc0703904bc0dedad9f2",
-      "msg": "[ARM64_DYNAREC] Fixed 16-bit LOCK OR opcode (#3728)",
-      "date": "2026-03-28T16:53:40Z"
+      "old": "52fd5ed",
+      "new": "c85b3d6",
+      "full": "c85b3d6252dfee2ed782c3e27fb000da1a266479",
+      "msg": "[WRAPPER] Fix XML_ParserCreate_MM wrapping (#3686)",
+      "date": "2026-03-28T17:29:40Z"
     }
   ]
 }
