@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260324-a77d91c-run93](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260324-a77d91c-run93) |
+| **Release** | [🔗 proton-bleeding-edge-20260324-a77d91c-run94](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260324-a77d91c-run94) |
 | **Wine Commit** | [`a77d91c`](https://github.com/ValveSoftware/wine/commit/a77d91c417c471c6b0ae184d0ba8e1ce5bf7afcc) — amend! netprofm: HACK: Throttle list_manager_GetConnectivity() for Death Strandi |
 | **Date** | 2026-03-24 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260324-a77d91c-run93) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260324-a77d91c-run94) |
 <!-- PROTON-LATEST-END -->
 
 ---
