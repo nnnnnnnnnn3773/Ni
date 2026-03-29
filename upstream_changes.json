@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-29T14:27:05Z",
+  "triggered_at": "2026-03-29T16:25:49Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ca3cabd",
-      "new": "aebd764",
-      "full": "aebd76415b73f9892d455f13c36a1d6bd2409a4b",
-      "msg": "agx: drop NIR continue handling",
-      "date": "2026-03-29T14:06:14.000+00:00"
+      "old": "aebd764",
+      "new": "34e090a",
+      "full": "34e090ae118c19f60d342ab6f4c155b2934ec5bb",
+      "msg": "radv/video: Add low-latency flags",
+      "date": "2026-03-29T15:56:50.000+00:00"
     }
   ]
 }
