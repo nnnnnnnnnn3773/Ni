@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-29T16:25:49Z",
+  "triggered_at": "2026-03-29T17:23:05Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "aebd764",
-      "new": "34e090a",
-      "full": "34e090ae118c19f60d342ab6f4c155b2934ec5bb",
-      "msg": "radv/video: Add low-latency flags",
-      "date": "2026-03-29T15:56:50.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "c85b3d6",
+      "new": "d5a1864",
+      "full": "d5a1864cfaea836c8c0c1f7ae69bccda665964cd",
+      "msg": "[ARM64_DYNAREC] ymm0 is an ymm operation...",
+      "date": "2026-03-29T16:32:55Z"
     }
   ]
 }
