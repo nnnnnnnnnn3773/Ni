@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-29T09:29:17Z",
+  "triggered_at": "2026-03-29T13:46:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "6fb2611",
-      "new": "e7077e8",
-      "full": "e7077e8f5c7943d0f70a94dd268ea0ca9cf33ec3",
-      "msg": "nir/lower_non_uniform_access: fix fusing loops for same index but different arra",
-      "date": "2026-03-29T08:31:51.000+00:00"
+      "old": "e7077e8",
+      "new": "ca3cabd",
+      "full": "ca3cabd2f8acc29d551335f399b3663fe29a7a8d",
+      "msg": "brw: Use nir_texop_resinfo_intel for query_levels and txs",
+      "date": "2026-03-29T12:53:10.000+00:00"
     }
   ]
 }
