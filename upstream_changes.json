@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-03-30T18:49:39Z",
+  "triggered_at": "2026-03-30T19:50:43Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "beaa2c8",
-      "new": "c52f2fd",
-      "full": "c52f2fd01a1812f43eec87012a005b1bde7d8147",
-      "msg": "[WRAPPER] Added many symbols to liblcms2",
-      "date": "2026-03-30T18:41:15Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "af42f0c",
-      "new": "bf8862b",
-      "full": "bf8862b49f18269ff41d88deab826bc5cea3141a",
-      "msg": "gfxstream: Fix vkSetDebugUtilsObjectNameEXT crash for unwrapped objects",
-      "date": "2026-03-30T17:47:45.000+00:00"
+      "old": "bf8862b",
+      "new": "1b6ed1b",
+      "full": "1b6ed1b34e7e37d64ef58c2617fdd14c431c29bd",
+      "msg": "nir,radv: lower shadow compare gather to 16bit",
+      "date": "2026-03-30T18:54:22.000+00:00"
     }
   ]
 }
