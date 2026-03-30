@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-30T08:18:28Z",
+  "triggered_at": "2026-03-30T10:08:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "34e090a",
-      "new": "3324aba",
-      "full": "3324abad064821a5a404549716bd8ce99bf5893c",
-      "msg": "radv: introduce RADV_EXPERIMENTAL envvar for experimental features",
-      "date": "2026-03-30T07:27:01.000+00:00"
+      "old": "3324aba",
+      "new": "915684f",
+      "full": "915684fe6053f8a25ae4aeefbfb1b4e0f5225e9b",
+      "msg": "agx: Fix alpha-to-coverage bit size",
+      "date": "2026-03-30T08:19:57.000+00:00"
     }
   ]
 }
