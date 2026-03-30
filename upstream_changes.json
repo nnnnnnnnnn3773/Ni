@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-03-30T17:45:30Z",
+  "triggered_at": "2026-03-30T18:49:39Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "489bd8d",
-      "new": "beaa2c8",
-      "full": "beaa2c8a3ab37120fc0d5fb1acfba8b73226c38e",
-      "msg": "[WRAPPER] Added 1 more symbol to libgio-2",
-      "date": "2026-03-30T17:45:06Z"
+      "old": "beaa2c8",
+      "new": "c52f2fd",
+      "full": "c52f2fd01a1812f43eec87012a005b1bde7d8147",
+      "msg": "[WRAPPER] Added many symbols to liblcms2",
+      "date": "2026-03-30T18:41:15Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "889cf42",
-      "new": "af42f0c",
-      "full": "af42f0c80fd4e86f2ce65b9c53a7427b6a685c26",
-      "msg": "vulkan/wsi/win32: respect acquire timeout for sw wsi",
-      "date": "2026-03-30T16:10:01.000+00:00"
+      "old": "af42f0c",
+      "new": "bf8862b",
+      "full": "bf8862b49f18269ff41d88deab826bc5cea3141a",
+      "msg": "gfxstream: Fix vkSetDebugUtilsObjectNameEXT crash for unwrapped objects",
+      "date": "2026-03-30T17:47:45.000+00:00"
     }
   ]
 }
