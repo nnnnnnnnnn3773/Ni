@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-30T14:27:14Z",
+  "triggered_at": "2026-03-30T16:01:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "648dfe8",
-      "new": "fddc101",
-      "full": "fddc101070b9474140828e924f97edc57abc477e",
-      "msg": "r300: split large HiZ clears into multiple packets",
-      "date": "2026-03-30T13:37:16.000+00:00"
+      "old": "fddc101",
+      "new": "889cf42",
+      "full": "889cf429ee99f3d00ab70b379bce866dba2e844c",
+      "msg": "anv: Fix placed address mmap with slab bo",
+      "date": "2026-03-30T13:59:27.000+00:00"
     }
   ]
 }
