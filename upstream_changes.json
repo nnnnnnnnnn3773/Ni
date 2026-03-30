@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-30T11:50:04Z",
+  "triggered_at": "2026-03-30T12:58:50Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "d5a1864",
+      "new": "489bd8d",
+      "full": "489bd8de296eacb9c047200f53e51d8e1bacc9bf",
+      "msg": "[ARM64_DYNAREC] Fixed a regression introduced with 537c8f4c53cdf044d15f60d5e8bbe",
+      "date": "2026-03-30T11:58:52Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "915684f",
-      "new": "d348654",
-      "full": "d348654a75726e555d360119bab77b213d3e7366",
-      "msg": "iris: use mi_set_autostrip_state for autostrip control",
-      "date": "2026-03-30T11:02:27.000+00:00"
+      "old": "d348654",
+      "new": "648dfe8",
+      "full": "648dfe88f493cceff80f9ecbfb7f7808ef1f76cf",
+      "msg": "r300: don't apply odd macroblock rounding to 3D textures",
+      "date": "2026-03-30T12:39:57.000+00:00"
     }
   ]
 }
