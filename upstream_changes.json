@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-30T16:01:22Z",
+  "triggered_at": "2026-03-30T17:45:30Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "489bd8d",
+      "new": "beaa2c8",
+      "full": "beaa2c8a3ab37120fc0d5fb1acfba8b73226c38e",
+      "msg": "[WRAPPER] Added 1 more symbol to libgio-2",
+      "date": "2026-03-30T17:45:06Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "fddc101",
-      "new": "889cf42",
-      "full": "889cf429ee99f3d00ab70b379bce866dba2e844c",
-      "msg": "anv: Fix placed address mmap with slab bo",
-      "date": "2026-03-30T13:59:27.000+00:00"
+      "old": "889cf42",
+      "new": "af42f0c",
+      "full": "af42f0c80fd4e86f2ce65b9c53a7427b6a685c26",
+      "msg": "vulkan/wsi/win32: respect acquire timeout for sw wsi",
+      "date": "2026-03-30T16:10:01.000+00:00"
     }
   ]
 }
