@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260330-cf54429-run103](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260330-cf54429-run103) |
+| **Release** | [🔗 proton-bleeding-edge-20260330-cf54429-run104](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260330-cf54429-run104) |
 | **Wine Commit** | [`cf54429`](https://github.com/ValveSoftware/wine/commit/cf54429d314df794412d5229d7a20d3924dda8e2) — ntdll: Handle page faults from RtlVirtualUnwind2_arm64() in RtlVirtualUnwind2(). |
 | **Date** | 2026-03-31 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260330-cf54429-run103) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260330-cf54429-run104) |
 <!-- PROTON-LATEST-END -->
 
 ---
