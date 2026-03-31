@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T01:29:03Z",
+  "triggered_at": "2026-03-31T04:30:00Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1b6ed1b",
-      "new": "75b0dc6",
-      "full": "75b0dc667d33612959b983a98f06946a4b1d2fda",
-      "msg": "nak: run nir_normalize_sin_cos on Volta+",
-      "date": "2026-03-31T01:47:33.000+02:00"
+      "old": "75b0dc6",
+      "new": "9c9f5f6",
+      "full": "9c9f5f69fd1da6293ade05c1f22779e55faa96cc",
+      "msg": "panvk: enable fragmentStoresAndAtomics for Bifrost",
+      "date": "2026-03-31T02:18:24.000+00:00"
     }
   ]
 }
