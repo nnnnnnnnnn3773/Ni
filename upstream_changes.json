@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-03-31T12:57:29Z",
+  "triggered_at": "2026-03-31T14:25:50Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "c52f2fd",
-      "new": "0b9df5d",
-      "full": "0b9df5d5a09eab1fbc02b9a7a5a25f80631515c4",
-      "msg": "[BOX32] Fixed BOUND exception signal",
-      "date": "2026-03-31T12:47:46Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "e808096",
-      "new": "d6c4753",
-      "full": "d6c4753b7ec6d81c974e3d155d4121767454df75",
-      "msg": "vkd3d: Add RDNA1 fallback path for games that require Bary/VRS.",
-      "date": "2026-03-31T11:53:02Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5453419",
-      "new": "6333bf3",
-      "full": "6333bf359bbe2ceaed7bfe16852cc970a028c4a6",
-      "msg": "panvk: Advertise VK_KHR_shader_untyped_pointers on v9+",
-      "date": "2026-03-31T11:57:10.000+00:00"
+      "old": "6333bf3",
+      "new": "d6bc201",
+      "full": "d6bc20160e2507fdd3fee24a94cebceb4bf0d2ba",
+      "msg": "nir/lower_robust_access: add heap/bindless support",
+      "date": "2026-03-31T12:42:57.000+00:00"
     }
   ]
 }
