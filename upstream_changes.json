@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T16:00:43Z",
+  "triggered_at": "2026-03-31T17:49:59Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d6bc201",
-      "new": "b680374",
-      "full": "b68037473a34e3917958a682e37fd608b39f2b0d",
-      "msg": "lavapipe/ci: Skip flaky Android CTS test",
-      "date": "2026-03-31T15:32:25.000+00:00"
+      "old": "b680374",
+      "new": "e98c4c5",
+      "full": "e98c4c59c706405fcec0a0e4d08792c74629b6cf",
+      "msg": "v3dv: Enable VK_EXT_hdr_metadata.",
+      "date": "2026-03-31T16:16:13.000+00:00"
     }
   ]
 }
