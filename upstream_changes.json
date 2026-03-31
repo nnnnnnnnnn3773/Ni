@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T09:56:53Z",
+  "triggered_at": "2026-03-31T10:50:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9d059a6",
-      "new": "c4e3380",
-      "full": "c4e338018714eaf50fb0a80dc52770e66ab043d1",
-      "msg": "nir,treewide: add nir_image_intrinsic_type",
-      "date": "2026-03-31T09:10:27.000+00:00"
+      "old": "c4e3380",
+      "new": "4cf6cd8",
+      "full": "4cf6cd85e0eab16b4777295550a40d3851f68307",
+      "msg": "nir/lower_image: add heap support",
+      "date": "2026-03-31T10:10:17.000+00:00"
     }
   ]
 }
