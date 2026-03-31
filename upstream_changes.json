@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T04:30:00Z",
+  "triggered_at": "2026-03-31T08:03:12Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "75b0dc6",
-      "new": "9c9f5f6",
-      "full": "9c9f5f69fd1da6293ade05c1f22779e55faa96cc",
-      "msg": "panvk: enable fragmentStoresAndAtomics for Bifrost",
-      "date": "2026-03-31T02:18:24.000+00:00"
+      "old": "9c9f5f6",
+      "new": "9d059a6",
+      "full": "9d059a60f566e424f1787036851868162aec7cdc",
+      "msg": "nir: introduce nir_descriptor_type for Vulkan like descriptors",
+      "date": "2026-03-31T07:16:20.000+00:00"
     }
   ]
 }
