@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-30T19:50:43Z",
+  "triggered_at": "2026-03-31T01:29:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bf8862b",
-      "new": "1b6ed1b",
-      "full": "1b6ed1b34e7e37d64ef58c2617fdd14c431c29bd",
-      "msg": "nir,radv: lower shadow compare gather to 16bit",
-      "date": "2026-03-30T18:54:22.000+00:00"
+      "old": "1b6ed1b",
+      "new": "75b0dc6",
+      "full": "75b0dc667d33612959b983a98f06946a4b1d2fda",
+      "msg": "nak: run nir_normalize_sin_cos on Volta+",
+      "date": "2026-03-31T01:47:33.000+02:00"
     }
   ]
 }
