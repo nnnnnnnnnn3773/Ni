@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T17:49:59Z",
+  "triggered_at": "2026-03-31T18:50:37Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b680374",
-      "new": "e98c4c5",
-      "full": "e98c4c59c706405fcec0a0e4d08792c74629b6cf",
-      "msg": "v3dv: Enable VK_EXT_hdr_metadata.",
-      "date": "2026-03-31T16:16:13.000+00:00"
+      "old": "e98c4c5",
+      "new": "73f0d8e",
+      "full": "73f0d8ed51d88ad018811dd2cc307d4e717e9774",
+      "msg": "ci: add api@clgetmemobjectinfo to fails",
+      "date": "2026-03-31T17:39:47.000+00:00"
     }
   ]
 }
