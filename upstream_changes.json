@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-03-31T10:50:22Z",
+  "triggered_at": "2026-03-31T11:42:37Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c4e3380",
-      "new": "4cf6cd8",
-      "full": "4cf6cd85e0eab16b4777295550a40d3851f68307",
-      "msg": "nir/lower_image: add heap support",
-      "date": "2026-03-31T10:10:17.000+00:00"
+      "old": "4cf6cd8",
+      "new": "5453419",
+      "full": "5453419086a08a9dcb771a02e40b416fb9817d3d",
+      "msg": "aco/isel: use s_bitcmp1 for 1bit ubfe",
+      "date": "2026-03-31T10:42:33.000+00:00"
     }
   ]
 }
