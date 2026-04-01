@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T19:53:31Z",
+  "triggered_at": "2026-04-01T20:36:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a45a7bb",
-      "new": "64d95c5",
-      "full": "64d95c5ca99679b53022b67595e151f1277763a8",
-      "msg": "d3d12: ifdef the surfaces member from d3d12_batch under HAVE_GALLIUM_D3D12_GRAPH",
-      "date": "2026-04-01T18:37:22.000+00:00"
+      "old": "64d95c5",
+      "new": "e77c984",
+      "full": "e77c984cefbc8bb9d95e0dc47d36b069b1498a5a",
+      "msg": "rusticl: fix flag validation when creating an image",
+      "date": "2026-04-01T20:15:06.000+00:00"
     }
   ]
 }
