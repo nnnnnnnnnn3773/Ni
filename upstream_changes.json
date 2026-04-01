@@ -1,32 +1,14 @@
 {
-  "triggered_at": "2026-04-01T16:02:48Z",
+  "triggered_at": "2026-04-01T17:43:14Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "6ebd9c3",
-      "new": "95bd956",
-      "full": "95bd956af88f96d22aac01e5dc53bf681212383f",
-      "msg": "[ARM64_DYNAREC] Fixed BSF/BSR PF computation (#3732)",
-      "date": "2026-04-01T15:35:22Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d6c4753",
-      "new": "ad62f1e",
-      "full": "ad62f1e5cd2e726b6dce78152c126b93146e3e06",
-      "msg": "vkd3d: Batch graphics DGC when we cannot hoist.",
-      "date": "2026-04-01T15:06:05Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "61c85c8",
-      "new": "4fe64d2",
-      "full": "4fe64d23b870be9b5ab31c95545b331f82a0520b",
-      "msg": "ac/vcn_dec: add addr_mode for VCN 5.0.1",
-      "date": "2026-04-01T10:32:20.000-04:00"
+      "old": "95bd956",
+      "new": "9571135",
+      "full": "9571135b8d81cff06a061e3cff832bf4242e6eba",
+      "msg": "[ARM64_DYNAREC] Fixed IOC bit reset for CVTTPD2PI/CVTPD2PI opcodes (#3733)",
+      "date": "2026-04-01T16:29:46Z"
     }
   ]
 }
