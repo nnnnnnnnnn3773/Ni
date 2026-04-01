@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T11:44:12Z",
+  "triggered_at": "2026-04-01T12:59:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "37a6be5",
-      "new": "eff9f00",
-      "full": "eff9f0053383b9b5f8f2880f5d1d95cd1154e198",
-      "msg": "nir/search: remove matching variable type",
-      "date": "2026-04-01T09:52:45.000+00:00"
+      "old": "eff9f00",
+      "new": "0975e15",
+      "full": "0975e1513a7a7ca8b493d115d136ee88a7d81879",
+      "msg": "nir/opt_large_constants: optimize constant arrays with just two different values",
+      "date": "2026-04-01T12:23:18.000+00:00"
     }
   ]
 }
