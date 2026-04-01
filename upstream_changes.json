@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T20:36:26Z",
+  "triggered_at": "2026-04-01T23:29:36Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64d95c5",
-      "new": "e77c984",
-      "full": "e77c984cefbc8bb9d95e0dc47d36b069b1498a5a",
-      "msg": "rusticl: fix flag validation when creating an image",
-      "date": "2026-04-01T20:15:06.000+00:00"
+      "old": "e77c984",
+      "new": "aa39da8",
+      "full": "aa39da83383805b919ece0cf2aba97403afb7a3a",
+      "msg": "ci-tron: ensure the test jobs start with a clean job folder",
+      "date": "2026-04-01T22:16:20.000+00:00"
     }
   ]
 }
