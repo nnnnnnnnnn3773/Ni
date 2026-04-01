@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-01T08:11:26Z",
+  "triggered_at": "2026-04-01T10:00:57Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0b9df5d",
-      "new": "6ebd9c3",
-      "full": "6ebd9c3b32cb3ad7c2a5eb64577586b8da80b0d5",
-      "msg": "[INTERP] Fixed cvtf32_16 again (#3731)",
-      "date": "2026-04-01T08:08:31Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "ae3fa6a",
+      "new": "34b48c4",
+      "full": "34b48c4069087e92644a882437adad75876b9ac5",
+      "msg": "Merge pull request #5383 from Sonicadvance1/119",
+      "date": "2026-04-01T08:48:18Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "580381d",
-      "new": "bf7e296",
-      "full": "bf7e29617d203b91511c5348170fd6486ed4829f",
-      "msg": "radv: emit BOP events after every draw to workaround a VRS bug on GFX12",
-      "date": "2026-04-01T07:11:45.000+00:00"
+      "old": "bf7e296",
+      "new": "37a6be5",
+      "full": "37a6be551b3fb732b97620148875cb8367f3cfa6",
+      "msg": "v3dv/ci: add link to failing CTS test",
+      "date": "2026-04-01T09:27:22.000+00:00"
     }
   ]
 }
