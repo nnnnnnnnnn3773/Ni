@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T18:49:58Z",
+  "triggered_at": "2026-04-01T19:53:31Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4fe64d2",
-      "new": "a45a7bb",
-      "full": "a45a7bbf44d4ed04d247b15a1a1dc07072a49119",
-      "msg": "pan/compiler: Split bifrost_nir.c from bifrost_compile.c",
-      "date": "2026-04-01T18:14:32.000+00:00"
+      "old": "a45a7bb",
+      "new": "64d95c5",
+      "full": "64d95c5ca99679b53022b67595e151f1277763a8",
+      "msg": "d3d12: ifdef the surfaces member from d3d12_batch under HAVE_GALLIUM_D3D12_GRAPH",
+      "date": "2026-04-01T18:37:22.000+00:00"
     }
   ]
 }
