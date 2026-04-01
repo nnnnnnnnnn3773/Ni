@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260331-e4e4d79-run107](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260331-e4e4d79-run107) |
+| **Release** | [🔗 proton-bleeding-edge-20260331-e4e4d79-run108](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260331-e4e4d79-run108) |
 | **Wine Commit** | [`e4e4d79`](https://github.com/ValveSoftware/wine/commit/e4e4d79bec13381fd70e076e406118d6263abe4b) — win32u, winevulkan: Truncate deviceID to 16 bit. |
 | **Date** | 2026-04-01 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260331-e4e4d79-run107) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260331-e4e4d79-run108) |
 <!-- PROTON-LATEST-END -->
 
 ---
