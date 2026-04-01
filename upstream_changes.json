@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T12:59:21Z",
+  "triggered_at": "2026-04-01T14:42:33Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "eff9f00",
-      "new": "0975e15",
-      "full": "0975e1513a7a7ca8b493d115d136ee88a7d81879",
-      "msg": "nir/opt_large_constants: optimize constant arrays with just two different values",
-      "date": "2026-04-01T12:23:18.000+00:00"
+      "old": "0975e15",
+      "new": "61c85c8",
+      "full": "61c85c8d316126d6814008868615f206c8da8ff1",
+      "msg": "vulkan: fix determining the heap ptr",
+      "date": "2026-04-01T12:56:43.000+00:00"
     }
   ]
 }
