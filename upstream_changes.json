@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-03-31T21:31:23Z",
+  "triggered_at": "2026-04-01T08:11:26Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "0b9df5d",
+      "new": "6ebd9c3",
+      "full": "6ebd9c3b32cb3ad7c2a5eb64577586b8da80b0d5",
+      "msg": "[INTERP] Fixed cvtf32_16 again (#3731)",
+      "date": "2026-04-01T08:08:31Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ab94515",
-      "new": "580381d",
-      "full": "580381d9e7f5bb63cece6e582adb82e4659e4523",
-      "msg": "vulkan/wsi/display: Check with an atomic commit if the swapchain fails.",
-      "date": "2026-03-31T20:45:06.000+00:00"
+      "old": "580381d",
+      "new": "bf7e296",
+      "full": "bf7e29617d203b91511c5348170fd6486ed4829f",
+      "msg": "radv: emit BOP events after every draw to workaround a VRS bug on GFX12",
+      "date": "2026-04-01T07:11:45.000+00:00"
     }
   ]
 }
