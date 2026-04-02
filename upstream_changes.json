@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-02T19:43:26Z",
+  "triggered_at": "2026-04-02T21:29:37Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3335e70",
-      "new": "007be58",
-      "full": "007be58ade2db4b2f7ed2e45cb7b13ba72fba520",
-      "msg": "intel/ds: Modify rejection threshold to scale with requested sample period",
-      "date": "2026-04-02T18:56:16.000+00:00"
+      "old": "007be58",
+      "new": "e100ca7",
+      "full": "e100ca7c86c513f5965a356adbc9013d334d6c00",
+      "msg": "ethosu: Move ethosu_allocate_feature_map() to ethosu_lower.c",
+      "date": "2026-04-02T21:04:25.000+00:00"
     }
   ]
 }
