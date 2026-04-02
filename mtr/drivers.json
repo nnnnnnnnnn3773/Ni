@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-02T09:04:13Z",
+  "updated_at": "2026-04-02T22:25:04Z",
   "source": "https://github.com/maxjivi05/Components/tree/main/Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/mtr-drivers",
-  "total_assets": 37,
+  "total_assets": 39,
   "assets": [
     {
       "name": "Turnip_MTR_v1.5_A840P.zip",
@@ -204,27 +204,39 @@
     },
     {
       "name": "Turnip_MTR_v3.0.0-b_Axxx.zip",
-      "size": 0,
-      "original_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-b_Axxx.zip",
+      "size": 2501558,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.0.0-b_Axxx.zip",
       "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-b_Axxx.zip"
     },
     {
       "name": "Turnip_MTR_v3.0.0-p_Axxx.zip",
-      "size": 0,
-      "original_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-p_Axxx.zip",
+      "size": 2500854,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.0.0-p_Axxx.zip",
       "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.0.0-p_Axxx.zip"
     },
     {
       "name": "Turnip_MTR_v3.2.0-b_Axxx.zip",
-      "size": 0,
-      "original_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.0-b_Axxx.zip",
+      "size": 2509491,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.2.0-b_Axxx.zip",
       "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.0-b_Axxx.zip"
     },
     {
       "name": "Turnip_MTR_v3.2.0-p_Axxx.zip",
-      "size": 0,
-      "original_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.0-p_Axxx.zip",
+      "size": 2509311,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.2.0-p_Axxx.zip",
       "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.0-p_Axxx.zip"
+    },
+    {
+      "name": "Turnip_MTR_v3.2.2-b_Axxx.zip",
+      "size": 2518937,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.2.2-b_Axxx.zip",
+      "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.2-b_Axxx.zip"
+    },
+    {
+      "name": "Turnip_MTR_v3.2.2-p_Axxx.zip",
+      "size": 2518892,
+      "original_url": "https://raw.githubusercontent.com/maxjivi05/Components/main/Drivers/Turnip_MTR_v3.2.2-p_Axxx.zip",
+      "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/mtr-drivers/Turnip_MTR_v3.2.2-p_Axxx.zip"
     }
   ]
 }
