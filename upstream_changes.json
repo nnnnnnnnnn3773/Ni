@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-04-02T09:53:16Z",
+  "triggered_at": "2026-04-02T10:43:43Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "9a1fcc8",
-      "new": "cda0c94",
-      "full": "cda0c94b83e12325060ed64e66c10a7302b8bf75",
-      "msg": "[LA64_DYNAREC] Fixed CF tracing for ADC/SBB opcodes (#3736)",
-      "date": "2026-04-02T08:40:40Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "34b48c4",
-      "new": "c6d2ce0",
-      "full": "c6d2ce043f004dd2fcd3c5dfba3cb5e85811f1ce",
-      "msg": "Merge pull request #5388 from Sonicadvance1/123",
-      "date": "2026-04-02T09:00:37Z"
+      "old": "cda0c94",
+      "new": "a696462",
+      "full": "a696462cc3160f08a12a8571de9e685ac9699470",
+      "msg": "[LA64_DYNAREC] Fixed Gx equals Ex case for VCVTPD2DQ (#3737)",
+      "date": "2026-04-02T10:27:04Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "72e9f9a",
-      "new": "33864e5",
-      "full": "33864e569e3d8d977524d002b4453e1cb749007c",
-      "msg": "st/bitmap: release the temporary bitmap sampler view",
-      "date": "2026-04-02T08:34:54.000+00:00"
+      "old": "33864e5",
+      "new": "bae86c3",
+      "full": "bae86c31183e66c7d98a76cded2f292cdcab73c1",
+      "msg": "ci: fix envvar default value",
+      "date": "2026-04-02T09:09:52.000+00:00"
     }
   ]
 }
