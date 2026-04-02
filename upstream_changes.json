@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-02T17:42:37Z",
+  "triggered_at": "2026-04-02T19:43:26Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "5e03e18",
-      "new": "11bb701",
-      "full": "11bb70178b90cc8953645daf165edf942f0fd16b",
-      "msg": "[ARM64_DYNAREC] Added native flags support to float/double comparisons opcodes",
-      "date": "2026-04-02T17:14:48Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "75fad9e",
-      "new": "3335e70",
-      "full": "3335e707e14b37ed14fd20a8a28a3f1e5fda1061",
-      "msg": "tu: u_trace usage fixes before u_trace refactoring",
-      "date": "2026-04-02T16:20:09.000+00:00"
+      "old": "3335e70",
+      "new": "007be58",
+      "full": "007be58ade2db4b2f7ed2e45cb7b13ba72fba520",
+      "msg": "intel/ds: Modify rejection threshold to scale with requested sample period",
+      "date": "2026-04-02T18:56:16.000+00:00"
     }
   ]
 }
