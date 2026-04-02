@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-02T04:23:00Z",
+  "triggered_at": "2026-04-02T08:00:23Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "aa39da8",
-      "new": "72e9f9a",
-      "full": "72e9f9a760a5dd81a74497f1daef054af1b6b827",
-      "msg": "nak: add algebraic patterns to improve MUFU.F16",
-      "date": "2026-04-02T01:10:57.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "9571135",
+      "new": "9a1fcc8",
+      "full": "9a1fcc84b0c18ff7e31e93a2cb2794fb8e6763b7",
+      "msg": "[INTERP] Fixed a regression introduced in #3719 (#3735)",
+      "date": "2026-04-02T07:44:43Z"
     }
   ]
 }
