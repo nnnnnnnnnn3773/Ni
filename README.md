@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260401-f865c49-run110](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run110) |
+| **Release** | [🔗 proton-bleeding-edge-20260401-f865c49-run112](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run112) |
 | **Wine Commit** | [`f865c49`](https://github.com/ValveSoftware/wine/commit/f865c499901ec78506c5e5dd16b7ffcf2da94863) — ntdll: HACK: Enable WINE_SIMULATE_WRITECOPY for Puppeteer : Control. |
 | **Date** | 2026-04-01 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run110) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run112) |
 <!-- PROTON-LATEST-END -->
 
 ---
