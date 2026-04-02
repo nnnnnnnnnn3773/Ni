@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-02T16:48:42Z",
+  "triggered_at": "2026-04-02T17:42:37Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "5e03e18",
+      "new": "11bb701",
+      "full": "11bb70178b90cc8953645daf165edf942f0fd16b",
+      "msg": "[ARM64_DYNAREC] Added native flags support to float/double comparisons opcodes",
+      "date": "2026-04-02T17:14:48Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "27a4c58",
-      "new": "75fad9e",
-      "full": "75fad9e2c4e08fb2399c83680f909db6c77a7598",
-      "msg": "tu/kgsl: Add UBWC_5 and UBWC_6 support",
-      "date": "2026-04-02T15:55:55.000+00:00"
+      "old": "75fad9e",
+      "new": "3335e70",
+      "full": "3335e707e14b37ed14fd20a8a28a3f1e5fda1061",
+      "msg": "tu: u_trace usage fixes before u_trace refactoring",
+      "date": "2026-04-02T16:20:09.000+00:00"
     }
   ]
 }
