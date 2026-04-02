@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-01T23:29:36Z",
+  "triggered_at": "2026-04-02T04:23:00Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e77c984",
-      "new": "aa39da8",
-      "full": "aa39da83383805b919ece0cf2aba97403afb7a3a",
-      "msg": "ci-tron: ensure the test jobs start with a clean job folder",
-      "date": "2026-04-01T22:16:20.000+00:00"
+      "old": "aa39da8",
+      "new": "72e9f9a",
+      "full": "72e9f9a760a5dd81a74497f1daef054af1b6b827",
+      "msg": "nak: add algebraic patterns to improve MUFU.F16",
+      "date": "2026-04-02T01:10:57.000+00:00"
     }
   ]
 }
