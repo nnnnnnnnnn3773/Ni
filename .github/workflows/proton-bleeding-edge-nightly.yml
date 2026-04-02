@@ -486,7 +486,34 @@ jobs:
                   fh.write(f"{k}={v}\n")
           PY
 
+      - name: Check if wine hash changed
+        id: hash_check
+        env:
+          GIT_HASH: ${{ steps.meta.outputs.git_hash }}
+        run: |
+          python3 <<'PY'
+          import json, os
+          from pathlib import Path
+
+          new_hash = os.environ["GIT_HASH"]
+          event    = os.environ.get("GITHUB_EVENT_NAME", "")
+
+          try:
+              old_hash = json.loads(Path("proton-latest.json").read_text()).get("gitHash", "")
+          except Exception:
+              old_hash = ""
+
+          skip = (old_hash[:7] == new_hash[:7]) and (event == "schedule")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"skip={'true' if skip else 'false'}\n")
+          if skip:
+              print(f"Hash unchanged ({new_hash[:7]}) on scheduled run — skipping release.")
+          else:
+              print(f"Proceeding: hash={new_hash[:7]}, old={old_hash[:7]}, trigger={event}")
+          PY
+
       - name: Prepare release files
+        if: steps.hash_check.outputs.skip != 'true'
         run: |
           mkdir -p release
           find artifacts -name "*.wcp"            -exec cp {} release/ \;
@@ -496,6 +523,7 @@ jobs:
           ls -lah release/
 
       - name: Delete previous releases for same wine hash
+        if: steps.hash_check.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_HASH: ${{ steps.meta.outputs.git_hash }}
@@ -511,6 +539,7 @@ jobs:
             done
 
       - name: Create GitHub Release
+        if: steps.hash_check.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_HASH: ${{ steps.meta.outputs.git_hash }}
@@ -668,6 +697,7 @@ jobs:
           || gh release upload "$RELEASE_TAG" release/* --clobber
 
       - name: Update proton-latest.json
+        if: steps.hash_check.outputs.skip != 'true'
         run: |
           python3 <<'PY'
           import glob, json
@@ -692,12 +722,13 @@ jobs:
           PY
 
       - name: Commit proton-latest.json
+        if: steps.hash_check.outputs.skip != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add proton-latest.json README.md
           GIT_DATE="${{ steps.meta.outputs.git_date }}"
           git diff --staged --quiet || git commit -m "chore: update proton-latest.json + README for bleeding-edge ${GIT_DATE}"
-          git pull --rebase -X ours origin HEAD
+          git pull --rebase origin HEAD
           git push
 
