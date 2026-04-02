@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260402-fcb89d3-run116](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-fcb89d3-run116) |
-| **Wine Commit** | [`fcb89d3`](https://github.com/ValveSoftware/wine/commit/fcb89d367b29b2effdcdceadc3c529dabe5f5bca) — Revert "netprofm: HACK: Throttle list_manager_GetConnectivity() for Death Strand |
+| **Release** | [🔗 proton-bleeding-edge-20260402-6b08ceb-run117](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-6b08ceb-run117) |
+| **Wine Commit** | [`6b08ceb`](https://github.com/ValveSoftware/wine/commit/6b08ceb96d557026d473beea4baf467c9243a3db) — wine.inf: Add a default association for .reg files. |
 | **Date** | 2026-04-02 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-fcb89d3-run116) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-6b08ceb-run117) |
 <!-- PROTON-LATEST-END -->
 
 ---
