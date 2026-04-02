@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-02T21:29:37Z",
+  "triggered_at": "2026-04-02T23:27:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "007be58",
-      "new": "e100ca7",
-      "full": "e100ca7c86c513f5965a356adbc9013d334d6c00",
-      "msg": "ethosu: Move ethosu_allocate_feature_map() to ethosu_lower.c",
-      "date": "2026-04-02T21:04:25.000+00:00"
+      "old": "e100ca7",
+      "new": "19f3991",
+      "full": "19f39910a9f718afdbe7abe80b7a573e0bc758f4",
+      "msg": "anv/bvh: Drop atomic on instance_count",
+      "date": "2026-04-02T22:14:11.000+00:00"
     }
   ]
 }
