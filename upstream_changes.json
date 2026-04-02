@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-02T10:43:43Z",
+  "triggered_at": "2026-04-02T15:53:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "cda0c94",
-      "new": "a696462",
-      "full": "a696462cc3160f08a12a8571de9e685ac9699470",
-      "msg": "[LA64_DYNAREC] Fixed Gx equals Ex case for VCVTPD2DQ (#3737)",
-      "date": "2026-04-02T10:27:04Z"
+      "old": "a696462",
+      "new": "5e03e18",
+      "full": "5e03e18c683a28e311c58b0f1602b775195b9dcb",
+      "msg": "[ARM64_DYNAREC] Fixed a regression introduced with #3732",
+      "date": "2026-04-02T15:09:47Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "33864e5",
-      "new": "bae86c3",
-      "full": "bae86c31183e66c7d98a76cded2f292cdcab73c1",
-      "msg": "ci: fix envvar default value",
-      "date": "2026-04-02T09:09:52.000+00:00"
+      "old": "bae86c3",
+      "new": "27a4c58",
+      "full": "27a4c5874513e484c91ba858cbea81e699ffce17",
+      "msg": "nir/tests: test nir_opt_varyings with sysvals",
+      "date": "2026-04-02T14:38:56.000+00:00"
     }
   ]
 }
