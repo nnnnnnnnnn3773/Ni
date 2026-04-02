@@ -1,14 +1,14 @@
 {
-  "gitHash": "f865c49",
-  "date": "20260401",
-  "versionName": "proton-bleeding-edge-20260401-f865c49-arm64ec",
+  "gitHash": "fcb89d3",
+  "date": "20260402",
+  "versionName": "proton-bleeding-edge-20260402-fcb89d3-arm64ec",
   "wcp": {
-    "fileName": "proton-proton-bleeding-edge-20260401-f865c49-arm64ec.wcp",
-    "sha256": "54c7cc7d4d76254d4042ebf630ae63dd04504f77aa6aff5c753d9394ce06e2ea"
+    "fileName": "proton-proton-bleeding-edge-20260402-fcb89d3-arm64ec.wcp",
+    "sha256": "3dc4d1c5dc19194539719c82b131d0630334383aeafc099889b9ea4168c83b28"
   },
   "wcpxz": {
-    "fileName": "proton-wine-proton-bleeding-edge-20260401-f865c49-arm64ec.wcp.xz",
-    "sha256": "f967ab9968b793015416928e2e8d018b8479dc7f3e3a078c2f461a4c604daedc"
+    "fileName": "proton-wine-proton-bleeding-edge-20260402-fcb89d3-arm64ec.wcp.xz",
+    "sha256": "bef1940c7d5fbe827c439416d9960a2acafc353d17d4ed6d6d40557a4b308467"
   },
-  "releaseTag": "proton-bleeding-edge-20260401-f865c49-run114"
+  "releaseTag": "proton-bleeding-edge-20260402-fcb89d3-run115"
 }

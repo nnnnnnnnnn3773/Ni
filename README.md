@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260401-f865c49-run114](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run114) |
-| **Wine Commit** | [`f865c49`](https://github.com/ValveSoftware/wine/commit/f865c499901ec78506c5e5dd16b7ffcf2da94863) — ntdll: HACK: Enable WINE_SIMULATE_WRITECOPY for Puppeteer : Control. |
-| **Date** | 2026-04-01 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260401-f865c49-run114) |
+| **Release** | [🔗 proton-bleeding-edge-20260402-fcb89d3-run115](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-fcb89d3-run115) |
+| **Wine Commit** | [`fcb89d3`](https://github.com/ValveSoftware/wine/commit/fcb89d367b29b2effdcdceadc3c529dabe5f5bca) — Revert "netprofm: HACK: Throttle list_manager_GetConnectivity() for Death Strand |
+| **Date** | 2026-04-02 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-fcb89d3-run115) |
 <!-- PROTON-LATEST-END -->
 
 ---
