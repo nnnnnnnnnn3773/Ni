@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Make the GE ntsync patch auto-enable on systems that expose /dev/ntsync.
+Make the GE ntsync patch auto-enable only when /dev/ntsync is actually usable.
 
 The imported patch series currently enables ntsync only when WINENTSYNC=1.
-For these packaged builds we want ntsync to activate automatically where the
-kernel device exists, with WINENTSYNC=0 remaining an escape hatch.
+For these packaged builds we want ntsync to activate automatically only when
+the app can really open /dev/ntsync, with WINENTSYNC=0 remaining an escape
+hatch and WINENTSYNC=1 staying as the explicit force-enable override.
 """
 from __future__ import annotations
 
@@ -33,7 +34,28 @@ NEW = """static int get_enabled(void)
     if (enabled == -1)
     {
         const char *env = getenv("WINENTSYNC");
-        enabled = !(env && !strcmp(env, "0"));
+
+        if (env && !strcmp(env, "0"))
+        {
+            enabled = 0;
+        }
+        else if (env && !strcmp(env, "1"))
+        {
+            enabled = 1;
+        }
+        else
+        {
+            int fd = open( "/dev/ntsync", O_CLOEXEC | O_RDONLY );
+            if (fd >= 0)
+            {
+                close( fd );
+                enabled = 1;
+            }
+            else
+            {
+                enabled = 0;
+            }
+        }
     }
 
     return enabled;
@@ -67,7 +89,7 @@ def main() -> int:
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(text)
 
-    print("FIXED: ntsync now auto-enables unless WINENTSYNC=0")
+    print("FIXED: ntsync now auto-enables only when /dev/ntsync is openable")
     return 0
 
 
