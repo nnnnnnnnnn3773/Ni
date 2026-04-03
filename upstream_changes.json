@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-03T07:57:19Z",
+  "triggered_at": "2026-04-03T08:51:41Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "11bb701",
-      "new": "df00419",
-      "full": "df00419f69148674f1e28683f6b9fe2083690f05",
-      "msg": "[INTERP] Fixed BZHI opcode (#3738)",
-      "date": "2026-04-03T06:57:22Z"
+      "old": "df00419",
+      "new": "c0c2780",
+      "full": "c0c2780db42f7ef54581e129f1743db6335b3689",
+      "msg": "[ARM64_DYNAREC] Added some F2/F3 faked prefix opcodes (for #3717)",
+      "date": "2026-04-03T08:11:58Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "27b5631",
-      "new": "893d3ca",
-      "full": "893d3caf7b7814149caf33a7e0690e7e31384407",
-      "msg": "tu: use nir_opt_varyings_bulk for linking",
-      "date": "2026-04-03T08:18:08.000+02:00"
+      "old": "893d3ca",
+      "new": "30fda44",
+      "full": "30fda4488fb24a915f22cd6ec832a979c84a0eaa",
+      "msg": "nir: divergence analysis support for image_heap_load_param_intel",
+      "date": "2026-04-03T07:49:24.000+00:00"
     }
   ]
 }
