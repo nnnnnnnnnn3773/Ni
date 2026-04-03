@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-03T13:57:28Z",
+  "triggered_at": "2026-04-03T14:40:04Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "58542e4",
-      "new": "132d401",
-      "full": "132d40108b9b78218c539678b11c54d5a83fcb1a",
-      "msg": "[ARM64_DYNAREC] Small optim for BSF/BSR opcodes",
-      "date": "2026-04-03T13:44:06Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d15ba8d",
-      "new": "b1d379e",
-      "full": "b1d379eeba2f97a7d258373fe27828d8195c6c2b",
-      "msg": "anv: Add control over divergent atomics fusion opt via driconf",
-      "date": "2026-04-03T12:17:01.000+00:00"
+      "old": "b1d379e",
+      "new": "aa2d16c",
+      "full": "aa2d16c80a245e9135a46d17c015daf3ad71bec5",
+      "msg": "docs: add sha sum for 26.0.4",
+      "date": "2026-04-03T14:18:06.000+00:00"
     }
   ]
 }
