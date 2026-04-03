@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-03T16:31:03Z",
+  "triggered_at": "2026-04-03T17:27:34Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "24b14fd",
-      "new": "e68a0df",
-      "full": "e68a0dfb1261230df81f2044e7c1f5e3e5c00bf3",
-      "msg": "llvmpipe: Implement manual context resets",
-      "date": "2026-04-03T15:40:50.000+00:00"
+      "old": "e68a0df",
+      "new": "eff4c00",
+      "full": "eff4c0011217ba4546ce1e5e4377dfbcb7192b5e",
+      "msg": "vulkan: update spec to 1.4.348",
+      "date": "2026-04-03T16:03:02.000+00:00"
     }
   ]
 }
