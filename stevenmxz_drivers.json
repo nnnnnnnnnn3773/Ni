@@ -7,6 +7,12 @@
   },
   {
     "type": "GpuDriver",
+    "verName": "v26.1.0_r6 \u2014 Turnip_Autotuner_v26.1.0.zip",
+    "verCode": "0",
+    "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.1.0_r6_Turnip_Autotuner_v26.1.0.zip"
+  },
+  {
+    "type": "GpuDriver",
     "verName": "26.1.0_r6 \u2014 Turnip_v26.1.0_R6.zip",
     "verCode": "0",
     "remoteUrl": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/26.1.0_r6_Turnip_v26.1.0_R6.zip"
