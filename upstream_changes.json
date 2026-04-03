@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-03T17:27:34Z",
+  "triggered_at": "2026-04-03T18:36:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e68a0df",
-      "new": "eff4c00",
-      "full": "eff4c0011217ba4546ce1e5e4377dfbcb7192b5e",
-      "msg": "vulkan: update spec to 1.4.348",
-      "date": "2026-04-03T16:03:02.000+00:00"
+      "old": "eff4c00",
+      "new": "283f07f",
+      "full": "283f07f13ee88671117ed0ee3883fd52f288bf89",
+      "msg": "mediafoundation: Use WaitForMultipleObjects for AUTO slices wait in sliced encod",
+      "date": "2026-04-03T17:24:25.000+00:00"
     }
   ]
 }
