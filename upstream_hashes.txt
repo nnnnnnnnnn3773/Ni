@@ -6,6 +6,6 @@ https://github.com/doitsujin/dxvk: 1676dcaf342a9b13af86c0464ad46235687727a6
 https://gitlab.freedesktop.org/mesa/mesa@main: 283f07f13ee88671117ed0ee3883fd52f288bf89
 https://github.com/ValveSoftware/wine@bleeding-edge: 72e89e5910188f97bbd5a7183c23ab4faf839b62
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
-https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: v26.1.0_r6
+https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: v26.1.0_auto
 https://github.com/whitebelyash/freedreno_turnip-CI@latest-release: tu_v24
 https://github.com/maxjivi05/Components@main: a5d5aedf00a22bf9c211f218a9afb3413cc1f803
