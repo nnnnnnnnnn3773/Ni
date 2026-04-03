@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-03T06:07:26Z",
+  "triggered_at": "2026-04-03T07:57:19Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "c6d2ce0",
-      "new": "dc48a4f",
-      "full": "dc48a4f73c651a68203769b07ef19c5ac84990ea",
-      "msg": "Merge pull request #5406 from Sonicadvance1/128",
-      "date": "2026-04-03T04:26:44Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "11bb701",
+      "new": "df00419",
+      "full": "df00419f69148674f1e28683f6b9fe2083690f05",
+      "msg": "[INTERP] Fixed BZHI opcode (#3738)",
+      "date": "2026-04-03T06:57:22Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "27b5631",
+      "new": "893d3ca",
+      "full": "893d3caf7b7814149caf33a7e0690e7e31384407",
+      "msg": "tu: use nir_opt_varyings_bulk for linking",
+      "date": "2026-04-03T08:18:08.000+02:00"
     }
   ]
 }
