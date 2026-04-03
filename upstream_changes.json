@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-02T23:27:24Z",
+  "triggered_at": "2026-04-03T04:23:46Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e100ca7",
-      "new": "19f3991",
-      "full": "19f39910a9f718afdbe7abe80b7a573e0bc758f4",
-      "msg": "anv/bvh: Drop atomic on instance_count",
-      "date": "2026-04-02T22:14:11.000+00:00"
+      "old": "19f3991",
+      "new": "27b5631",
+      "full": "27b56314ee4eb044d378434f6ee84bcadd049ccb",
+      "msg": "radeonsi: add Gun Godz workaround",
+      "date": "2026-04-03T00:01:32.000+00:00"
     }
   ]
 }
