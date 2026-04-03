@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-03T14:40:04Z",
+  "triggered_at": "2026-04-03T15:33:38Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b1d379e",
-      "new": "aa2d16c",
-      "full": "aa2d16c80a245e9135a46d17c015daf3ad71bec5",
-      "msg": "docs: add sha sum for 26.0.4",
-      "date": "2026-04-03T14:18:06.000+00:00"
+      "old": "aa2d16c",
+      "new": "24b14fd",
+      "full": "24b14fd095f82affaca44c0f7172cac72f213094",
+      "msg": "kk: Clean up gfx state flushing",
+      "date": "2026-04-03T14:54:14.000+00:00"
     }
   ]
 }
