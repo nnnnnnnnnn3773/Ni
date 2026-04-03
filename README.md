@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260402-6b08ceb-run117](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-6b08ceb-run117) |
-| **Wine Commit** | [`6b08ceb`](https://github.com/ValveSoftware/wine/commit/6b08ceb96d557026d473beea4baf467c9243a3db) — wine.inf: Add a default association for .reg files. |
-| **Date** | 2026-04-02 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260402-6b08ceb-run117) |
+| **Release** | [🔗 proton-bleeding-edge-20260403-72e89e5-run118](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-72e89e5-run118) |
+| **Wine Commit** | [`72e89e5`](https://github.com/ValveSoftware/wine/commit/72e89e5910188f97bbd5a7183c23ab4faf839b62) — mf: Specify the multithreaded queue for sample grabber timer callbacks. |
+| **Date** | 2026-04-03 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-72e89e5-run118) |
 <!-- PROTON-LATEST-END -->
 
 ---
