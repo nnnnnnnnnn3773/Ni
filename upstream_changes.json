@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-03T09:45:39Z",
+  "triggered_at": "2026-04-03T10:36:23Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c0c2780",
-      "new": "ba20a27",
-      "full": "ba20a2753002272406c82ff92db30b2a90530644",
-      "msg": "[LA64_DYNAREC] Fixed BSF/BSR PF computation (#3741)",
-      "date": "2026-04-03T09:14:48Z"
+      "old": "ba20a27",
+      "new": "58542e4",
+      "full": "58542e4a7286dfebe0bd42dca6536a2953bab0c8",
+      "msg": "[LA64_DYNAREC] Fixed LOCK NEG opcode (#3742)",
+      "date": "2026-04-03T10:12:48Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "30fda44",
+      "new": "d15ba8d",
+      "full": "d15ba8d14a7c5210c32a4e5d754f54c927148b6f",
+      "msg": "turnip/ci: Add Android job with ANGLE on a618",
+      "date": "2026-04-03T09:25:14.000+00:00"
     }
   ]
 }
