@@ -732,3 +732,53 @@ jobs:
           git pull --rebase origin HEAD
           git push
 
+      - name: Notify Discord (success)
+        if: success() && steps.hash_check.outputs.skip != 'true'
+        env:
+          RELEASE_TAG: ${{ steps.meta.outputs.release_tag }}
+          GIT_HASH: ${{ steps.meta.outputs.git_hash }}
+          GIT_DATE: ${{ steps.meta.outputs.git_date }}
+        run: |
+          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"embeds\": [{
+                \"title\": \"🧪 New Proton Bleeding-Edge Build Released\",
+                \"description\": \"**${RELEASE_TAG}**\n\n[📦 Download from GitHub Releases](https://github.com/${{ github.repository }}/releases/tag/${RELEASE_TAG})\",
+                \"color\": 5763719,
+                \"fields\": [
+                  {
+                    \"name\": \"Wine Commit\",
+                    \"value\": \"\`${GIT_HASH}\` (${GIT_DATE})\",
+                    \"inline\": false
+                  },
+                  {
+                    \"name\": \"Arch\",
+                    \"value\": \"ARM64EC\",
+                    \"inline\": true
+                  },
+                  {
+                    \"name\": \"Files\",
+                    \"value\": \".wcp + .wcp.xz\",
+                    \"inline\": true
+                  }
+                ],
+                \"footer\": { \"text\": \"GitHub Actions · ${{ github.repository }}\" },
+                \"timestamp\": \"${{ github.event.repository.updated_at }}\"
+              }]
+            }"
+
+      - name: Notify Discord (failure)
+        if: failure()
+        run: |
+          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "embeds": [{
+                "title": "❌ Proton Bleeding-Edge Build Failed",
+                "description": "The Proton bleeding-edge build failed.\n\n[🔍 View Actions Log](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})",
+                "color": 15548997,
+                "footer": { "text": "GitHub Actions · ${{ github.repository }}" },
+                "timestamp": "${{ github.event.repository.updated_at }}"
+              }]
+            }'
