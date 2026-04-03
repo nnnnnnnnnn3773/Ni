@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-03T10:36:23Z",
+  "triggered_at": "2026-04-03T13:57:28Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "ba20a27",
-      "new": "58542e4",
-      "full": "58542e4a7286dfebe0bd42dca6536a2953bab0c8",
-      "msg": "[LA64_DYNAREC] Fixed LOCK NEG opcode (#3742)",
-      "date": "2026-04-03T10:12:48Z"
+      "old": "58542e4",
+      "new": "132d401",
+      "full": "132d40108b9b78218c539678b11c54d5a83fcb1a",
+      "msg": "[ARM64_DYNAREC] Small optim for BSF/BSR opcodes",
+      "date": "2026-04-03T13:44:06Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "30fda44",
-      "new": "d15ba8d",
-      "full": "d15ba8d14a7c5210c32a4e5d754f54c927148b6f",
-      "msg": "turnip/ci: Add Android job with ANGLE on a618",
-      "date": "2026-04-03T09:25:14.000+00:00"
+      "old": "d15ba8d",
+      "new": "b1d379e",
+      "full": "b1d379eeba2f97a7d258373fe27828d8195c6c2b",
+      "msg": "anv: Add control over divergent atomics fusion opt via driconf",
+      "date": "2026-04-03T12:17:01.000+00:00"
     }
   ]
 }
