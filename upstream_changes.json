@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-03T15:33:38Z",
+  "triggered_at": "2026-04-03T16:31:03Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "aa2d16c",
-      "new": "24b14fd",
-      "full": "24b14fd095f82affaca44c0f7172cac72f213094",
-      "msg": "kk: Clean up gfx state flushing",
-      "date": "2026-04-03T14:54:14.000+00:00"
+      "old": "24b14fd",
+      "new": "e68a0df",
+      "full": "e68a0dfb1261230df81f2044e7c1f5e3e5c00bf3",
+      "msg": "llvmpipe: Implement manual context resets",
+      "date": "2026-04-03T15:40:50.000+00:00"
     }
   ]
 }
