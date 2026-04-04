@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260403-72e89e5-run118](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-72e89e5-run118) |
-| **Wine Commit** | [`72e89e5`](https://github.com/ValveSoftware/wine/commit/72e89e5910188f97bbd5a7183c23ab4faf839b62) — mf: Specify the multithreaded queue for sample grabber timer callbacks. |
-| **Date** | 2026-04-03 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-72e89e5-run118) |
+| **Release** | [🔗 proton-bleeding-edge-20260403-2001ded-run123](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-2001ded-run123) |
+| **Wine Commit** | [`2001ded`](https://github.com/ValveSoftware/wine/commit/2001ded734f94103392cce4fefb7899c8a7bb1a1) — mciavi32: Use msvfw32 for presentation. |
+| **Date** | 2026-04-04 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-2001ded-run123) |
 <!-- PROTON-LATEST-END -->
 
 ---
