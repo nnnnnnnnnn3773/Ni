@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-04T15:23:30Z",
+  "triggered_at": "2026-04-04T19:25:28Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8730c03",
-      "new": "02679a5",
-      "full": "02679a51fdde8745bbe7c724f4aa43a504b58c18",
-      "msg": "radeonsi: set valid_buffer_range for CL buffers",
-      "date": "2026-04-04T14:54:40.000+00:00"
+      "old": "02679a5",
+      "new": "cc6eec7",
+      "full": "cc6eec79c2bbb3cd0508a15baaa0d07655be7b23",
+      "msg": "nir/opt_uniform_subgroup: fix ballot_bit_count components",
+      "date": "2026-04-04T17:48:34.000+00:00"
     }
   ]
 }
