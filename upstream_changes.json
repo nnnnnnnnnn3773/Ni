@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-04T11:23:09Z",
+  "triggered_at": "2026-04-04T12:36:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f07783",
-      "new": "fc19ce6",
-      "full": "fc19ce6c179b5a1f501a020e436daa8dd7fb89b3",
-      "msg": "nir/opt_load_skip_helpers: don't skip helpers for store_scratch data",
-      "date": "2026-04-04T09:41:00.000+00:00"
+      "old": "fc19ce6",
+      "new": "8730c03",
+      "full": "8730c039bf37e8dba25ae76067dda68a1ab6a870",
+      "msg": "nir/opt_algebraic: move some lower_lerp patterns",
+      "date": "2026-04-04T10:44:09.000+00:00"
     }
   ]
 }
