@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-04T01:22:33Z",
+  "triggered_at": "2026-04-04T07:43:26Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "dc48a4f",
-      "new": "73ffff7",
-      "full": "73ffff7d22aae4b76a428508bba1343c9dc714a8",
-      "msg": "Merge pull request #5409 from Sonicadvance1/130",
-      "date": "2026-04-04T00:23:39Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "132d401",
+      "new": "1957721",
+      "full": "1957721f37fc64067548b60b41cc497b1101a6e9",
+      "msg": "[INTERP] Fixed nan propagation edge-cases for various opcodes (#3734)",
+      "date": "2026-04-04T07:20:47Z"
     }
   ]
 }
