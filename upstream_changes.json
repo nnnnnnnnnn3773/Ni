@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-04T12:36:06Z",
+  "triggered_at": "2026-04-04T14:28:06Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "fc19ce6",
-      "new": "8730c03",
-      "full": "8730c039bf37e8dba25ae76067dda68a1ab6a870",
-      "msg": "nir/opt_algebraic: move some lower_lerp patterns",
-      "date": "2026-04-04T10:44:09.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "1957721",
+      "new": "7e2528c",
+      "full": "7e2528c538e7e1181c3d957c87fd6a265c764159",
+      "msg": "[ARM64_DYNAREC] Added F2 0F BD opcode (for #3717)",
+      "date": "2026-04-04T14:09:50Z"
     }
   ]
 }
