@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-05T12:38:21Z",
+  "triggered_at": "2026-04-05T13:48:31Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "0416caa",
-      "new": "b1a706a",
-      "full": "b1a706a650cb62a614f15615cd2dcd3a7cec305b",
-      "msg": "[ARM64_DYNAREC] Fixed nan propagation for ADDPS and similar opcodes (#3754)",
-      "date": "2026-04-05T12:02:25Z"
+      "old": "b1a706a",
+      "new": "43dcbf3",
+      "full": "43dcbf3773a3770cb3d6fe0b802d7390b332ee9b",
+      "msg": "[DYNAREC] Added a way to use Dynarec for alt address, for MALLOC_HACK=2 for exam",
+      "date": "2026-04-05T13:07:26Z"
     }
   ]
 }
