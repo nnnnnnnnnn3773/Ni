@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-05T08:34:41Z",
+  "triggered_at": "2026-04-05T12:38:21Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "7e2528c",
-      "new": "0416caa",
-      "full": "0416caa95a408041fd520e39e459420ecb61378b",
-      "msg": "[VULKAN] Added VK_ARM_shader_instrumentation extension (for #3749)",
-      "date": "2026-04-05T07:59:32Z"
+      "old": "0416caa",
+      "new": "b1a706a",
+      "full": "b1a706a650cb62a614f15615cd2dcd3a7cec305b",
+      "msg": "[ARM64_DYNAREC] Fixed nan propagation for ADDPS and similar opcodes (#3754)",
+      "date": "2026-04-05T12:02:25Z"
     }
   ]
 }
