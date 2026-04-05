@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-05T13:48:31Z",
+  "triggered_at": "2026-04-05T17:22:54Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "b1a706a",
-      "new": "43dcbf3",
-      "full": "43dcbf3773a3770cb3d6fe0b802d7390b332ee9b",
-      "msg": "[DYNAREC] Added a way to use Dynarec for alt address, for MALLOC_HACK=2 for exam",
-      "date": "2026-04-05T13:07:26Z"
+      "old": "43dcbf3",
+      "new": "eef6818",
+      "full": "eef68182b36a790804ece8c5c63cc087fe5ae1bc",
+      "msg": "[ARM64_DYNAREC] Fixed IOC bit reset for CVTTPS2PI/CVTPS2PI opcodes (#3755)",
+      "date": "2026-04-05T16:46:51Z"
     }
   ]
 }
