@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-05T18:31:29Z",
+  "triggered_at": "2026-04-05T20:22:54Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "eef6818",
-      "new": "f20db6c",
-      "full": "f20db6caae44220ac0dd5ceadc92c11d3ba23dac",
-      "msg": "[ARM64_DYNAREC] Refined SNaN propagation for various opcodes (#3758)",
-      "date": "2026-04-05T17:56:23Z"
+      "old": "f20db6c",
+      "new": "74fd2a0",
+      "full": "74fd2a0a5d45c42394438c3eabef5b93562f5e2f",
+      "msg": "Fixed sse42_compare_string_explicit_len for length=INT_MIN (#3759)",
+      "date": "2026-04-05T19:55:36Z"
     }
   ]
 }
