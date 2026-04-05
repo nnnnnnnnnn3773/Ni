@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-05T17:22:54Z",
+  "triggered_at": "2026-04-05T18:31:29Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "43dcbf3",
-      "new": "eef6818",
-      "full": "eef68182b36a790804ece8c5c63cc087fe5ae1bc",
-      "msg": "[ARM64_DYNAREC] Fixed IOC bit reset for CVTTPS2PI/CVTPS2PI opcodes (#3755)",
-      "date": "2026-04-05T16:46:51Z"
+      "old": "eef6818",
+      "new": "f20db6c",
+      "full": "f20db6caae44220ac0dd5ceadc92c11d3ba23dac",
+      "msg": "[ARM64_DYNAREC] Refined SNaN propagation for various opcodes (#3758)",
+      "date": "2026-04-05T17:56:23Z"
     }
   ]
 }
