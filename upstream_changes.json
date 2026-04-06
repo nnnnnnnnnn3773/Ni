@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-06T19:46:09Z",
+  "triggered_at": "2026-04-06T21:31:06Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "c4cecd9",
-      "new": "f0ae58d",
-      "full": "f0ae58df12a1ab5643887893fd59e3a67aacf6b8",
-      "msg": "intel/compiler: Handle TerminateOnFirstHit in ray query execution",
-      "date": "2026-04-06T10:00:05.000-07:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "cbcd118",
+      "new": "fe556e9",
+      "full": "fe556e957ea1d6854af93e891bc1679c56907f16",
+      "msg": "[ARM64_DYNAREC] Fixed a edge case of df tracking for LOCK CMPXCHG16B opcode (#37",
+      "date": "2026-04-06T20:46:32Z"
     }
   ]
 }
