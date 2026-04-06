@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-06T12:51:47Z",
+  "triggered_at": "2026-04-06T14:07:07Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "c1a7680",
-      "new": "5b76c1d",
-      "full": "5b76c1dd0c578dbc3ce8b1d3af43a9ff4fbfdcd0",
-      "msg": "radv/rt: Don't combine config of unreachable shaders",
-      "date": "2026-04-06T11:32:47.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "95b6819",
+      "new": "29bf151",
+      "full": "29bf151ed9a07c9e00ec5b8f7dc265529c500038",
+      "msg": "[ARM64_DYNAREC] Fixed CMPXCHG8B CASPALw equal case (#3760)",
+      "date": "2026-04-06T14:06:11Z"
     }
   ]
 }
