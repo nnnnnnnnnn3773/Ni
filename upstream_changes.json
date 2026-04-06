@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-06T10:01:35Z",
+  "triggered_at": "2026-04-06T11:41:50Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "74fd2a0",
-      "new": "95b6819",
-      "full": "95b68190b386d84b41214671fadbe6e6c23d70fb",
-      "msg": "[ARM64_DYNAREC] Fixed some rare case where native flags might be lost on some sp",
-      "date": "2026-04-06T08:43:21Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e34fa59",
-      "new": "1be54ac",
-      "full": "1be54acdeec60fa3d694054b6df177a1d93027a8",
-      "msg": "broadcom/cle: parse once the XML spec",
-      "date": "2026-04-06T09:17:15.000+00:00"
+      "old": "1be54ac",
+      "new": "c1a7680",
+      "full": "c1a7680d9327196dbb233867fb27aabe2ef7c3f7",
+      "msg": "radv/rt: Don't enable midpoint sorting",
+      "date": "2026-04-06T11:03:04.000+00:00"
     }
   ]
 }
