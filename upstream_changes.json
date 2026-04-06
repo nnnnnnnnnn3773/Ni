@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-06T14:07:07Z",
+  "triggered_at": "2026-04-06T15:39:03Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "95b6819",
-      "new": "29bf151",
-      "full": "29bf151ed9a07c9e00ec5b8f7dc265529c500038",
-      "msg": "[ARM64_DYNAREC] Fixed CMPXCHG8B CASPALw equal case (#3760)",
-      "date": "2026-04-06T14:06:11Z"
+      "old": "29bf151",
+      "new": "cbcd118",
+      "full": "cbcd11894c1959a5393cb3125e828ab7bbfc56f0",
+      "msg": "[ARM64_DYNAREC] Fixed cmpxchg modreg ed=rax case (#3761)",
+      "date": "2026-04-06T14:09:19Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "5b76c1d",
+      "new": "77835f6",
+      "full": "77835f6c21b38dc175f611e8cfcea1801a7b5505",
+      "msg": "zink+turnip/ci: Add failures uncovered by new autotune",
+      "date": "2026-04-06T14:19:51.000+00:00"
     }
   ]
 }
