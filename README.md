@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260403-2001ded-run123](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-2001ded-run123) |
-| **Wine Commit** | [`2001ded`](https://github.com/ValveSoftware/wine/commit/2001ded734f94103392cce4fefb7899c8a7bb1a1) — mciavi32: Use msvfw32 for presentation. |
-| **Date** | 2026-04-04 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260403-2001ded-run123) |
+| **Release** | [🔗 proton-bleeding-edge-20260406-31041b4-run136](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260406-31041b4-run136) |
+| **Wine Commit** | [`31041b4`](https://github.com/ValveSoftware/wine/commit/31041b496e16b32f084a26179b901a8335012bca) — fixup! winevulkan: HACK: Handle VK_WINE_openvr_device_extensions. |
+| **Date** | 2026-04-06 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260406-31041b4-run136) |
 <!-- PROTON-LATEST-END -->
 
 ---
