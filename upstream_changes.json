@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-06T11:41:50Z",
+  "triggered_at": "2026-04-06T12:51:47Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1be54ac",
-      "new": "c1a7680",
-      "full": "c1a7680d9327196dbb233867fb27aabe2ef7c3f7",
-      "msg": "radv/rt: Don't enable midpoint sorting",
-      "date": "2026-04-06T11:03:04.000+00:00"
+      "old": "c1a7680",
+      "new": "5b76c1d",
+      "full": "5b76c1dd0c578dbc3ce8b1d3af43a9ff4fbfdcd0",
+      "msg": "radv/rt: Don't combine config of unreachable shaders",
+      "date": "2026-04-06T11:32:47.000+00:00"
     }
   ]
 }
