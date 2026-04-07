@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T19:52:09Z",
+  "triggered_at": "2026-04-07T20:38:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "daa3d52",
-      "new": "33676d8",
-      "full": "33676d829664474e2ebb2bdb7079e5ae39042e73",
-      "msg": "spirv: mark all resources as non-uniform by default with descriptor heap",
-      "date": "2026-04-07T18:55:49.000+00:00"
+      "old": "33676d8",
+      "new": "e382d82",
+      "full": "e382d82ca97df2290dd3da2398f0a1f4e1791856",
+      "msg": "anv: Fix assert in anv_nir_compute_push_layout",
+      "date": "2026-04-07T19:56:55.000+00:00"
     }
   ]
 }
