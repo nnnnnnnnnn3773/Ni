@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T20:38:18Z",
+  "triggered_at": "2026-04-07T21:36:02Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "33676d8",
-      "new": "e382d82",
-      "full": "e382d82ca97df2290dd3da2398f0a1f4e1791856",
-      "msg": "anv: Fix assert in anv_nir_compute_push_layout",
-      "date": "2026-04-07T19:56:55.000+00:00"
+      "old": "e382d82",
+      "new": "3b4a7f2",
+      "full": "3b4a7f2d1a4582e9e23465eb572c95db073ee10a",
+      "msg": "brw: In \"Clear Accumulator\" workaround, never set predicate_inverse",
+      "date": "2026-04-07T20:33:46.000+00:00"
     }
   ]
 }
