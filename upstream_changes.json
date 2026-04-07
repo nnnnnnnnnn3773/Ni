@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T08:06:58Z",
+  "triggered_at": "2026-04-07T10:00:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "001de6d",
-      "new": "71b6db0",
-      "full": "71b6db06e13b7ee577b816cd8901f3b5f9ca6c26",
-      "msg": "ac/nir: add descriptor heap support to opt_flip_if_for_mem_loads()",
-      "date": "2026-04-07T06:15:24.000+00:00"
+      "old": "71b6db0",
+      "new": "58390ce",
+      "full": "58390ceb985eea302941a12ab7f65ce8b9b44884",
+      "msg": "radv: increase limit for peephole_select in radv_optimize_nir_algebraic_early()",
+      "date": "2026-04-07T08:00:04.000+00:00"
     }
   ]
 }
