@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-07T15:00:32Z",
+  "triggered_at": "2026-04-07T17:51:44Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "feaf6ff",
-      "new": "3c266d3",
-      "full": "3c266d33e348e5a616bf5a3b36945c738039c50e",
-      "msg": "[ARM64_DYNAREC] Some minor modifications on callret and SEP handling",
-      "date": "2026-04-07T14:30:46Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "bbed00a",
-      "new": "994ead3",
-      "full": "994ead31bd4dbd653e6a73446c12e9c1718e943a",
-      "msg": "ci: Disable Collabora's farm due to network issues",
-      "date": "2026-04-07T14:30:35.000+00:00"
+      "old": "994ead3",
+      "new": "dbb7050",
+      "full": "dbb7050ca71c057cd8a4f08024c9e776c6336fc0",
+      "msg": "util/sparse_bitset: add u_sparse_bitset_clear_all",
+      "date": "2026-04-07T16:59:11.000+00:00"
     }
   ]
 }
