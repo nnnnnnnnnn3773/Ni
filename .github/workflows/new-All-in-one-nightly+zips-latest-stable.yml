@@ -938,6 +938,12 @@ jobs:
                 continue
               fi
 
+              # Skip draft releases (published_at is null)
+              if [ "$PUBLISHED" = "null" ] || [ -z "$PUBLISHED" ]; then
+                echo "Skipping draft release: $TAG"
+                continue
+              fi
+
               # Convert published_at to epoch seconds and compare
               PUBLISHED_EPOCH=$(date -u -d "$PUBLISHED" +%s)
               if [ "$PUBLISHED_EPOCH" -lt "$CUTOFF" ]; then
