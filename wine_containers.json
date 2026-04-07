@@ -1,0 +1,74 @@
+[
+  {
+    "id": 5,
+    "name": "wine10.0-x64-2",
+    "type": "Wine",
+    "framework": "X64"
+  },
+  {
+    "id": 7,
+    "name": "wine9.16-x64-2",
+    "type": "Wine",
+    "framework": "X64"
+  },
+  {
+    "id": 8,
+    "name": "wine9.13-x64-2",
+    "type": "Wine",
+    "framework": "X64"
+  },
+  {
+    "id": 3,
+    "name": "wine9.5-x64-2",
+    "type": "Wine",
+    "framework": "X64"
+  },
+  {
+    "id": 6,
+    "name": "wine10.6-arm64x-2",
+    "type": "Wine",
+    "framework": "arm64X"
+  },
+  {
+    "id": 2,
+    "name": "proton10.0-arm64x-2",
+    "type": "Proton",
+    "framework": "arm64X"
+  },
+  {
+    "id": 9,
+    "name": "proton9.0-arm64x-3",
+    "type": "Proton",
+    "framework": "arm64X"
+  },
+  {
+    "id": 10,
+    "name": "proton10.0-x64-1",
+    "type": "Proton",
+    "framework": "X64"
+  },
+  {
+    "id": 21,
+    "name": "proton10.0-arm64x-5",
+    "type": "Proton",
+    "framework": "arm64X"
+  },
+  {
+    "id": 20,
+    "name": "proton10.0-arm64x-4",
+    "type": "Proton",
+    "framework": "arm64X"
+  },
+  {
+    "id": 17,
+    "name": "proton10.0_arm64x_1",
+    "type": "Proton",
+    "framework": "arm64X"
+  },
+  {
+    "id": 4,
+    "name": "proton9.0-x64-3",
+    "type": "Proton",
+    "framework": "X64"
+  }
+]
