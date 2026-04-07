@@ -221,5 +221,8 @@ jobs:
           NC=$(jq 'length' nightlies_components.json)
           DRV=$(jq 'length' drivers.json)
           git commit -m "chore: update nightlies_components.json (${NC}) + drivers.json (${DRV} drivers) ($(date -u +%Y-%m-%d))"
-          git pull --rebase -X ours
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X ours && git push && break
+            echo "Push attempt $i failed, retrying in 5s..."
+            sleep 5
+          done
