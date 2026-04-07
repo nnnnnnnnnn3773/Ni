@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-07T10:00:52Z",
+  "triggered_at": "2026-04-07T11:45:44Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "0874bb4",
+      "new": "9178869",
+      "full": "91788694ba25bda1410b9e919da99292a841ffe1",
+      "msg": "[ARM64_DYNAREC] Fixed a regression introduced in #3766 (#3768)",
+      "date": "2026-04-07T11:24:47Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "71b6db0",
-      "new": "58390ce",
-      "full": "58390ceb985eea302941a12ab7f65ce8b9b44884",
-      "msg": "radv: increase limit for peephole_select in radv_optimize_nir_algebraic_early()",
-      "date": "2026-04-07T08:00:04.000+00:00"
+      "old": "58390ce",
+      "new": "248b0b4",
+      "full": "248b0b47b74abf51fdda1ae10ca573cbab78c89a",
+      "msg": "panfrost: Fix GEM handle refcount leak in panfrost_bo_import",
+      "date": "2026-04-07T11:06:34.000+00:00"
     }
   ]
 }
