@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T18:52:03Z",
+  "triggered_at": "2026-04-07T19:52:09Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dbb7050",
-      "new": "daa3d52",
-      "full": "daa3d5292fad6d10439cbc6a523a0c273d39d8ff",
-      "msg": "nir/opt_if: allow undef instructions on ELSE side for if-simplification",
-      "date": "2026-04-07T17:28:11.000+00:00"
+      "old": "daa3d52",
+      "new": "33676d8",
+      "full": "33676d829664474e2ebb2bdb7079e5ae39042e73",
+      "msg": "spirv: mark all resources as non-uniform by default with descriptor heap",
+      "date": "2026-04-07T18:55:49.000+00:00"
     }
   ]
 }
