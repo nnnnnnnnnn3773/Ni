@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T21:36:02Z",
+  "triggered_at": "2026-04-07T23:30:26Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "e382d82",
-      "new": "3b4a7f2",
-      "full": "3b4a7f2d1a4582e9e23465eb572c95db073ee10a",
-      "msg": "brw: In \"Clear Accumulator\" workaround, never set predicate_inverse",
-      "date": "2026-04-07T20:33:46.000+00:00"
+      "old": "3b4a7f2",
+      "new": "11c3173",
+      "full": "11c3173890de7f6f2294b018379570024462a760",
+      "msg": "xlib: clear currentDpy when switching current context",
+      "date": "2026-04-07T22:39:49.000+00:00"
     }
   ]
 }
