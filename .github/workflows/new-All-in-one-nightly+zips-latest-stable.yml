@@ -1230,44 +1230,48 @@ jobs:
       - name: Notify Discord (success)
         if: success()
         run: |
+          RELEASE_NAME="${{ env.RELEASE_NAME }}"
+          TAG_NAME="${{ env.TAG_NAME }}"
+          REPO="${{ github.repository }}"
+
+          # Build "what's new" from upstream_changes.json (same logic as release body)
+          DISCORD_TRIGGER="Scheduled build — no upstream changes detected."
+          if [ -f "upstream_changes.json" ]; then
+            CHANGED_COUNT=$(jq '.changed | length' upstream_changes.json)
+            TRIGGERED_AT=$(jq -r '.triggered_at' upstream_changes.json)
+            TRIGGERED_EPOCH=$(date -u -d "$TRIGGERED_AT" +%s 2>/dev/null || echo 0)
+            NOW_EPOCH=$(date -u +%s)
+            AGE=$(( NOW_EPOCH - TRIGGERED_EPOCH ))
+            if [ "$CHANGED_COUNT" -gt "0" ] && [ "$AGE" -lt "10800" ]; then
+              DISCORD_TRIGGER=""
+              while IFS= read -r row; do
+                R_NAME=$(echo "$row" | jq -r '.name')
+                R_OLD=$(echo "$row" | jq -r '.old')
+                R_NEW=$(echo "$row" | jq -r '.new')
+                R_MSG=$(echo "$row" | jq -r '.msg' | cut -c1-60)
+                [ -n "$DISCORD_TRIGGER" ] && DISCORD_TRIGGER+=$'\n'
+                DISCORD_TRIGGER+="• **${R_NAME}** \`${R_OLD}\` → \`${R_NEW}\`: ${R_MSG}"
+              done < <(jq -c '.changed[]' upstream_changes.json)
+            fi
+          fi
+
+          DESC="${RELEASE_NAME}"$'\n\n'"[📦 Download from GitHub Releases](https://github.com/${REPO}/releases/tag/${TAG_NAME})"
+
           curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
-            -d '{
-              "embeds": [{
-                "title": "🚀 New Nightly Build Released",
-                "description": "**${{ env.RELEASE_NAME }}**\n\n[📦 Download from GitHub Releases](https://github.com/${{ github.repository }}/releases/tag/${{ env.TAG_NAME }})",
-                "color": 5763719,
-                "fields": [
-                  {
-                    "name": "Box64",
-                    "value": "Native · Bionic · WOW64 (Official + Hybrid)",
-                    "inline": false
-                  },
-                  {
-                    "name": "FEXCore",
-                    "value": "${{ needs.build-fex.outputs.version }}",
-                    "inline": true
-                  },
-                  {
-                    "name": "VKD3D-Proton",
-                    "value": "${{ needs.build-vkd3d.outputs.version }}",
-                    "inline": true
-                  },
-                  {
-                    "name": "DXVK (GPLAsync)",
-                    "value": "${{ needs.build-dxvk.outputs.commit }}",
-                    "inline": true
-                  },
-                  {
-                    "name": "DXVK (ARM64EC)",
-                    "value": "${{ needs.build-dxvk-arm64ec.outputs.version }}",
-                    "inline": true
-                  }
-                ],
-                "footer": { "text": "GitHub Actions · ${{ github.repository }}" },
-                "timestamp": "${{ github.event.repository.updated_at }}"
-              }]
-            }'
+            -d "$(jq -n \
+              --arg desc "$DESC" \
+              --arg trigger "$DISCORD_TRIGGER" \
+              --arg footer "GitHub Actions · ${REPO}" \
+              --arg ts "${{ github.event.repository.updated_at }}" \
+              '{embeds: [{
+                title: "🚀 New Nightly Build Released",
+                description: $desc,
+                color: 5763719,
+                fields: [{ name: "🔄 What'\''s New", value: $trigger, inline: false }],
+                footer: { text: $footer },
+                timestamp: $ts
+              }]}')"
 
       - name: Notify Discord (failure)
         if: failure()
