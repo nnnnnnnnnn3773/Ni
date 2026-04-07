@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-07T01:30:01Z",
+  "triggered_at": "2026-04-07T06:14:42Z",
   "changed": [
     {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "73ffff7",
-      "new": "0695249",
-      "full": "0695249fc83b14dff3ae1a045019cb9975a3b694",
-      "msg": "Merge pull request #5413 from Sonicadvance1/132",
-      "date": "2026-04-06T23:49:49Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "fe556e9",
+      "new": "0874bb4",
+      "full": "0874bb4d017277adbb106982fae332f308fbe7ad",
+      "msg": "[DYNAREC] Fixed XADD where source register overlapping memory base (#3766)",
+      "date": "2026-04-07T06:10:51Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "0d5cae9",
+      "new": "001de6d",
+      "full": "001de6d71bd788f784b0a96177dab010221d31d9",
+      "msg": "nak: Fix mufu's f16 bit on sm90+",
+      "date": "2026-04-07T05:10:16.000+00:00"
     }
   ]
 }
