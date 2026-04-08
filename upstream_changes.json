@@ -1,41 +1,32 @@
 {
-  "triggered_at": "2026-04-08T16:52:36Z",
+  "triggered_at": "2026-04-08T18:00:25Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "06f5fa3",
-      "new": "c90a2ab",
-      "full": "c90a2ab5a471686f25d24fa3f4a15293924f2f1c",
-      "msg": "[ARM64_DYNAREC] Added some potentials fixes for missing AutoCRC on CALLRET retur",
-      "date": "2026-04-08T16:47:12Z"
-    },
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "0695249",
-      "new": "ce65f53",
-      "full": "ce65f5376f73db94b285caf8562d676ddd23679e",
-      "msg": "Merge pull request #5415 from Sonicadvance1/133",
-      "date": "2026-04-08T15:39:56Z"
+      "old": "c90a2ab",
+      "new": "55c967f",
+      "full": "55c967fe9dcb1e6d0c040d43a630bd16669e48c9",
+      "msg": "[RCFILE] Added some more game profiles",
+      "date": "2026-04-08T17:14:12Z"
     },
     {
       "repo": "HansKristian-Work/vkd3d-proton",
       "name": "VKD3D-Proton",
-      "old": "76c11d2",
-      "new": "d78c7d1",
-      "full": "d78c7d1df252d08eb3c3c947b74c68bf7b947ac1",
-      "msg": "vkd3d: Use swapchain blits when applicable.",
-      "date": "2026-04-08T15:41:25Z"
+      "old": "d78c7d1",
+      "new": "69f3df1",
+      "full": "69f3df1d0c3caa128d0157a4656cf9164ec4fb24",
+      "msg": "vkd3d: Handle illegal and transitive barriers better.",
+      "date": "2026-04-08T17:14:08Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b402b98",
-      "new": "b391f2d",
-      "full": "b391f2d8881205b3a822201f8cc392d1f0c30504",
-      "msg": "anv: Use nir_lower_memory_model",
-      "date": "2026-04-08T16:07:35.000+00:00"
+      "old": "b391f2d",
+      "new": "5f1c220",
+      "full": "5f1c22037b01cc59a1f6c89d0b2ac611eaa54fe5",
+      "msg": "radv: advertise VK_EXT_primitive_restart_index",
+      "date": "2026-04-08T17:19:48.000+00:00"
     }
   ]
 }
