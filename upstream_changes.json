@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-07T23:30:26Z",
+  "triggered_at": "2026-04-08T01:44:23Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3b4a7f2",
-      "new": "11c3173",
-      "full": "11c3173890de7f6f2294b018379570024462a760",
-      "msg": "xlib: clear currentDpy when switching current context",
-      "date": "2026-04-07T22:39:49.000+00:00"
+      "old": "11c3173",
+      "new": "cfdb3dd",
+      "full": "cfdb3ddb93c02eb1e98e9f634263313fc87693c0",
+      "msg": "brw: brw_reg::nr for an accumulator is not part of the offset",
+      "date": "2026-04-08T00:36:39.000+00:00"
     }
   ]
 }
