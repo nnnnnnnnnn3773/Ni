@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-08T19:25:24Z",
+  "triggered_at": "2026-04-08T21:35:09Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "55c967f",
-      "new": "08934a3",
-      "full": "08934a3b0c523c3acf905604102780bed37d7eaf",
-      "msg": "[ARM64_DYNAREC] Better fix for #3762 (#3772)",
-      "date": "2026-04-08T19:24:10Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5f1c220",
-      "new": "1e052f0",
-      "full": "1e052f0bb5b01af551411b72c03b757a8e38dc48",
-      "msg": "intel/brw: Remove unsed functions to get data port message type",
-      "date": "2026-04-08T17:44:52.000+00:00"
+      "old": "1e052f0",
+      "new": "1f03706",
+      "full": "1f0370616a622c53de715611d2f9ba7dd8f22b26",
+      "msg": "pan: Centralize preload registers",
+      "date": "2026-04-08T20:30:32.000+00:00"
     }
   ]
 }
