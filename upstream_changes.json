@@ -1,32 +1,23 @@
 {
-  "triggered_at": "2026-04-08T18:00:25Z",
+  "triggered_at": "2026-04-08T19:25:24Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c90a2ab",
-      "new": "55c967f",
-      "full": "55c967fe9dcb1e6d0c040d43a630bd16669e48c9",
-      "msg": "[RCFILE] Added some more game profiles",
-      "date": "2026-04-08T17:14:12Z"
-    },
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "d78c7d1",
-      "new": "69f3df1",
-      "full": "69f3df1d0c3caa128d0157a4656cf9164ec4fb24",
-      "msg": "vkd3d: Handle illegal and transitive barriers better.",
-      "date": "2026-04-08T17:14:08Z"
+      "old": "55c967f",
+      "new": "08934a3",
+      "full": "08934a3b0c523c3acf905604102780bed37d7eaf",
+      "msg": "[ARM64_DYNAREC] Better fix for #3762 (#3772)",
+      "date": "2026-04-08T19:24:10Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b391f2d",
-      "new": "5f1c220",
-      "full": "5f1c22037b01cc59a1f6c89d0b2ac611eaa54fe5",
-      "msg": "radv: advertise VK_EXT_primitive_restart_index",
-      "date": "2026-04-08T17:19:48.000+00:00"
+      "old": "5f1c220",
+      "new": "1e052f0",
+      "full": "1e052f0bb5b01af551411b72c03b757a8e38dc48",
+      "msg": "intel/brw: Remove unsed functions to get data port message type",
+      "date": "2026-04-08T17:44:52.000+00:00"
     }
   ]
 }
