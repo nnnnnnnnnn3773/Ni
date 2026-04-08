@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260406-31041b4-run136](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260406-31041b4-run136) |
-| **Wine Commit** | [`31041b4`](https://github.com/ValveSoftware/wine/commit/31041b496e16b32f084a26179b901a8335012bca) — fixup! winevulkan: HACK: Handle VK_WINE_openvr_device_extensions. |
-| **Date** | 2026-04-06 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260406-31041b4-run136) |
+| **Release** | [🔗 proton-bleeding-edge-20260408-8de17ab-run145](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260408-8de17ab-run145) |
+| **Wine Commit** | [`8de17ab`](https://github.com/ValveSoftware/wine/commit/8de17abf6284d9fda00498f5d934721d15b08ccc) — wmvcore: Initialize COM in async_reader_callback_thread(). |
+| **Date** | 2026-04-08 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260408-8de17ab-run145) |
 <!-- PROTON-LATEST-END -->
 
 ---
