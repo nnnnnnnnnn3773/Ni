@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-08T01:44:23Z",
+  "triggered_at": "2026-04-08T06:16:39Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "11c3173",
-      "new": "cfdb3dd",
-      "full": "cfdb3ddb93c02eb1e98e9f634263313fc87693c0",
-      "msg": "brw: brw_reg::nr for an accumulator is not part of the offset",
-      "date": "2026-04-08T00:36:39.000+00:00"
+      "old": "cfdb3dd",
+      "new": "ca6edbd",
+      "full": "ca6edbd9c886d6c2ab276aee2377ceeb113d2cb0",
+      "msg": "nil: Fix Rust test link failure under Coverity due to missing -lm",
+      "date": "2026-04-07T21:17:27.000-07:00"
     }
   ]
 }
