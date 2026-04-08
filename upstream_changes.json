@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-04-08T13:02:49Z",
+  "triggered_at": "2026-04-08T15:02:43Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "91b32b0",
-      "new": "2260cf8",
-      "full": "2260cf8a48e41375fc9b37d629f95a2461e0d493",
-      "msg": "[LA64_DYNAREC] Add CALRET=2 and Secondary Entry Points support",
-      "date": "2026-04-08T12:20:10Z"
+      "old": "2260cf8",
+      "new": "06f5fa3",
+      "full": "06f5fa3e6c6309428bccbf337effbcfdd8fbff4b",
+      "msg": "[ARM64_DYNAREC] Fixed autoCRC on Secondary Entry Point",
+      "date": "2026-04-08T13:04:13Z"
+    },
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ad62f1e",
+      "new": "76c11d2",
+      "full": "76c11d2e2b90b0a46dc894508e67e2aaacc2c04d",
+      "msg": "vkd3d: Get rid of obsolete NV_dgc paths.",
+      "date": "2026-04-08T14:20:24Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "61a2e53",
-      "new": "0d08b19",
-      "full": "0d08b197f2f66b2cf080e8332f46387eb99e5d55",
-      "msg": "pan/cs: Fix cs_run_fragment() calls with swapped arguments",
-      "date": "2026-04-08T12:14:23.000+00:00"
+      "old": "0d08b19",
+      "new": "b402b98",
+      "full": "b402b983478139e3c64def2dd647a266ef5475ff",
+      "msg": "nir: allow heap image intrinsics in nir_rewrite_image_intrinsic()",
+      "date": "2026-04-08T13:56:04.000+00:00"
     }
   ]
 }
