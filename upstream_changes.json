@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-08T11:46:49Z",
+  "triggered_at": "2026-04-08T13:02:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "91b32b0",
+      "new": "2260cf8",
+      "full": "2260cf8a48e41375fc9b37d629f95a2461e0d493",
+      "msg": "[LA64_DYNAREC] Add CALRET=2 and Secondary Entry Points support",
+      "date": "2026-04-08T12:20:10Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d1ed4e1",
-      "new": "61a2e53",
-      "full": "61a2e53b7b125915ae3f478f4aa050f9bfc9efc1",
-      "msg": "anv/ci: Add full VKCTS pre-merge job on Raptor Lake",
-      "date": "2026-04-08T11:11:17.000+00:00"
+      "old": "61a2e53",
+      "new": "0d08b19",
+      "full": "0d08b197f2f66b2cf080e8332f46387eb99e5d55",
+      "msg": "pan/cs: Fix cs_run_fragment() calls with swapped arguments",
+      "date": "2026-04-08T12:14:23.000+00:00"
     }
   ]
 }
