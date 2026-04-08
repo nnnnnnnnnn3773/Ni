@@ -26,15 +26,15 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- NIGHTLY-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 nightly-20260408-151604](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260408-151604) |
-| **FEXCore** | [`0695249fc`](https://github.com/FEX-Emu/FEX/commit/0695249fc) — FEX-2603-Nightly-0695249fc |
-| **VKD3D-Proton (Std)** | [`76c11d2e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/76c11d2e) |
-| **VKD3D-Proton (ARM64EC)** | [`76c11d2e`](https://github.com/HansKristian-Work/vkd3d-proton/commit/76c11d2e) |
+| **Release** | [🔗 nightly-20260408-165714](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260408-165714) |
+| **FEXCore** | [`ce65f5376`](https://github.com/FEX-Emu/FEX/commit/ce65f5376) — FEX-2603-Nightly-ce65f5376 |
+| **VKD3D-Proton (Std)** | [`d78c7d1d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/d78c7d1d) |
+| **VKD3D-Proton (ARM64EC)** | [`d78c7d1d`](https://github.com/HansKristian-Work/vkd3d-proton/commit/d78c7d1d) |
 | **DXVK (GPLAsync)** | [`5af3710c`](https://github.com/doitsujin/dxvk/commit/5af3710c) |
 | **DXVK (ARM64EC)** | [`5af3710c`](https://github.com/doitsujin/dxvk/commit/5af3710c) |
 | **Box64** | [ptitSeb/box64](https://github.com/ptitSeb/box64/commits/main) + [Pipetto/box64](https://github.com/Pipetto-crypto/box64/commits/main) |
-| **Turnip** | [v26.1.0-20260408-r210](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.1.0-20260408-r210) — Turnip 26.1.0 — 20260408 |
-| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260408-151604) |
+| **Turnip** | [v26.1.0-20260408-r211](https://github.com/The412Banner/Banners-Turnip/releases/tag/v26.1.0-20260408-r211) — Turnip 26.1.0 — 20260408 |
+| **Files** | [`.wcp` and `.zip` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/nightly-20260408-165714) |
 <!-- NIGHTLY-LATEST-END -->
 
 ### 🍷 Proton Bleeding-Edge ARM64EC
