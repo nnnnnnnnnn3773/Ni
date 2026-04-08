@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-08T06:16:39Z",
+  "triggered_at": "2026-04-08T08:07:53Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "3c266d3",
+      "new": "ac35b41",
+      "full": "ac35b41b9d18f583f6c704ce280a9974015dff7f",
+      "msg": "[WRAPPER] Aded 1 more symbol to gmodule (should be wrapped tho)",
+      "date": "2026-04-08T07:40:52Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "cfdb3dd",
-      "new": "ca6edbd",
-      "full": "ca6edbd9c886d6c2ab276aee2377ceeb113d2cb0",
-      "msg": "nil: Fix Rust test link failure under Coverity due to missing -lm",
-      "date": "2026-04-07T21:17:27.000-07:00"
+      "old": "ca6edbd",
+      "new": "5e2c951",
+      "full": "5e2c951ba61e01b223fe5bbd863436393185c6d9",
+      "msg": "pan: add sigil to SSA values for debug printing",
+      "date": "2026-04-08T07:41:56.000+00:00"
     }
   ]
 }
