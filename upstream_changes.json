@@ -1,23 +1,32 @@
 {
-  "triggered_at": "2026-04-08T08:07:53Z",
+  "triggered_at": "2026-04-08T10:00:48Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "3c266d3",
-      "new": "ac35b41",
-      "full": "ac35b41b9d18f583f6c704ce280a9974015dff7f",
-      "msg": "[WRAPPER] Aded 1 more symbol to gmodule (should be wrapped tho)",
-      "date": "2026-04-08T07:40:52Z"
+      "old": "ac35b41",
+      "new": "91b32b0",
+      "full": "91b32b01d584cd3a9042c79e6499466e3382e714",
+      "msg": "[WRAPPER] Added 1 more dbus symbol",
+      "date": "2026-04-08T09:05:40Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "1676dca",
+      "new": "5af3710",
+      "full": "5af3710cd1c4aba395640bddd74700e717e71f5c",
+      "msg": "[dxvk] Do not expose features and properties in DxvkAdapter",
+      "date": "2026-04-08T08:44:14Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ca6edbd",
-      "new": "5e2c951",
-      "full": "5e2c951ba61e01b223fe5bbd863436393185c6d9",
-      "msg": "pan: add sigil to SSA values for debug printing",
-      "date": "2026-04-08T07:41:56.000+00:00"
+      "old": "5e2c951",
+      "new": "d1ed4e1",
+      "full": "d1ed4e1774913d800e351a0dd271d037dae9d1f4",
+      "msg": "aco/optimizer: do not try to create 3 byte constant operands",
+      "date": "2026-04-08T09:17:26.000+00:00"
     }
   ]
 }
