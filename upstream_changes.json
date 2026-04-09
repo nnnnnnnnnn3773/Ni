@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-09T06:16:23Z",
+  "triggered_at": "2026-04-09T08:14:29Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "08934a3",
+      "new": "1a7ea1c",
+      "full": "1a7ea1c09a634892c76d743b718ae7e341c14b52",
+      "msg": "[TEST] Supported baking env variables settings into test (#3773)",
+      "date": "2026-04-09T06:53:30Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4cac78b",
-      "new": "2bf5203",
-      "full": "2bf520340d02702bde1067c6cd816790540e81ed",
-      "msg": "intel/compiler: Remove unused brw_nir_memclear_global helper",
-      "date": "2026-04-09T05:06:05.000+00:00"
+      "old": "2bf5203",
+      "new": "3ab9145",
+      "full": "3ab9145393fe126aed83ef8fc403cefc011d1382",
+      "msg": "intel/compiler: implement dummy mov for Wa_18035690555",
+      "date": "2026-04-09T07:30:01.000+00:00"
     }
   ]
 }
