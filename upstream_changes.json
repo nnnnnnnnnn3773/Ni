@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-09T15:14:59Z",
+  "triggered_at": "2026-04-09T16:58:16Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "913abd1",
-      "new": "657d69a",
-      "full": "657d69aa3b7248afcbe6bc0c56cf34a679cefc30",
-      "msg": "[WRAPPER] Added libgmp.so wrapping too (for #3747)",
-      "date": "2026-04-09T15:00:28Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "82cfd13",
+      "new": "cef75e8",
+      "full": "cef75e8dd326e58f6f7193b8c0c49ee0b84bafe8",
+      "msg": "vkd3d: Fix really silly missed blit barrier.",
+      "date": "2026-04-09T16:24:01Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "564b061",
-      "new": "c69da75",
-      "full": "c69da756d10b38ea3a98bbf0c2d9166978be1847",
-      "msg": "aco/isel: added test-case for iterative cf visitor",
-      "date": "2026-04-09T13:46:23.000+00:00"
+      "old": "c69da75",
+      "new": "63d55d8",
+      "full": "63d55d84a35bf2f68e596876be8d3aa459142cd3",
+      "msg": "radv: replace remaining occurrences of VK_ACCESS_xxx",
+      "date": "2026-04-09T15:58:06.000+00:00"
     }
   ]
 }
