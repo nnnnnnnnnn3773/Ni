@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-09T10:05:24Z",
+  "triggered_at": "2026-04-09T11:47:51Z",
   "changed": [
-    {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "69f3df1",
-      "new": "82cfd13",
-      "full": "82cfd13c04e9160f00b0fe8059be716a903e3427",
-      "msg": "vkd3d: Fix integer truncation in find_blob_chunk_masked()",
-      "date": "2026-04-09T09:55:53Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3ab9145",
-      "new": "37bdb2b",
-      "full": "37bdb2b7921f8c461f179fb651f66d825f2b2b34",
-      "msg": "pco: Move part of legalization after register allocation",
-      "date": "2026-04-09T09:29:21.000+00:00"
+      "old": "37bdb2b",
+      "new": "41b3433",
+      "full": "41b34334a62b6237e74b4d0a0dbf3330f60b2abd",
+      "msg": "panvk: Advertise VK_EXT_attachment_feedback_loop_dynamic_state",
+      "date": "2026-04-09T12:30:21.000+02:00"
     }
   ]
 }
