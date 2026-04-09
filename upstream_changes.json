@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-09T11:47:51Z",
+  "triggered_at": "2026-04-09T13:03:20Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "1a7ea1c",
+      "new": "913abd1",
+      "full": "913abd14f0078f023f8fcfb172e11cd232435aac",
+      "msg": "[TEST] Support array values in baked-in variables for combinatorial runs (#3774)",
+      "date": "2026-04-09T12:02:59Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "37bdb2b",
-      "new": "41b3433",
-      "full": "41b34334a62b6237e74b4d0a0dbf3330f60b2abd",
-      "msg": "panvk: Advertise VK_EXT_attachment_feedback_loop_dynamic_state",
-      "date": "2026-04-09T12:30:21.000+02:00"
+      "old": "41b3433",
+      "new": "564b061",
+      "full": "564b06198147abec0074b142b751d5219592409b",
+      "msg": "hk: Increase maxFragmentCombinedOutputResources to HK_MAX_DESCRIPTORS",
+      "date": "2026-04-09T12:35:40.000+00:00"
     }
   ]
 }
