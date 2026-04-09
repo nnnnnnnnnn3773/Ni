@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-09T21:05:41Z",
+  "triggered_at": "2026-04-09T22:33:32Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "ce65f53",
-      "new": "9681559",
-      "full": "9681559d56eee7eff5cd9232ca3b49ba419cb62b",
-      "msg": "Docs: Update for release FEX-2604",
-      "date": "2026-04-09T20:45:35Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "31ddfe2",
-      "new": "82b3db7",
-      "full": "82b3db7e0635c080c7a97a54f7f3f107557b5641",
-      "msg": "tu: Enable multiviewGeometryShader",
-      "date": "2026-04-09T20:34:58.000+00:00"
+      "old": "82b3db7",
+      "new": "0b99c88",
+      "full": "0b99c88337907715bf43714c061a4ca380847fd0",
+      "msg": "nir, brw: lower scratch in NIR",
+      "date": "2026-04-09T21:02:16.000+00:00"
     }
   ]
 }
