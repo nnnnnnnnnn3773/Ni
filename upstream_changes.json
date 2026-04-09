@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-09T13:03:20Z",
+  "triggered_at": "2026-04-09T15:14:59Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "1a7ea1c",
-      "new": "913abd1",
-      "full": "913abd14f0078f023f8fcfb172e11cd232435aac",
-      "msg": "[TEST] Support array values in baked-in variables for combinatorial runs (#3774)",
-      "date": "2026-04-09T12:02:59Z"
+      "old": "913abd1",
+      "new": "657d69a",
+      "full": "657d69aa3b7248afcbe6bc0c56cf34a679cefc30",
+      "msg": "[WRAPPER] Added libgmp.so wrapping too (for #3747)",
+      "date": "2026-04-09T15:00:28Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "41b3433",
-      "new": "564b061",
-      "full": "564b06198147abec0074b142b751d5219592409b",
-      "msg": "hk: Increase maxFragmentCombinedOutputResources to HK_MAX_DESCRIPTORS",
-      "date": "2026-04-09T12:35:40.000+00:00"
+      "old": "564b061",
+      "new": "c69da75",
+      "full": "c69da756d10b38ea3a98bbf0c2d9166978be1847",
+      "msg": "aco/isel: added test-case for iterative cf visitor",
+      "date": "2026-04-09T13:46:23.000+00:00"
     }
   ]
 }
