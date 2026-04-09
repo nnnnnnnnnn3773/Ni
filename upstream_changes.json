@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-09T08:14:29Z",
+  "triggered_at": "2026-04-09T10:05:24Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "08934a3",
-      "new": "1a7ea1c",
-      "full": "1a7ea1c09a634892c76d743b718ae7e341c14b52",
-      "msg": "[TEST] Supported baking env variables settings into test (#3773)",
-      "date": "2026-04-09T06:53:30Z"
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "69f3df1",
+      "new": "82cfd13",
+      "full": "82cfd13c04e9160f00b0fe8059be716a903e3427",
+      "msg": "vkd3d: Fix integer truncation in find_blob_chunk_masked()",
+      "date": "2026-04-09T09:55:53Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2bf5203",
-      "new": "3ab9145",
-      "full": "3ab9145393fe126aed83ef8fc403cefc011d1382",
-      "msg": "intel/compiler: implement dummy mov for Wa_18035690555",
-      "date": "2026-04-09T07:30:01.000+00:00"
+      "old": "3ab9145",
+      "new": "37bdb2b",
+      "full": "37bdb2b7921f8c461f179fb651f66d825f2b2b34",
+      "msg": "pco: Move part of legalization after register allocation",
+      "date": "2026-04-09T09:29:21.000+00:00"
     }
   ]
 }
