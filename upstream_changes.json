@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-09T17:58:25Z",
+  "triggered_at": "2026-04-09T19:07:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "63d55d8",
-      "new": "46aac5a",
-      "full": "46aac5abaf0fb6382ad5d497d6cf0974fb6e1d84",
-      "msg": "tu: Only emit preempt optimization ambles when active",
-      "date": "2026-04-09T17:29:18.000+00:00"
+      "old": "46aac5a",
+      "new": "31ddfe2",
+      "full": "31ddfe26ebc18aa83c86ef44b2aeeefd6dfab51b",
+      "msg": "panfrost: don't try to emit varying shader stats on v12+",
+      "date": "2026-04-09T18:21:12.000+00:00"
     }
   ]
 }
