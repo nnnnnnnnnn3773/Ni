@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-08T22:31:22Z",
+  "triggered_at": "2026-04-09T06:16:23Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1f03706",
-      "new": "4cac78b",
-      "full": "4cac78bb3cc6f9d2863663c00e1e8fdc2950bfa5",
-      "msg": "mediafoundation: MFTRegisterWorkQueue/MFTUnregisterWorkQueue to validate null pa",
-      "date": "2026-04-08T14:48:54.000-07:00"
+      "old": "4cac78b",
+      "new": "2bf5203",
+      "full": "2bf520340d02702bde1067c6cd816790540e81ed",
+      "msg": "intel/compiler: Remove unused brw_nir_memclear_global helper",
+      "date": "2026-04-09T05:06:05.000+00:00"
     }
   ]
 }
