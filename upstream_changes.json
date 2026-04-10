@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-10T22:28:35Z",
+  "triggered_at": "2026-04-10T23:28:02Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "434e9ba",
-      "new": "d15e427",
-      "full": "d15e4274f6268c33fbddd1021779ad1cd85c1156",
-      "msg": "Uprev Piglit to 11ce9eb56edb00e6a7702d13168cc827ce5e0cbd",
-      "date": "2026-04-10T21:21:52.000+00:00"
+      "old": "d15e427",
+      "new": "c7ab501",
+      "full": "c7ab501171e823adccb5577cd4fdbb4eb341a51f",
+      "msg": "nvk: Disable zcull save/restore regions for now",
+      "date": "2026-04-10T22:20:58.000+00:00"
     }
   ]
 }
