@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-10T12:51:27Z",
+  "triggered_at": "2026-04-10T15:42:12Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "657d69a",
-      "new": "ff634b1",
-      "full": "ff634b1e0cebf59b039c71728dd51326e28d2b24",
-      "msg": "[RCFILE] Fine tuned 2 games profile",
-      "date": "2026-04-10T12:08:08Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "93340aa",
-      "new": "2ac3652",
-      "full": "2ac3652f3064564a8792efc46c10a6efe8b229b3",
-      "msg": "r300: keep all vertex atributes 32bit on big endian",
-      "date": "2026-04-10T12:36:11.000+00:00"
+      "old": "2ac3652",
+      "new": "718f90d",
+      "full": "718f90dd8c768de4686d929e2e894324bd129fbd",
+      "msg": "tu: Remove unecessary forward declaration",
+      "date": "2026-04-10T13:55:01.000+00:00"
     }
   ]
 }
