@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-10T18:40:49Z",
+  "triggered_at": "2026-04-10T19:38:04Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ff634b1",
-      "new": "b99dde2",
-      "full": "b99dde293df5c94248eba284b509f9577886017a",
-      "msg": "[ARM64_DYNAREC] Fixed uninitilized scratch registers for VCVTTPD2DQ opcode (#377",
-      "date": "2026-04-10T18:07:39Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5aa4bdc",
-      "new": "79e3196",
-      "full": "79e3196320616ea3567a8465d283665a547030ba",
-      "msg": "gallium/u_blitter: remove unused CONST declaration when using IMM",
-      "date": "2026-04-10T17:50:23.000+00:00"
+      "old": "79e3196",
+      "new": "ad65ed6",
+      "full": "ad65ed643b865734347d17ed44d37b59c9a3acd8",
+      "msg": "nvk: SET_ROOT_TABLE_PREFETCH",
+      "date": "2026-04-10T19:21:39.000+00:00"
     }
   ]
 }
