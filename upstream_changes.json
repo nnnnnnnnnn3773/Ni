@@ -1,23 +1,23 @@
 {
-  "triggered_at": "2026-04-10T11:40:59Z",
+  "triggered_at": "2026-04-10T12:51:27Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "cef75e8",
-      "new": "c8c8ab5",
-      "full": "c8c8ab502c2da715459790ba5aeb196e3ae626f6",
-      "msg": "vkd3d: Fix DLSS Frame Generation causing Reflex desync and game freezes",
-      "date": "2026-04-10T10:05:45Z"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "657d69a",
+      "new": "ff634b1",
+      "full": "ff634b1e0cebf59b039c71728dd51326e28d2b24",
+      "msg": "[RCFILE] Fine tuned 2 games profile",
+      "date": "2026-04-10T12:08:08Z"
     },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c5bfa68",
-      "new": "93340aa",
-      "full": "93340aa80d551f3922da4f5d843aa8b770d31c17",
-      "msg": "docs/aco: add live variable analysis documentation",
-      "date": "2026-04-10T10:34:45.000+00:00"
+      "old": "93340aa",
+      "new": "2ac3652",
+      "full": "2ac3652f3064564a8792efc46c10a6efe8b229b3",
+      "msg": "r300: keep all vertex atributes 32bit on big endian",
+      "date": "2026-04-10T12:36:11.000+00:00"
     }
   ]
 }
