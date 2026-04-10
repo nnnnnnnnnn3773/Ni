@@ -135,7 +135,7 @@ jobs:
             "type": "FEXCore",
             "versionName": "${{ env.VERSION_NAME }}",
             "versionCode": ${{ github.run_number }},
-            "description": "FEXCore Nightly\n${{ env.VERSION_NAME }}",
+            "description": "${{ env.VERSION_NAME }}",
             "author": "FEX-Emu",
             "files": [
               { "source": "system32/libarm64ecfex.dll", "target": "\${system32}/libarm64ecfex.dll" },
