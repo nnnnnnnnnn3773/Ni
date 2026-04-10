@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-10T08:17:31Z",
+  "triggered_at": "2026-04-10T11:40:59Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "cef75e8",
+      "new": "c8c8ab5",
+      "full": "c8c8ab502c2da715459790ba5aeb196e3ae626f6",
+      "msg": "vkd3d: Fix DLSS Frame Generation causing Reflex desync and game freezes",
+      "date": "2026-04-10T10:05:45Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "a7c63ae",
-      "new": "c5bfa68",
-      "full": "c5bfa688b439cdb2322c0f9846fb68b5f8af0a15",
-      "msg": "intel/dev: update mesa_defs.json from workaround database",
-      "date": "2026-04-10T09:50:41.000+03:00"
+      "old": "c5bfa68",
+      "new": "93340aa",
+      "full": "93340aa80d551f3922da4f5d843aa8b770d31c17",
+      "msg": "docs/aco: add live variable analysis documentation",
+      "date": "2026-04-10T10:34:45.000+00:00"
     }
   ]
 }
