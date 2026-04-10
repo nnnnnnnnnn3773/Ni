@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-09T23:31:58Z",
+  "triggered_at": "2026-04-10T04:40:52Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0b99c88",
-      "new": "432a298",
-      "full": "432a298f67008889717af2808b3b8e8358dd85c9",
-      "msg": "pan/bi: Vectorize more conversions",
-      "date": "2026-04-09T18:08:40.000-04:00"
+      "old": "432a298",
+      "new": "a7c63ae",
+      "full": "a7c63ae6fa95426186d02c754393b5f6ab91c8e8",
+      "msg": "amd: switch to new packet definitions for all packets",
+      "date": "2026-04-10T03:42:45.000+00:00"
     }
   ]
 }
