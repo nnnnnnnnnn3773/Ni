@@ -2,10 +2,19 @@ name: FEXCore Standalone Nightlies
 
 on:
   workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Commit hash, branch, or tag to build (leave blank for latest HEAD)'
+        required: false
+        default: ''
+      version_label:
+        description: 'Override version label in profile.json (leave blank to auto-detect from git describe)'
+        required: false
+        default: ''
 
 jobs:
   # ==================================================================
-  # JOB 1: FEXCore Nightly
+  # JOB 1: FEXCore Build
   # ==================================================================
   build-fex:
     name: Build FEXCore
@@ -13,6 +22,7 @@ jobs:
     outputs:
       version: ${{ steps.version.outputs.version }}
       commit: ${{ steps.version.outputs.commit }}
+      commit_full: ${{ steps.version.outputs.commit_full }}
     steps:
       - name: Install Dependencies
         run: |
@@ -37,24 +47,60 @@ jobs:
           sudo tar -C "$TOOLCHAIN_DIR" --strip-components=1 -xJf llvm.tar.xz
           echo "$TOOLCHAIN_DIR/bin" >> $GITHUB_PATH
 
-      - name: Build FEX
-        id: version
+      - name: Clone and checkout target commit
         run: |
           git clone --recursive https://github.com/FEX-Emu/FEX.git source
           cd source
-          
-          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "FEX-Unknown")
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          VERSION_NAME="${LATEST_TAG}-Nightly-${COMMIT_HASH}"
+
+          TARGET_COMMIT="${{ github.event.inputs.commit }}"
+          if [ -n "$TARGET_COMMIT" ]; then
+            echo "Checking out specified commit/ref: $TARGET_COMMIT"
+            git fetch --all --tags
+            git checkout "$TARGET_COMMIT"
+            # Update submodules after checkout
+            git submodule update --init --recursive
+          else
+            echo "No commit specified — building latest HEAD"
+          fi
+
+      - name: Determine version label
+        id: version
+        run: |
+          cd source
+
+          COMMIT_FULL=$(git rev-parse HEAD)
+          COMMIT_SHORT=$(git rev-parse --short HEAD)
+
+          # Auto-detect version from git: prefer exact tag, fall back to describe
+          GIT_TAG=$(git tag --points-at HEAD | grep -E '^FEX-' | sort -V | tail -1 || true)
+          if [ -z "$GIT_TAG" ]; then
+            GIT_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "FEX-Unknown")
+          fi
+
+          # Use user-supplied label if given, otherwise build one
+          CUSTOM_LABEL="${{ github.event.inputs.version_label }}"
+          if [ -n "$CUSTOM_LABEL" ]; then
+            VERSION_NAME="${CUSTOM_LABEL}"
+          else
+            VERSION_NAME="${GIT_TAG}-Nightly-${COMMIT_SHORT}"
+          fi
+
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "version=${VERSION_NAME}" >> $GITHUB_OUTPUT
-          echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
+          echo "commit=${COMMIT_SHORT}" >> $GITHUB_OUTPUT
+          echo "commit_full=${COMMIT_FULL}" >> $GITHUB_OUTPUT
+
+          echo "Building: $VERSION_NAME (full: $COMMIT_FULL)"
+
+      - name: Build FEX
+        run: |
+          cd source
 
           build_arch() {
             local triple="$1"
             local dest="$2"
             local build_dir="build-${triple}"
-            
+
             rm -rf "$build_dir" && mkdir "$build_dir" && cd "$build_dir"
             cmake -G Ninja -Wno-dev \
               -DCMAKE_BUILD_TYPE=Release \
@@ -76,14 +122,15 @@ jobs:
       - name: Package
         run: |
           rm -rf final_package && mkdir -p final_package/system32
+
           DLL_EC=$(find stage-ec -type f -name '*.dll' | head -n 1)
           DLL_WOW=$(find stage-wo -type f -name '*.dll' | head -n 1)
-          
+
           cp "$DLL_EC" final_package/system32/libarm64ecfex.dll
           cp "$DLL_WOW" final_package/system32/libwow64fex.dll
           /opt/llvm-mingw/bin/llvm-strip --strip-all final_package/system32/*.dll
-          
-          cat <<EOF > final_package/profile.json
+
+          cat > final_package/profile.json << EOF
           {
             "type": "FEXCore",
             "versionName": "${{ env.VERSION_NAME }}",
@@ -96,13 +143,10 @@ jobs:
             ]
           }
           EOF
-          
+
           cd final_package
-          
-          # Create WCP
+
           tar -cJf ../${{ env.VERSION_NAME }}.wcp .
-          
-          # Create ZIP
           zip -r ../${{ env.VERSION_NAME }}.zip .
 
       - uses: actions/upload-artifact@v4
@@ -116,7 +160,7 @@ jobs:
   # JOB 2: Release
   # ==================================================================
   create-release:
-    name: Create Nightly Release
+    name: Create Release
     runs-on: ubuntu-latest
     needs: [build-fex]
     permissions:
@@ -130,11 +174,8 @@ jobs:
 
       - name: Set Release Variables
         run: |
-          # Create a tag-safe timestamp (e.g., 20231025-090000)
           TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
-          # Create a human-readable date for the title (e.g., 2023-10-25 09:00:00 UTC)
           READABLE_DATE=$(date +'%Y-%m-%d %H:%M:%S UTC')
-          
           echo "TAG_NAME=fexcore-nightly-$TIMESTAMP" >> $GITHUB_ENV
           echo "RELEASE_NAME=FEXCore Nightly Build - $READABLE_DATE" >> $GITHUB_ENV
 
@@ -146,17 +187,18 @@ jobs:
           prerelease: false
           make_latest: true
           body: |
-            ### 🚀 FEXCore Nightly Build: ${{ env.TAG_NAME }}
-            
-            | Component | Source / Commit |
+            ### FEXCore Build: ${{ needs.build-fex.outputs.version }}
+
+            | Property | Value |
             | :--- | :--- |
-            | **FEXCore** | [${{ needs.build-fex.outputs.version }}](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex.outputs.commit }}) |
-            
-            ### 📦 Files Included
-            1. **FEXCore**: `*-Nightly-*.wcp` (and `.zip`)
-            
-            **The .wcp files are packaged for use with Winlator**
-            **The .zip files are packaged for manual injection with Gamehub**
+            | **Version** | `${{ needs.build-fex.outputs.version }}` |
+            | **Commit (short)** | [`${{ needs.build-fex.outputs.commit }}`](https://github.com/FEX-Emu/FEX/commit/${{ needs.build-fex.outputs.commit_full }}) |
+            | **Commit (full)** | `${{ needs.build-fex.outputs.commit_full }}` |
+            | **Source input** | `${{ github.event.inputs.commit || 'latest HEAD' }}` |
+
+            ### Files Included
+            - `*.wcp` — packaged for Winlator
+            - `*.zip` — for manual injection with GameHub
           files: |
             ./artifacts/*.wcp
             ./artifacts/*.zip
