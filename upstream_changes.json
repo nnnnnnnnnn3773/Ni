@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-10T16:41:18Z",
+  "triggered_at": "2026-04-10T17:41:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "718f90d",
-      "new": "c5423d3",
-      "full": "c5423d3e27311e550f45b4dd9431e4c814dae0e6",
-      "msg": "ac/nir: Fixed OpenGL CTS transform feedback overflow detection test case",
-      "date": "2026-04-10T15:43:21.000+00:00"
+      "old": "c5423d3",
+      "new": "5aa4bdc",
+      "full": "5aa4bdc8e7da3273240cd3263cece7c8e440cfcd",
+      "msg": "r300: fix BE CBZB clears for swapped 8888 formats",
+      "date": "2026-04-10T17:01:51.000+00:00"
     }
   ]
 }
