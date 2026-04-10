@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-10T15:42:12Z",
+  "triggered_at": "2026-04-10T16:41:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2ac3652",
-      "new": "718f90d",
-      "full": "718f90dd8c768de4686d929e2e894324bd129fbd",
-      "msg": "tu: Remove unecessary forward declaration",
-      "date": "2026-04-10T13:55:01.000+00:00"
+      "old": "718f90d",
+      "new": "c5423d3",
+      "full": "c5423d3e27311e550f45b4dd9431e4c814dae0e6",
+      "msg": "ac/nir: Fixed OpenGL CTS transform feedback overflow detection test case",
+      "date": "2026-04-10T15:43:21.000+00:00"
     }
   ]
 }
