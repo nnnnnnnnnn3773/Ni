@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-11T12:37:48Z",
+  "triggered_at": "2026-04-11T13:49:51Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "0bc4d5b",
-      "new": "13c9fda",
-      "full": "13c9fdaa40422a88af2322e292fe421c2ac8ca1f",
-      "msg": "[WRAPPER][VULKAN] Added some more vulkan extensions",
-      "date": "2026-04-11T12:03:37Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "2443f36",
+      "new": "01156c0",
+      "full": "01156c0697ef858f449cdd3258470d5d1294719c",
+      "msg": "vulkan: Init all update scratch at once",
+      "date": "2026-04-11T13:04:39.000+00:00"
     }
   ]
 }
