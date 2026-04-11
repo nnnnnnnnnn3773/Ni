@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-10T23:28:02Z",
+  "triggered_at": "2026-04-11T04:13:58Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d15e427",
-      "new": "c7ab501",
-      "full": "c7ab501171e823adccb5577cd4fdbb4eb341a51f",
-      "msg": "nvk: Disable zcull save/restore regions for now",
-      "date": "2026-04-10T22:20:58.000+00:00"
+      "old": "c7ab501",
+      "new": "f92cfe9",
+      "full": "f92cfe9a744e3028b144c693f064ee5b7ef14603",
+      "msg": "gfxstream: additional Goldfish logic for Android builds",
+      "date": "2026-04-11T01:11:45.000+00:00"
     }
   ]
 }
