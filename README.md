@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260408-8de17ab-run145](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260408-8de17ab-run145) |
-| **Wine Commit** | [`8de17ab`](https://github.com/ValveSoftware/wine/commit/8de17abf6284d9fda00498f5d934721d15b08ccc) — wmvcore: Initialize COM in async_reader_callback_thread(). |
-| **Date** | 2026-04-08 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260408-8de17ab-run145) |
+| **Release** | [🔗 proton-bleeding-edge-20260410-2b182b6-run154](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260410-2b182b6-run154) |
+| **Wine Commit** | [`2b182b6`](https://github.com/ValveSoftware/wine/commit/2b182b68797fcff1d3fc81409acdf9780322ef91) — fixup! ntdll: HACK: Add process exit delay for DCS World CEF processes. |
+| **Date** | 2026-04-11 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260410-2b182b6-run154) |
 <!-- PROTON-LATEST-END -->
 
 ---
