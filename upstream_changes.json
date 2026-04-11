@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-11T07:44:40Z",
+  "triggered_at": "2026-04-11T12:37:48Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "18a3f1b",
-      "new": "0bc4d5b",
-      "full": "0bc4d5b5320a8505903ce4fe83e75b1e2a9f9b62",
-      "msg": "[CI] Hacking a way around termux-docker debloblification",
-      "date": "2026-04-11T07:04:26Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "f92cfe9",
-      "new": "2443f36",
-      "full": "2443f3608ab7501ece7941e45030b7d32f81985a",
-      "msg": "d3d12: Fix MinGW cross-build error in resource_state_if_promoted",
-      "date": "2026-04-10T23:43:03.000-07:00"
+      "old": "0bc4d5b",
+      "new": "13c9fda",
+      "full": "13c9fdaa40422a88af2322e292fe421c2ac8ca1f",
+      "msg": "[WRAPPER][VULKAN] Added some more vulkan extensions",
+      "date": "2026-04-11T12:03:37Z"
     }
   ]
 }
