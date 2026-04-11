@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-11T13:49:51Z",
+  "triggered_at": "2026-04-11T20:23:19Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2443f36",
-      "new": "01156c0",
-      "full": "01156c0697ef858f449cdd3258470d5d1294719c",
-      "msg": "vulkan: Init all update scratch at once",
-      "date": "2026-04-11T13:04:39.000+00:00"
+      "old": "01156c0",
+      "new": "9e56c7b",
+      "full": "9e56c7bd8f4c5ae4fab743751db0c476302e13f4",
+      "msg": "tu: Support transfer commands for R64 formats",
+      "date": "2026-04-11T19:46:13.000+00:00"
     }
   ]
 }
