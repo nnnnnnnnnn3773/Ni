@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T15:29:19Z",
+  "triggered_at": "2026-04-12T17:27:52Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "ee99b5b",
-      "new": "fc8a05e",
-      "full": "fc8a05e693b122b07e8126f67d9c3fe5edac7986",
-      "msg": "[RV64_DYNAREC] Added FAR RET(N) with CALLRET support",
-      "date": "2026-04-12T15:07:18Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "9e56c7b",
+      "new": "db38d1a",
+      "full": "db38d1a98c6c19176ec01d127782e7a6b840ead6",
+      "msg": "radv/bvh: Prefer selecting quads as the first pair of a HW node",
+      "date": "2026-04-12T17:53:05.000+02:00"
     }
   ]
 }
