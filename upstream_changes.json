@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T13:55:15Z",
+  "triggered_at": "2026-04-12T14:35:22Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "c845ab0",
-      "new": "21d6668",
-      "full": "21d66686da755227e21ed5d139bbc573fce45d8e",
-      "msg": "[RV64_DYNAREC] Added some workaround for gameoverui crashing",
-      "date": "2026-04-12T13:39:03Z"
+      "old": "21d6668",
+      "new": "ee99b5b",
+      "full": "ee99b5b167e1bae4e38159e3fedffffcd7ead7c0",
+      "msg": "[RV64_DYNAREC] Refactored IRET so it support CALLRET optimisation",
+      "date": "2026-04-12T14:20:56Z"
     }
   ]
 }
