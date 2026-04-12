@@ -1,14 +1,14 @@
 [
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260412-r250-A8xx",
+    "verName": "Turnip-v26.1.0-20260412-r251-A8xx",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260412-r250/Turnip-v26.1.0-20260412-r250-A8xx.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260412-r251/Turnip-v26.1.0-20260412-r251-A8xx.zip"
   },
   {
     "type": "GpuDriver",
-    "verName": "Turnip-v26.1.0-20260412-r250",
+    "verName": "Turnip-v26.1.0-20260412-r251",
     "verCode": "0",
-    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260412-r250/Turnip-v26.1.0-20260412-r250.zip"
+    "remoteUrl": "https://github.com/The412Banner/Banners-Turnip/releases/download/v26.1.0-20260412-r251/Turnip-v26.1.0-20260412-r251.zip"
   }
 ]
