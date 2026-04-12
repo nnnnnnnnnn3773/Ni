@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260410-2b182b6-run154](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260410-2b182b6-run154) |
-| **Wine Commit** | [`2b182b6`](https://github.com/ValveSoftware/wine/commit/2b182b68797fcff1d3fc81409acdf9780322ef91) — fixup! ntdll: HACK: Add process exit delay for DCS World CEF processes. |
-| **Date** | 2026-04-11 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260410-2b182b6-run154) |
+| **Release** | [🔗 proton-bleeding-edge-20260412-b01ca65-run163](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260412-b01ca65-run163) |
+| **Wine Commit** | [`b01ca65`](https://github.com/ValveSoftware/wine/commit/b01ca6530d00057b3020daa8e2a65805d23bd906) — fsync: 8-byte align 'struct fsync_cache'. |
+| **Date** | 2026-04-12 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260412-b01ca65-run163) |
 <!-- PROTON-LATEST-END -->
 
 ---
