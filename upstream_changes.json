@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T14:35:22Z",
+  "triggered_at": "2026-04-12T15:29:19Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "21d6668",
-      "new": "ee99b5b",
-      "full": "ee99b5b167e1bae4e38159e3fedffffcd7ead7c0",
-      "msg": "[RV64_DYNAREC] Refactored IRET so it support CALLRET optimisation",
-      "date": "2026-04-12T14:20:56Z"
+      "old": "ee99b5b",
+      "new": "fc8a05e",
+      "full": "fc8a05e693b122b07e8126f67d9c3fe5edac7986",
+      "msg": "[RV64_DYNAREC] Added FAR RET(N) with CALLRET support",
+      "date": "2026-04-12T15:07:18Z"
     }
   ]
 }
