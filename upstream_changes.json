@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T17:27:52Z",
+  "triggered_at": "2026-04-12T18:35:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9e56c7b",
-      "new": "db38d1a",
-      "full": "db38d1a98c6c19176ec01d127782e7a6b840ead6",
-      "msg": "radv/bvh: Prefer selecting quads as the first pair of a HW node",
-      "date": "2026-04-12T17:53:05.000+02:00"
+      "old": "db38d1a",
+      "new": "21bdc71",
+      "full": "21bdc7105d2f98e52a86c345527e97b959503bce",
+      "msg": "radv: clarify that copy prop is required for correctness after D16 opt",
+      "date": "2026-04-12T17:54:48.000+00:00"
     }
   ]
 }
