@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-11T20:23:19Z",
+  "triggered_at": "2026-04-12T10:31:28Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "01156c0",
-      "new": "9e56c7b",
-      "full": "9e56c7bd8f4c5ae4fab743751db0c476302e13f4",
-      "msg": "tu: Support transfer commands for R64 formats",
-      "date": "2026-04-11T19:46:13.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "13c9fda",
+      "new": "c845ab0",
+      "full": "c845ab01c498ddeedd170ffe5e9a08a09eb2aec5",
+      "msg": "[RV64_DYNAREC] Added CALLRET=2 and SEP support",
+      "date": "2026-04-12T10:23:55Z"
     }
   ]
 }
