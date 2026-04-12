@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T18:35:30Z",
+  "triggered_at": "2026-04-12T19:33:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "db38d1a",
-      "new": "21bdc71",
-      "full": "21bdc7105d2f98e52a86c345527e97b959503bce",
-      "msg": "radv: clarify that copy prop is required for correctness after D16 opt",
-      "date": "2026-04-12T17:54:48.000+00:00"
+      "old": "21bdc71",
+      "new": "64b0b83",
+      "full": "64b0b83c9a74efa5e3e7e361aca450417b91bd72",
+      "msg": "r300/ci: update expectations",
+      "date": "2026-04-12T18:49:23.000+00:00"
     }
   ]
 }
