@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-12T10:31:28Z",
+  "triggered_at": "2026-04-12T13:55:15Z",
   "changed": [
     {
       "repo": "ptitSeb/box64",
       "name": "Box64 (Official)",
-      "old": "13c9fda",
-      "new": "c845ab0",
-      "full": "c845ab01c498ddeedd170ffe5e9a08a09eb2aec5",
-      "msg": "[RV64_DYNAREC] Added CALLRET=2 and SEP support",
-      "date": "2026-04-12T10:23:55Z"
+      "old": "c845ab0",
+      "new": "21d6668",
+      "full": "21d66686da755227e21ed5d139bbc573fce45d8e",
+      "msg": "[RV64_DYNAREC] Added some workaround for gameoverui crashing",
+      "date": "2026-04-12T13:39:03Z"
     }
   ]
 }
