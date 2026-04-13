@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-13T19:03:48Z",
+  "triggered_at": "2026-04-13T20:44:24Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3a076be",
-      "new": "13f98d8",
-      "full": "13f98d8658e041b6761047db0ccafb585cfbd823",
-      "msg": "nvk: Adjust maxFragmentCombinedOutputResources to match max descriptors limit",
-      "date": "2026-04-13T18:44:08.000+00:00"
+      "old": "13f98d8",
+      "new": "b50bb53",
+      "full": "b50bb53630144e16a07eabceef1aa185fe98fbb6",
+      "msg": "intel/blorp: Fix width scaling for YCBCR copies",
+      "date": "2026-04-13T20:03:41.000+00:00"
     }
   ]
 }
