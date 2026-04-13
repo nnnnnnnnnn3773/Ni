@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-13T15:09:18Z",
+  "triggered_at": "2026-04-13T16:55:30Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2c99dc8",
-      "new": "ab6cdd6",
-      "full": "ab6cdd64c1dfa0f0888fa1434d3d0b70f24411dc",
-      "msg": "lavapipe: VK_EXT_primitive_restart_index",
-      "date": "2026-04-13T10:40:17.000-04:00"
+      "old": "ab6cdd6",
+      "new": "3a076be",
+      "full": "3a076beb1340f304c1582b94b1fb94a797700dcd",
+      "msg": "ir3/analyze_ubo_ranges: don't over-align consts when loaded via preamble",
+      "date": "2026-04-13T15:38:31.000+00:00"
     }
   ]
 }
