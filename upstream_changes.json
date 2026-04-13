@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-13T13:05:08Z",
+  "triggered_at": "2026-04-13T15:09:18Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "3e71087",
-      "new": "f388a8f",
-      "full": "f388a8f4937dcbc196e2046e291f823b57ef68c0",
-      "msg": "[BOX32][WRAPPER] Added a few more wrapped symbols for SDL1",
-      "date": "2026-04-13T11:47:01Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "2b6b859",
-      "new": "2c99dc8",
-      "full": "2c99dc8a1870c01e9724760aa86c78e0f92b9796",
-      "msg": "d3d12: Don't allow CPU storage for huge buffers",
-      "date": "2026-04-13T12:33:20.000+00:00"
+      "old": "2c99dc8",
+      "new": "ab6cdd6",
+      "full": "ab6cdd64c1dfa0f0888fa1434d3d0b70f24411dc",
+      "msg": "lavapipe: VK_EXT_primitive_restart_index",
+      "date": "2026-04-13T10:40:17.000-04:00"
     }
   ]
 }
