@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-13T20:44:24Z",
+  "triggered_at": "2026-04-13T21:40:17Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "13f98d8",
-      "new": "b50bb53",
-      "full": "b50bb53630144e16a07eabceef1aa185fe98fbb6",
-      "msg": "intel/blorp: Fix width scaling for YCBCR copies",
-      "date": "2026-04-13T20:03:41.000+00:00"
+      "old": "b50bb53",
+      "new": "1950b6c",
+      "full": "1950b6c1a7cec1ac7df6fc35899ae64e5dfaf2ee",
+      "msg": "vulkan: mark RP attachments as invalid when no rendering create info",
+      "date": "2026-04-13T21:01:43.000+00:00"
     }
   ]
 }
