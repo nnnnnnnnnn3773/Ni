@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-13T17:54:41Z",
+  "triggered_at": "2026-04-13T19:03:48Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "c8c8ab5",
-      "new": "f344f67",
-      "full": "f344f6733ddd12519004e133941f8eee88c23939",
-      "msg": "dxil-spirv: Update submodule.",
-      "date": "2026-04-13T17:27:49Z"
-    },
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "5af3710",
-      "new": "ba5ae90",
-      "full": "ba5ae90e0d6fa1e69794c00eabb767142cc4f8af",
-      "msg": "[dxvk] Enable descriptor heap by default on AMD and Lavapipe",
-      "date": "2026-04-13T17:19:37Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "3a076be",
+      "new": "13f98d8",
+      "full": "13f98d8658e041b6761047db0ccafb585cfbd823",
+      "msg": "nvk: Adjust maxFragmentCombinedOutputResources to match max descriptors limit",
+      "date": "2026-04-13T18:44:08.000+00:00"
     }
   ]
 }
