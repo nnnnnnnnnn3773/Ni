@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-13T09:28:50Z",
+  "triggered_at": "2026-04-13T11:10:41Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "21047e6",
-      "new": "c415134",
-      "full": "c4151344549ce3a238e6b0dd4ac78022a3aefccb",
-      "msg": "panfrost: disable round_to_nearest_even for NEAREST samplers",
-      "date": "2026-04-13T08:38:55.000+00:00"
+      "old": "c415134",
+      "new": "2b6b859",
+      "full": "2b6b859a2222531ed986403547c8debb3fc765f1",
+      "msg": "v3dv: defer tile_alloc creation in meta TLB ops",
+      "date": "2026-04-13T10:31:21.000+00:00"
     }
   ]
 }
