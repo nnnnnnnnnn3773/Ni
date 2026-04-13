@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-12T23:26:37Z",
+  "triggered_at": "2026-04-13T07:10:31Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "fc8a05e",
+      "new": "3e71087",
+      "full": "3e71087a87abbb74826a2837d7e096de77595e9f",
+      "msg": "[TEST] Optimized combo with dynarec=0 (#3781)",
+      "date": "2026-04-13T06:18:21Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "64b0b83",
-      "new": "58d4572",
-      "full": "58d45725c7cca54c02079566e0f0bb59b16a1e5d",
-      "msg": "rusticl/device: Fix reporting of global memory on mixed memory devices",
-      "date": "2026-04-12T21:58:40.000+00:00"
+      "old": "58d4572",
+      "new": "21047e6",
+      "full": "21047e61a50db6d5e92690210f4a5219e025c267",
+      "msg": "winsys/amdgpu: call userq wait ioctl only once",
+      "date": "2026-04-13T05:15:43.000+00:00"
     }
   ]
 }
