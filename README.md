@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260412-b01ca65-run163](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260412-b01ca65-run163) |
-| **Wine Commit** | [`b01ca65`](https://github.com/ValveSoftware/wine/commit/b01ca6530d00057b3020daa8e2a65805d23bd906) — fsync: 8-byte align 'struct fsync_cache'. |
-| **Date** | 2026-04-12 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260412-b01ca65-run163) |
+| **Release** | [🔗 proton-bleeding-edge-20260414-5edc831-run171](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run171) |
+| **Wine Commit** | [`5edc831`](https://github.com/ValveSoftware/wine/commit/5edc831e88430b5e71efae03d86b908070f05e0f) — atiadlxx: Add ADL2_Graphics_Versions_Get(). |
+| **Date** | 2026-04-14 |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run171) |
 <!-- PROTON-LATEST-END -->
 
 ---
