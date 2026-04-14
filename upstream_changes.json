@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-14T19:59:51Z",
+  "triggered_at": "2026-04-14T20:59:54Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8c10eab",
-      "new": "8c10ad8",
-      "full": "8c10ad844f6ab821a3c4f7e400bf898e0d865644",
-      "msg": "intel/genxml: move the GPGPU_DISPATCHDIM* registers to genxml",
-      "date": "2026-04-14T18:26:09.000+00:00"
+      "old": "8c10ad8",
+      "new": "9fdf3f6",
+      "full": "9fdf3f684feb0d2c13f31bd3010219dd44bbc345",
+      "msg": "nak: uregs are 6 bits before Hopper, so enforce that",
+      "date": "2026-04-14T20:18:39.000+00:00"
     }
   ]
 }
