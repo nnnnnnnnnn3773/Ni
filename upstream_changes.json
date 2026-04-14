@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-14T21:55:01Z",
+  "triggered_at": "2026-04-14T22:38:28Z",
   "changed": [
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "ba5ae90",
+      "new": "a1abc9c",
+      "full": "a1abc9c4a913aedc2a575a2ee8cc98011b4e5fa3",
+      "msg": "[wsi] Don't treat SDL_SetWindowPosition failure as fatal",
+      "date": "2026-04-14T22:00:44Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "9fdf3f6",
-      "new": "b247679",
-      "full": "b247679ed84a6e67e1eb459e212a0caaad5cb3d1",
-      "msg": "Uprev ANGLE to 5e591d03650dd427001e355f4884b857cadab113",
-      "date": "2026-04-14T20:34:52.000+00:00"
+      "old": "b247679",
+      "new": "7067b66",
+      "full": "7067b6684639614a1d3179cf44d6ead277b05904",
+      "msg": "nvk: don't set sector promotion on texture headers",
+      "date": "2026-04-14T21:56:56.000+00:00"
     }
   ]
 }
