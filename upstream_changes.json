@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-14T11:53:03Z",
+  "triggered_at": "2026-04-14T13:06:11Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "f344f67",
+      "new": "ba4aea1",
+      "full": "ba4aea1b255ea69c8477450f3c755f7abebe7a7b",
+      "msg": "vkd3d: Don't redundantly update rendering info all the time.",
+      "date": "2026-04-14T12:19:19Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "dc4efab",
-      "new": "2ec0925",
-      "full": "2ec0925bc1472e02eee128c4b13cf277d80fd248",
-      "msg": "kk: Fix pre-gfx encoder dependency with gfx encoder",
-      "date": "2026-04-14T10:48:29.000+00:00"
+      "old": "2ec0925",
+      "new": "7e163fb",
+      "full": "7e163fb79377c0fdf6d4e99ca4775fa7e1a4299e",
+      "msg": "ac/tests: use amdgpu shim devices",
+      "date": "2026-04-14T12:06:20.000+00:00"
     }
   ]
 }
