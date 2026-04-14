@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-14T15:07:21Z",
+  "triggered_at": "2026-04-14T16:57:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7e163fb",
-      "new": "63c4773",
-      "full": "63c47734a9093c9b3649d247a9ae21a9ef2de321",
-      "msg": "pvr: re-enable wideLines",
-      "date": "2026-04-14T15:30:57.000+01:00"
+      "old": "63c4773",
+      "new": "8ea53c2",
+      "full": "8ea53c25d46eb3817170c52faa82a3e5e0beea43",
+      "msg": "anv: log aux disable reasons in image init and DRM modifier selection",
+      "date": "2026-04-14T16:14:48.000+00:00"
     }
   ]
 }
