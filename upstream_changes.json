@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-14T18:01:49Z",
+  "triggered_at": "2026-04-14T19:59:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "8ea53c2",
-      "new": "8c10eab",
-      "full": "8c10eab1f338ae297a7982b38592aded1a13a78e",
-      "msg": "radv: Add an option for dumping BVH stats",
-      "date": "2026-04-14T17:27:29.000+00:00"
+      "old": "8c10eab",
+      "new": "8c10ad8",
+      "full": "8c10ad844f6ab821a3c4f7e400bf898e0d865644",
+      "msg": "intel/genxml: move the GPGPU_DISPATCHDIM* registers to genxml",
+      "date": "2026-04-14T18:26:09.000+00:00"
     }
   ]
 }
