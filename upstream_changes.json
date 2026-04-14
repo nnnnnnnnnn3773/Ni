@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-14T04:40:02Z",
+  "triggered_at": "2026-04-14T06:26:51Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "f3ce8fe",
-      "new": "745dc66",
-      "full": "745dc66b69a3f9096d554ff0984a3cfc048c07f8",
-      "msg": "anv: fix Wa_14024015672 interaction in blorp",
-      "date": "2026-04-14T03:15:14.000+00:00"
+      "old": "745dc66",
+      "new": "739e3d2",
+      "full": "739e3d20f02e522c97b172ea3cbe494e989d7eb8",
+      "msg": "docs/panfrost: fix heading-levels",
+      "date": "2026-04-14T05:39:23.000+00:00"
     }
   ]
 }
