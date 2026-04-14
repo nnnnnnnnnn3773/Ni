@@ -482,7 +482,8 @@ jobs:
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           echo "commit=${COMMIT_HASH}" >> $GITHUB_OUTPUT
 
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
+          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
           git apply dxvk-gplasync-master.patch
 
           # Use all available vCPUs (runners have 4; was hardcoded to 2)
@@ -753,7 +754,8 @@ jobs:
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
           echo "version=$VERSION_NAME" >> $GITHUB_OUTPUT
           echo "commit=$COMMIT_HASH" >> $GITHUB_OUTPUT
-          wget https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
+          curl -fL -A "Mozilla/5.0 (X11; Linux x86_64)" -o dxvk-gplasync-master.patch \
+            https://gitlab.com/Ph42oN/dxvk-gplasync/-/raw/main/patches/dxvk-gplasync-master.patch
           git apply dxvk-gplasync-master.patch
 
       - name: Configure Cross-Files
