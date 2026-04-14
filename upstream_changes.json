@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-13T23:35:32Z",
+  "triggered_at": "2026-04-14T04:40:02Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3be57aa",
-      "new": "f3ce8fe",
-      "full": "f3ce8fe90b93e7b9b898424333c260d9cadc461a",
-      "msg": "nak: properly copy prop neg/abs float sources for flushed values",
-      "date": "2026-04-13T23:15:10.000+00:00"
+      "old": "f3ce8fe",
+      "new": "745dc66",
+      "full": "745dc66b69a3f9096d554ff0984a3cfc048c07f8",
+      "msg": "anv: fix Wa_14024015672 interaction in blorp",
+      "date": "2026-04-14T03:15:14.000+00:00"
     }
   ]
 }
