@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-15T10:09:56Z",
+  "triggered_at": "2026-04-15T11:50:49Z",
   "changed": [
+    {
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "9681559",
+      "new": "2ea0de9",
+      "full": "2ea0de92f404f100a5d6c2f29d5398b3f5db507c",
+      "msg": "Merge pull request #5418 from Sonicadvance1/135",
+      "date": "2026-04-15T11:22:25Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "3427b20",
-      "new": "5607417",
-      "full": "5607417f577cc709f758d0e478b54da4c6b2d2c3",
-      "msg": "radv: remove radv_nir_lower_viewport_to_zero",
-      "date": "2026-04-15T09:17:01.000+00:00"
+      "old": "5607417",
+      "new": "b8c5e47",
+      "full": "b8c5e4794924bbfc9ecc15f58c6d616ec5b8ad44",
+      "msg": "pvr: propagate get_vis_results flag from secondary cmdbuf gfx jobs",
+      "date": "2026-04-15T11:03:06.000+00:00"
     }
   ]
 }
