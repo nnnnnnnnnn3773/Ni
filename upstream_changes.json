@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T16:09:24Z",
+  "triggered_at": "2026-04-15T18:00:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "1e03ef5",
-      "new": "7f3900e",
-      "full": "7f3900ed20fd00e807aa64dceb8f644fecc106cb",
-      "msg": "ac/nir_lower_global_access: perform range analysis if useful",
-      "date": "2026-04-15T15:13:10.000+00:00"
+      "old": "7f3900e",
+      "new": "e09045e",
+      "full": "e09045e26cde23a3dc37dd5a70855257f066989c",
+      "msg": "nak: the MS location comes last in TLD, same spot as depth compare in TEX",
+      "date": "2026-04-15T17:00:07.000+00:00"
     }
   ]
 }
