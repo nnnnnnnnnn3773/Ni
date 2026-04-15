@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T06:28:44Z",
+  "triggered_at": "2026-04-15T08:23:19Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "5982deb",
-      "new": "b730dff",
-      "full": "b730dff54ecead9d083eb5d37694da4807141bc9",
-      "msg": "ir3/postsched: update legalize state for terminators",
-      "date": "2026-04-15T05:57:17.000+00:00"
+      "old": "b730dff",
+      "new": "3427b20",
+      "full": "3427b20b7191eb8eafa9a1861e1b3c4c7b8a4b77",
+      "msg": "pan/bi: Fix MEMMOV size calculation",
+      "date": "2026-04-15T07:22:35.000+00:00"
     }
   ]
 }
