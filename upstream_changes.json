@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T18:00:22Z",
+  "triggered_at": "2026-04-15T19:58:13Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7f3900e",
-      "new": "e09045e",
-      "full": "e09045e26cde23a3dc37dd5a70855257f066989c",
-      "msg": "nak: the MS location comes last in TLD, same spot as depth compare in TEX",
-      "date": "2026-04-15T17:00:07.000+00:00"
+      "old": "e09045e",
+      "new": "c4bd6bd",
+      "full": "c4bd6bd590ec1cc09d90c8de7302bb481f9877e7",
+      "msg": "radeonsi: just get si_shader_info::num_inputs from NIR",
+      "date": "2026-04-15T18:12:12.000+00:00"
     }
   ]
 }
