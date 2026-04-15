@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T01:45:57Z",
+  "triggered_at": "2026-04-15T06:28:44Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "7067b66",
-      "new": "5982deb",
-      "full": "5982deb48b90264dd7644525f40dbd89ae5b6344",
-      "msg": "zink: remove unused variable in zink_instance.py",
-      "date": "2026-04-14T23:44:45.000+00:00"
+      "old": "5982deb",
+      "new": "b730dff",
+      "full": "b730dff54ecead9d083eb5d37694da4807141bc9",
+      "msg": "ir3/postsched: update legalize state for terminators",
+      "date": "2026-04-15T05:57:17.000+00:00"
     }
   ]
 }
