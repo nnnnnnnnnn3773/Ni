@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-14T22:38:28Z",
+  "triggered_at": "2026-04-15T01:45:57Z",
   "changed": [
-    {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "ba5ae90",
-      "new": "a1abc9c",
-      "full": "a1abc9c4a913aedc2a575a2ee8cc98011b4e5fa3",
-      "msg": "[wsi] Don't treat SDL_SetWindowPosition failure as fatal",
-      "date": "2026-04-14T22:00:44Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b247679",
-      "new": "7067b66",
-      "full": "7067b6684639614a1d3179cf44d6ead277b05904",
-      "msg": "nvk: don't set sector promotion on texture headers",
-      "date": "2026-04-14T21:56:56.000+00:00"
+      "old": "7067b66",
+      "new": "5982deb",
+      "full": "5982deb48b90264dd7644525f40dbd89ae5b6344",
+      "msg": "zink: remove unused variable in zink_instance.py",
+      "date": "2026-04-14T23:44:45.000+00:00"
     }
   ]
 }
