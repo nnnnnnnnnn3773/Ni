@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-15T13:04:47Z",
+  "triggered_at": "2026-04-15T15:00:17Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "ba4aea1",
+      "new": "9efd756",
+      "full": "9efd756a88b3353ef86f7e9f8612d3959ed976dc",
+      "msg": "dxil-spirv: Update submodule.",
+      "date": "2026-04-15T14:15:06Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b8c5e47",
-      "new": "713cecb",
-      "full": "713cecb1dfce2af1e38cc71eae2b28b6c7923df6",
-      "msg": "panvk: Advertise VK_EXT_rgba10x6_formats",
-      "date": "2026-04-15T12:16:53.000+00:00"
+      "old": "713cecb",
+      "new": "1e03ef5",
+      "full": "1e03ef5c38038b0e9c3a9dd6637e34d83f4bd023",
+      "msg": "docs: update calendar for 26.1.0-rc1",
+      "date": "2026-04-15T14:37:28.000+00:00"
     }
   ]
 }
