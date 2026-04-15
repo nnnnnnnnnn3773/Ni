@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T21:43:42Z",
+  "triggered_at": "2026-04-15T22:35:22Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "c4bd6bd",
-      "new": "62efee1",
-      "full": "62efee18607380e3728480cb0061de0521171ef4",
-      "msg": "mesa/st: Convert st_cb_texture to use st_context_invalidate_state",
-      "date": "2026-04-15T21:08:44.000+00:00"
+      "old": "62efee1",
+      "new": "81feb2e",
+      "full": "81feb2e7f1196dec7faee7791e17e472f9d8702a",
+      "msg": "mesa/st: relax shader_has_one_variant checks for GLES2",
+      "date": "2026-04-15T21:39:50.000+00:00"
     }
   ]
 }
