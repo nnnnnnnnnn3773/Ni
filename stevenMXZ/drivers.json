@@ -1,10 +1,40 @@
 {
-  "updated_at": "2026-04-15T08:21:31Z",
+  "updated_at": "2026-04-15T20:50:22Z",
   "source": "https://github.com/StevenMXZ/Adreno-Tools-Drivers",
   "mirror_release": "https://github.com/The412Banner/Nightlies/releases/tag/stevenmxz-drivers",
-  "total_releases": 52,
-  "total_assets": 65,
+  "total_releases": 54,
+  "total_assets": 67,
   "releases": [
+    {
+      "tag": "v28",
+      "name": "Turnip Gen8 V28",
+      "published_at": "2026-04-15T20:34:42Z",
+      "assets": [
+        {
+          "name": "Turnip_Gen8_V28.zip",
+          "mirror_name": "v28_Turnip_Gen8_V28.zip",
+          "size": 3525761,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v28/Turnip_Gen8_V28.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v28_Turnip_Gen8_V28.zip",
+          "published_at": "2026-04-15T20:34:30Z"
+        }
+      ]
+    },
+    {
+      "tag": "v26.2.0-R1",
+      "name": "Turnip 26.2.0 R1",
+      "published_at": "2026-04-15T20:35:39Z",
+      "assets": [
+        {
+          "name": "Turnip_v26.2.0_R1.zip",
+          "mirror_name": "v26.2.0-R1_Turnip_v26.2.0_R1.zip",
+          "size": 3525006,
+          "original_url": "https://github.com/StevenMXZ/Adreno-Tools-Drivers/releases/download/v26.2.0-R1/Turnip_v26.2.0_R1.zip",
+          "mirror_url": "https://github.com/The412Banner/Nightlies/releases/download/stevenmxz-drivers/v26.2.0-R1_Turnip_v26.2.0_R1.zip",
+          "published_at": "2026-04-15T20:35:23Z"
+        }
+      ]
+    },
     {
       "tag": "v26.1.0_auto",
       "name": "Turnip v26.1.0 New Autotuner ",
