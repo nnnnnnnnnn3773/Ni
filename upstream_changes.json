@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T08:23:19Z",
+  "triggered_at": "2026-04-15T10:09:56Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "b730dff",
-      "new": "3427b20",
-      "full": "3427b20b7191eb8eafa9a1861e1b3c4c7b8a4b77",
-      "msg": "pan/bi: Fix MEMMOV size calculation",
-      "date": "2026-04-15T07:22:35.000+00:00"
+      "old": "3427b20",
+      "new": "5607417",
+      "full": "5607417f577cc709f758d0e478b54da4c6b2d2c3",
+      "msg": "radv: remove radv_nir_lower_viewport_to_zero",
+      "date": "2026-04-15T09:17:01.000+00:00"
     }
   ]
 }
