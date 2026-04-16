@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-16T08:23:53Z",
+  "triggered_at": "2026-04-16T10:09:40Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "f388a8f",
-      "new": "55e8ebf",
-      "full": "55e8ebf5257388cc8bc2058d644a552eccdf4a60",
-      "msg": "[WOWBOX64] Do not clobber return EAX on NT syscall (for #3782)",
-      "date": "2026-04-16T07:15:20Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "49d29d4",
-      "new": "69708ff",
-      "full": "69708ff3f579248538fb54f96715ff72d4dd18c5",
-      "msg": "v3d: mark mapped BO as initialized for valgrind",
-      "date": "2026-04-16T07:55:39.000+00:00"
+      "old": "69708ff",
+      "new": "f949e3b",
+      "full": "f949e3b81976826b8e0e36c428bd214cae281a3b",
+      "msg": "nir: remove nir_link_xfb_varyings",
+      "date": "2026-04-16T08:49:23.000+00:00"
     }
   ]
 }
