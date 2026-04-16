@@ -42,10 +42,10 @@ A special thanks to [Arihany](https://github.com/Arihany/WinlatorWCPHub), Steven
 <!-- PROTON-LATEST-START -->
 | | |
 | :--- | :--- |
-| **Release** | [🔗 proton-bleeding-edge-20260414-5edc831-run171](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run171) |
+| **Release** | [🔗 proton-bleeding-edge-20260414-5edc831-run180](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run180) |
 | **Wine Commit** | [`5edc831`](https://github.com/ValveSoftware/wine/commit/5edc831e88430b5e71efae03d86b908070f05e0f) — atiadlxx: Add ADL2_Graphics_Versions_Get(). |
 | **Date** | 2026-04-14 |
-| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run171) |
+| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets](https://github.com/The412Banner/Nightlies/releases/tag/proton-bleeding-edge-20260414-5edc831-run180) |
 <!-- PROTON-LATEST-END -->
 
 ---
