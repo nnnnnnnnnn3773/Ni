@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-16T10:09:40Z",
+  "triggered_at": "2026-04-16T11:54:06Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "69708ff",
-      "new": "f949e3b",
-      "full": "f949e3b81976826b8e0e36c428bd214cae281a3b",
-      "msg": "nir: remove nir_link_xfb_varyings",
-      "date": "2026-04-16T08:49:23.000+00:00"
+      "old": "f949e3b",
+      "new": "f137207",
+      "full": "f13720710885c70201998c8dc31daab7d6dce1a3",
+      "msg": "panvk: drop out-of-date TODO",
+      "date": "2026-04-16T11:21:48.000+00:00"
     }
   ]
 }
