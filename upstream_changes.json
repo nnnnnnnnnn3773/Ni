@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-16T17:04:50Z",
+  "triggered_at": "2026-04-16T20:40:07Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "4b81cb6",
-      "new": "ae8f83d",
-      "full": "ae8f83d46588031b3167f3f35cec967f8f63563b",
-      "msg": "radv: allow input attachment to use pixel coord optimization",
-      "date": "2026-04-16T14:54:49.000+00:00"
+      "old": "ae8f83d",
+      "new": "712a4e5",
+      "full": "712a4e569128d8c8de321a34285e02349e90e4fd",
+      "msg": "llvmpipe: fix overflow in rasterizer",
+      "date": "2026-04-16T19:36:28.000+00:00"
     }
   ]
 }
