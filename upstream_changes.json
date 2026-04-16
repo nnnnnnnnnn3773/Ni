@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-15T22:35:22Z",
+  "triggered_at": "2026-04-16T04:46:18Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "62efee1",
-      "new": "81feb2e",
-      "full": "81feb2e7f1196dec7faee7791e17e472f9d8702a",
-      "msg": "mesa/st: relax shader_has_one_variant checks for GLES2",
-      "date": "2026-04-15T21:39:50.000+00:00"
+      "old": "81feb2e",
+      "new": "19d64d6",
+      "full": "19d64d6f7dc72c50b8c351d6bb7652647c3f2d21",
+      "msg": "anv/rt: Copy 16bytes at once instead of copying 8bytes",
+      "date": "2026-04-16T02:52:03.000+00:00"
     }
   ]
 }
