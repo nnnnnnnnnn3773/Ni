@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-16T20:40:07Z",
+  "triggered_at": "2026-04-16T23:33:21Z",
   "changed": [
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "ae8f83d",
-      "new": "712a4e5",
-      "full": "712a4e569128d8c8de321a34285e02349e90e4fd",
-      "msg": "llvmpipe: fix overflow in rasterizer",
-      "date": "2026-04-16T19:36:28.000+00:00"
+      "old": "712a4e5",
+      "new": "78e2bbc",
+      "full": "78e2bbc70f55f1cf6ef922e2052b1ce6b879b952",
+      "msg": "tu/query_pool: Avoid CP counter conflict with autotune",
+      "date": "2026-04-16T21:59:35.000+00:00"
     }
   ]
 }
