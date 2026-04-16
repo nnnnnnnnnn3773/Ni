@@ -715,6 +715,23 @@ jobs:
               "> **Which file do I need?**",
               "> - Use **`.wcp`** if you are injecting via **BannersComponentInjector** (GameHub / Winlator Cmod)",
               "> - Use **`.wcp.xz`** if you need the raw XZ archive for manual extraction or other tools",
+              "",
+              "---",
+              "",
+              "### ⚡ About NTSync",
+              "",
+              "The `-ntsync` variant has NTSync patches applied. NTSync is a kernel-level synchronization mechanism that can significantly reduce CPU overhead in games that create many synchronization objects (locks, events, mutexes).",
+              "",
+              "**Do I need to do anything to enable it?**",
+              "No. The build auto-detects `/dev/ntsync` at runtime:",
+              "- If your kernel supports NTSync (`/dev/ntsync` exists) — it enables automatically",
+              "- If your kernel does not support it — it silently falls back to standard sync, behaving identically to the non-NTSync build",
+              "",
+              "**Override env vars (optional):**",
+              "- `WINENTSYNC=0` — force-disable NTSync even if `/dev/ntsync` is present",
+              "- `WINENTSYNC=1` — force-enable (for debugging)",
+              "",
+              "**Kernel requirement:** NTSync was merged into Linux 6.14. Most stock Android kernels (5.x–6.1) do not include it. It is available on select devices running custom kernels or newer kernel versions. If unsure, just use the NTSync build — there is no downside if your kernel does not support it.",
           ]
           notes = "\n".join(lines)
           with open("/tmp/release-notes.md", "w") as f:
