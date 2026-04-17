@@ -1,9 +1,9 @@
 https://github.com/ptitSeb/box64: f6beb4320e7e02d95ba44920be6a97b9ac12876c
 https://github.com/Pipetto-crypto/box64: c0cc2c254e24ae53bd435e4d3ff84e1a7fdb6399
 https://github.com/FEX-Emu/FEX: 441116e1e67df6d0b8f5d21a14349c12754d1bfd
-https://github.com/HansKristian-Work/vkd3d-proton: 9efd756a88b3353ef86f7e9f8612d3959ed976dc
+https://github.com/HansKristian-Work/vkd3d-proton: dd78b4ff658526944c92a1e3360a1b3c808546f2
 https://github.com/doitsujin/dxvk: a1abc9c4a913aedc2a575a2ee8cc98011b4e5fa3
-https://gitlab.freedesktop.org/mesa/mesa@main: c36e3ce934d274d02e247d1d9730b73bd54db88d
+https://gitlab.freedesktop.org/mesa/mesa@main: 0c6019e2651b8cb4c26e92847931501b62188835
 https://github.com/ValveSoftware/wine@bleeding-edge: 5edc831e88430b5e71efae03d86b908070f05e0f
 https://github.com/K11MCH1/AdrenoToolsDrivers@latest-release: v840
 https://github.com/StevenMXZ/Adreno-Tools-Drivers@latest-release: v26.2.0-R1
