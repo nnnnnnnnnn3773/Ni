@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-17T20:37:01Z",
+  "triggered_at": "2026-04-17T22:30:08Z",
   "changed": [
     {
-      "repo": "doitsujin/dxvk",
-      "name": "DXVK",
-      "old": "1ffaccf",
-      "new": "011706c",
-      "full": "011706c611dbc34c31e0acd2eca249bc20542e48",
-      "msg": "[d3d11] Fix deadlock when recursively destroying state objects",
-      "date": "2026-04-17T20:33:02Z"
+      "repo": "FEX-Emu/FEX",
+      "name": "FEX",
+      "old": "441116e",
+      "new": "d41d52b",
+      "full": "d41d52b88914a5c3e9a7137cedb122f2f3a244d4",
+      "msg": "Merge pull request #5419 from pmatos/f64-scale-f2xm1",
+      "date": "2026-04-17T21:38:22Z"
+    },
+    {
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "d36a578",
+      "new": "2cc5d8c",
+      "full": "2cc5d8ce4868a1aba813894a50c3120864ff6975",
+      "msg": "radeonsi: advertise support for subgroup rotate",
+      "date": "2026-04-17T21:47:34.000+00:00"
     }
   ]
 }
