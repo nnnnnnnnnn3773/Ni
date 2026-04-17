@@ -1,14 +1,23 @@
 {
-  "triggered_at": "2026-04-16T23:33:21Z",
+  "triggered_at": "2026-04-17T08:22:49Z",
   "changed": [
+    {
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "55e8ebf",
+      "new": "f6beb43",
+      "full": "f6beb4320e7e02d95ba44920be6a97b9ac12876c",
+      "msg": "[BOX32] Add library path used by Debian \"cross\" packages (#3785)",
+      "date": "2026-04-17T08:12:42Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "712a4e5",
-      "new": "78e2bbc",
-      "full": "78e2bbc70f55f1cf6ef922e2052b1ce6b879b952",
-      "msg": "tu/query_pool: Avoid CP counter conflict with autotune",
-      "date": "2026-04-16T21:59:35.000+00:00"
+      "old": "78e2bbc",
+      "new": "dfca417",
+      "full": "dfca417db88dcb54fbcef0492136c593ed6fafb5",
+      "msg": "radv: Fix gnu-empty-initializer errors in 8c10eab1",
+      "date": "2026-04-17T07:09:51.000+00:00"
     }
   ]
 }
