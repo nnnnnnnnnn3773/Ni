@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-17T15:52:02Z",
+  "triggered_at": "2026-04-17T18:46:08Z",
   "changed": [
     {
-      "repo": "HansKristian-Work/vkd3d-proton",
-      "name": "VKD3D-Proton",
-      "old": "f4552f9",
-      "new": "71095c7",
-      "full": "71095c7bddb34a6ec118e5833589abcea4796f2e",
-      "msg": "vkd3d: Fix shader interface key for quirks above 32-bit.",
-      "date": "2026-04-17T15:39:13Z"
-    },
-    {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "94cac13",
-      "new": "242130f",
-      "full": "242130fde5c26daaa0e66f41f4c896b6ed8f8429",
-      "msg": "vulkan/video: Reject interlaced picture layout for H.264 baseline profile",
-      "date": "2026-04-17T14:16:13.000+00:00"
+      "repo": "ptitSeb/box64",
+      "name": "Box64 (Official)",
+      "old": "f6beb43",
+      "new": "a4479a9",
+      "full": "a4479a9ac0546169c8e50af07e106d023f9232f4",
+      "msg": "[LA64_DYNAREC] Fixed PCMPESTRI opcode (#3787)",
+      "date": "2026-04-17T18:28:27Z"
     }
   ]
 }
