@@ -4,6 +4,7 @@ Apply the Android-specific XATOM__NET_WM_HWND addition directly when the
 original x11drv.h patch drifts against newer Wine sources.
 """
 import os
+import re
 import sys
 
 
@@ -25,21 +26,43 @@ def main():
         print("fix_x11drv_h: already applied")
         return 0
 
-    old = "    XATOM_text_uri_list,\n    XATOM_GAMESCOPE_XALIA_OVERLAY,\n"
-    new = (
-        "    XATOM_text_uri_list,\n"
-        "#ifdef __ANDROID__\n"
-        "    XATOM__NET_WM_HWND,\n"
-        "#endif\n"
-        "    XATOM_GAMESCOPE_XALIA_OVERLAY,\n"
-    )
+    patterns = [
+        (
+            re.compile(
+                r"(    XATOM_text_uri_list,\n)(    XATOM_GAMESCOPE_XALIA_OVERLAY,\n)"
+            ),
+            r'\1#ifdef __ANDROID__' "\n"
+            r"    XATOM__NET_WM_HWND," "\n"
+            r"#endif" "\n"
+            r"\2",
+        ),
+        (
+            re.compile(r"(    XATOM_text_uri_list,\n)"),
+            r'\1#ifdef __ANDROID__' "\n"
+            r"    XATOM__NET_WM_HWND," "\n"
+            r"#endif" "\n",
+        ),
+        (
+            re.compile(r"(    XATOM_COUNT,\n)"),
+            r'#ifdef __ANDROID__' "\n"
+            r"    XATOM__NET_WM_HWND," "\n"
+            r"#endif" "\n"
+            r"\1",
+        ),
+    ]
 
-    if old not in src:
+    updated = None
+    for pattern, replacement in patterns:
+        updated, count = pattern.subn(replacement, src, count=1)
+        if count:
+            break
+
+    if updated is None:
         print("fix_x11drv_h: anchor not found")
         return 3
 
     with open(path, "w") as f:
-        f.write(src.replace(old, new, 1))
+        f.write(updated)
 
     print("fix_x11drv_h: applied")
     return 0

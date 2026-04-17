@@ -32,6 +32,7 @@ ALREADY_APPLIED = {
     "dlls_winex11_drv_window_c.patch":      ("dlls/winex11.drv/window.c",    "steam_proton"),
     "dlls_winex11_drv_mouse_c.patch":       ("dlls/winex11.drv/mouse.c",     ["clip_center", "needs_relative_motion", "get_send_mouse_flags"]),
     "dlls_winex11_drv_x11drv_h.patch":      ("dlls/winex11.drv/x11drv.h",    "XATOM__NET_WM_HWND"),
+    "dlls_winex11_drv_x11drv_main_c.patch": ("dlls/winex11.drv/x11drv_main.c", ['"_NET_WM_HWND"', "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H\n    x11drv_xinput2_load();\n#endif"]),
     "dlls_wineandroid_drv_window_c.patch":  ("dlls/wineandroid.drv/window.c", ["WINE_ANDROID_RELATIVE_MOUSE", "android_relative_mouse_active", "INPUTDBG android.motion"]),
     "dlls_nsiproxy_sys_ip_c.patch":         ("dlls/nsiproxy.sys/ip.c",        ["# include <net/if.h>", "mask_v4_to_prefix", "mask_v6_to_prefix"]),
 

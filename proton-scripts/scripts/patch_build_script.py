@@ -58,6 +58,8 @@ txt = txt.replace(
     'else '
     'if [[ "$patch" == "dlls_winex11_drv_x11drv_h.patch" ]] && grep -qF "XATOM__NET_WM_HWND" "dlls/winex11.drv/x11drv.h" 2>/dev/null; then '
     '  echo "ALREADY APPLIED (skipped): $patch"; '
+    'elif [[ "$patch" == "dlls_winex11_drv_x11drv_main_c.patch" ]] && grep -qF "\"_NET_WM_HWND\"" "dlls/winex11.drv/x11drv_main.c" 2>/dev/null && grep -qF "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H" "dlls/winex11.drv/x11drv_main.c" 2>/dev/null; then '
+    '  echo "ALREADY APPLIED (skipped): $patch"; '
     'elif git apply --ignore-whitespace -C1 -R --check ./android/patches/$patch 2>/dev/null; then '
     '  echo "ALREADY APPLIED (skipped): $patch"; '
     'elif git apply --ignore-whitespace -C1 --check ./android/patches/$patch 2>/dev/null'
