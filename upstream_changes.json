@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-17T19:53:16Z",
+  "triggered_at": "2026-04-17T20:37:01Z",
   "changed": [
     {
-      "repo": "mesa/mesa",
-      "name": "Mesa (Turnip)",
-      "old": "242130f",
-      "new": "d36a578",
-      "full": "d36a578bc028ef43ca460e529bb59ef8a3c286a3",
-      "msg": "intel/elk: Remove dead TXL_LZ/TXF_LZ opcodes",
-      "date": "2026-04-17T15:13:00.000+00:00"
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "1ffaccf",
+      "new": "011706c",
+      "full": "011706c611dbc34c31e0acd2eca249bc20542e48",
+      "msg": "[d3d11] Fix deadlock when recursively destroying state objects",
+      "date": "2026-04-17T20:33:02Z"
     }
   ]
 }
