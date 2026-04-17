@@ -1,9 +1,5 @@
 # Star-Compose: Jetpack Compose Migration Report & Developer Guide
 
-**Repo:** https://github.com/The412Banner/star-compose  
-**Branch:** `main`  
-**Final migration commit:** `6537038`  
-**Latest commit:** `546d25e`  
 **Date:** 2026-04-16  
 **Last updated:** 2026-04-17
 
