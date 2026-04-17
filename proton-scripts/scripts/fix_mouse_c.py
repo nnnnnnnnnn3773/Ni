@@ -40,7 +40,7 @@ def main():
 
     total = 0
 
-    src, n = apply(src, "clip state declarations and xinput2 guard",
+    src, n = apply(src, "clip state declarations",
         "static RECT clip_rect;\n"
         "static Cursor create_cursor( HANDLE handle );\n\n"
         "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H\n"
@@ -51,8 +51,38 @@ def main():
         "static POINT clip_center_root;  /* same point in X root coordinates for warping / deltas */\n"
         "static BOOL needs_relative_motion;  /* TRUE when game wants clipping but xinput2 unavailable */\n"
         "static Cursor create_cursor( HANDLE handle );\n\n"
-        "#if defined(HAVE_X11_EXTENSIONS_XINPUT2_H) && !defined(__ANDROID__)\n"
+        "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H\n"
         "static BOOL xinput2_available;\n"
+    )
+    total += n
+
+    if "static BOOL xinput2_available;\nstatic BOOL broken_rawevents;\n" not in src:
+        old = (
+            "static BOOL needs_relative_motion;  /* TRUE when game wants clipping but xinput2 unavailable */\n"
+            "static Cursor create_cursor( HANDLE handle );\n\n"
+            "#if defined(HAVE_X11_EXTENSIONS_XINPUT2_H) && !defined(__ANDROID__)\n"
+            "static BOOL xinput2_available;\n"
+        )
+        new = (
+            "static BOOL needs_relative_motion;  /* TRUE when game wants clipping but xinput2 unavailable */\n"
+            "static Cursor create_cursor( HANDLE handle );\n\n"
+            "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H\n"
+            "static BOOL xinput2_available;\n"
+            "static BOOL broken_rawevents;\n"
+        )
+        src, n = apply(src, "restore xinput2 declarations on Android", old, new)
+        total += n
+
+    # Keep the upstream XInput2 declaration block visible on Android builds.
+    # Only the Android-specific runtime behavior should be gated out, not the
+    # global declarations / function pointers that the rest of mouse.c uses.
+    src, n = apply(
+        src,
+        "normalize xinput2 declaration guard",
+        "#if defined(HAVE_X11_EXTENSIONS_XINPUT2_H) && !defined(__ANDROID__)\n"
+        "static BOOL xinput2_available;\n",
+        "#ifdef HAVE_X11_EXTENSIONS_XINPUT2_H\n"
+        "static BOOL xinput2_available;\n",
     )
     total += n
 
