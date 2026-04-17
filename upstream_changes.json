@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-17T22:30:08Z",
+  "triggered_at": "2026-04-17T23:31:59Z",
   "changed": [
-    {
-      "repo": "FEX-Emu/FEX",
-      "name": "FEX",
-      "old": "441116e",
-      "new": "d41d52b",
-      "full": "d41d52b88914a5c3e9a7137cedb122f2f3a244d4",
-      "msg": "Merge pull request #5419 from pmatos/f64-scale-f2xm1",
-      "date": "2026-04-17T21:38:22Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "d36a578",
-      "new": "2cc5d8c",
-      "full": "2cc5d8ce4868a1aba813894a50c3120864ff6975",
-      "msg": "radeonsi: advertise support for subgroup rotate",
-      "date": "2026-04-17T21:47:34.000+00:00"
+      "old": "2cc5d8c",
+      "new": "fcfdd4c",
+      "full": "fcfdd4cfead83bcda48b2c2f983e1aab3062e36a",
+      "msg": "iris: advertise support for subgroup rotate",
+      "date": "2026-04-18T00:23:33.000+02:00"
     }
   ]
 }
