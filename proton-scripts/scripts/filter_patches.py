@@ -31,7 +31,9 @@ ALREADY_APPLIED = {
     # git apply never sees their drift-prone hunks against bleeding-edge.
     "dlls_winex11_drv_window_c.patch":      ("dlls/winex11.drv/window.c",    "steam_proton"),
     "dlls_winex11_drv_mouse_c.patch":       ("dlls/winex11.drv/mouse.c",     ["clip_center", "needs_relative_motion", "get_send_mouse_flags"]),
+    "dlls_winex11_drv_x11drv_h.patch":      ("dlls/winex11.drv/x11drv.h",    "XATOM__NET_WM_HWND"),
     "dlls_wineandroid_drv_window_c.patch":  ("dlls/wineandroid.drv/window.c", ["WINE_ANDROID_RELATIVE_MOUSE", "android_relative_mouse_active", "INPUTDBG android.motion"]),
+    "dlls_nsiproxy_sys_ip_c.patch":         ("dlls/nsiproxy.sys/ip.c",        ["# include <net/if.h>", "mask_v4_to_prefix", "mask_v6_to_prefix"]),
 
     # These are all merged into ValveSoftware/wine bleeding-edge already.
     "dlls_ntdll_loader_c.patch":            ("dlls/ntdll/loader.c",          "libarm64ecfex.dll"),
@@ -71,7 +73,12 @@ ALREADY_APPLIED = {
     "test-bylaws/server_thread_c.patch":             ("server/thread.c",              "bypass_proc_suspend"),
     "test-bylaws/dlls_ntdll_unix_thread_c.patch":    ("dlls/ntdll/unix/thread.c",     "BYPASS_PROCESS_FREEZE"),
     "test-bylaws/include_winternl_h.patch":          ("include/winternl.h",           "ProcessFexHardwareTso"),
-    "test-bylaws/tools_makedep_c.patch":             ("tools/makedep.c",              ["arch_install_dirs[arch] = \"$(libdir)/wine/aarch64-windows/\";", "output_symlink_rule("]),
+    "test-bylaws/tools_makedep_c.patch":             ("tools/makedep.c",              ['arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );', "output_symlink_rule("]),
+}
+
+NOT_APPLICABLE_IF_MISSING = {
+    "dlls_ntdll_unix_esync_c.patch": "dlls/ntdll/unix/esync.c",
+    "server_esync_c.patch": "server/esync.c",
 }
 
 
@@ -100,6 +107,20 @@ def main():
         content = f.read()
 
     skipped = []
+    for patch_name, rel_file in NOT_APPLICABLE_IF_MISSING.items():
+        path = os.path.join(wine_src, rel_file)
+        if os.path.exists(path):
+            continue
+        pattern = r'(\s*)"' + re.escape(patch_name) + r'"'
+        replacement = r'\1# (not applicable on current upstream) # "' + patch_name + '"'
+        new_content = re.sub(pattern, replacement, content)
+        if new_content != content:
+            content = new_content
+            skipped.append(patch_name)
+            print(f"SKIP (missing upstream target): {patch_name}")
+        else:
+            print(f"NOT FOUND IN SCRIPT (no change): {patch_name}")
+
     for patch_name, (rel_file, markers) in ALREADY_APPLIED.items():
         if patch_name in FORCE_SKIP:
             pattern = r'(\s*)"' + re.escape(patch_name) + r'"'

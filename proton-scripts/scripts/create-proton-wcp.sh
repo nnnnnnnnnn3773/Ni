@@ -62,9 +62,9 @@ GIT_HASH="unknown"
 if [[ -z "$VERSION_NAME" ]]; then
     if git -C "$INPUT_DIR" rev-parse --short HEAD >/dev/null 2>&1; then
         GIT_HASH="$(git -C "$INPUT_DIR" rev-parse --short HEAD 2>/dev/null || echo 'unknown')"
-        VERSION_NAME="10.0.99-arm64ec"
+        VERSION_NAME="11"
     else
-        VERSION_NAME="10.0.99-arm64ec"
+        VERSION_NAME="11"
     fi
 fi
 
@@ -73,7 +73,7 @@ if [[ -z "$VERSION_CODE" ]]; then
 fi
 
 if [[ -z "$DESCRIPTION" ]]; then
-    DESCRIPTION="Proton bleeding-edge ARM64EC ${DATE_TAG} (${GIT_HASH})"
+    DESCRIPTION="Proton_11 ARM64EC ${DATE_TAG} (${GIT_HASH})"
 fi
 
 echo "  Version name: $VERSION_NAME"

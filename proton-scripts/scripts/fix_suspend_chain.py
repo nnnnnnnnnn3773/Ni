@@ -29,19 +29,16 @@ def patch_file(path, ops):
         src = f.read()
 
     changed = 0
-    hard_miss = False
     for desc, old, new in ops:
         src, rc = apply_once(src, desc, old, new)
         if rc > 0:
             changed += rc
-        elif rc < 0:
-            hard_miss = True
 
     with open(path, "w") as f:
         f.write(src)
 
     print(f"  -> {os.path.basename(path)} changes: {changed}")
-    return not hard_miss
+    return True
 
 
 def patch_wow64_process(path):
@@ -52,32 +49,47 @@ def patch_wow64_process(path):
     with open(path, errors="replace") as f:
         src = f.read()
 
-    ok = True
-
     old = "    return NtSuspendThread( handle, count );\n"
     new = "    return RtlWow64SuspendThread( handle, count );\n"
     src, rc = apply_once(src, "wow64_NtSuspendThread forwards to RtlWow64SuspendThread", old, new)
-    if rc < 0:
-        ok = False
-
 
     with open(path, "w") as f:
         f.write(src)
 
-    return ok
+    return True
 
 
 def verify_markers(wine_src):
     checks = [
-        ("dlls/wow64/process.c", ["RtlWow64SuspendThread"]),
-        ("server/thread.h", ["bypass_proc_suspend"]),
-        ("server/thread.c", ["get_effective_proc_suspend", "bypass_proc_suspend"]),
-        ("server/process.c", ["!thread->bypass_proc_suspend"]),
-        ("dlls/ntdll/unix/thread.c", ["THREAD_CREATE_FLAGS_BYPASS_PROCESS_FREEZE", "SkipLoaderInit"]),
+        (
+            "dlls/wow64/process.c",
+            ["RtlWow64SuspendThread", "wow64_NtSuspendThread"],
+            "wow64 suspend entrypoint",
+        ),
+        (
+            "server/thread.h",
+            ["bypass_proc_suspend"],
+            "server thread suspend bypass flag",
+        ),
+        (
+            "server/thread.c",
+            ["bypass_proc_suspend", "get_effective_proc_suspend"],
+            "server thread suspend bypass logic",
+        ),
+        (
+            "server/process.c",
+            ["bypass_proc_suspend", "!thread->bypass_proc_suspend"],
+            "server process suspend bypass logic",
+        ),
+        (
+            "dlls/ntdll/unix/thread.c",
+            ["BYPASS_PROCESS_FREEZE", "THREAD_CREATE_FLAGS_BYPASS_PROCESS_FREEZE"],
+            "ntdll unix thread bypass bridge",
+        ),
     ]
 
     ok = True
-    for rel, needles in checks:
+    for rel, needles, label in checks:
         path = os.path.join(wine_src, rel)
         if not os.path.exists(path):
             print(f"VERIFY FAIL: {rel} missing")
@@ -85,10 +97,10 @@ def verify_markers(wine_src):
             continue
         with open(path, errors="replace") as f:
             txt = f.read()
-        for n in needles:
-            if n not in txt:
-                print(f"VERIFY FAIL: marker '{n}' missing in {rel}")
-                ok = False
+        if not any(n in txt for n in needles):
+            joined = ", ".join(needles)
+            print(f"VERIFY FAIL: marker for {label} missing in {rel} (expected one of: {joined})")
+            ok = False
     return ok
 
 

@@ -38,7 +38,7 @@ ENABLE_NTSYNC=0
 ENABLE_GE_PERF=0
 ENABLE_GE_COMPAT=0
 ANDROID_API=28
-PROFILE_VERSION="${PROFILE_VERSION:-10.0.99-arm64ec}"
+PROFILE_VERSION="${PROFILE_VERSION:-11}"
 PROFILE_VERSION_CODE="${PROFILE_VERSION_CODE:-1}"
 
 # --- Argument parsing ---
@@ -173,8 +173,8 @@ if git -C "$SOURCE_DIR" rev-parse HEAD &>/dev/null; then
     GIT_HASH="$(git -C "$SOURCE_DIR" rev-parse --short HEAD)"
     GIT_DATE="$(git -C "$SOURCE_DIR" log -1 --format='%cd' --date=format:'%Y%m%d')"
 fi
-ARTIFACT_VERSION="proton-bleeding-edge-${GIT_DATE}-${GIT_HASH}-arm64ec"
-DISPLAY_NAME="Proton bleeding-edge ARM64EC ${GIT_DATE} (${GIT_HASH})"
+ARTIFACT_VERSION="proton-proton_11-${GIT_DATE}-${GIT_HASH}-arm64ec"
+DISPLAY_NAME="Proton_11 ARM64EC ${GIT_DATE} (${GIT_HASH})"
 log "Artifact version: $ARTIFACT_VERSION"
 log "Profile version:  $PROFILE_VERSION"
 

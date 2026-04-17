@@ -7,6 +7,7 @@ Usage: fix_test_bylaws_chain.py <wine-source-dir>
 Script rev: 2026-03-07-driftproof-v2
 """
 import os
+import re
 import subprocess
 import sys
 
@@ -61,7 +62,7 @@ REQUIRED_MARKERS = {
         "RtlWow64SuspendThread",
     ],
     "tools/makedep.c": [
-        "arch_install_dirs[arch] = \"$(libdir)/wine/aarch64-windows/\";",
+        'arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );',
         "output_symlink_rule(",
     ],
 }
@@ -187,7 +188,8 @@ def try_apply_patch(wine_src, patch_path):
         "dlls_ntdll_signal_arm64ec_c.patch": ("dlls/ntdll/signal_arm64ec.c", ["ARM64EC_NT_XCONTEXT", "RtlWow64SuspendThread"]),
         "dlls_ntdll_signal_x86_64_c.patch": ("dlls/ntdll/signal_x86_64.c", ["0x3b0+0xcd0", "RtlWow64SuspendThread"]),
         "include_winternl_h.patch": ("include/winternl.h", ["ProcessFexHardwareTso", "THREAD_CREATE_FLAGS_BYPASS_PROCESS_FREEZE", "RtlWow64SuspendThread", "MemoryFexStatsShm"]),
-        "tools_makedep_c.patch": ("tools/makedep.c", ['arch_install_dirs[arch] = "$(libdir)/wine/aarch64-windows/";', 'output_symlink_rule(']),
+        "dlls_ntdll_loader_c.patch": ("dlls/ntdll/loader.c", ["pWow64SuspendLocalThread", "GET_PTR( Wow64SuspendLocalThread )"]),
+        "tools_makedep_c.patch": ("tools/makedep.c", ['arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );', 'output_symlink_rule(']),
     }
     if patch_name in marker_map:
         rel, markers = marker_map[patch_name]
@@ -360,8 +362,91 @@ def fallback_fix_wow64_syscall(wine_src):
     return notes
 
 
+def fallback_fix_loader(wine_src):
+    rel = "dlls/ntdll/loader.c"
+    path = os.path.join(wine_src, rel)
+    if not os.path.exists(path):
+        return [f"MISSING: {rel}"]
+
+    txt = read_text(path)
+    notes = []
+
+    if "pWow64SuspendLocalThread" not in txt:
+        anchors = [
+            "GET_PTR( Wow64GetThreadContext );\n",
+            "GET_PTR( Wow64SetThreadContext );\n",
+            "GET_PTR( Wow64ApcRoutine );\n",
+        ]
+        inserted = False
+        for anchor in anchors:
+            if anchor in txt:
+                txt = txt.replace(
+                    anchor,
+                    anchor + "    GET_PTR( Wow64SuspendLocalThread );\n",
+                    1,
+                )
+                inserted = True
+                notes.append(f"FIXED: {rel} add GET_PTR( Wow64SuspendLocalThread )")
+                break
+        if not inserted:
+            notes.append(f"WARN: {rel} could not place GET_PTR( Wow64SuspendLocalThread )")
+
+    write_text(path, txt)
+    return notes
+
+
+def fallback_fix_makedep(wine_src):
+    rel = "tools/makedep.c"
+    path = os.path.join(wine_src, rel)
+    if not os.path.exists(path):
+        return [f"MISSING: {rel}"]
+
+    txt = read_text(path)
+    notes = []
+
+    if 'arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );' not in txt:
+        pattern = re.compile(r'^(\s*arch_install_dirs\[arch\]\s*=\s*".*-windows/";\s*)$', re.MULTILINE)
+        matches = list(pattern.finditer(txt))
+        if matches:
+            match = matches[-1]
+            indent = re.match(r"^(\s*)", match.group(1)).group(1)
+            insertion = match.group(1) + "\n" + indent + 'arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );'
+            txt = txt[:match.start()] + insertion + txt[match.end():]
+            notes.append(f"FIXED: {rel} add generic arch_install_dirs[arch] windows mapping")
+        else:
+            rej_path = path + ".rej"
+            inserted = False
+            if os.path.exists(rej_path):
+                rej = read_text(rej_path)
+                rej_match = re.search(r'^\+.*arch_install_dirs\[arch\].*$', rej, re.MULTILINE)
+                line = rej_match.group(0)[1:] if rej_match else '        arch_install_dirs[arch] = strmake( "$(libdir)/wine/%s-windows", archs.str[arch] );'
+                fallback_anchors = [
+                    "output_symlink_rule(",
+                    "arch_install_dirs[arch]",
+                    "main( int argc, char *argv[] )",
+                ]
+                for anchor in fallback_anchors:
+                    idx = txt.find(anchor)
+                    if idx >= 0:
+                        line_start = txt.rfind("\n", 0, idx) + 1
+                        indent_match = re.match(r"(\s*)", txt[line_start:])
+                        indent = indent_match.group(1) if indent_match else ""
+                        txt = txt[:line_start] + indent + line.strip() + "\n" + txt[line_start:]
+                        inserted = True
+                        notes.append(f"FIXED: {rel} add generic arch_install_dirs[arch] windows mapping from reject hunk")
+                        break
+            if not inserted:
+                notes.append(f"WARN: {rel} could not place generic arch_install_dirs[arch] windows mapping")
+
+    write_text(path, txt)
+    return notes
+
+
 def apply_fallbacks(wine_src, failed_patch_names):
     notes = []
+
+    if "dlls_ntdll_loader_c.patch" in failed_patch_names:
+        notes.extend(fallback_fix_loader(wine_src))
 
     if "include_winnt_h.patch" in failed_patch_names:
         notes.extend(fallback_fix_winnt(wine_src))
@@ -380,6 +465,9 @@ def apply_fallbacks(wine_src, failed_patch_names):
 
     if "dlls_ntdll_signal_x86_64_c.patch" in failed_patch_names:
         notes.extend(fallback_fix_signal_file(wine_src, "dlls/ntdll/signal_x86_64.c"))
+
+    if "tools_makedep_c.patch" in failed_patch_names:
+        notes.extend(fallback_fix_makedep(wine_src))
 
     return notes
 
