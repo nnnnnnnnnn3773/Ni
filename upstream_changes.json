@@ -1,14 +1,32 @@
 {
-  "triggered_at": "2026-04-17T12:59:48Z",
+  "triggered_at": "2026-04-17T14:21:42Z",
   "changed": [
+    {
+      "repo": "HansKristian-Work/vkd3d-proton",
+      "name": "VKD3D-Proton",
+      "old": "dd78b4f",
+      "new": "f4552f9",
+      "full": "f4552f94f11227c5cf2e99d258ae3dc1dc663dee",
+      "msg": "vkd3d: Disable weird RDNA4 HW workaround on RADV 26.1+.",
+      "date": "2026-04-17T13:45:47Z"
+    },
+    {
+      "repo": "doitsujin/dxvk",
+      "name": "DXVK",
+      "old": "a1abc9c",
+      "new": "1ffaccf",
+      "full": "1ffaccfa1571323007c73086b2048d384e33469b",
+      "msg": "[meta] Update dxbc-spirv",
+      "date": "2026-04-17T13:44:24Z"
+    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "0c6019e",
-      "new": "6e20e96",
-      "full": "6e20e96a64dfcbed91d086d7ea556593141dcb2d",
-      "msg": "radv: add enable_mrt_output_nan_fixup to the physical cache key",
-      "date": "2026-04-17T12:00:00.000+00:00"
+      "old": "6e20e96",
+      "new": "94cac13",
+      "full": "94cac134dd06823372d5edc756caeccdfe53dd40",
+      "msg": "kk: Increase maxFragmentCombinedOutputResources to KK_MAX_DESCRIPTORS",
+      "date": "2026-04-17T13:24:18.000+00:00"
     }
   ]
 }
