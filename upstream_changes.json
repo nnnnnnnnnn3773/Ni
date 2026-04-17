@@ -1,14 +1,14 @@
 {
-  "triggered_at": "2026-04-17T18:46:08Z",
+  "triggered_at": "2026-04-17T19:53:16Z",
   "changed": [
     {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "f6beb43",
-      "new": "a4479a9",
-      "full": "a4479a9ac0546169c8e50af07e106d023f9232f4",
-      "msg": "[LA64_DYNAREC] Fixed PCMPESTRI opcode (#3787)",
-      "date": "2026-04-17T18:28:27Z"
+      "repo": "mesa/mesa",
+      "name": "Mesa (Turnip)",
+      "old": "242130f",
+      "new": "d36a578",
+      "full": "d36a578bc028ef43ca460e529bb59ef8a3c286a3",
+      "msg": "intel/elk: Remove dead TXL_LZ/TXF_LZ opcodes",
+      "date": "2026-04-17T15:13:00.000+00:00"
     }
   ]
 }
