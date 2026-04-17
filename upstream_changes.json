@@ -1,23 +1,14 @@
 {
-  "triggered_at": "2026-04-17T08:22:49Z",
+  "triggered_at": "2026-04-17T10:07:05Z",
   "changed": [
-    {
-      "repo": "ptitSeb/box64",
-      "name": "Box64 (Official)",
-      "old": "55e8ebf",
-      "new": "f6beb43",
-      "full": "f6beb4320e7e02d95ba44920be6a97b9ac12876c",
-      "msg": "[BOX32] Add library path used by Debian \"cross\" packages (#3785)",
-      "date": "2026-04-17T08:12:42Z"
-    },
     {
       "repo": "mesa/mesa",
       "name": "Mesa (Turnip)",
-      "old": "78e2bbc",
-      "new": "dfca417",
-      "full": "dfca417db88dcb54fbcef0492136c593ed6fafb5",
-      "msg": "radv: Fix gnu-empty-initializer errors in 8c10eab1",
-      "date": "2026-04-17T07:09:51.000+00:00"
+      "old": "dfca417",
+      "new": "c36e3ce",
+      "full": "c36e3ce934d274d02e247d1d9730b73bd54db88d",
+      "msg": "freedreno/decode: Fix error() in script.c",
+      "date": "2026-04-17T09:16:34.000+00:00"
     }
   ]
 }
