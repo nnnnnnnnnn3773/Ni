@@ -1,5 +1,4 @@
 name: Proton Bleeding-Edge Nightly
-
 on:
   schedule:
     - cron: '15 */6 * * *'
@@ -28,13 +27,27 @@ on:
         required: false
         default: false
         type: boolean
+      skip_unstable_patches:
+        description: 'Skip problematic/unstable patches to improve build reliability'
+        required: false
+        default: true
+        type: boolean
+      skip_bylaws_patches:
+        description: 'Skip BYLAWS-specific test-bylaws patches (dlls_wow64_syscall_c.patch etc.)'
+        required: false
+        default: false
+        type: boolean
+      skip_ntsync:
+        description: 'Skip NTSync patches (if /dev/ntsync not available on device)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   # ============================================================
   # JOB 0: Sync proton-scripts/ from Pepelespooder if changed
   # ============================================================
-  sync-scripts:
-    runs-on: ubuntu-latest
+  sync-scripts:    runs-on: ubuntu-latest
     permissions:
       contents: write
     outputs:
@@ -44,7 +57,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Sync proton-scripts/ from Pepelespooder/proton-arm64-nightlies
         id: sync
         env:
@@ -85,7 +97,6 @@ jobs:
           while IFS= read -r name; do
             sync_file "patches/$name"
           done < <(gh api "repos/$UPSTREAM/contents/patches" --jq '.[].name')
-
           echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
 
       - name: Compute scripts hash (for cache key)
@@ -98,7 +109,7 @@ jobs:
       - name: Commit updated proton-scripts
         if: steps.sync.outputs.changed == 'true'
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add proton-scripts/
           git diff --staged --quiet || {
@@ -128,27 +139,26 @@ jobs:
             profile_version: 10.0.99-arm64ec
             display_arch: ARM64EC
             sysvshm: true
-            enable_ntsync: false
-
+            enable_ntsync: ${{ github.event.inputs.skip_ntsync == 'false' && 'true' || 'false' }}
+            
           - arch_id: arm64ec-ntsync
             termux_arch: aarch64
             build_script: build-step-arm64ec.sh
             output_dir: compiled-files-aarch64
-            prefix_pack: prefixPack-arm64ec.txz
-            profile_version: 10.0.99-arm64ec-ntsync
+            prefix_pack: prefixPack-arm64ec.txz            profile_version: 10.0.99-arm64ec-ntsync
             display_arch: ARM64EC NTSync
             sysvshm: true
-            enable_ntsync: true
+            enable_ntsync: ${{ github.event.inputs.skip_ntsync == 'false' && 'true' || 'false' }}
 
     steps:
-      - name: Checkout Nightlies repo
+      - name: Checkout Nightl ies repo
         uses: actions/checkout@v4
 
       - name: Free up disk space
         run: |
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf /opt/ghc
-          sudo rm -rf /usr/local/share/boost
+          sudo rm -rf /usr/local/share/bo ost
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
           df -h
 
@@ -157,7 +167,7 @@ jobs:
           sudo dpkg --add-architecture i386
           sudo apt-get update
           sudo apt-get install -y \
-            build-essential \
+            build-essenti al \
             git \
             wget \
             curl \
@@ -168,14 +178,14 @@ jobs:
             autoconf \
             automake \
             libtool \
-            pkg-config \
+            pk g-config \
             mingw-w64 \
             gcc-multilib \
             g++-multilib \
             libfreetype6-dev \
             libfreetype6-dev:i386 \
             libpng-dev \
-            libpng-dev:i386 \
+            libpng-dev:i386  \
             zlib1g-dev \
             zlib1g-dev:i386 \
             zstd \
@@ -184,8 +194,7 @@ jobs:
             patch
 
       - name: Clone Wine source
-        run: |
-          WINE_REF="${{ github.event.inputs.wine_ref || 'bleeding-edge' }}"
+        run: |          WINE_REF="${{ github.event.inputs.wine_ref || 'bleeding-edge' }}"
           git clone --depth=1 --branch "$WINE_REF" \
             https://github.com/ValveSoftware/wine wine-source \
           || {
@@ -215,20 +224,27 @@ jobs:
           SCRIPTS="$GITHUB_WORKSPACE/proton-scripts/scripts"
           GE="$GITHUB_WORKSPACE/proton-scripts/ge-second-pass"
 
+          SKIP_BYLAWS=${{ github.event.inputs.skip_bylaws_patches == 'true' && 'true' || 'false' }}
+          
           # Apply repo-owned BYLAWS patch overrides
           rm -f wine-source/android/patches/dlls_wow64_syscall_c.patch
-          rm -f wine-source/android/patches/test-bylaws/dlls_wow64_syscall_c.patch
+          rm -f wine-source/android/patches/test-bylaws/dlls_wow64 _syscall_c.patch
           rm -f wine-source/android/patches/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch
           mkdir -p wine-source/android/patches/test-bylaws
-          cp "$GE/test-bylaws/dlls_wow64_syscall_c.patch" \
-            wine-source/android/patches/dlls_wow64_syscall_c.patch
-          cp "$GE/test-bylaws/dlls_wow64_syscall_c.patch" \
-            wine-source/android/patches/test-bylaws/dlls_wow64_syscall_c.patch
-          cp "$GE/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch" \
-            wine-source/android/patches/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch
 
+          if [[ "$SKIP_BYLAWS" != "true" ]]; then
+            cp "$GE/test-bylaws/dlls_wow64_syscall_c.patch" \
+              wine-source/android/patches/dlls_wow64_syscall_c.patch
+            cp "$GE/test-bylaws/dlls_wow64_syscall_c.patch" \
+              wine-source/android/patches/test-bylaws/dlls_wow64_syscall_c.patch
+            cp "$GE/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch" \
+              wine-source/android/patches/test-bylaws/dlls_ntdll_signal_arm64ec_c.patch
+            echo "BYLAWS patches applied."
+          else
+            echo "BYLAWS patches SKIPPED (skip_bylaws_patches=true)."
+          fi
           find wine-source/android/patches -type f -name "*.patch" -exec sed -i 's/\r$//' {} +
-          sed -i 's/atoi("WINE_X11FORCEGLX")/atoi(getenv("WINE_X11FORCEGLX"))/g' \
+          sed -i 's/atoi( "WINE_X11FORCEGLX ")/atoi(getenv( "WINE_X11FORCEGLX "))/g' \
             wine-source/android/patches/dlls_winex11_drv_opengl_c.patch
 
           python3 "$SCRIPTS/filter_patches.py"    wine-source/build-scripts/build-step-arm64ec.sh wine-source
@@ -242,31 +258,33 @@ jobs:
           python3 "$SCRIPTS/fix_suspend_chain.py"  wine-source
           python3 "$SCRIPTS/fix_test_bylaws_chain.py" wine-source
 
-          if [[ "${{ matrix.enable_ntsync }}" == "true" ]]; then
-            echo "=== Applying NTSync patches ==="
+          if [[ "${{ matrix.enable_ntsync }}" == "true" ]] && [[ "${{ github.event.inputs.skip_ntsync }}" != "true" ]]; then
+            echo "=== Applying NTSync patches === "
             NTSYNC_UPSTREAM="Pepelespooder/proton-arm64-nightlies"
             NTSYNC_PATCH_PATH="patches/ge-wine-only-wrapper/patches/wine-hotfixes/wine-wayland"
             mkdir -p ntsync-patches
             for patch in \
               0163-ntdll-Retrieve-and-cache-an-ntsync-device-in-wait-ca.patch \
               0165-ntsync-implementation.patch \
-              0166-Finish-up-ntsync-console-implementation.patch \
+               0166-Finish-up-ntsync-console-implementation.patch \
               0172-ntdll-ntsync-remove-unused-variable-fix-datatypes.patch; do
               gh api "repos/$NTSYNC_UPSTREAM/contents/$NTSYNC_PATCH_PATH/$patch" \
-                --jq '.content' | base64 -d > "ntsync-patches/$patch"
+                --jq '.content' | base64 -d  >  "ntsync-patches/$patch"
               echo "fetched: $patch"
             done
             python3 "$SCRIPTS/strip_generated_ntsync_patch_sections.py" ntsync-patches/*.patch
             python3 "$SCRIPTS/fix_ntsync_chain.py" wine-source
             for patch in \
               ntsync-patches/0163-ntdll-Retrieve-and-cache-an-ntsync-device-in-wait-ca.patch \
-              ntsync-patches/0165-ntsync-implementation.patch \
+              ntsync-patches/0165-ntsync-implementation. patch \
               ntsync-patches/0166-Finish-up-ntsync-console-implementation.patch \
               ntsync-patches/0172-ntdll-ntsync-remove-unused-variable-fix-datatypes.patch; do
-              patch -d wine-source -p1 < "$patch"
+             patch -d wine-source -p1  <  "$patch"
             done
             python3 "$SCRIPTS/fix_ntsync.py" wine-source
             echo "NTSync patches applied."
+          else
+            echo "NTSync patches SKIPPED (enable_ntsync=false or skip_ntsync=true)."
           fi
 
           TARGET_APP_ID="${{ github.event.inputs.target_app_id || 'app.gamenative' }}"
@@ -274,9 +292,8 @@ jobs:
           INSTALL_DIR="/data/data/${TARGET_APP_ID}/files/imagefs/opt/proton-${PROFILE_VERSION}"
           RUNTIME_PATH="/data/data/${TARGET_APP_ID}/files/imagefs/usr"
           sed -i "s|export install_dir=.*|export install_dir=${INSTALL_DIR}|" \
-            "wine-source/build-scripts/${{ matrix.build_script }}"
-          sed -i "s|export RUNTIME_PATH=.*|export RUNTIME_PATH=\"${RUNTIME_PATH}\"|" \
-            "wine-source/build-scripts/${{ matrix.build_script }}"
+             "wine-source/build-scripts/${{ matrix.build_script }}"          sed -i "s|export RUNTIME_PATH=.*|export RUNTIME_PATH=\ "${RUNTIME_PATH}\ "|" \
+             "wine-source/build-scripts/${{ matrix.build_script }}"
 
       - name: Download termuxfs (${{ matrix.termux_arch }})
         run: |
@@ -296,7 +313,7 @@ jobs:
             wget -q https://dl.google.com/android/repository/android-ndk-r27d-linux.zip
             unzip -q android-ndk-r27d-linux.zip
             mv android-ndk-r27d 27.3.13750724
-          fi
+          fi 
 
       - name: Set up LLVM MinGW (bylaws 20250920)
         run: |
@@ -305,9 +322,9 @@ jobs:
             mkdir -p "$HOME/toolchains"
             cd "$HOME/toolchains"
             wget -q https://github.com/bylaws/llvm-mingw/releases/download/20250920/llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64.tar.xz
-            tar -xf llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64.tar.xz
+            tar -xf llvm-mingw-20250920-ucrt-ubunt u-22.04-x86_64.tar.xz
           fi
-          echo "$HOME/toolchains/llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64/bin" >> "$GITHUB_PATH"
+          echo "$HOME/toolchains/llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64/bin"  >>  "$GITHUB_PATH"
 
       - name: Run autogen.sh
         run: |
@@ -318,20 +335,19 @@ jobs:
         id: cache-wine-tools
         uses: actions/cache@v4
         with:
-          path: wine-source/wine-tools
+          pa th: wine-source/wine-tools
           key: proton-wine-tools-${{ matrix.arch_id }}-${{ hashFiles('wine-source/configure.ac', 'wine-source/configure') }}
           restore-keys: proton-wine-tools-${{ matrix.arch_id }}-
 
       - name: Build wine-tools
         if: steps.cache-wine-tools.outputs.cache-hit != 'true'
-        run: |
-          cd wine-source
+        run: |          cd wine-source
           mkdir -p wine-tools
-          cd wine-tools
+           cd wine-tools
           ../configure --without-x --without-gstreamer --without-vulkan --without-wayland --without-xinput2
           make -j$(nproc) __tooldeps__ nls/all
 
-      - name: Build sysvshm library
+      - name: Build sy svshm library
         if: matrix.sysvshm
         run: |
           cd wine-source
@@ -350,7 +366,7 @@ jobs:
         run: |
           echo "ERROR: configure failed"
           find wine-source -maxdepth 2 \( -name config.log -o -name configure.log \) -print | \
-            xargs -I{} sh -c 'echo "=== {} ===" && tail -n 200 {}'
+            xargs -I{} sh -c 'echo "=== {} === " && tail -n 200 {}'
           exit 1
 
       - name: Verify patch markers
@@ -374,8 +390,7 @@ jobs:
 
           OUTPUT_DIR="$HOME/${{ matrix.output_dir }}"
           echo "=== Ensuring core D3D DLLs are staged ==="
-          ensure_d3d_dll() {
-            local arch_dir="$1" dll_name="$2"
+          ensure_d3d_dll() {            local arch_dir="$1" dll_name="$2"
             local dst="$OUTPUT_DIR/lib/wine/$arch_dir/$dll_name"
             [ -f "$dst" ] && { echo "present: $dst"; return; }
             local src
@@ -415,25 +430,24 @@ jobs:
 
           # Generate profile.json for .wcp (proton variant)
           python3 "$SCRIPTS/generate_profile.py" \
-            "${OUTPUT_DIR}/profile.json" \
-            "${PROFILE_VERSION}" \
-            "1" \
-            "${DISPLAY_NAME}"
+             "${OUTPUT_DIR}/profile.json" \
+             "${PROFILE_VERSION}" \
+             "1" \
+             "${DISPLAY_NAME}"
 
           # Create .wcp
           bash "$SCRIPTS/create-proton-wcp.sh" \
-            "$OUTPUT_DIR" \
-            "$GITHUB_WORKSPACE/output/proton-${VERSION}.wcp" \
-            "${PROFILE_VERSION}" \
-            "1" \
-            "${DISPLAY_NAME}"
+             "$OUTPUT_DIR" \
+             "$GITHUB_WORKSPACE/output/proton-${VERSION}.wcp" \
+             "${PROFILE_VERSION}" \             "1" \
+             "${DISPLAY_NAME}"
 
           # Generate profile.json for .wcp.xz (wine variant)
           python3 "$SCRIPTS/generate_profile.py" \
-            "${OUTPUT_DIR}/profile.json" \
-            "${PROFILE_VERSION}" \
-            "0" \
-            "${DISPLAY_NAME}" \
+             "${OUTPUT_DIR}/profile.json" \
+             "${PROFILE_VERSION}" \
+             "0" \
+             "${DISPLAY_NAME}" \
             wine
 
           # Create .wcp.xz
@@ -445,24 +459,24 @@ jobs:
 
           # SHA256 checksums
           sha256sum "output/proton-${VERSION}.wcp" \
-            > "output/proton-${VERSION}.wcp.sha256"
+             > "output/proton-${VERSION}.wcp.sha256"
           sha256sum "output/proton-wine-${VERSION}.wcp.xz" \
-            > "output/proton-wine-${VERSION}.wcp.xz.sha256"
+             > "output/proton-wine-${VERSION}.wcp.xz.sha256"
 
           WCP_SHA=$(cut -d' ' -f1 "output/proton-${VERSION}.wcp.sha256")
           WCPXZ_SHA=$(cut -d' ' -f1 "output/proton-wine-${VERSION}.wcp.xz.sha256")
 
           cat > "output/metadata-${{ matrix.arch_id }}.json" <<EOF
           {
-            "arch": "${{ matrix.arch_id }}",
-            "gitHash": "${GIT_HASH}",
-            "gitDate": "${GIT_DATE}",
-            "version": "${VERSION}",
-            "profileVersion": "${PROFILE_VERSION}",
-            "wcpFile": "proton-${VERSION}.wcp",
-            "wcpSha": "${WCP_SHA}",
-            "wcpxzFile": "proton-wine-${VERSION}.wcp.xz",
-            "wcpxzSha": "${WCPXZ_SHA}"
+             "arch ": "${{ matrix.arch_id }}",
+             "gitHash ": "${GIT_HASH}",
+             "gitDate ": "${GIT_DATE}",
+             "version ": "${VERSION}",
+             "profileVersion ": "${PROFILE_VERSION}",
+             "wcpFile ": "proton-${VERSION}.wcp",
+             "wcpSha ": "${WCP_SHA}",
+             "wcpxzFile ": "proton-wine-${VERSION}.wcp.xz",
+             "wcpxzSha ": "${WCPXZ_SHA}"
           }
           EOF
 
@@ -472,9 +486,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: proton-bleeding-edge-${{ matrix.arch_id }}
-          path: output/
+          pa th: output/
           retention-days: 7
-
   # ============================================================
   # JOB 3: Publish GitHub Release
   # ============================================================
@@ -483,7 +496,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout Nightlies repo
         uses: actions/checkout@v4
@@ -492,7 +504,7 @@ jobs:
 
       - name: Download artifacts
         uses: actions/download-artifact@v4
-        with:
+        with: 
           path: artifacts
 
       - name: Read build metadata
@@ -517,16 +529,15 @@ jobs:
           has_ntsync = "arm64ec-ntsync" in metas
 
           outputs = {
-              "git_hash":    arm["gitHash"],
-              "git_date":    arm["gitDate"],
-              "release_tag": release_tag,
-              "has_ntsync":  "true" if has_ntsync else "false",
+               "git_hash ":    arm["gitHash"],
+               "git_date ":    arm["gitDate"],
+               "release_tag ": release_tag,
+               "has_ntsync ":   "true" if has_ntsync else "false",
           }
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
               for k, v in outputs.items():
                   fh.write(f"{k}={v}\n")
           PY
-
       - name: Check if wine hash changed
         id: hash_check
         env:
@@ -537,12 +548,12 @@ jobs:
           from pathlib import Path
 
           new_hash = os.environ["GIT_HASH"]
-          event    = os.environ.get("GITHUB_EVENT_NAME", "")
+          event    = os.environ.get("GITHUB_EVENT_NAME", " ")
 
           try:
-              old_hash = json.loads(Path("proton-latest.json").read_text()).get("gitHash", "")
+              old_hash = json.loads(Path("proton-latest.json").read_text()).get("gitHash ", " ")
           except Exception:
-              old_hash = ""
+              old_hash = " "
 
           skip = (old_hash[:7] == new_hash[:7]) and (event == "schedule")
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
@@ -566,7 +577,7 @@ jobs:
       - name: Delete previous releases for same wine hash
         if: steps.hash_check.outputs.skip != 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${ { secrets.GITHUB_TOKEN }}
           GIT_HASH: ${{ steps.meta.outputs.git_hash }}
           GIT_DATE: ${{ steps.meta.outputs.git_date }}
         run: |
@@ -575,15 +586,14 @@ jobs:
             --jq '.[].tagName' \
           | grep "^${PREFIX}" \
           | while read -r tag; do
-              echo "Deleting duplicate release: $tag"
-              gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
+              echo "Deleting duplicate release: $tag"              gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
             done
 
       - name: Create GitHub Release
         if: steps.hash_check.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_HASH: ${{ steps.meta.outputs.git_hash }}
+          GIT_H ASH: ${{ steps.meta.outputs.git_hash }}
           GIT_DATE: ${{ steps.meta.outputs.git_date }}
           RELEASE_TAG: ${{ steps.meta.outputs.release_tag }}
         run: |
@@ -599,56 +609,55 @@ jobs:
               req = urllib.request.Request(
                   f"https://api.github.com/{path}",
                   headers={"Authorization": f"Bearer {gh_token}",
-                           "Accept": "application/vnd.github+json"})
+                            "Accept": "application/vnd.github+json"})
               try:
                   with urllib.request.urlopen(req, timeout=15) as r:
                       return json.loads(r.read())
               except Exception as e:
-                  print(f"WARNING: API call failed ({path}): {e}")
+                  pri nt(f"WARNING: API call failed ({path}): {e}")
                   return {}
 
           # Old hash from proton-latest.json (before update)
           try:
-              old_hash = json.loads(open("proton-latest.json").read()).get("gitHash", "")
+              old_hash = json.loads(open("proton-latest.json").read()).get("gitHash", " ")
           except Exception:
-              old_hash = ""
-          old_short = old_hash[:7] if old_hash else ""
+              old_hash = " "
+          old_short = old_hash[:7] if old_hash else " "
 
           # Wine bleeding-edge current HEAD + commit info
           branch_info  = gh_api("repos/ValveSoftware/wine/branches/bleeding-edge")
-          wine_full    = branch_info.get("commit", {}).get("sha", "") or git_hash
+          wine_full    = branch_info.get("commit", {}).get("sha", " ") or git_hash
           wine_short   = wine_full[:7]
 
           commit_info  = gh_api(f"repos/ValveSoftware/wine/commits/{wine_full}")
           wine_msg     = (commit_info.get("commit", {}).get("message", "N/A") or "N/A").split("\n")[0][:80]
-          wine_ts_str  = commit_info.get("commit", {}).get("committer", {}).get("date", "")
+          wine_ts_str  = commit_info.get("commit", {}).get("committer", {}).get("date", " ")
           wine_date_d  = wine_ts_str[:10] if wine_ts_str else "unknown"
 
           # 🆕 badge — updated in last 24h
-          new_badge = ""
-          if wine_ts_str:
+          new_badge = " "          if wine_ts_str:
               try:
                   dt = datetime.datetime.fromisoformat(wine_ts_str.replace("Z", "+00:00"))
-                  if (datetime.datetime.now(datetime.timezone.utc) - dt).total_seconds() < 86400:
-                      new_badge = " 🆕"
+                  if (datetime.datetime.now(datetime.timezone.utc) - dt).total_seconds()  < 86400:
+                      new_badge = " 🆕 "
               except Exception:
                   pass
 
           # What triggered
           if old_short and old_short != wine_short:
               triggered = (
-                  "### 🔄 What Triggered This Build\n"
-                  "> Wine bleeding-edge was updated\n\n"
-                  "| Component | Old Commit | New Commit | Change |\n"
-                  "| :--- | :--- | :--- | :--- |\n"
-                  f"| **ValveSoftware/wine** `bleeding-edge` | `{old_short}` "
-                  f"| [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) "
+                   "### 🔄 What Triggered This Build\n "
+                   " > Wine bleeding-edge was updated\n\n "
+                   "| Component | Old Commit | New Commit | Change |\n "
+                   "| :--- | :--- | :--- | |\n "
+                  f"| **ValveSoftware/wine** `bleeding-edge` | `{old_short}`  "
+                  f"| [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full})  "
                   f"| {wine_msg} |\n\n---"
               )
           else:
               triggered = (
-                  "### 🔄 What Triggered This Build\n"
-                  "> Scheduled build or manual dispatch\n\n---"
+                   "### 🔄 What Triggered This Build\n "
+                   " > Scheduled build or manual dispatch\n\n---"
               )
 
           # File names from release/
@@ -663,75 +672,73 @@ jobs:
           wcp_name        = os.path.basename(wcp_files[0])        if wcp_files        else "proton-*.wcp"
           wcpxz_name      = os.path.basename(wcpxz_files[0])      if wcpxz_files      else "proton-wine-*.wcp.xz"
           wcp_ntsync_name   = os.path.basename(wcp_ntsync_files[0])   if wcp_ntsync_files   else None
-          wcpxz_ntsync_name = os.path.basename(wcpxz_ntsync_files[0]) if wcpxz_ntsync_files else None
+          wcpxz_ntsync_name = os.path.basename(wcpxz_ntsync_files[0]) if wcpxz_ntsyn c_files else None
 
           repo = os.environ.get("GITHUB_REPOSITORY", "The412Banner/Nightlies")
           release_url = f"https://github.com/{repo}/releases/tag/{tag}"
 
           lines = [
-              "> ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!**",
-              "",
-              "---",
-              "",
-              f"### 🚀 Proton Bleeding-Edge Build: {tag}",
-              "",
-              triggered,
-              "",
-              "",
-              "### 📊 Upstream Status",
-              "| Component | Latest Commit | Last Updated |",
-              "| :--- | :--- | :--- |",
-              f"| **ValveSoftware/wine** `bleeding-edge` | [`{wine_short}` — {wine_msg}](https://github.com/ValveSoftware/wine/commit/{wine_full}) | {wine_date_d}{new_badge} |",
-              "",
-              "",
-              "---",
-              "",
-              "### 📦 Built Components",
-              "",
-              "| Component | Source / Commit |",
-              "| :--- | :--- |",
-              f"| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) |",
-              f"| **Proton ARM64EC NTSync** | Same source — NTSync patches applied on top |",
-              "",
-              "---",
-              "",
-              "### ⬇️ Download",
-              "",
-              "Scroll down to **Assets** below to download the files, or use the direct links:",
-              "",
-              f"| File | Description | Link |",
-              f"| :--- | :--- | :--- |",
-              f"| `{wcp_name}` | Proton WCP (standard) — inject via BannersComponentInjector | [Download]({release_url}) |",
-              f"| `{wcp_name}.sha256` | SHA-256 checksum for `.wcp` | [Download]({release_url}) |",
-              f"| `{wcpxz_name}` | Proton WCP.XZ (standard) — XZ-compressed tar for manual use | [Download]({release_url}) |",
-              f"| `{wcpxz_name}.sha256` | SHA-256 checksum for `.wcp.xz` | [Download]({release_url}) |",
+               " > ⚠️ **DISCLAIMER: BLEEDING-EDGE BUILDS ARE NOT ALWAYS STABLE OR RECOMMENDED! USE AT YOUR OWN RISK!** ",
+               " ",
+               "---",
+               " ",
+              f"### 🚀 Proton Bleeding-Edge Build: {tag} ",
+               " ",
+              triggered,               " ",
+               " ",
+               "### 📊 Upstream Status ",
+               "| Component | Latest Commit | Last Updated | ",
+               "| :--- | :--- | :--- | ",
+              f"| **ValveSoftware/wine** `bleeding-edge` | [`{wine_short}` — {wine_msg}](https://github.com/ValveSoftware/wine/commit/{wine_full}) | {wine_date_d}{new_badge} | ",
+               " ",
+               " ",
+               "---",
+               " ",
+               "### 📦 Built Components ",
+               " ",
+               "| Component | Source / Commit | ",
+               "| :--- | :--- | ",
+              f"| **Proton ARM64EC** | [ValveSoftware/wine `bleeding-edge` @ `{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) | ",
+              f"| **Proton ARM64EC NTSync** | Same source — NTSync patches applied on top | ",
+               " ",
+               "---",
+               " ",
+               "### ⬇️ Download ",
+               " ",
+               "Scroll down to **Assets** below to download the files, or use the direct links: ",
+               " ",
+              f"| File | Description | Link | ",
+              f"| :--- | :--- | :--- | ",
+              f"| `{wcp_name}` | Proton WCP (standard) — inject via BannersComponentInjector | [Download]({release_url}) | ",
+              f"| `{wcp_name}.sha256` | SHA-256 checksum for `.wcp` | [Download]({release_url}) | ",
+              f"| `{wcpxz_name}` | Proton WCP.XZ (standard) — XZ-compressed tar for manual use | [Download]({release_url}) | ",
+              f"| `{wcpxz_name}.sha256` | SHA-256 checksum for `.wcp.xz` | [Download]({release_url}) | ",
           ] + ([
-              f"| `{wcp_ntsync_name}` | Proton WCP **(NTSync)** — requires `/dev/ntsync` kernel support | [Download]({release_url}) |",
-              f"| `{wcp_ntsync_name}.sha256` | SHA-256 checksum for NTSync `.wcp` | [Download]({release_url}) |",
-              f"| `{wcpxz_ntsync_name}` | Proton WCP.XZ **(NTSync)** — XZ-compressed tar for manual use | [Download]({release_url}) |",
-              f"| `{wcpxz_ntsync_name}.sha256` | SHA-256 checksum for NTSync `.wcp.xz` | [Download]({release_url}) |",
+              f"| `{wcp_ntsync_name}` | Proton WCP **(NTSync)** — requires `/dev/ntsync` kernel support | [Download]({release_url}) | ",
+              f"| `{wcp_ntsync_name}.sha256` | SHA-256 checksum for NTSync `.wcp` | [Download]({release_url}) | ",
+              f"| `{wcpxz_ntsync_name}` | Proton WCP.XZ **(NTSync)** — XZ-compressed tar for manual use | [Download]({release_url}) | ",
+              f"| `{wcpxz_ntsync_name}.sha256` | SHA-256 checksum for NTSync `.wcp.xz` | [Download]({release_url}) | ",
           ] if wcp_ntsync_name else []) + [
-              "",
-              "> **Which file do I need?**",
-              "> - Use **`.wcp`** if you are injecting via **BannersComponentInjector** (GameHub / Winlator Cmod)",
-              "> - Use **`.wcp.xz`** if you need the raw XZ archive for manual extraction or other tools",
-              "",
-              "---",
-              "",
-              "### ⚡ About NTSync",
-              "",
-              "The `-ntsync` variant has NTSync patches applied. NTSync is a kernel-level synchronization mechanism that can significantly reduce CPU overhead in games that create many synchronization objects (locks, events, mutexes).",
-              "",
-              "**Do I need to do anything to enable it?**",
-              "No. The build auto-detects `/dev/ntsync` at runtime:",
-              "- If your kernel supports NTSync (`/dev/ntsync` exists) — it enables automatically",
-              "- If your kernel does not support it — it silently falls back to standard sync, behaving identically to the non-NTSync build",
-              "",
-              "**Override env vars (optional):**",
-              "- `WINENTSYNC=0` — force-disable NTSync even if `/dev/ntsync` is present",
-              "- `WINENTSYNC=1` — force-enable (for debugging)",
-              "",
-              "**Kernel requirement:** NTSync was merged into Linux 6.14. Most stock Android kernels (5.x–6.1) do not include it. It is available on select devices running custom kernels or newer kernel versions. If unsure, just use the NTSync build — there is no downside if your kernel does not support it.",
+               " ",
+               " > **Which file do I need?** ",
+               " > - Use **`.wcp`** if you are injecting via **BannersComponentInjector** (GameHub / Winlator Cmod) ",
+               " > - Use **`.wcp.xz`** if you need the raw XZ archive for manual extraction or other tools ",
+               " ",
+               "---",
+               " ",
+               "### ⚡ About NTSync ",
+               " ",
+               "The `-ntsync` variant has NTSync patches applied. NTSync is a kernel-level synchronization mechanism that can significantly reduce CPU overhead in games that create many synchroni zation objects (locks, events, mutexes). ",
+               " ",
+               "**Do I need to do anything to enable it?** ",
+               "No. The build auto-detects `/dev/ntsync` at runtime: ",
+               "- If your kernel supports NTSync (`/dev/ntsync` exists) — it enables automatically ",
+               "- If your kernel does not support it — it silently falls back to standard sync, behaving identically to the non-NTSync build ",               " ",
+               "**Override env vars (optional):** ",
+               "- `WINENTSYNC=0` — force-disable NTSync even if `/dev/ntsync` is present ",
+               "- `WINENTSYNC=1` — force-enable (for debugging) ",
+               " ",
+               "**Kernel requirement:** NTSync was merged into Linux 6.14. Most stock Android kernels (5.x–6.1) do not include it. It is available on select devices running custom kernels or newe r kernel versions. If unsure, just use the NTSync build — there is no downside if your kernel does not support it. ",
           ]
           notes = "\n".join(lines)
           with open("/tmp/release-notes.md", "w") as f:
@@ -744,17 +751,17 @@ jobs:
           readme_path = "README.md"
           readme = Path(readme_path).read_text()
           new_block = "\n".join([
-              "<!-- PROTON-LATEST-START -->",
-              "| | |",
-              "| :--- | :--- |",
-              f"| **Release** | [🔗 {tag}]({release_url}) |",
-              f"| **Wine Commit** | [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) — {wine_msg} |",
-              f"| **Date** | {wine_date_d} |",
-              f"| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets]({release_url}) |",
-              "<!-- PROTON-LATEST-END -->",
+               " <!-- PROTON-LATEST-START --> ",
+               "| | | ",
+               "| :--- | :--- | ",
+              f"| **Release** | [🔗 {tag}]({release_url}) | ",
+              f"| **Wine Commit** | [`{wine_short}`](https://github.com/ValveSoftware/wine/commit/{wine_full}) — {wine_msg} | ",
+              f"| **Date** | {wine_date_d} | ",
+              f"| **Files** | [`.wcp` and `.wcp.xz` — scroll to Assets]({release_url}) | ",
+               " <!-- PROTON-LATEST-END --> ",
           ])
           readme = re.sub(
-              r"<!-- PROTON-LATEST-START -->.*?<!-- PROTON-LATEST-END -->",
+              r" <!-- PROTON-LATEST-START -->.*? <!-- PROTON-LATEST-END --> ",
               new_block,
               readme,
               flags=re.DOTALL,
@@ -764,7 +771,7 @@ jobs:
           PY
 
           gh release create "$RELEASE_TAG" release/* \
-            --title "Proton bleeding-edge ARM64EC ($GIT_DATE)" \
+            --title "Proton bleeding-edge ARM64EC ($GIT_DATE) " \
             --notes-file /tmp/release-notes.md \
             --prerelease \
           || gh release upload "$RELEASE_TAG" release/* --clobber
@@ -775,7 +782,6 @@ jobs:
           python3 <<'PY'
           import glob, json
           from pathlib import Path
-
           metas = {}
           for path in glob.glob("artifacts/**/metadata-*.json", recursive=True):
               data = json.loads(Path(path).read_text())
@@ -783,12 +789,12 @@ jobs:
 
           arm = metas["arm64ec"]
           data = {
-              "gitHash":     arm["gitHash"],
-              "date":        arm["gitDate"],
-              "versionName": arm["version"],
-              "wcp":   { "fileName": arm["wcpFile"],  "sha256": arm["wcpSha"]   },
-              "wcpxz": { "fileName": arm["wcpxzFile"], "sha256": arm["wcpxzSha"] },
-              "releaseTag": "${{ steps.meta.outputs.release_tag }}",
+               "gitHash ":     arm["gitHash"],
+               "date ":        arm["gitDate"],
+               "versionName ": arm["version"],
+               "wcp ":   {  "fileName ": arm["wcpFile"],   "sha256 ": arm["wcpSha"]   },
+               "wcpxz ": {  "fileName ": arm["wcpxzFile"],  "sha256 ": arm["wcpxzSha"] },
+               "releaseTag ":  "${{ steps.meta.outputs.release_tag }} ",
           }
           Path("proton-latest.json").write_text(json.dumps(data, indent=2) + "\n")
           print(json.dumps(data, indent=2))
@@ -797,7 +803,7 @@ jobs:
       - name: Commit proton-latest.json
         if: steps.hash_check.outputs.skip != 'true'
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add proton-latest.json README.md
           GIT_DATE="${{ steps.meta.outputs.git_date }}"
@@ -806,40 +812,39 @@ jobs:
           git push
 
       - name: Notify Discord (success)
-        if: success() && steps.hash_check.outputs.skip != 'true'
+        if: success()  && steps.hash_check.outputs.skip != 'true'
         env:
           RELEASE_TAG: ${{ steps.meta.outputs.release_tag }}
           GIT_HASH: ${{ steps.meta.outputs.git_hash }}
-          GIT_DATE: ${{ steps.meta.outputs.git_date }}
+          GIT_DATE: ${{ s teps.meta.outputs.git_date }}
         run: |
           curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
             -d "{
-              \"embeds\": [{
-                \"title\": \"🧪 New Proton Bleeding-Edge Build Released\",
-                \"description\": \"**${RELEASE_TAG}**\n\n[📦 Download from GitHub Releases](https://github.com/${{ github.repository }}/releases/tag/${RELEASE_TAG})\",
-                \"color\": 5763719,
-                \"fields\": [
+              \ "embeds\ ": [{
+                \ "title\ ": \ "🧪 New Proton Bleeding-Edge Build Released\ ",
+                \ "description\ ": \ "**${RELEASE_TAG}**\n\n[📦 Download from GitHub Releases](https://github.com/${{ github.repository }}/releases/tag/${RELEASE_TAG})\ ",
+                \ "color\ ": 5763719,
+                \ "fields\ ": [
                   {
-                    \"name\": \"Wine Commit\",
-                    \"value\": \"\`${GIT_HASH}\` (${GIT_DATE})\",
-                    \"inline\": false
+                    \ "name\ ": \ "Wine Commit\ ",
+                    \ "value\ ": \ "\`${GIT_HASH}\` (${GIT_DATE})\ ",
+                    \ "inline\ ": false
+                  },
+                  {                    \ "name\ ": \ "Arch\ ",
+                    \ "value\ ": \ "ARM64EC + ARM64EC NTSync\ ",
+                    \ "inline\ ": true
                   },
                   {
-                    \"name\": \"Arch\",
-                    \"value\": \"ARM64EC + ARM64EC NTSync\",
-                    \"inline\": true
-                  },
-                  {
-                    \"name\": \"Files\",
-                    \"value\": \".wcp + .wcp.xz (both variants)\",
-                    \"inline\": true
+                    \ "name\ ": \ "Files\ ",
+                    \ "value\ ": \ ".wcp + .wcp.xz (both variants)\ ",
+                    \ "inline\ ": true
                   }
                 ],
-                \"footer\": { \"text\": \"GitHub Actions · ${{ github.repository }}\" },
-                \"timestamp\": \"${{ github.event.repository.updated_at }}\"
+                \ "footer\ ": { \ "text\ ": \ "GitHub Actions · ${{ github.repository }}\ " },
+                \ "timestamp\ ": \ "${{ github.event.repository.updated_at }}\ "
               }]
-            }"
+            } "
 
       - name: Notify Discord (failure)
         if: failure()
@@ -847,11 +852,11 @@ jobs:
           curl -s -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
             -d '{
-              "embeds": [{
-                "title": "❌ Proton Bleeding-Edge Build Failed",
-                "description": "The Proton bleeding-edge build failed.\n\n[🔍 View Actions Log](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})",
-                "color": 15548997,
-                "footer": { "text": "GitHub Actions · ${{ github.repository }}" },
-                "timestamp": "${{ github.event.repository.updated_at }}"
+               "embeds ": [{
+                 "title ":  "❌ Proton Bleeding-Edge Build Failed ",
+                 "description ":  "The Proton bleeding-edge build failed.\n\n[🔍 View Actions Log](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) ",
+                 "color ": 15548997,
+                 "footer ": {  "text ":  "GitHub Actions · ${{ github.repository }} " },
+                 "timestamp ":  "${{ github.event.repository.updated_at }} "
               }]
             }'
